@@ -3,6 +3,14 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+    <color name="dark_silver">#3d3c3c</color>
+    <color name="fab_color">#078A0A</color>
+    <color name="red">#ff5656</color>
+    <color name="green">#00ff95</color>
+    <color name="yellow">#fdd962</color>
+    <color name="blue">#0039f4</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
     <color name="colorGreen">#068D4A</color>

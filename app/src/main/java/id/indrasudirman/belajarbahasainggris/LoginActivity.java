@@ -34,24 +34,19 @@ import id.indrasudirman.belajarbahasainggris.sqlite.SQLiteHelper;
 
 public class LoginActivity extends AppCompatActivity {
 
-    AppCompatButton loginButton;
-    TextInputLayout layoutUsername;
-    TextInputLayout layoutPassword;
-    TextInputEditText username;
-    TextInputEditText password;
-    AppCompatTextView register;
-    NestedScrollView nestedScrollView;
-    String userName, pwdUsr;
-    Boolean allFieldValid = false;
+    private AppCompatButton loginButton;
+    private TextInputLayout layoutUsername;
+    private TextInputLayout layoutPassword;
+    private TextInputEditText username;
+    private TextInputEditText password;
+    private AppCompatTextView register;
+    private NestedScrollView nestedScrollView;
+    private String userName, pwdUsr;
+    private Boolean allFieldValid = false;
 
-    SQLiteDatabase sqLiteDatabaseObject;
-    SQLiteHelper sqLiteHelper;
-    Cursor cursor;
-    String userNameHolder, passwordOneHolder, passwordTwoHolder;
-    String sQLiteDatabaseQueryHolder;
-    String fResult = "NOT_FOUND";
-    int length;
-    char[] pwd;
+    private SQLiteHelper sqLiteHelper;
+    private int length;
+    private char[] pwd;
 
 
     @Override
@@ -100,6 +95,8 @@ public class LoginActivity extends AppCompatActivity {
                             username.setText("");
                             password.setText("");
                             allFieldValid = false;
+                            Intent intent = new Intent(getApplicationContext(), RecyclerViewActivity.class);
+                            startActivity(intent);
                         } else {
 
                             Snackbar.make(nestedScrollView, "Password salah", Snackbar.LENGTH_LONG).show();

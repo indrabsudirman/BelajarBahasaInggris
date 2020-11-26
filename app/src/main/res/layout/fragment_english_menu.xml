@@ -5,7 +5,7 @@
     android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
+    android:background="@android:color/white"
     android:fitsSystemWindows="true">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorAccent"
+            app:contentScrim="?attr/colorPrimary"
             app:expandedTitleMarginEnd="64dp"
             app:expandedTitleMarginStart="48dp"
             app:expandedTitleTextAppearance="@android:color/transparent"
@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <androidx.appcompat.widget.AppCompatImageView
+                <ImageView
                     android:id="@+id/backdrop"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -38,22 +38,23 @@
                     android:scaleType="centerCrop"
                     app:layout_collapseMode="parallax"/>
 
-                <androidx.appcompat.widget.LinearLayoutCompat
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center_horizontal"
                     android:orientation="vertical">
 
-                    <androidx.appcompat.widget.AppCompatTextView
+
+                    <TextView
                         android:id="@+id/love_music"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Belajar Bahasa Inggris"
-                        android:textColor="@color/colorBlack"
+                        android:textColor="@android:color/black"
                         android:textSize="18dp"/>
 
-                </androidx.appcompat.widget.LinearLayoutCompat>
+                </LinearLayout>
 
             </RelativeLayout>
 
@@ -64,13 +65,11 @@
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
+
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_main"/>
-
-
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

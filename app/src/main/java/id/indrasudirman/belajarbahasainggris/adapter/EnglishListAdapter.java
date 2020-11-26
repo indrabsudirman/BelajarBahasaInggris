@@ -41,7 +41,7 @@ public class EnglishListAdapter extends RecyclerView.Adapter <EnglishListAdapter
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.english_card, parent, false);
+                .inflate(R.layout.english_card_recycler_view, parent, false);
         return new MyViewHolder(view);
     }
 

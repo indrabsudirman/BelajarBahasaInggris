@@ -7,8 +7,6 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.widget.NestedScrollView;
 
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.TextUtils;
@@ -16,7 +14,6 @@ import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.util.Patterns;
 import android.view.View;
-import android.widget.Toast;
 
 import static id.indrasudirman.belajarbahasainggris.utils.PasswordMD5WithSalt.digest;
 import static id.indrasudirman.belajarbahasainggris.utils.PasswordMD5WithSalt.hexStringToByteArray;
@@ -29,7 +26,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.Objects;
 
-import id.indrasudirman.belajarbahasainggris.model.User;
+import id.indrasudirman.belajarbahasainggris.activities.RecyclerViewActivity;
 import id.indrasudirman.belajarbahasainggris.sqlite.SQLiteHelper;
 
 public class LoginActivity extends AppCompatActivity {

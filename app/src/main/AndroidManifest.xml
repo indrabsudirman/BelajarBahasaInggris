@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".SimplePastTense"/>
-        <activity android:name=".SimplePast" />
-        <activity android:name=".RecyclerViewActivity" />
+        <activity android:name=".activities.SimplePastTenseActivity"/>
+        <activity android:name=".activities.SimplePresentTenseActivity" />
+        <activity android:name=".activities.RecyclerViewActivity" />
         <activity android:name=".SignUp" />
         <activity
             android:name=".SplashScreen"

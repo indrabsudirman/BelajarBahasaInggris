@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/box_inset_layout_padding"
-    tools:context=".SimplePast">
+    tools:context=".activities.SimplePresentTenseActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Simple Past"
+        android:text="Simple Present Tense"
         android:textSize="25dp"
         android:gravity="center"/>
 

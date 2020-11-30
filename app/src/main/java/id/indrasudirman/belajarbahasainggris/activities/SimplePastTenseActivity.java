@@ -1,10 +1,12 @@
-package id.indrasudirman.belajarbahasainggris;
+package id.indrasudirman.belajarbahasainggris.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class SimplePastTense extends AppCompatActivity {
+import id.indrasudirman.belajarbahasainggris.R;
+
+public class SimplePastTenseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

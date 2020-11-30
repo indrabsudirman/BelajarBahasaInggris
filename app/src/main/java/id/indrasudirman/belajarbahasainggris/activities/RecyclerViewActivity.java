@@ -1,4 +1,4 @@
-package id.indrasudirman.belajarbahasainggris;
+package id.indrasudirman.belajarbahasainggris.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -13,6 +13,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import id.indrasudirman.belajarbahasainggris.R;
 import id.indrasudirman.belajarbahasainggris.fragment.EnglishMenuFragment;
 import id.indrasudirman.belajarbahasainggris.fragment.UserFragment;
 import id.indrasudirman.belajarbahasainggris.utils.BottomNavigationBehavior;

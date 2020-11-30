@@ -9,8 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -22,7 +20,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.appbar.AppBarLayout;
@@ -33,9 +30,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import id.indrasudirman.belajarbahasainggris.R;
-import id.indrasudirman.belajarbahasainggris.RecyclerViewActivity;
-import id.indrasudirman.belajarbahasainggris.SimplePastFragment;
-import id.indrasudirman.belajarbahasainggris.SimplePastTense;
+import id.indrasudirman.belajarbahasainggris.activities.SimplePresentTenseActivity;
+import id.indrasudirman.belajarbahasainggris.activities.RecyclerViewActivity;
+import id.indrasudirman.belajarbahasainggris.activities.SimplePastTenseActivity;
 import id.indrasudirman.belajarbahasainggris.adapter.EnglishListAdapter;
 import id.indrasudirman.belajarbahasainggris.model.EnglishList;
 import id.indrasudirman.belajarbahasainggris.utils.RecyclerItemClickListener;
@@ -104,13 +101,10 @@ public class EnglishMenuFragment extends Fragment {
             public void onClick(View view, int position) {
 //                Fragment fragment =new Fragment();
                 if (position == 0) {
-                    FragmentManager fragmentManager = getParentFragmentManager();
-                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                    SimplePastFragment simplePastTense = new SimplePastFragment();
-                    fragmentTransaction.replace(R.id.frame_container, simplePastTense);
-                    fragmentTransaction.commit();
+                    Intent intent = new Intent(getContext().getApplicationContext(), SimplePastTenseActivity.class);
+                    startActivity(intent);
                 } else if (position == 1) {
-                    Intent intent = new Intent(getContext().getApplicationContext(), SimplePastTense.class);
+                    Intent intent = new Intent(getContext().getApplicationContext(), SimplePresentTenseActivity.class);
                     startActivity(intent);
                 }
 

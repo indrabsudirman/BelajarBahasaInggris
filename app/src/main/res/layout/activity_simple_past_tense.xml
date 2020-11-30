@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SimplePastTense">
+    tools:context=".activities.SimplePastTenseActivity">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Simple Present Tense"
-        android:gravity="center"/>
+        android:text="Simple Past Tense"
+        android:gravity="center"
+        android:textSize="25dp"/>
 </RelativeLayout>

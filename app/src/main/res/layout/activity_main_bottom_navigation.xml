@@ -6,7 +6,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecyclerViewActivity">
+    tools:context=".activities.RecyclerViewActivity">
 <!--Tool context belum fix, cek lagi-->
 
     <androidx.fragment.app.FragmentContainerView

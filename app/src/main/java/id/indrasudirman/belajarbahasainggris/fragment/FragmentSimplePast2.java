@@ -11,20 +11,18 @@ import android.view.ViewGroup;
 import id.indrasudirman.belajarbahasainggris.R;
 
 
-public class UserFragment extends Fragment {
+public class FragmentSimplePast2 extends Fragment {
 
 
-
-    public UserFragment() {
+    public FragmentSimplePast2() {
         // Required empty public constructor
     }
-
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user, container, false);
+        return inflater.inflate(R.layout.fragment_simple_past2, container, false);
     }
 }

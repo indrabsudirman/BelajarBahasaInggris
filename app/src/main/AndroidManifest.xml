@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".activities.SimplePastTenseActivity"/>
-        <activity android:name=".activities.SimplePresentTenseActivity" />
-        <activity android:name=".activities.RecyclerViewActivity" />
+        <activity android:name=".AccountActivity"/>
+        <activity android:name=".SimplePastActivity" />
+        <activity android:name=".MainMenu" />
         <activity android:name=".SignUp" />
         <activity
             android:name=".SplashScreen"
@@ -22,7 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

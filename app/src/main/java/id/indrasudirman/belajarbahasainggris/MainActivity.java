@@ -26,10 +26,9 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.Objects;
 
-import id.indrasudirman.belajarbahasainggris.activities.RecyclerViewActivity;
 import id.indrasudirman.belajarbahasainggris.sqlite.SQLiteHelper;
 
-public class LoginActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     private AppCompatButton loginButton;
     private TextInputLayout layoutUsername;
@@ -59,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
         register = findViewById(R.id.appCompatTextViewRegisterLink);
         nestedScrollView = findViewById(R.id.nestedScrollView);
 
-        sqLiteHelper = new SQLiteHelper(LoginActivity.this);
+        sqLiteHelper = new SQLiteHelper(MainActivity.this);
 
 
         //Adding Login click listener
@@ -92,7 +91,7 @@ public class LoginActivity extends AppCompatActivity {
                             username.setText("");
                             password.setText("");
                             allFieldValid = false;
-                            Intent intent = new Intent(getApplicationContext(), RecyclerViewActivity.class);
+                            Intent intent = new Intent(getApplicationContext(), MainMenu.class);
                             startActivity(intent);
                         } else {
 
@@ -124,8 +123,6 @@ public class LoginActivity extends AppCompatActivity {
         ClickableSpan clickableSpan = new ClickableSpan() {
             @Override
             public void onClick(@NonNull View view) {
-//                String salt = sqLiteHelper.getSalt(username.getText().toString().trim());
-//                System.out.println("value of salt " + salt);
                 Intent intent = new Intent(getApplicationContext(), SignUp.class);
                 startActivity(intent);
             }

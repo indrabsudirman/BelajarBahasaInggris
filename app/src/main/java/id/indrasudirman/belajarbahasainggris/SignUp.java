@@ -16,7 +16,6 @@ import android.text.style.ClickableSpan;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
@@ -122,7 +121,6 @@ public class SignUp extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 if (allFieldValid) {
-                    Toast.makeText(SignUp.this, "Semua Field sudah diisi " + userName, Toast.LENGTH_LONG).show();
 
                     if (!sqLiteHelper.checkUser(textInputEditTextUsername.getText().toString().trim())) {
                         user.setName(textInputEditTextName.getText().toString().trim());
@@ -163,7 +161,7 @@ public class SignUp extends AppCompatActivity {
         ClickableSpan clickableSpan = new ClickableSpan() {
             @Override
             public void onClick(@NonNull View view) {
-                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
         };

@@ -10,6 +10,7 @@ import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +28,7 @@ import java.util.List;
 
 import id.indrasudirman.belajarbahasainggris.adapter.MainMenuAdapter;
 import id.indrasudirman.belajarbahasainggris.model.EnglishList;
+import id.indrasudirman.belajarbahasainggris.utils.RecyclerItemClickListener;
 
 public class MainMenu extends AppCompatActivity {
 
@@ -78,6 +80,26 @@ public class MainMenu extends AppCompatActivity {
         recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(10), true));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
+
+        //Row click listener
+        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getApplicationContext(), recyclerView, new RecyclerItemClickListener.ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+                if (position == 0) {
+                    startActivity(new Intent(getApplicationContext()
+                            ,SimplePastActivity.class));
+                    overridePendingTransition(0, 0);
+                } else if (position == 1) {
+                    Toast.makeText(MainMenu.this, "Anda klik Simple Present Tense", Toast.LENGTH_LONG).show();
+                }
+
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+
+            }
+        }));
 
         prepareCovers();
 

@@ -15,11 +15,11 @@
 
     <!-- Simple Past Tense, Explain 1 -->
 
-    <string name="simple_past_tense"><u>Simple Past Tense</u></string>
+    <string name="simple_past_tense"><b><u>Simple Past Tense</u></b></string>
     <string name="simple_past_explain"><b>Simple Past Tense digunakan untuk menyatakan kejadian yang sudah selesai dan tidak ada hubungan sama sekali dengan saat ini (sekarang)</b>, biasanya hanya untuk menceritakan kejadian yang lalu saja. Simple Past Tense juga biasa digunakan untuk menyatakan sesuatu yang sudah terjadi dalam cerita.</string>
     <string name="example">Contoh :</string>
     <string name="first_bullet">■ My Parent lived in Germany in 2002.\n \t\t(Kedua orangtua saya pernah tinggal\n \t\t di Jerman pada tahun 2002)</string>
     <string name="second_bullet">■ I bought a new smartphone last week.\n \t\t(Saya sudah membeli smartphone\n \t\t baru minggu lalu)</string>
     <string name="third_bullet">■ Pinocchio’s nose grew longer every time\n \t\t he told a lie.\n \t\t(Hidung Pinocchio bertambah panjang\n \t\t setiap dia mengatakan kebohongan)</string>
-
+    <string name="mengerti">Bagaimana, sudah mengerti? Jika sudah paham klik <b>next</b> untuk mencoba mengerjakan test.</string>
 </resources>

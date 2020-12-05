@@ -5,11 +5,36 @@
     android:layout_height="match_parent"
     tools:context=".fragment.SimplePastFragment1">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Simple Past Fragment 1"
-        android:textSize="24sp"
-        android:layout_gravity="center"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/simple_past_tense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/simple_past_tense"
+                android:textSize="18dp"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                android:id="@+id/simple_past_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:lineSpacingExtra="2dp"
+                android:padding="5dp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/simple_past_explain" />
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>

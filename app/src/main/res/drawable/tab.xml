@@ -6,6 +6,6 @@
         android:color="@color/colorPrimary"/>
     <item
         android:state_selected="false"
-        android:color="@color/colorBlack"/>
+        android:color="@color/album_title"/>
 
 </selector>

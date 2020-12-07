@@ -6,10 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    android:paddingTop="10dp"
-    android:paddingBottom="10dp"
     android:paddingLeft="10dp"
+    android:paddingTop="10dp"
     android:paddingRight="10dp"
+    android:paddingBottom="10dp"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -22,14 +22,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="40dp"
-            android:src="@drawable/bahasainggris_splashscreen"/>
+            android:src="@drawable/bahasainggris_splashscreen" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayoutEmail"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputEditTextEmail"
@@ -38,15 +38,15 @@
                 android:hint="Email"
                 android:inputType="text"
                 android:maxLines="1"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayoutPassword"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -56,25 +56,26 @@
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:maxLines="1"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/appCompatButtonLogin"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:background="@drawable/rounded_shape"
-            android:text="Login"
-            android:layout_gravity="center"/>
+            android:text="@string/login"
+            android:textColor="@color/colorWhite" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/appCompatTextViewRegisterLink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="Don't have account! Register here!"
             android:layout_gravity="center"
-            android:textSize="16dp"/>
+            android:layout_marginTop="30dp"
+            android:text="@string/register_here"
+            android:textSize="16sp" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.core.widget.NestedScrollView>

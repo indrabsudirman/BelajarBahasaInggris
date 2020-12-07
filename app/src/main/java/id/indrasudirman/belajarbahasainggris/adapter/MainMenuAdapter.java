@@ -55,7 +55,7 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MyView
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         EnglishList album = albumList.get(position);
         holder.title.setText(album.getName());
-        holder.count.setText(album.getNumOfPages() + " songs");
+        holder.count.setText(album.getNumOfPages() + " hal");
 
         // loading album cover using Glide library
         Glide.with(mContext).load(album.getThumbnail()).into(holder.thumbnail);

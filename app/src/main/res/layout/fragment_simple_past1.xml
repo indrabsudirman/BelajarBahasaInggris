@@ -83,6 +83,13 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/rounded_rectangle">
 
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@mipmap/ic_question" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -97,11 +104,11 @@
                 android:id="@+id/nextSimplePast"
                 android:layout_width="150dp"
                 android:layout_height="45dp"
+                android:layout_gravity="right"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/rounded_shape"
-                android:text="Next"
-                android:textColor="@color/colorWhite"
-                android:layout_gravity="right"/>
+                android:text="@string/next"
+                android:textColor="@color/colorWhite" />
 
 
         </LinearLayout>

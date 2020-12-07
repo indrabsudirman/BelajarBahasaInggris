@@ -1,5 +1,7 @@
 package id.indrasudirman.belajarbahasainggris.adapter;
 
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -18,10 +20,11 @@ public class SimplePastAdapter extends FragmentStateAdapter {
     @Override
     public Fragment createFragment(int position) {
         switch (position) {
-            case 0:
-                return new SimplePastFragment1();
-            default:
+            case 1:
+//                Toast.makeText("Set method belum berhasil :(", Toast.LENGTH_SHORT).show();
                 return new SimplePastFragment2();
+            default:
+                return new SimplePastFragment1();
         }
 
     }

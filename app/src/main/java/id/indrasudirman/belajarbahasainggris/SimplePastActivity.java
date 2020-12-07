@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -17,6 +18,10 @@ import com.google.android.material.tabs.TabLayoutMediator;
 import id.indrasudirman.belajarbahasainggris.adapter.SimplePastAdapter;
 
 public class SimplePastActivity extends AppCompatActivity {
+    private ViewPager2 viewPager2;
+    private int score = 0;
+
+
 
 
 
@@ -25,10 +30,12 @@ public class SimplePastActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_past);
 
-        ViewPager2 viewPager2 = findViewById(R.id.viewPager);
+        viewPager2 = findViewById(R.id.viewPager);
         viewPager2.setAdapter(new SimplePastAdapter(this));
+        viewPager2.setUserInputEnabled(false);
 
         TabLayout tabLayout = findViewById(R.id.tabLayout);
+//        tabLayout.clearOnTabSelectedListeners();
 
         //Initialize and assign variable
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
@@ -64,11 +71,16 @@ public class SimplePastActivity extends AppCompatActivity {
                     case 0: {
                         tab.setText("Hal 1");
                         tab.setIcon(R.drawable.ic_baseline_menu_book_24);
+
                         break;
                     }
                     case 1: {
                         tab.setText("Test");
                         tab.setIcon(R.drawable.test);
+                        tab.view.setClickable(false);
+                        if (score==1) {
+                            tab.view.setClickable(true);
+                        }
                         break;
                     }
 
@@ -77,6 +89,6 @@ public class SimplePastActivity extends AppCompatActivity {
             }
         });
         tabLayoutMediator.attach();
-
     }
+
 }

@@ -17,4 +17,5 @@
     <color name="colorLightGreen">#41F79D</color>
     <color name="bgBottomNavigation">#117A00</color>
     <color name="colorDivider">#ECECEC</color>
+    <color name="greenInfo">#009650</color>
 </resources>

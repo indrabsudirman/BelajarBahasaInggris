@@ -27,7 +27,7 @@ public class SimplePastFragment1 extends Fragment {
 
     private View view;
     private JustifiedTextView justifiedTextViewSimplePastExplain, justifiedTextViewSimplePastFirstBullet, justifiedTextViewSimplePastSecondBullet, justifiedTextViewSimplePastThirdBullet;
-    private AppCompatButton buttonNext;
+//    private AppCompatButton buttonNext;
     private ViewPager2 viewPager2;
 
 
@@ -48,7 +48,7 @@ public class SimplePastFragment1 extends Fragment {
         justifiedTextViewSimplePastFirstBullet = view.findViewById(R.id.simple_past_tense_example1);
         justifiedTextViewSimplePastSecondBullet = view.findViewById(R.id.simple_past_tense_example2);
         justifiedTextViewSimplePastThirdBullet = view.findViewById(R.id.simple_past_tense_example3);
-        buttonNext = view.findViewById(R.id.nextSimplePast);
+//        buttonNext = view.findViewById(R.id.nextSimplePast);
 
         SpannableString spannableString = new SpannableString(getActivity().getResources().getString(R.string.simple_past_explain));
         ClickableSpan clickableSpan = new ClickableSpan() {
@@ -187,13 +187,13 @@ public class SimplePastFragment1 extends Fragment {
         justifiedTextViewSimplePastThirdBullet.setText(spannableString5);
 
         //Event button next fragment
-        buttonNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                viewPager2.setCurrentItem(1);
-
-            }
-        });
+//        buttonNext.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                viewPager2.setCurrentItem(1);
+//
+//            }
+//        });
 
 
 

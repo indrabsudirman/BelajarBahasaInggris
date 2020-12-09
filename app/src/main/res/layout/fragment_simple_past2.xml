@@ -154,15 +154,15 @@
 
             </com.google.android.material.textfield.TextInputEditText>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/checkAnswer"
-                android:layout_width="150dp"
-                android:layout_height="45dp"
-                android:layout_gravity="right"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_shape"
-                android:text="@string/cek_jawaban"
-                android:textColor="@color/colorWhite" />
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/checkAnswer"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_gravity="right"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="@drawable/rounded_shape"-->
+<!--                android:text="@string/cek_jawaban"-->
+<!--                android:textColor="@color/colorWhite" />-->
 
         </LinearLayout>
 

@@ -68,7 +68,13 @@
     <string name="last_month">Last month</string>
     <string name="last_year">Last year</string>
     <string name="cek_jawaban">Cek Jawaban</string>
-    <string name="next">Next</string>
     <string name="register_here">Don\'t have account! Register here!</string>
     <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="already_a_member_login">Already a member? Login</string>
+    <string name="next">Next</string>
 </resources>

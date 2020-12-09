@@ -1,10 +1,14 @@
 package id.indrasudirman.belajarbahasainggris.utils;
 
+import android.util.Log;
+
+import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.SecureRandom;
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 public class PasswordMD5WithSalt {
     public static String digest (char [] in, byte [] salt) throws NoSuchAlgorithmException {
@@ -72,6 +76,26 @@ public class PasswordMD5WithSalt {
         } else {
             return null;
         }
+    }
+
+    public String passKey (String key) {
+        String digest = null;
+        try {
+            MessageDigest messageDigest = MessageDigest.getInstance("MD5");
+            byte [] hash = messageDigest.digest(key.getBytes("UTF-8"));
+
+            //converting byte array to Hexadecimal String
+            StringBuilder stringBuilder = new StringBuilder(2 * hash.length);
+            for (byte b : hash) {
+                stringBuilder.append(String.format("%02x", b&0xff));
+            }
+            digest = stringBuilder.toString();
+        } catch (UnsupportedEncodingException e) {
+            Log.e("MyActivity", "UnsupportedEncodingException");
+        } catch (NoSuchAlgorithmException e) {
+            Log.e("MyActivity", "NoSuchAlgorithmException");
+        }
+        return digest;
     }
 
 }

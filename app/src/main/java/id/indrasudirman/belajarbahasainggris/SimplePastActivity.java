@@ -1,5 +1,6 @@
 package id.indrasudirman.belajarbahasainggris;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ import android.view.animation.ScaleAnimation;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
@@ -23,18 +25,23 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+import com.google.android.material.textfield.TextInputEditText;
+
+import java.util.ArrayList;
 
 import id.indrasudirman.belajarbahasainggris.adapter.SimplePastAdapter;
+import id.indrasudirman.belajarbahasainggris.utils.PasswordMD5WithSalt;
 
 public class SimplePastActivity extends AppCompatActivity {
     private ViewPager2 viewPager2;
     private FloatingActionButton floatingActionButton;
     private int score = 0;
 
-    int[] colorIntArray = {R.color.colorPrimary, R.color.colorPrimary, R.color.colorAccent};
-    int[] iconIntArray = {R.drawable.ic_next_white, R.drawable.ic_baseline_account_circle_24, R.drawable.ic_baseline_account_circle_24};
+    int[] colorIntArray = {R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary};
+    int[] iconIntArray = {R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_next_white, R.drawable.ic_check};
 
 
 
@@ -101,6 +108,18 @@ public class SimplePastActivity extends AppCompatActivity {
                         }
                         break;
                     }
+                    case 2: {
+                        tab.setText("Hal 3");
+                        tab.setIcon(R.drawable.ic_baseline_menu_book_24);
+                        tab.view.setClickable(false);
+                        break;
+                    }
+                    case 3: {
+                        tab.setText("Test");
+                        tab.setIcon(R.drawable.test);
+                        tab.view.setClickable(false);
+                        break;
+                    }
 
                 }
 
@@ -114,7 +133,15 @@ public class SimplePastActivity extends AppCompatActivity {
                 int position = tabLayout.getSelectedTabPosition();
                 switch (position) {
                     case 0:
+                    case 2:
                         viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                        break;
+                    case 1:
+                        checkAnswer(view);
+                        break;
+                    case 3:
+                        Snackbar.make(view, "Pakulonan, Serpong Utara, Tangsel", Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
                         break;
                 }
             }
@@ -194,7 +221,112 @@ public class SimplePastActivity extends AppCompatActivity {
         });
         fab.startAnimation(shrink);
 
+    }
 
+    private boolean checkQuestion1() {
+        TextInputEditText editTextQuestion = findViewById(R.id.answer_simple_past_test1);
+
+        String key = "1f0cec14e2c5effcbff50f2feb9495f6";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestion2() {
+        TextInputEditText editTextQuestion = findViewById(R.id.answer_simple_past_test2);
+
+        String key = "07715e6d0e0223bf2bd3ded1ff74184c";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestion3() {
+        TextInputEditText editTextQuestion = findViewById(R.id.answer_simple_past_test3);
+
+        String key = "e22864336bd8b265bcd2d0435462e1f4";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase()).equalsIgnoreCase(key);
+    }
+
+    private void checkAnswer(View view) {
+        ArrayList<String> incorrectAnswerList = new ArrayList<>();
+
+        int numberOfQuestionCorrect = 0;
+
+        if (checkQuestion1()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 1");
+        }
+
+        if (checkQuestion2()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 2");
+        }
+
+        if (checkQuestion3()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 3");
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (String s : incorrectAnswerList) {
+            sb.append(s);
+            sb.append("\n");
+        }
+
+        if (numberOfQuestionCorrect == 3) {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SimplePastActivity.this);
+            alertDialogBuilder
+                    .setTitle("Selamat!")
+                    .setMessage("Anda berhasil, nilai Anda : " + numberOfQuestionCorrect + "/3\nIni Sempurna. Anda dapat melanjutkan ke pelajaran berikutnya.")
+                    .setCancelable(false)
+                    .setPositiveButton("Simple Past Tense 2",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+
+
+                                }
+                            });
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+        } else {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SimplePastActivity.this);
+            alertDialogBuilder
+                    .setTitle("Gagal!")
+                    .setMessage("Anda gagal, Nilai Anda adalah : " + numberOfQuestionCorrect + "/3\nAnda belum dapat melanjutkan pelajaran berikutnya.\n\n" + "Perbaiki jawaban Anda : \n\n" + sb.toString())
+                    .setCancelable(false)
+                    .setPositiveButton("Mulai test lagi",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem());
+
+                                }
+                            })
+
+                    .setNegativeButton("Keluar aplikasi",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    moveTaskToBack(true);
+                                    finish();
+                                }
+                            });
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+        }
     }
 
 

@@ -9,6 +9,8 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import id.indrasudirman.belajarbahasainggris.fragment.SimplePastFragment1;
 import id.indrasudirman.belajarbahasainggris.fragment.SimplePastFragment2;
+import id.indrasudirman.belajarbahasainggris.fragment.SimplePastFragment3;
+import id.indrasudirman.belajarbahasainggris.fragment.SimplePastFragment4;
 
 public class SimplePastAdapter extends FragmentStateAdapter {
 
@@ -21,8 +23,11 @@ public class SimplePastAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position) {
             case 1:
-//                Toast.makeText("Set method belum berhasil :(", Toast.LENGTH_SHORT).show();
                 return new SimplePastFragment2();
+            case 2:
+                return new SimplePastFragment3();
+            case 3:
+                return new SimplePastFragment4();
             default:
                 return new SimplePastFragment1();
         }
@@ -31,6 +36,6 @@ public class SimplePastAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 2;
+        return 4;
     }
 }

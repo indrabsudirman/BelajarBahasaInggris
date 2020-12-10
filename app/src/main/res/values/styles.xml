@@ -9,7 +9,6 @@
     </style>
 
     <style name="FloatingActionButton" parent="Widget.Design.FloatingActionButton">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/bgBottomNavigation</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -47,6 +46,10 @@
 
     <style name="CustomTitle2" parent="TextAppearance.ShowcaseView.Title.Light">
         <item name="android:textColor">#DEFFFFFF</item>
+    </style>
+<!--    No Uppercase-->
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
     </style>
 
 </resources>

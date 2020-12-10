@@ -7,6 +7,19 @@ public class User {
     private String email;
     private String salt;
     private String password;
+    private int score;
+
+    //Default constructor
+    public User() {
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
 
     public int getId() {
         return id;

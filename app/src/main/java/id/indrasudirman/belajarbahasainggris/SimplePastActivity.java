@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
@@ -14,6 +15,7 @@ import android.view.animation.AnimationSet;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,12 +35,15 @@ import com.google.android.material.textfield.TextInputEditText;
 import java.util.ArrayList;
 
 import id.indrasudirman.belajarbahasainggris.adapter.SimplePastAdapter;
+import id.indrasudirman.belajarbahasainggris.model.User;
 import id.indrasudirman.belajarbahasainggris.utils.PasswordMD5WithSalt;
 
 public class SimplePastActivity extends AppCompatActivity {
     private ViewPager2 viewPager2;
     private FloatingActionButton floatingActionButton;
     private int score = 0;
+    private User user;
+    private TabLayout tabLayout;
 
     int[] colorIntArray = {R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary};
     int[] iconIntArray = {R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_next_white, R.drawable.ic_check};
@@ -48,7 +53,7 @@ public class SimplePastActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_past);
 
@@ -56,10 +61,12 @@ public class SimplePastActivity extends AppCompatActivity {
         viewPager2.setAdapter(new SimplePastAdapter(this));
         viewPager2.setUserInputEnabled(false);
 
+        user = new User();
+
         floatingActionButton = findViewById(R.id.fab);
         floatingActionButton.setBackgroundColor(Color.parseColor("#FF009650"));
 
-        final TabLayout tabLayout = findViewById(R.id.tabLayout);
+        tabLayout = findViewById(R.id.tabLayout);
 //        tabLayout.clearOnTabSelectedListeners();
 
         //Initialize and assign variable
@@ -96,27 +103,18 @@ public class SimplePastActivity extends AppCompatActivity {
                     case 0: {
                         tab.setText("Hal 1");
                         tab.setIcon(R.drawable.ic_baseline_menu_book_24);
-
                         break;
                     }
-                    case 1: {
+                    case 1:
+                    case 3: {
                         tab.setText("Test");
                         tab.setIcon(R.drawable.test);
                         tab.view.setClickable(false);
-                        if (score==1) {
-                            tab.view.setClickable(true);
-                        }
                         break;
                     }
                     case 2: {
                         tab.setText("Hal 3");
                         tab.setIcon(R.drawable.ic_baseline_menu_book_24);
-                        tab.view.setClickable(false);
-                        break;
-                    }
-                    case 3: {
-                        tab.setText("Test");
-                        tab.setIcon(R.drawable.test);
                         tab.view.setClickable(false);
                         break;
                     }
@@ -133,15 +131,26 @@ public class SimplePastActivity extends AppCompatActivity {
                 int position = tabLayout.getSelectedTabPosition();
                 switch (position) {
                     case 0:
-                    case 2:
                         viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                        user.setScore(1);
+                        score = user.getScore();
+                        System.out.println("Score : " + score);
                         break;
                     case 1:
                         checkAnswer(view);
                         break;
+                    case 2:
+                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                        user.setScore(3);
+                        score = user.getScore();
+                        System.out.println("Score : " + score);
+                        break;
                     case 3:
                         Snackbar.make(view, "Pakulonan, Serpong Utara, Tangsel", Snackbar.LENGTH_LONG)
                                 .setAction("Action", null).show();
+                        user.setScore(4);
+                        score = user.getScore();
+                        System.out.println("Score : " + score);
                         break;
                 }
             }
@@ -151,16 +160,24 @@ public class SimplePastActivity extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager2.setCurrentItem(tab.getPosition());
-                if (tab.getPosition() ==2) {
-                    viewPager2.setOnTouchListener(new View.OnTouchListener() {
-                        @Override
-                        public boolean onTouch(View v, MotionEvent event) {
-
-                            return false;
-                        }
-                    });
-                }
                 animateFab(tab.getPosition());
+                switch (tab.getPosition()) {
+                    case 0:
+                        tab.view.setClickable(true);
+                        break;
+                    case 1:
+                        tab.view.setClickable(score >= 1);
+                        break;
+                    case 2:
+                        tab.view.setClickable(score >= 2);
+                        break;
+                    case 3:
+                        tab.view.setClickable(score >= 3);
+                        break;
+
+                }
+
+
             }
 
             @Override
@@ -230,7 +247,7 @@ public class SimplePastActivity extends AppCompatActivity {
 
         PasswordMD5WithSalt p = new PasswordMD5WithSalt();
 
-        return p.passKey(editTextQuestion.getText().toString().toLowerCase()).equalsIgnoreCase(key);
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
     }
 
     private boolean checkQuestion2() {
@@ -240,7 +257,7 @@ public class SimplePastActivity extends AppCompatActivity {
 
         PasswordMD5WithSalt p = new PasswordMD5WithSalt();
 
-        return p.passKey(editTextQuestion.getText().toString().toLowerCase()).equalsIgnoreCase(key);
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
     }
 
     private boolean checkQuestion3() {
@@ -250,7 +267,7 @@ public class SimplePastActivity extends AppCompatActivity {
 
         PasswordMD5WithSalt p = new PasswordMD5WithSalt();
 
-        return p.passKey(editTextQuestion.getText().toString().toLowerCase()).equalsIgnoreCase(key);
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
     }
 
     private void checkAnswer(View view) {
@@ -288,12 +305,16 @@ public class SimplePastActivity extends AppCompatActivity {
                     .setTitle("Selamat!")
                     .setMessage("Anda berhasil, nilai Anda : " + numberOfQuestionCorrect + "/3\nIni Sempurna. Anda dapat melanjutkan ke pelajaran berikutnya.")
                     .setCancelable(false)
-                    .setPositiveButton("Simple Past Tense 2",
+                    .setPositiveButton("Halaman berikutnya",
                             new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
+                                    //Set Score user to 1
+                                    score = 2;
+                                    user.setScore(score);
+                                    score = user.getScore();
+                                    System.out.println("Score : " + score);
                                     viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-
 
                                 }
                             });

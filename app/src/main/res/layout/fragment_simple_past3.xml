@@ -3,112 +3,503 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.SimplePastFragment3">
+    tools:context=".fragment.SimplePastFragment4">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:id="@+id/simple_past_tense"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="@string/simple_past_tense"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
-                android:textSize="18dp" />
-
-            <com.uncopt.android.widget.text.justify.JustifiedTextView
-                android:id="@+id/simple_past_explain"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:autoLink="web"
-                android:lineSpacingExtra="2dp"
-                android:padding="5dp"
-                android:text="@string/simple_past_explain"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
-                android:textColor="@color/colorBlack" />
-
-            <TextView
-                android:id="@+id/simple_past_tense_example"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="@string/example"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
-                android:textColor="@color/colorBlack" />
-
-            <com.uncopt.android.widget.text.justify.JustifiedTextView
-                android:id="@+id/simple_past_tense_example1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:autoLink="web"
-                android:lineSpacingExtra="2dp"
-                android:padding="5dp"
-                android:text="@string/first_bullet"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
-                android:textColor="@color/colorBlack" />
-
-            <com.uncopt.android.widget.text.justify.JustifiedTextView
-                android:id="@+id/simple_past_tense_example2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:autoLink="web"
-                android:lineSpacingExtra="2dp"
-                android:padding="5dp"
-                android:text="@string/second_bullet"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
-                android:textColor="@color/colorBlack" />
-
-            <com.uncopt.android.widget.text.justify.JustifiedTextView
-                android:id="@+id/simple_past_tense_example3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:autoLink="web"
-                android:lineSpacingExtra="2dp"
-                android:padding="5dp"
-                android:text="@string/third_bullet"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
-                android:textColor="@color/colorBlack" />
+            android:layout_height="wrap_content">
 
             <LinearLayout
+                android:id="@+id/linear_layout1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/rounded_rectangle"
-                android:id="@+id/layoutQuestion">
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
-                    android:background="@mipmap/ic_question" />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:text="@string/mengerti"
-                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
-                    android:textColor="@color/colorWhite" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:text="@string/pola_kalimat_simple_past"
+                        android:textColor="@color/dark_silver"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/tooltip_pola_kalimat_simple_past"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/ic_tips" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/verbal_simple_past"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:textColor="@color/dark_silver" />
+
+                <TextView
+                    android:id="@+id/verbal_positif_simple_past"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_verbal_positif_simple_past"
+                    android:textColor="@color/dark_silver" />
+
+                <TextView
+                    android:id="@+id/verbal_negatif_simple_past"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_verbal_negatif_simple_past"
+                    android:textColor="@color/dark_silver" />
+
+                <TextView
+                    android:id="@+id/verbal_question_simple_past"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_verbal_question_simple_past"
+                    android:textColor="@color/dark_silver" />
+
+                <!-- Bentuk kalimat nominal -->
 
             </LinearLayout>
 
-            <View
-                android:id="@+id/view"
+            <LinearLayout
+                android:id="@+id/linear_layout2"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="bottom"/>
+                android:layout_height="match_parent"
+                android:layout_below="@id/linear_layout1"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/pola_kalimat_simple_past"
+                    android:textColor="@color/dark_silver"
+                    android:textStyle="bold" />
 
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/nominal_simple_past"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_nominal_simple_past"
+                    android:textColor="@color/dark_silver" />
+
+                <TextView
+                    android:id="@+id/nominal_positif_simple_past"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_nominal_positif_simple_past"
+                    android:textColor="@color/dark_silver" />
+
+                <TextView
+                    android:id="@+id/nominal_negatif_simple_past"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_nominal_negatif_simple_past"
+                    android:textColor="@color/dark_silver" />
+
+                <TextView
+                    android:id="@+id/nominal_question_simple_past"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_nominal_question_simple_past"
+                    android:textColor="@color/dark_silver" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/linear_layout2"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*">
+
+
+                    <!-- Row 1 with single column -->
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+
+                        <TextView
+                            android:id="@+id/time_signal_simple_past"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_span="3"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/contoh_keterangan_waktu_time_signal"
+                            android:textColor="@color/dark_silver"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+                    <!-- Row 2 with 3 columns -->
+
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/TextView01"
+                            android:layout_width="200dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/last_time"
+                            android:textColor="@color/dark_silver"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/TextView02"
+                            android:layout_width="200dip"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/cardinal_time_ago"
+                            android:textColor="@color/dark_silver"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/TextView03"
+                            android:layout_width="200dip"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/specific_time_in_the_past"
+                            android:textColor="@color/dark_silver"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <!-- Row 3 with 2 columns -->
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/last_sunday"
+                            android:textColor="@color/dark_silver" />
+
+                        <TextView
+                            android:id="@+id/TextView05"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/one_day_ago"
+                            android:textColor="@color/dark_silver" />
+
+                        <TextView
+                            android:id="@+id/TextView06"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/yesterday"
+                            android:textColor="@color/dark_silver" />
+
+                    </TableRow>
+
+                    <!-- Row 4 with 3 columns -->
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/TextView07"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/last_day"
+                            android:textColor="@color/dark_silver" />
+
+                        <TextView
+                            android:id="@+id/TextView08"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/two_days_ago"
+                            android:textColor="@color/dark_silver" />
+
+                        <TextView
+                            android:id="@+id/TextView09"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/the_day_before_yesterday"
+                            android:textColor="@color/dark_silver" />
+
+                    </TableRow>
+
+
+                    <!-- Row 5 with 3 columns -->
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/TextView10"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/last_night"
+                            android:textColor="@color/dark_silver" />
+
+                        <TextView
+                            android:id="@+id/TextView11"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/three_weeks_ago"
+                            android:textColor="@color/dark_silver" />
+
+                        <TextView
+                            android:id="@+id/TextView12"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/two_days_before_yesterday"
+                            android:textColor="@color/dark_silver" />
+
+                    </TableRow>
+
+
+                    <!-- Row 6 with 3 columns -->
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/TextView13"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/last_morning"
+                            android:textColor="@color/dark_silver" />
+
+                        <TextView
+                            android:id="@+id/TextView14"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/four_years_ago"
+                            android:textColor="@color/dark_silver" />
+
+                        <TextView
+                            android:id="@+id/TextView15"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/one_week_before"
+                            android:textColor="@color/dark_silver" />
+
+                    </TableRow>
+
+
+                    <!-- Row 7 with 3 columns -->
+                    <TableRow
+                        android:id="@+id/tableRow7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/TextView16"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/last_week"
+                            android:textColor="@color/dark_silver" />
+
+                        <TextView
+                            android:id="@+id/TextView17"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/dan_lainnya"
+                            android:textColor="@color/dark_silver" />
+
+                        <TextView
+                            android:id="@+id/TextView18"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/in_1990"
+                            android:textColor="@color/dark_silver" />
+
+                    </TableRow>
+
+
+                    <!-- Row 8 with 3 columns -->
+                    <TableRow
+                        android:id="@+id/tableRow8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/TextView19"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/last_month"
+                            android:textColor="@color/dark_silver" />
+
+                        <TextView
+                            android:id="@+id/TextView20"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/dan_lainnya"
+                            android:textColor="@color/dark_silver" />
+
+                        <TextView
+                            android:id="@+id/TextView21"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/dan_lainnya"
+                            android:textColor="@color/dark_silver" />
+
+                    </TableRow>
+
+
+                    <!-- Row 9 with 3 columns -->
+                    <TableRow
+                        android:id="@+id/tableRow9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/TextView22"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/last_year"
+                            android:textColor="@color/dark_silver" />
+
+                        <TextView
+                            android:id="@+id/TextView23"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/dan_lainnya"
+                            android:textColor="@color/dark_silver" />
+
+                        <TextView
+                            android:id="@+id/TextView24"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/dan_lainnya"
+                            android:textColor="@color/dark_silver" />
+
+                    </TableRow>
+
+                    <!-- Row 10 with 3 columns -->
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_span="3"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="dan contoh lainnya ..."
+                            android:textColor="@color/dark_silver" />
+
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
 
 
     </ScrollView>

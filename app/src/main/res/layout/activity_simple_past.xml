@@ -26,7 +26,8 @@
         app:tabPaddingBottom="8dp"
         app:tabTextColor="@color/colorBlack"
         app:tabSelectedTextColor="@drawable/tab"
-        app:tabIconTint="@drawable/tab"/>
+        app:tabIconTint="@drawable/tab"
+        app:tabTextAppearance="@style/MyCustomTextAppearance"/>
 
 
     <androidx.viewpager2.widget.ViewPager2

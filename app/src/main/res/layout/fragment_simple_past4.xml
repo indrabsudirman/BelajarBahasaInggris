@@ -29,20 +29,20 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_margin="5dp"
                         android:text="@string/pola_kalimat_simple_past"
-                        android:textColor="@color/dark_silver"
-                        android:textStyle="bold"
-                        android:layout_gravity="center"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
 
                     <Button
                         android:id="@+id/tooltip_pola_kalimat_simple_past"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:background="@mipmap/ic_tips"/>
+                        android:background="@mipmap/ic_tips" />
 
                 </LinearLayout>
-
 
 
                 <TextView
@@ -50,43 +50,44 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:layout_marginLeft="25dp"
                     android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
                     android:lineSpacingExtra="3sp"
-                    android:textColor="@color/dark_silver" />
+                    android:text="@string/bentuk_kalimat_verbal_simple_past"
+                    android:textColor="@color/colorBlack" />
 
                 <TextView
                     android:id="@+id/verbal_positif_simple_past"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:layout_marginLeft="25dp"
                     android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
                     android:lineSpacingExtra="3sp"
                     android:text="@string/bentuk_kalimat_verbal_positif_simple_past"
-                    android:textColor="@color/dark_silver" />
+                    android:textColor="@color/colorBlack" />
 
                 <TextView
                     android:id="@+id/verbal_negatif_simple_past"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:layout_marginLeft="25dp"
                     android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
                     android:lineSpacingExtra="3sp"
                     android:text="@string/bentuk_kalimat_verbal_negatif_simple_past"
-                    android:textColor="@color/dark_silver" />
+                    android:textColor="@color/colorBlack" />
 
                 <TextView
                     android:id="@+id/verbal_question_simple_past"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:layout_marginLeft="25dp"
                     android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
                     android:lineSpacingExtra="3sp"
                     android:text="@string/bentuk_kalimat_verbal_question_simple_past"
-                    android:textColor="@color/dark_silver" />
+                    android:textColor="@color/colorBlack" />
 
                 <!-- Bentuk kalimat nominal -->
 
@@ -101,58 +102,50 @@
                 android:orientation="vertical"
                 android:padding="5dp">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:text="@string/pola_kalimat_simple_past"
-                    android:textColor="@color/dark_silver"
-                    android:textStyle="bold" />
-
 
                 <TextView
                     android:id="@+id/nominal_simple_past"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:layout_marginLeft="25dp"
                     android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
                     android:lineSpacingExtra="3sp"
                     android:text="@string/bentuk_kalimat_nominal_simple_past"
-                    android:textColor="@color/dark_silver" />
+                    android:textColor="@color/colorBlack" />
 
                 <TextView
                     android:id="@+id/nominal_positif_simple_past"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:layout_marginLeft="25dp"
                     android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
                     android:lineSpacingExtra="3sp"
                     android:text="@string/bentuk_kalimat_nominal_positif_simple_past"
-                    android:textColor="@color/dark_silver" />
+                    android:textColor="@color/colorBlack" />
 
                 <TextView
                     android:id="@+id/nominal_negatif_simple_past"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:layout_marginLeft="25dp"
                     android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
                     android:lineSpacingExtra="3sp"
                     android:text="@string/bentuk_kalimat_nominal_negatif_simple_past"
-                    android:textColor="@color/dark_silver" />
+                    android:textColor="@color/colorBlack" />
 
                 <TextView
                     android:id="@+id/nominal_question_simple_past"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:layout_marginLeft="25dp"
                     android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
                     android:lineSpacingExtra="3sp"
                     android:text="@string/bentuk_kalimat_nominal_question_simple_past"
-                    android:textColor="@color/dark_silver" />
+                    android:textColor="@color/colorBlack" />
 
             </LinearLayout>
 
@@ -180,15 +173,15 @@
 
 
                         <TextView
+                            android:id="@+id/time_signal_simple_past"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_span="3"
+                            android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/contoh_keterangan_waktu_time_signal"
-                            android:gravity="center"
-                            android:textColor="@color/dark_silver"
-                            android:textStyle="bold"
-                            android:id="@+id/time_signal_simple_past"/>
+                            android:textColor="@color/colorBlack"
+                            android:textStyle="bold" />
 
 
                     </TableRow>
@@ -209,8 +202,8 @@
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/last_time"
-                            android:textColor="@color/dark_silver"
-                            android:textStyle="bold"/>
+                            android:textColor="@color/colorBlack"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/TextView02"
@@ -219,8 +212,8 @@
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/cardinal_time_ago"
-                            android:textColor="@color/dark_silver"
-                            android:textStyle="bold"/>
+                            android:textColor="@color/colorBlack"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/TextView03"
@@ -229,8 +222,8 @@
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/specific_time_in_the_past"
-                            android:textColor="@color/dark_silver"
-                            android:textStyle="bold"/>
+                            android:textColor="@color/colorBlack"
+                            android:textStyle="bold" />
 
                     </TableRow>
 
@@ -246,7 +239,7 @@
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/last_sunday"
-                            android:textColor="@color/dark_silver" />
+                            android:textColor="@color/colorBlack" />
 
                         <TextView
                             android:id="@+id/TextView05"
@@ -254,7 +247,7 @@
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/one_day_ago"
-                            android:textColor="@color/dark_silver" />
+                            android:textColor="@color/colorBlack" />
 
                         <TextView
                             android:id="@+id/TextView06"
@@ -262,7 +255,7 @@
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/yesterday"
-                            android:textColor="@color/dark_silver" />
+                            android:textColor="@color/colorBlack" />
 
                     </TableRow>
 
@@ -274,21 +267,21 @@
 
                         <TextView
                             android:id="@+id/TextView07"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/last_day"
-                            android:textColor="@color/dark_silver"
-                            android:layout_height="match_parent"/>
+                            android:textColor="@color/colorBlack" />
 
                         <TextView
                             android:id="@+id/TextView08"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/two_days_ago"
-                            android:textColor="@color/dark_silver"
-                            android:layout_height="match_parent"/>
+                            android:textColor="@color/colorBlack" />
 
                         <TextView
                             android:id="@+id/TextView09"
@@ -296,7 +289,7 @@
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/the_day_before_yesterday"
-                            android:textColor="@color/dark_silver" />
+                            android:textColor="@color/colorBlack" />
 
                     </TableRow>
 
@@ -309,21 +302,21 @@
 
                         <TextView
                             android:id="@+id/TextView10"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/last_night"
-                            android:textColor="@color/dark_silver"
-                            android:layout_height="match_parent"/>
+                            android:textColor="@color/colorBlack" />
 
                         <TextView
                             android:id="@+id/TextView11"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/three_weeks_ago"
-                            android:textColor="@color/dark_silver"
-                            android:layout_height="match_parent"/>
+                            android:textColor="@color/colorBlack" />
 
                         <TextView
                             android:id="@+id/TextView12"
@@ -331,7 +324,7 @@
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/two_days_before_yesterday"
-                            android:textColor="@color/dark_silver" />
+                            android:textColor="@color/colorBlack" />
 
                     </TableRow>
 
@@ -344,21 +337,21 @@
 
                         <TextView
                             android:id="@+id/TextView13"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/last_morning"
-                            android:textColor="@color/dark_silver"
-                            android:layout_height="match_parent"/>
+                            android:textColor="@color/colorBlack" />
 
                         <TextView
                             android:id="@+id/TextView14"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/four_years_ago"
-                            android:textColor="@color/dark_silver"
-                            android:layout_height="match_parent"/>
+                            android:textColor="@color/colorBlack" />
 
                         <TextView
                             android:id="@+id/TextView15"
@@ -366,7 +359,7 @@
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/one_week_before"
-                            android:textColor="@color/dark_silver" />
+                            android:textColor="@color/colorBlack" />
 
                     </TableRow>
 
@@ -379,21 +372,21 @@
 
                         <TextView
                             android:id="@+id/TextView16"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/last_week"
-                            android:textColor="@color/dark_silver"
-                            android:layout_height="match_parent"/>
+                            android:textColor="@color/colorBlack" />
 
                         <TextView
                             android:id="@+id/TextView17"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/dan_lainnya"
-                            android:textColor="@color/dark_silver"
-                            android:layout_height="match_parent"/>
+                            android:textColor="@color/colorBlack" />
 
                         <TextView
                             android:id="@+id/TextView18"
@@ -401,7 +394,7 @@
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/in_1990"
-                            android:textColor="@color/dark_silver" />
+                            android:textColor="@color/colorBlack" />
 
                     </TableRow>
 
@@ -414,21 +407,21 @@
 
                         <TextView
                             android:id="@+id/TextView19"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/last_month"
-                            android:textColor="@color/dark_silver"
-                            android:layout_height="match_parent"/>
+                            android:textColor="@color/colorBlack" />
 
                         <TextView
                             android:id="@+id/TextView20"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/dan_lainnya"
-                            android:textColor="@color/dark_silver"
-                            android:layout_height="match_parent"/>
+                            android:textColor="@color/colorBlack" />
 
                         <TextView
                             android:id="@+id/TextView21"
@@ -436,7 +429,7 @@
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/dan_lainnya"
-                            android:textColor="@color/dark_silver" />
+                            android:textColor="@color/colorBlack" />
 
                     </TableRow>
 
@@ -449,21 +442,21 @@
 
                         <TextView
                             android:id="@+id/TextView22"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/last_year"
-                            android:textColor="@color/dark_silver"
-                            android:layout_height="match_parent"/>
+                            android:textColor="@color/colorBlack" />
 
                         <TextView
                             android:id="@+id/TextView23"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/dan_lainnya"
-                            android:textColor="@color/dark_silver"
-                            android:layout_height="match_parent"/>
+                            android:textColor="@color/colorBlack" />
 
                         <TextView
                             android:id="@+id/TextView24"
@@ -471,7 +464,7 @@
                             android:gravity="center"
                             android:padding="10dp"
                             android:text="@string/dan_lainnya"
-                            android:textColor="@color/dark_silver"/>
+                            android:textColor="@color/colorBlack" />
 
                     </TableRow>
 
@@ -487,14 +480,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_span="3"
+                            android:gravity="center"
                             android:padding="10dp"
                             android:text="dan contoh lainnya ..."
-                            android:gravity="center"
-                            android:textColor="@color/dark_silver"/>
+                            android:textColor="@color/colorBlack" />
 
 
                     </TableRow>
-
 
 
                 </TableLayout>
@@ -504,14 +496,7 @@
         </RelativeLayout>
 
 
-
-
-
     </ScrollView>
-
-
-
-
 
 
 </FrameLayout>

@@ -5,4 +5,5 @@ Project Android, Aplikasi Belajar Bahasa Inggris.
 Saat ini, dalam pengembangan aplikasi Android Belajar Bahasa Inggris
 Aplikasi Android rencananya akan menggunakan :
 
-Database SQLite untuk Login, login menggunakan hash + salt untuk passwordnya.
+1. Database SQLite untuk Login, login menggunakan hash + salt untuk passwordnya.
+2. SharedPreferences untuk simpan login session

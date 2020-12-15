@@ -7,6 +7,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.widget.NestedScrollView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.TextUtils;
@@ -40,9 +41,14 @@ public class MainActivity extends AppCompatActivity {
     private String userName, pwdUsr;
     private Boolean allFieldValid = false;
 
+    private SharedPreferences sharedPreferences;
+
     private SQLiteHelper sqLiteHelper;
     private int length;
     private char[] pwd;
+
+    private static final String SHARED_PREF_NAME = "sharedPrefLogin";
+    private static final String KEY_EMAIL = "email";
 
 
     @Override
@@ -58,7 +64,19 @@ public class MainActivity extends AppCompatActivity {
         register = findViewById(R.id.appCompatTextViewRegisterLink);
         nestedScrollView = findViewById(R.id.nestedScrollView);
 
+        sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
+
         sqLiteHelper = new SQLiteHelper(MainActivity.this);
+
+        //Check if sharedPreferences data available
+        String emailSharedPref = sharedPreferences.getString(KEY_EMAIL, null);
+        // if sharedPreferences available so direcly to MainMenu.class
+        if (emailSharedPref != null) {
+            Intent intent = new Intent(getApplicationContext(), MainMenu.class);
+            startActivity(intent);
+        }
+
+
 
 
         //Adding Login click listener
@@ -87,6 +105,11 @@ public class MainActivity extends AppCompatActivity {
                             e.printStackTrace();
                         }
                         if (pwdUsr.equals(sqLiteHelper.getPwdSalt(username.getText().toString().trim()))) {
+                            //Save to sharedPreferences
+                            SharedPreferences.Editor editor = sharedPreferences.edit();
+                            editor.putString(KEY_EMAIL, username.getText().toString().trim());
+                            editor.apply();
+                            //Snackbar login berhasil
                             Snackbar.make(nestedScrollView, "Login Berhasil", Snackbar.LENGTH_LONG).show();
                             username.setText("");
                             password.setText("");

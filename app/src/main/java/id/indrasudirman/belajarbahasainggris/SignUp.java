@@ -6,6 +6,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.widget.NestedScrollView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -50,12 +51,13 @@ public class SignUp extends AppCompatActivity {
     private Boolean allFieldValid = false;
 
     private User user;
-    SQLiteDatabase sqLiteDatabaseObject;
     private SQLiteHelper sqLiteHelper;
-    Cursor cursor;
-    String userNameHolder, passwordOneHolder, passwordTwoHolder;
-    String sQLiteDatabaseQueryHolder;
-    String fResult = "NOT_FOUND";
+
+    private SharedPreferences sharedPreferences;
+
+    private static final String SHARED_PREF_NAME = "sharedPrefLogin";
+    private static final String KEY_EMAIL = "email";
+    private static final String KEY_PWD = "pwd";
 
     public SignUp() {
         //Default constructor
@@ -96,6 +98,8 @@ public class SignUp extends AppCompatActivity {
 
         nestedScrollView = findViewById(R.id.nestedScrollView);
 
+        sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
+
         sqLiteHelper = new SQLiteHelper(this);
         user = new User();
 
@@ -105,16 +109,6 @@ public class SignUp extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
-
-
-
-                //Create SQLite database if doesn't exists
-//                sQliteDatabaseBuild();
-                //Create SQLite table if doesn't exists
-//                sQLiteTableBuild();
-
-                //Call method to check all field valid
                 try {
                     checkFieldSignUp();
                 } catch (NoSuchAlgorithmException e) {
@@ -136,6 +130,8 @@ public class SignUp extends AppCompatActivity {
                         textInputEditTextUsername.setText("");
                         textInputEditTextPassword.setText("");
                         textInputEditTextPasswordConfirm.setText("");
+
+
 
                         //Snack Bar to show success message that record saved successfully
                         Snackbar.make(nestedScrollView, "Registration Successful", Snackbar.LENGTH_LONG).show();

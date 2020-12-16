@@ -316,11 +316,20 @@ public class SimplePastActivity extends AppCompatActivity {
                                     System.out.println("Score : " + score);
                                     viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
 
+                                    TextInputEditText editTextQuestion1 = findViewById(R.id.answer_simple_past_test1);
+                                    TextInputEditText editTextQuestion2 = findViewById(R.id.answer_simple_past_test2);
+                                    TextInputEditText editTextQuestion3 = findViewById(R.id.answer_simple_past_test3);
+
+                                    editTextQuestion1.setText("");
+                                    editTextQuestion2.setText("");
+                                    editTextQuestion3.setText("");
+
                                 }
                             });
 
             AlertDialog alertDialog = alertDialogBuilder.create();
             alertDialog.show();
+
         } else {
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SimplePastActivity.this);
             alertDialogBuilder

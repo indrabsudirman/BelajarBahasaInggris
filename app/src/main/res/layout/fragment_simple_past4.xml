@@ -9,494 +9,164 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:text="@string/exercises"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:textColor="@color/dark_silver"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- Question No 1 -->
 
             <LinearLayout
-                android:id="@+id/linear_layout1"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:orientation="vertical"
-                android:padding="5dp">
+                android:layout_marginTop="10dp">
 
-                <LinearLayout
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/question_simple_past_test1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/exercise_simple_past_test1"
+                    android:textColor="@color/dark_silver" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:text="@string/pola_kalimat_simple_past"
-                        android:textColor="@color/colorBlack"
-                        android:textSize="18dp"
-                        android:textStyle="bold" />
-
-                    <Button
-                        android:id="@+id/tooltip_pola_kalimat_simple_past"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:background="@mipmap/ic_tips" />
-
-                </LinearLayout>
-
-
-                <TextView
-                    android:id="@+id/verbal_simple_past"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginLeft="25dp"
-                    android:lineSpacingExtra="3sp"
-                    android:text="@string/bentuk_kalimat_verbal_simple_past"
-                    android:textColor="@color/colorBlack" />
-
-                <TextView
-                    android:id="@+id/verbal_positif_simple_past"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginLeft="25dp"
-                    android:lineSpacingExtra="3sp"
-                    android:text="@string/bentuk_kalimat_verbal_positif_simple_past"
-                    android:textColor="@color/colorBlack" />
-
-                <TextView
-                    android:id="@+id/verbal_negatif_simple_past"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginLeft="25dp"
-                    android:lineSpacingExtra="3sp"
-                    android:text="@string/bentuk_kalimat_verbal_negatif_simple_past"
-                    android:textColor="@color/colorBlack" />
-
-                <TextView
-                    android:id="@+id/verbal_question_simple_past"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginLeft="25dp"
-                    android:lineSpacingExtra="3sp"
-                    android:text="@string/bentuk_kalimat_verbal_question_simple_past"
-                    android:textColor="@color/colorBlack" />
-
-                <!-- Bentuk kalimat nominal -->
+                <Button
+                    android:id="@+id/tooltip_simple_past_test1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/ic_tips" />
 
             </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/first_exercise_meaning_test1"
+                android:textColor="@color/dark_silver" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/answer_simple_past_test1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="20dp"
+                android:hint="@string/hint"
+                android:textSize="15sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <!-- Question No 2 -->
 
             <LinearLayout
-                android:id="@+id/linear_layout2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@id/linear_layout1"
-                android:layout_margin="5dp"
-                android:orientation="vertical"
-                android:padding="5dp">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-
-                <TextView
-                    android:id="@+id/nominal_simple_past"
-                    android:layout_width="match_parent"
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/question_simple_past_test2"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginLeft="25dp"
-                    android:lineSpacingExtra="3sp"
-                    android:text="@string/bentuk_kalimat_nominal_simple_past"
-                    android:textColor="@color/colorBlack" />
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/exercise_simple_past_test2"
+                    android:textColor="@color/dark_silver" />
 
-                <TextView
-                    android:id="@+id/nominal_positif_simple_past"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginLeft="25dp"
-                    android:lineSpacingExtra="3sp"
-                    android:text="@string/bentuk_kalimat_nominal_positif_simple_past"
-                    android:textColor="@color/colorBlack" />
-
-                <TextView
-                    android:id="@+id/nominal_negatif_simple_past"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginLeft="25dp"
-                    android:lineSpacingExtra="3sp"
-                    android:text="@string/bentuk_kalimat_nominal_negatif_simple_past"
-                    android:textColor="@color/colorBlack" />
-
-                <TextView
-                    android:id="@+id/nominal_question_simple_past"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginLeft="25dp"
-                    android:lineSpacingExtra="3sp"
-                    android:text="@string/bentuk_kalimat_nominal_question_simple_past"
-                    android:textColor="@color/colorBlack" />
+                <Button
+                    android:id="@+id/tooltip_simple_past_test2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/ic_tips" />
 
             </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/first_exercise_meaning_test2"
+                android:textColor="@color/dark_silver" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/answer_simple_past_test2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="20dp"
+                android:hint="@string/hint"
+                android:textSize="15sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <!-- Question No 3 -->
 
             <LinearLayout
-                android:id="@+id/linear_layout3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@id/linear_layout2"
-                android:layout_margin="5dp"
-                android:orientation="vertical"
-                android:padding="5dp">
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
 
-                <TableLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:shrinkColumns="*"
-                    android:stretchColumns="*">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/question_simple_past_test3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/exercise_simple_past_test3"
+                    android:textColor="@color/dark_silver" />
 
-
-                    <!-- Row 1 with single column -->
-                    <TableRow
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal">
-
-
-                        <TextView
-                            android:id="@+id/time_signal_simple_past"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_span="3"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/contoh_keterangan_waktu_time_signal"
-                            android:textColor="@color/colorBlack"
-                            android:textStyle="bold" />
-
-
-                    </TableRow>
-
-                    <!-- Row 2 with 3 columns -->
-
-
-                    <TableRow
-                        android:id="@+id/tableRow1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:id="@+id/TextView01"
-                            android:layout_width="200dip"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/last_time"
-                            android:textColor="@color/colorBlack"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/TextView02"
-                            android:layout_width="200dip"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/cardinal_time_ago"
-                            android:textColor="@color/colorBlack"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/TextView03"
-                            android:layout_width="200dip"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/specific_time_in_the_past"
-                            android:textColor="@color/colorBlack"
-                            android:textStyle="bold" />
-
-                    </TableRow>
-
-                    <!-- Row 3 with 2 columns -->
-                    <TableRow
-                        android:id="@+id/tableRow2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:id="@+id/TextView04"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/last_sunday"
-                            android:textColor="@color/colorBlack" />
-
-                        <TextView
-                            android:id="@+id/TextView05"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/one_day_ago"
-                            android:textColor="@color/colorBlack" />
-
-                        <TextView
-                            android:id="@+id/TextView06"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/yesterday"
-                            android:textColor="@color/colorBlack" />
-
-                    </TableRow>
-
-                    <!-- Row 4 with 3 columns -->
-                    <TableRow
-                        android:id="@+id/tableRow3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:id="@+id/TextView07"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/last_day"
-                            android:textColor="@color/colorBlack" />
-
-                        <TextView
-                            android:id="@+id/TextView08"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/two_days_ago"
-                            android:textColor="@color/colorBlack" />
-
-                        <TextView
-                            android:id="@+id/TextView09"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/the_day_before_yesterday"
-                            android:textColor="@color/colorBlack" />
-
-                    </TableRow>
-
-
-                    <!-- Row 5 with 3 columns -->
-                    <TableRow
-                        android:id="@+id/tableRow5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:id="@+id/TextView10"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/last_night"
-                            android:textColor="@color/colorBlack" />
-
-                        <TextView
-                            android:id="@+id/TextView11"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/three_weeks_ago"
-                            android:textColor="@color/colorBlack" />
-
-                        <TextView
-                            android:id="@+id/TextView12"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/two_days_before_yesterday"
-                            android:textColor="@color/colorBlack" />
-
-                    </TableRow>
-
-
-                    <!-- Row 6 with 3 columns -->
-                    <TableRow
-                        android:id="@+id/tableRow6"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:id="@+id/TextView13"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/last_morning"
-                            android:textColor="@color/colorBlack" />
-
-                        <TextView
-                            android:id="@+id/TextView14"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/four_years_ago"
-                            android:textColor="@color/colorBlack" />
-
-                        <TextView
-                            android:id="@+id/TextView15"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/one_week_before"
-                            android:textColor="@color/colorBlack" />
-
-                    </TableRow>
-
-
-                    <!-- Row 7 with 3 columns -->
-                    <TableRow
-                        android:id="@+id/tableRow7"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:id="@+id/TextView16"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/last_week"
-                            android:textColor="@color/colorBlack" />
-
-                        <TextView
-                            android:id="@+id/TextView17"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/dan_lainnya"
-                            android:textColor="@color/colorBlack" />
-
-                        <TextView
-                            android:id="@+id/TextView18"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/in_1990"
-                            android:textColor="@color/colorBlack" />
-
-                    </TableRow>
-
-
-                    <!-- Row 8 with 3 columns -->
-                    <TableRow
-                        android:id="@+id/tableRow8"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:id="@+id/TextView19"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/last_month"
-                            android:textColor="@color/colorBlack" />
-
-                        <TextView
-                            android:id="@+id/TextView20"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/dan_lainnya"
-                            android:textColor="@color/colorBlack" />
-
-                        <TextView
-                            android:id="@+id/TextView21"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/dan_lainnya"
-                            android:textColor="@color/colorBlack" />
-
-                    </TableRow>
-
-
-                    <!-- Row 9 with 3 columns -->
-                    <TableRow
-                        android:id="@+id/tableRow9"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:id="@+id/TextView22"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/last_year"
-                            android:textColor="@color/colorBlack" />
-
-                        <TextView
-                            android:id="@+id/TextView23"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/dan_lainnya"
-                            android:textColor="@color/colorBlack" />
-
-                        <TextView
-                            android:id="@+id/TextView24"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="@string/dan_lainnya"
-                            android:textColor="@color/colorBlack" />
-
-                    </TableRow>
-
-                    <!-- Row 10 with 3 columns -->
-
-                    <TableRow
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal">
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_span="3"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="dan contoh lainnya ..."
-                            android:textColor="@color/colorBlack" />
-
-
-                    </TableRow>
-
-
-                </TableLayout>
+                <Button
+                    android:id="@+id/tooltip_simple_past_test3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/ic_tips" />
 
             </LinearLayout>
 
-        </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/first_exercise_meaning_test3"
+                android:textColor="@color/dark_silver" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/answer_simple_past_test3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="20dp"
+                android:hint="@string/hint"
+                android:textSize="15sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <!--            <androidx.appcompat.widget.AppCompatButton-->
+            <!--                android:id="@+id/checkAnswer"-->
+            <!--                android:layout_width="150dp"-->
+            <!--                android:layout_height="45dp"-->
+            <!--                android:layout_gravity="right"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:background="@drawable/rounded_shape"-->
+            <!--                android:text="@string/cek_jawaban"-->
+            <!--                android:textColor="@color/colorWhite" />-->
+
+        </LinearLayout>
 
 
     </ScrollView>
-
 
 </FrameLayout>

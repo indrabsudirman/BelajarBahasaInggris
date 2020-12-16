@@ -23,7 +23,7 @@ import id.indrasudirman.belajarbahasainggris.R;
 public class SimplePastFragment3 extends Fragment {
 
     private View view;
-    private TextView verbalSimplePast, verbalPositifSimplePast, verbalNegatifSimplePast, verbalQuestionSimplePast, nominalSimplePast;
+    private TextView verbalSimplePast, verbalPositifSimplePast, verbalNegatifSimplePast, verbalQuestionSimplePast, nominalSimplePast, nominalPositifSimplePast, timeSignalSimplePast;
 
     public SimplePastFragment3() {
         // Required empty public constructor
@@ -41,6 +41,9 @@ public class SimplePastFragment3 extends Fragment {
         verbalQuestionSimplePast = view.findViewById(R.id.verbal_question_simple_past);
 
         nominalSimplePast = view.findViewById(R.id.nominal_simple_past);
+        nominalPositifSimplePast = view.findViewById(R.id.nominal_positif_simple_past);
+
+        timeSignalSimplePast = view.findViewById(R.id.time_signal_simple_past);
 
         SpannableString spannableString = new SpannableString(getActivity().getResources().getString(R.string.bentuk_kalimat_verbal_simple_past));
         ClickableSpan clickableSpan = new ClickableSpan() {
@@ -321,6 +324,93 @@ public class SimplePastFragment3 extends Fragment {
         spannableString6.setSpan(new StyleSpan(Typeface.BOLD), 9, 24, 0);
         nominalSimplePast.setMovementMethod(LinkMovementMethod.getInstance());
         nominalSimplePast.setText(spannableString6);
+
+
+        //Bentuk Kalimat Nominal
+        SpannableString spannableString7 = new SpannableString(getActivity().getResources().getString(R.string.bentuk_kalimat_nominal_positif_simple_past));
+        ClickableSpan clickableSpan12 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+                AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
+                //Set Title
+                alertDialogSimplePast.setTitle("Info");
+                alertDialogSimplePast.setMessage("Was adalah bentuk Verb 2 atau bentuk Simple Past yang artinya ada (to be). Susunan bentuknya adalah am/are (Verb 1) - was/were (Verb 2) - been (Verb 3). Was termasuk dalam bentuk Irregular Verbs")
+                        .setCancelable(false)
+                        .setIcon(R.mipmap.ic_info_green)
+                        .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                                Toast.makeText(getActivity(), "Saya sudah paham", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog = alertDialogSimplePast.create();
+                alertDialog.show();
+            }
+        };
+
+        ClickableSpan clickableSpan13 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+                AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
+                //Set Title
+                alertDialogSimplePast.setTitle("Info");
+                alertDialogSimplePast.setMessage("Kata last week adalah contoh dari penggunaan Time signal (bagian bawah halaman ini)")
+                        .setCancelable(false)
+                        .setIcon(R.mipmap.ic_info_green)
+                        .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                                Toast.makeText(getActivity(), "Saya sudah paham", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog = alertDialogSimplePast.create();
+                alertDialog.show();
+            }
+        };
+
+
+        spannableString7.setSpan(clickableSpan12,68,71,0);
+        // make text bold
+        spannableString7.setSpan(new StyleSpan(Typeface.BOLD), 68, 71, 0);
+
+        spannableString7.setSpan(clickableSpan13,102,111,0);
+        // make text bold
+        spannableString7.setSpan(new StyleSpan(Typeface.BOLD), 102, 111, 0);
+        nominalPositifSimplePast.setMovementMethod(LinkMovementMethod.getInstance());
+        nominalPositifSimplePast.setText(spannableString7);
+
+        //Time Signal Header Table
+
+        SpannableString spannableString8 = new SpannableString(getActivity().getResources().getString(R.string.contoh_keterangan_waktu_time_signal));
+        ClickableSpan clickableSpan14 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+                AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
+                //Set Title
+                alertDialogSimplePast.setTitle("Info");
+                alertDialogSimplePast.setMessage("Beberapa penunjuk waktu (time signal) yang biasa digunakan dalam kalimat simple past")
+                        .setCancelable(false)
+                        .setIcon(R.mipmap.ic_info_green)
+                        .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                                Toast.makeText(getActivity(), "Saya sudah paham", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog = alertDialogSimplePast.create();
+                alertDialog.show();
+            }
+        };
+
+
+        spannableString8.setSpan(clickableSpan14,25,36,0);
+        // make text bold
+        spannableString8.setSpan(new StyleSpan(Typeface.BOLD), 25,36, 0);
+        timeSignalSimplePast.setMovementMethod(LinkMovementMethod.getInstance());
+        timeSignalSimplePast.setText(spannableString8);
 
 
         return view;

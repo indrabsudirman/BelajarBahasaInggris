@@ -41,6 +41,8 @@ dependencies {
     implementation 'com.uncopt:android.justified:1.3'
     //Showcase Library
     implementation 'com.github.amlcurran.showcaseview:library:5.4.3'
+    //FieldSetView
+    implementation 'com.github.mjn1369:fieldsetview:1.0.0'
 
 
 }

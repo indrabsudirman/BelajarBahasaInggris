@@ -157,7 +157,7 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
                 String dragData = item.getText().toString();
 
                 // Displays a message containing the dragged data.
-                Toast.makeText(getActivity(), "Dragged data is " + dragData, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Anda memilih " + dragData, Toast.LENGTH_SHORT).show();
 
                 // Turns off any color tints
                 view.getBackground().clearColorFilter();
@@ -184,23 +184,16 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
                 view.invalidate();
 
 
-                // Does a getResult(), and displays what happened.
-                if (event.getResult())
-                    Toast.makeText(getActivity(), "The drop was handled.", Toast.LENGTH_SHORT).show();
-
-                else {
-//                    Toast.makeText(getActivity(), "The drop didn't work.", Toast.LENGTH_SHORT).show();
-                    view.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            dragView.setVisibility(View.VISIBLE);
-                        }
-                    });
-                    break;
-                }
+                // View back to the first place, when drag doesn't correct target.
+                view.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        dragView.setVisibility(View.VISIBLE);
+                    }
+                });
 
 
-                // returns true; the value is ignored.
+            // returns true; the value is ignored.
                 return true;
 
             // An unknown action type was received.

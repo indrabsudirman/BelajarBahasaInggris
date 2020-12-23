@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -153,69 +152,79 @@
 
             </com.google.android.material.textfield.TextInputEditText>
 
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
                 android:orientation="vertical"
                 android:padding="16dp">
 
-                <libs.mjn.fieldset.FieldSetView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:padding="12dp"
-                    app:fsv_borderColor="#009688"
-                    app:fsv_borderRadius="8dp"
-                    app:fsv_borderWidth="2dp"
-                    app:fsv_legend="Pilih jawaban"
-                    app:fsv_legendFont="lobster.ttf"
-                    app:fsv_legendPosition="center"
-                    app:fsv_legendSize="16sp">
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:paddingTop="1dp"
+                        android:src="@mipmap/ic_tips" />
 
                     <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/optionTwo"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
-                        android:background="@null"
-                        android:gravity="center"
-                        android:text="Was"
-                        android:textColor="@color/colorBlack"
-                        android:textSize="14sp" />
+                        android:gravity="left"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingEnd="3dp"
+                        android:paddingBottom="3dp"
+                        android:text="@string/dragndrop"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/optionOne"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
-                        android:background="@null"
-                        android:gravity="center"
-                        android:text="Were"
-                        android:textColor="@color/colorBlack"
-                        android:textSize="14sp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/optionTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:text="Was"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
 
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/optionOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="Were"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
 
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/optionThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="Did not"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/optionThree"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="60dp"
-                        android:background="@null"
-                        android:gravity="center"
-                        android:text="Did not"
-                        android:textColor="@color/colorBlack"
-                        android:textSize="14sp" />
-
-
-                </libs.mjn.fieldset.FieldSetView>
 
             </LinearLayout>
+
             <View
                 android:id="@+id/view"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_gravity="bottom"/>
+                android:layout_gravity="bottom" />
 
         </LinearLayout>
 

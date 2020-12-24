@@ -22,7 +22,7 @@
                 android:text="@string/exercises"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault"
                 android:textColor="@color/dark_silver"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <!-- Question No 1 -->
@@ -36,16 +36,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginRight="10dp"
                     android:paddingTop="0dp"
-                    android:text="@string/exercise_simple_past_test1"
+                    android:text="@string/exercise_simple_past_test_two"
                     android:textColor="@color/dark_silver" />
 
                 <Button
-                    android:id="@+id/tooltip_simple_past_test1"
+                    android:id="@+id/tooltipsDropSimplePastOne"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/ic_info" />
+                    android:background="@mipmap/ic_tips" />
 
             </LinearLayout>
 
@@ -53,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="@string/first_exercise_meaning_test1"
+                android:text="@string/first_exercise_meaning_test_two"
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
@@ -61,8 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:layout_marginLeft="20dp"
-                android:hint="Drop jawaban disini ..."
+                android:hint="@string/drop_jawaban_disini"
                 android:textSize="15sp">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -78,16 +76,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginRight="10dp"
                     android:paddingTop="0dp"
                     android:text="@string/exercise_simple_past_test2"
                     android:textColor="@color/dark_silver" />
 
                 <Button
-                    android:id="@+id/tooltip_simple_past_test2"
+                    android:id="@+id/tooltipsDropSimplePastTwo"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/ic_info" />
+                    android:background="@mipmap/ic_tips" />
 
             </LinearLayout>
 
@@ -103,8 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:layout_marginLeft="20dp"
-                android:hint="Drop jawaban disini ..."
+                android:hint="@string/drop_jawaban_disini"
                 android:textSize="15sp">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -121,16 +117,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginRight="10dp"
                     android:paddingTop="0dp"
                     android:text="@string/exercise_simple_past_test3"
                     android:textColor="@color/dark_silver" />
 
                 <Button
-                    android:id="@+id/tooltip_simple_past_test3"
+                    android:id="@+id/tooltipsDropSimplePastThree"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/ic_info" />
+                    android:background="@mipmap/ic_tips" />
 
             </LinearLayout>
 
@@ -146,8 +141,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:layout_marginLeft="20dp"
-                android:hint="Drop jawaban disini ..."
+                android:hint="@string/drop_jawaban_disini"
                 android:textSize="15sp">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -170,7 +164,7 @@
                         android:layout_width="34dp"
                         android:layout_height="34dp"
                         android:paddingTop="1dp"
-                        android:src="@mipmap/ic_tips" />
+                        android:src="@mipmap/ic_info_green" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
@@ -213,7 +207,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="Did not"
+                    android:text="@string/biked"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 

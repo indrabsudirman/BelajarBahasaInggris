@@ -14,9 +14,12 @@ import android.view.DragEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.github.amlcurran.showcaseview.ShowcaseView;
+import com.github.amlcurran.showcaseview.targets.ViewTarget;
 import com.google.android.material.textfield.TextInputEditText;
 
 import id.indrasudirman.belajarbahasainggris.R;
@@ -37,7 +40,12 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
     private static final String SIMPLE_PAST_DROP_THREE = "Simple Past Drop Three";
     private static final String TEXT_VIEW_OPTION_ONE = "Were";
     private static final String TEXT_VIEW_OPTION_TWO = "Was";
-    private static final String TEXT_VIEW_OPTION_THREE = "Did not";
+    private static final String TEXT_VIEW_OPTION_THREE = "Biked";
+
+    private Button buttonTips1;
+    private Button buttonTips2;
+    private Button buttonTips3;
+    private ShowcaseView showcaseView;
 
 
     public SimplePastFragment4() {
@@ -52,6 +60,10 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
 
         findView();
         implementEvent();
+
+        buttonTips1.setOnClickListener(clickListenerToolTipsOne);
+        buttonTips2.setOnClickListener(clickListenerToolTipsTwo);
+        buttonTips3.setOnClickListener(clickListenerToolTipsThree);
 
 
 
@@ -79,6 +91,10 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
         optionTwo.setTag(TEXT_VIEW_OPTION_TWO);
         optionThree = view.findViewById(R.id.optionThree);
         optionThree.setTag(TEXT_VIEW_OPTION_THREE);
+
+        buttonTips1 = view.findViewById(R.id.tooltipsDropSimplePastOne);
+        buttonTips2 = view.findViewById(R.id.tooltipsDropSimplePastTwo);
+        buttonTips3 = view.findViewById(R.id.tooltipsDropSimplePastThree);
     }
 
     //Implement long click and drag listener
@@ -243,5 +259,44 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
         editText.setKeyListener(null);
 //        editText.setBackgroundColor(Color.TRANSPARENT);
      }
+
+     View.OnClickListener clickListenerToolTipsOne = new View.OnClickListener() {
+         @Override
+         public void onClick(View view) {
+             ViewTarget target = new ViewTarget(R.id.dropSimplePastOne, getActivity());
+             showcaseView = new ShowcaseView.Builder(getActivity())
+                     .setTarget(target)
+                     .setContentTitle("Tips")
+                     .setContentText("Drop jawabanmu di sini")
+                     .setStyle(R.style.CustomShowcaseTheme2)
+                     .build();
+         }
+     };
+
+    View.OnClickListener clickListenerToolTipsTwo = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            ViewTarget target = new ViewTarget(R.id.dropSimplePastTwo, getActivity());
+            showcaseView = new ShowcaseView.Builder(getActivity())
+                    .setTarget(target)
+                    .setContentTitle("Tips")
+                    .setContentText("Drop jawabanmu di sini")
+                    .setStyle(R.style.CustomShowcaseTheme2)
+                    .build();
+        }
+    };
+
+    View.OnClickListener clickListenerToolTipsThree = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            ViewTarget target = new ViewTarget(R.id.dropSimplePastThree, getActivity());
+            showcaseView = new ShowcaseView.Builder(getActivity())
+                    .setTarget(target)
+                    .setContentTitle("Tips")
+                    .setContentText("Drop jawabanmu di sini")
+                    .setStyle(R.style.CustomShowcaseTheme2)
+                    .build();
+        }
+    };
 
 }

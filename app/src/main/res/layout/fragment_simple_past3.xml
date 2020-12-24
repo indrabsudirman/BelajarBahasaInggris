@@ -36,12 +36,6 @@
                         android:textSize="18dp"
                         android:textStyle="bold" />
 
-                    <Button
-                        android:id="@+id/tooltip_pola_kalimat_simple_past"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:background="@mipmap/ic_tips" />
-
                 </LinearLayout>
 
 

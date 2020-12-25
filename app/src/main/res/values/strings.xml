@@ -83,12 +83,14 @@
 
     <!-- Simple Past Tense, Test 2 -->
 
-    <string name="exercise_simple_past_test_two">1. Lubna … Bicycle last week</string>
+    <string name="exercise_simple_past_test_two">1. Lubna … Bicycle last week.</string>
     <string name="first_exercise_meaning_test_two">\t Lubna mengendarai Sepeda minggu lalu.</string>
-    <string name="exercise_simple_past_test2_two">2. My Sister … Dieng Central Java last year.</string>
-    <string name="first_exercise_meaning_test2_two">\t Saudara perempuan saya mengunjungi Dieng\n \t Jawa Tengah tahun lalu.</string>
-    <string name="exercise_simple_past_test3_two">3. Cinderella … with her stepmother and her\n \t\t two stepsisters, Anastasia and Drizella.</string>
-    <string name="first_exercise_meaning_test3_two">\t Cinderella tinggal bersama Ibu tiri dan\n \t kedua Saudara perempuan tirinya.</string>
+    <string name="exercise_simple_past_test2_two">2. Lubna … bike Bicycle last week.</string>
+    <string name="first_exercise_meaning_test2_two">\t Lubna tidak mengendarai Sepeda minggu lalu.</string>
+    <string name="exercise_simple_past_test3_two">3. … Lubna bike Bicycle last week?</string>
+    <string name="first_exercise_meaning_test3_two">\t Apakah Lubna mengendarai Sepeda minggu lalu?</string>
     <string name="biked">Biked</string>
+    <string name="did_not">did not</string>
+    <string name="did">Did</string>
 
 </resources>

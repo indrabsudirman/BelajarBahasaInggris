@@ -6,7 +6,9 @@ import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.core.widget.ImageViewCompat;
 import androidx.fragment.app.Fragment;
 
 import android.util.Log;
@@ -38,13 +40,14 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
     private static final String SIMPLE_PAST_DROP_ONE = "Simple Past Drop One";
     private static final String SIMPLE_PAST_DROP_TWO = "Simple Past Drop Two";
     private static final String SIMPLE_PAST_DROP_THREE = "Simple Past Drop Three";
-    private static final String TEXT_VIEW_OPTION_ONE = "Were";
-    private static final String TEXT_VIEW_OPTION_TWO = "Was";
+    private static final String TEXT_VIEW_OPTION_ONE = "did not";
+    private static final String TEXT_VIEW_OPTION_TWO = "Did";
     private static final String TEXT_VIEW_OPTION_THREE = "Biked";
 
     private Button buttonTips1;
     private Button buttonTips2;
     private Button buttonTips3;
+    private AppCompatImageView imageViewCompat;
     private ShowcaseView showcaseView;
 
 
@@ -64,6 +67,8 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
         buttonTips1.setOnClickListener(clickListenerToolTipsOne);
         buttonTips2.setOnClickListener(clickListenerToolTipsTwo);
         buttonTips3.setOnClickListener(clickListenerToolTipsThree);
+        imageViewCompat.setOnClickListener(clickListenerToolTipsFour);
+
 
 
 
@@ -95,6 +100,8 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
         buttonTips1 = view.findViewById(R.id.tooltipsDropSimplePastOne);
         buttonTips2 = view.findViewById(R.id.tooltipsDropSimplePastTwo);
         buttonTips3 = view.findViewById(R.id.tooltipsDropSimplePastThree);
+
+        imageViewCompat = view.findViewById(R.id.imageInfo);
     }
 
     //Implement long click and drag listener
@@ -153,6 +160,8 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
                 return true;
             case DragEvent.ACTION_DRAG_LOCATION:
                 // Ignore the event
+
+
                 return true;
             case DragEvent.ACTION_DRAG_EXITED:
                 // Re-sets the color tint to blue, if you had set the BLUE color or any color in ACTION_DRAG_STARTED. Returns true; the return value is ignored.
@@ -294,6 +303,19 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
                     .setTarget(target)
                     .setContentTitle("Tips")
                     .setContentText("Drop jawabanmu di sini")
+                    .setStyle(R.style.CustomShowcaseTheme2)
+                    .build();
+        }
+    };
+
+    View.OnClickListener clickListenerToolTipsFour = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            ViewTarget target = new ViewTarget(R.id.layoutOptionDrag, getActivity());
+            showcaseView = new ShowcaseView.Builder(getActivity())
+                    .setTarget(target)
+                    .setContentTitle("Tips")
+                    .setContentText("Drag pilihan ini ")
                     .setStyle(R.style.CustomShowcaseTheme2)
                     .build();
         }

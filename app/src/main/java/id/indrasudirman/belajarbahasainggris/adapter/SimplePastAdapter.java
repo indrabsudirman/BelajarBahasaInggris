@@ -1,12 +1,11 @@
 package id.indrasudirman.belajarbahasainggris.adapter;
 
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
+import id.indrasudirman.belajarbahasainggris.fragment.SimplePastFragment5;
 import id.indrasudirman.belajarbahasainggris.fragment.SimplePastFragment1;
 import id.indrasudirman.belajarbahasainggris.fragment.SimplePastFragment2;
 import id.indrasudirman.belajarbahasainggris.fragment.SimplePastFragment3;
@@ -28,6 +27,8 @@ public class SimplePastAdapter extends FragmentStateAdapter {
                 return new SimplePastFragment3();
             case 3:
                 return new SimplePastFragment4();
+            case 4:
+                return new SimplePastFragment5();
             default:
                 return new SimplePastFragment1();
         }
@@ -36,6 +37,6 @@ public class SimplePastAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 4;
+        return 5;
     }
 }

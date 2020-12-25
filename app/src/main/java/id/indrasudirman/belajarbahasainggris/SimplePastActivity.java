@@ -33,6 +33,7 @@ import com.google.android.material.tabs.TabLayoutMediator;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 import id.indrasudirman.belajarbahasainggris.adapter.SimplePastAdapter;
 import id.indrasudirman.belajarbahasainggris.model.User;
@@ -45,8 +46,8 @@ public class SimplePastActivity extends AppCompatActivity {
     private User user;
     private TabLayout tabLayout;
 
-    int[] colorIntArray = {R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary};
-    int[] iconIntArray = {R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_next_white, R.drawable.ic_check};
+    int[] colorIntArray = {R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary};
+    int[] iconIntArray = {R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_check};
 
 
 
@@ -105,9 +106,8 @@ public class SimplePastActivity extends AppCompatActivity {
                         tab.setIcon(R.drawable.ic_baseline_menu_book_24);
                         break;
                     }
-                    case 1:
-                    case 3: {
-                        tab.setText("Test");
+                    case 1: {
+                        tab.setText("Hal 2");
                         tab.setIcon(R.drawable.test);
                         tab.view.setClickable(false);
                         break;
@@ -118,6 +118,19 @@ public class SimplePastActivity extends AppCompatActivity {
                         tab.view.setClickable(false);
                         break;
                     }
+                    case 3: {
+                        tab.setText("Hal 4");
+                        tab.setIcon(R.drawable.test);
+                        tab.view.setClickable(false);
+                        break;
+                    }
+                    case 4:{
+                        tab.setText("Hal 5");
+                        tab.setIcon(R.drawable.test);
+                        tab.view.setClickable(false);
+                        break;
+                    }
+
 
                 }
 
@@ -146,7 +159,10 @@ public class SimplePastActivity extends AppCompatActivity {
                         System.out.println("Score : " + score);
                         break;
                     case 3:
-                        Snackbar.make(view, "Pakulonan, Serpong Utara, Tangsel", Snackbar.LENGTH_LONG)
+                        checkAnswerSimplePast4();
+                        break;
+                    case 4:
+                        Snackbar.make(view, "Berta, Susukan, Banjarnegara", Snackbar.LENGTH_LONG)
                                 .setAction("Action", null).show();
                         user.setScore(4);
                         score = user.getScore();
@@ -173,6 +189,9 @@ public class SimplePastActivity extends AppCompatActivity {
                         break;
                     case 3:
                         tab.view.setClickable(score >= 3);
+                        break;
+                    case 4:
+                        tab.view.setClickable(score >= 4);
                         break;
 
                 }
@@ -357,6 +376,116 @@ public class SimplePastActivity extends AppCompatActivity {
             AlertDialog alertDialog = alertDialogBuilder.create();
             alertDialog.show();
         }
+    }
+
+    private void checkAnswerSimplePast4 () {
+        ArrayList<String> incorrectAnswerList = new ArrayList<>();
+
+        int numberOfQuestionCorrect = 0;
+
+        if (checkQuestionSimplePast4()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 1");
+        }
+
+        if (checkQuestionSimplePast5()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 2");
+        }
+
+        if (checkQuestionSimplePast6()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 3");
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (String s : incorrectAnswerList) {
+            sb.append(s);
+            sb.append("\n");
+        }
+
+        if (numberOfQuestionCorrect == 3) {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SimplePastActivity.this);
+            alertDialogBuilder
+                    .setTitle("Selamat!")
+                    .setMessage("Anda berhasil, nilai Anda : " + numberOfQuestionCorrect + "/3\nIni Sempurna. Anda dapat melanjutkan ke pelajaran berikutnya.")
+                    .setCancelable(false)
+                    .setPositiveButton("Halaman berikutnya",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    //Set Score user to 1
+                                    score = 4;
+                                    user.setScore(score);
+                                    score = user.getScore();
+                                    System.out.println("Score : " + score);
+                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                                }
+                            });
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+
+        } else {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SimplePastActivity.this);
+            alertDialogBuilder
+                    .setTitle("Gagal!")
+                    .setMessage("Anda gagal, Nilai Anda adalah : " + numberOfQuestionCorrect + "/3\nAnda belum dapat melanjutkan pelajaran berikutnya.\n\n" + "Perbaiki jawaban Anda : \n\n" + sb.toString())
+                    .setCancelable(false)
+                    .setPositiveButton("Mulai test lagi",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem());
+
+                                }
+                            })
+
+                    .setNegativeButton("Keluar aplikasi",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    moveTaskToBack(true);
+                                    finish();
+                                }
+                            });
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+        }
+    }
+
+    private boolean checkQuestionSimplePast4() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropSimplePastOne);
+
+        String key = "627c2ad0e945c61c23c529ba4bdff3ae";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(Objects.requireNonNull(editTextQuestion.getText()).toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestionSimplePast5() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropSimplePastTwo);
+
+        String key = "d0621ab86b9c4d676344f2305d2dfeb2";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(Objects.requireNonNull(editTextQuestion.getText()).toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestionSimplePast6() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropSimplePastThree);
+
+        String key = "ee85b62281ba8c77e8a83721683b5bcc";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(Objects.requireNonNull(editTextQuestion.getText()).toString().toLowerCase().trim()).equalsIgnoreCase(key);
     }
 
 

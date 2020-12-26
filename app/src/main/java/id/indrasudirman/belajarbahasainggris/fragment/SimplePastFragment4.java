@@ -18,6 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.Toast;
 
 import com.github.amlcurran.showcaseview.ShowcaseView;
@@ -25,6 +26,7 @@ import com.github.amlcurran.showcaseview.targets.ViewTarget;
 import com.google.android.material.textfield.TextInputEditText;
 
 import id.indrasudirman.belajarbahasainggris.R;
+import id.indrasudirman.belajarbahasainggris.utils.MyScrollView;
 
 
 public class SimplePastFragment4 extends Fragment implements View.OnDragListener, View.OnLongClickListener {
@@ -50,6 +52,9 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
     private AppCompatImageView imageViewCompat;
     private ShowcaseView showcaseView;
 
+    private int mScrollDistance;
+    private MyScrollView scrollView;
+
 
     public SimplePastFragment4() {
         // Required empty public constructor
@@ -69,7 +74,14 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
         buttonTips3.setOnClickListener(clickListenerToolTipsThree);
         imageViewCompat.setOnClickListener(clickListenerToolTipsFour);
 
-
+        //SCROLLVIEW
+        scrollView = (MyScrollView) view.findViewById(R.id.scrollViewSimplePast4);
+        scrollView.setOnScrollViewListener(new MyScrollView.OnScrollViewListener() {
+            @Override
+            public void onScrollChanged1(MyScrollView.OnScrollViewListener listener) {
+                mScrollDistance = scrollView.getScrollY();
+            }
+        });
 
 
 
@@ -102,6 +114,8 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
         buttonTips3 = view.findViewById(R.id.tooltipsDropSimplePastThree);
 
         imageViewCompat = view.findViewById(R.id.imageInfo);
+
+        scrollView = view.findViewById(R.id.scrollViewSimplePast4);
     }
 
     //Implement long click and drag listener
@@ -159,10 +173,24 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
 
                 return true;
             case DragEvent.ACTION_DRAG_LOCATION:
-                // Ignore the event
+                // Enable ScrollView while dragging
+                int y = Math.round(view.getY())+Math.round(event.getY());
+                int translatedY = y - mScrollDistance;
+                Log.i("translated",""+translatedY+" "+ mScrollDistance+" "+y);
+                int threshold =50 ;
+                // make a scrolling up due the y has passed the threshold
+                if (translatedY < 200) {
+                    // make a scroll up by 30 px
+                    scrollView.smoothScrollBy(0, -15);
+                }
+                // make a autoscrolling down due y has passed the 500 px border
+                if (translatedY + threshold > 500) {
+                    // make a scroll down by 30 px
+                    scrollView.smoothScrollBy(0, 15);
+                }
 
+                break;
 
-                return true;
             case DragEvent.ACTION_DRAG_EXITED:
                 // Re-sets the color tint to blue, if you had set the BLUE color or any color in ACTION_DRAG_STARTED. Returns true; the return value is ignored.
 

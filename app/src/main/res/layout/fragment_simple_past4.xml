@@ -3,9 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.SimplePastFragment4">
+    tools:context=".fragment.SimplePastFragment4"
+    android:id="@+id/frameLayout">
 
-    <ScrollView
+    <id.indrasudirman.belajarbahasainggris.utils.MyScrollView
         android:id="@+id/scrollViewSimplePast4"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -225,6 +226,6 @@
 
         </LinearLayout>
 
-    </ScrollView>
+    </id.indrasudirman.belajarbahasainggris.utils.MyScrollView>
 
 </FrameLayout>

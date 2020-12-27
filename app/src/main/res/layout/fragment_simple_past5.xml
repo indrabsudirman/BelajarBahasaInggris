@@ -1,17 +1,346 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<id.indrasudirman.belajarbahasainggris.utils.MyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.SimplePastFragment5">
-
-    <id.indrasudirman.belajarbahasainggris.utils.MyScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    tools:context=".fragment.SimplePastFragment5"
+    android:id="@+id/scrollViewSimplePast5">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </id.indrasudirman.belajarbahasainggris.utils.MyScrollView>
-</FrameLayout>
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:id="@+id/mainLayout">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:text="@string/exercises"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:textColor="@color/dark_silver"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Question No 1 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/exercise_simple_past_test_3_1"
+                    android:textColor="@color/dark_silver" />
+
+                <Button
+                    android:id="@+id/tooltipsDropSimplePastOne"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/ic_tips" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/first_exercise_meaning_test_3_1"
+                android:textColor="@color/dark_silver" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dropSimplePastOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="@string/drop_jawaban_disini"
+                android:textSize="15sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <!-- Question No 2 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/exercise_simple_past_test_3_2"
+                    android:textColor="@color/dark_silver" />
+
+                <Button
+                    android:id="@+id/tooltipsDropSimplePastTwo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/ic_tips" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/first_exercise_meaning_test_3_2"
+                android:textColor="@color/dark_silver" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dropSimplePastTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="@string/drop_jawaban_disini"
+                android:textSize="15sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <!-- Question No 3 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/question_simple_past_test3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/exercise_simple_past_test_3_3"
+                    android:textColor="@color/dark_silver" />
+
+                <Button
+                    android:id="@+id/tooltipsDropSimplePastThree"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/ic_tips" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/first_exercise_meaning_test_3_3"
+                android:textColor="@color/dark_silver" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dropSimplePastThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="@string/drop_jawaban_disini"
+                android:textSize="15sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <!-- Question No 4 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/question_simple_past_test4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/exercise_simple_past_test_3_4"
+                    android:textColor="@color/dark_silver" />
+
+                <Button
+                    android:id="@+id/tooltipsDropSimplePastFour"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/ic_tips" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/first_exercise_meaning_test_3_4"
+                android:textColor="@color/dark_silver" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dropSimplePastFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="@string/drop_jawaban_disini"
+                android:textSize="15sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <!-- Question No 5 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/question_simple_past_test5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/exercise_simple_past_test_3_5"
+                    android:textColor="@color/dark_silver" />
+
+                <Button
+                    android:id="@+id/tooltipsDropSimplePastFive"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/ic_tips" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/first_exercise_meaning_test_3_5"
+                android:textColor="@color/dark_silver" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dropSimplePastFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="@string/drop_jawaban_disini"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dropSimplePastSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="@string/drop_jawaban_disini"
+                android:textSize="15sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <LinearLayout
+                android:id="@+id/layoutOptionDrag"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imageInfo"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:paddingTop="1dp"
+                        android:src="@mipmap/ic_info_green" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingEnd="3dp"
+                        android:paddingBottom="3dp"
+                        android:text="@string/dragndrop"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/optionOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:text="was"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/optionTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="were"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/optionThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="@string/last_year"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/optionFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="were"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/optionFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="were not"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/optionSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="were"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom" />
+
+        </LinearLayout>
+
+</id.indrasudirman.belajarbahasainggris.utils.MyScrollView>

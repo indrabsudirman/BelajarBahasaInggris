@@ -162,11 +162,7 @@ public class SimplePastActivity extends AppCompatActivity {
                         checkAnswerSimplePast4();
                         break;
                     case 4:
-                        Snackbar.make(view, "Berta, Susukan, Banjarnegara", Snackbar.LENGTH_LONG)
-                                .setAction("Action", null).show();
-                        user.setScore(4);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
+                        checkAnswerSimplePast5();
                         break;
                 }
             }
@@ -486,6 +482,10 @@ public class SimplePastActivity extends AppCompatActivity {
         PasswordMD5WithSalt p = new PasswordMD5WithSalt();
 
         return p.passKey(Objects.requireNonNull(editTextQuestion.getText()).toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private void checkAnswerSimplePast5(){
+
     }
 
 

@@ -93,4 +93,17 @@
     <string name="did_not">did not</string>
     <string name="did">Did</string>
 
+    <!-- Simple Past Tense, Test 3 -->
+
+    <string name="exercise_simple_past_test_3_1">1. You … happy on your Birthday party.</string>
+    <string name="first_exercise_meaning_test_3_1">\t Kamu terlihat senang pada pesta ulang tahunmu.</string>
+    <string name="exercise_simple_past_test_3_2">2. You … happy on your Birthday party.</string>
+    <string name="first_exercise_meaning_test_3_2">\t Kamu terlihat tidak senang pada \n\t\tpesta ulang tahunmu.</string>
+    <string name="exercise_simple_past_test_3_3">3. … You happy on your Birthday party?</string>
+    <string name="first_exercise_meaning_test_3_3">\t Apakah kamu senang pada pesta ulang tahunmu?</string>
+    <string name="exercise_simple_past_test_3_4">4. … Zatul happy on his Birthday party?</string>
+    <string name="first_exercise_meaning_test_3_4">\t Apakah Zatul senang pada pesta ulang tahunnya?</string>
+    <string name="exercise_simple_past_test_3_5">5. Zatul and Lubna … happy on their \n\t\tGraduation …</string>
+    <string name="first_exercise_meaning_test_3_5">\t Zatul dan Lubna senang pada wisuda \n\t\tkelulusan mereka tahun lalu.</string>
+
 </resources>

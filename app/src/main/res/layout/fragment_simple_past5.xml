@@ -220,7 +220,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:hint="@string/drop_jawaban_disini"
+                android:hint="@string/drop_jawaban_5_1_disini"
                 android:textSize="15sp"/>
 
             <com.google.android.material.textfield.TextInputEditText
@@ -228,7 +228,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:hint="@string/drop_jawaban_disini"
+                android:hint="@string/drop_jawaban_5_2_disini"
                 android:textSize="15sp">
 
             </com.google.android.material.textfield.TextInputEditText>

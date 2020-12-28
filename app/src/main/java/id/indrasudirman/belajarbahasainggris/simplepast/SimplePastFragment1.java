@@ -1,4 +1,4 @@
-package id.indrasudirman.belajarbahasainggris.fragment;
+package id.indrasudirman.belajarbahasainggris.simplepast;
 
 import android.content.DialogInterface;
 import android.graphics.Typeface;
@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 
 import android.text.SpannableString;

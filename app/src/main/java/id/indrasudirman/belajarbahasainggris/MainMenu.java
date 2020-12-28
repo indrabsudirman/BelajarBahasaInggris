@@ -34,7 +34,7 @@ public class MainMenu extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private MainMenuAdapter adapter;
-    private List<EnglishList> albumList;
+    private List<EnglishList> english;
 
 
     @Override
@@ -70,10 +70,10 @@ public class MainMenu extends AppCompatActivity {
 
         initCollapsingToolbar();
 
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view);
 
-        albumList = new ArrayList<>();
-        adapter = new MainMenuAdapter(this, albumList);
+        english = new ArrayList<>();
+        adapter = new MainMenuAdapter(this, english);
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(mLayoutManager);
@@ -85,13 +85,60 @@ public class MainMenu extends AppCompatActivity {
         recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getApplicationContext(), recyclerView, new RecyclerItemClickListener.ClickListener() {
             @Override
             public void onClick(View view, int position) {
-                if (position == 0) {
+                if (position == 0) { //1
                     startActivity(new Intent(getApplicationContext()
                             ,SimplePastActivity.class));
                     overridePendingTransition(0, 0);
-                } else if (position == 1) {
-                    Toast.makeText(MainMenu.this, "Anda klik Simple Present Tense", Toast.LENGTH_LONG).show();
+                } if (position == 1) { //2
+                    startActivity(new Intent(getApplicationContext()
+                            ,SimplePresentActivity.class));
+                    overridePendingTransition(0, 0);
+                } if (position == 2) { //3
+                    startActivity(new Intent(getApplicationContext()
+                            ,SimpleFutureActivity.class));
+                    overridePendingTransition(0, 0);
+                } if (position == 3) { //4
+                    Toast.makeText(MainMenu.this, "Anda klik Simple Past Future Tense", Toast.LENGTH_LONG).show();
+
+                } if (position == 4) { //5
+                    Toast.makeText(MainMenu.this, "Anda klik Past Continuous Tense", Toast.LENGTH_LONG).show();
+
+                } if (position == 5) { //6
+                    Toast.makeText(MainMenu.this, "Anda klik Present Continuous Tense", Toast.LENGTH_LONG).show();
+
+                } if (position == 6) { //7
+                    Toast.makeText(MainMenu.this, "Anda klik Future Continuous Tense", Toast.LENGTH_LONG).show();
+
+                } if (position == 7) { //8
+                    Toast.makeText(MainMenu.this, "Anda klik Past Future Continuous Tense", Toast.LENGTH_LONG).show();
+
+                } if (position == 8) { //9
+                    Toast.makeText(MainMenu.this, "Anda klik Past Perfect Tense", Toast.LENGTH_LONG).show();
+
+                } if (position == 9) { //10
+                    Toast.makeText(MainMenu.this, "Anda klik Present Perfect Tense", Toast.LENGTH_LONG).show();
+
+                } if (position == 10) { //11
+                    Toast.makeText(MainMenu.this, "Anda klik Future Perfect Tense", Toast.LENGTH_LONG).show();
+
+                } if (position == 11) { //12
+                    Toast.makeText(MainMenu.this, "Anda klik Past Future Perfect Tense", Toast.LENGTH_LONG).show();
+
+                } if (position == 12) { //13
+                    Toast.makeText(MainMenu.this, "Anda klik Past Perfect Continuous Tense", Toast.LENGTH_LONG).show();
+
+                } if (position == 13) { //14
+                    Toast.makeText(MainMenu.this, "Anda klik Present Perfect Continuous Tense", Toast.LENGTH_LONG).show();
+
+                } if (position == 14) { //15
+                    Toast.makeText(MainMenu.this, "Anda klik Future Perfect Continuous Tense", Toast.LENGTH_LONG).show();
+
+                } if (position == 15) { //16
+                    Toast.makeText(MainMenu.this, "Anda klik Past Future Perfect Continuous Tense", Toast.LENGTH_LONG).show();
+
                 }
+
+
 
             }
 
@@ -117,9 +164,9 @@ public class MainMenu extends AppCompatActivity {
     @SuppressLint("ResourceAsColor")
     private void initCollapsingToolbar() {
         final CollapsingToolbarLayout collapsingToolbar =
-                (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+                findViewById(R.id.collapsing_toolbar);
         collapsingToolbar.setTitle(" ");
-        AppBarLayout appBarLayout = (AppBarLayout) findViewById(R.id.appbar);
+        AppBarLayout appBarLayout = findViewById(R.id.appbar);
         appBarLayout.setExpanded(true);
 
         // hiding & showing the title when toolbar expanded & collapsed
@@ -160,35 +207,53 @@ public class MainMenu extends AppCompatActivity {
                 R.drawable.bookopen,
                 R.drawable.bookopen};
 
-        EnglishList a = new EnglishList("Simple Past Tense", 13, covers[0]);
-        albumList.add(a);
+        EnglishList a = new EnglishList("Simple Past Tense", 5, covers[0]); //1
+        english.add(a);
 
-        a = new EnglishList("Simple Present Tense", 8, covers[1]);
-        albumList.add(a);
+        a = new EnglishList("Simple Present Tense", 5, covers[1]); //2
+        english.add(a);
 
-        a = new EnglishList("Simple Future Tense", 11, covers[2]);
-        albumList.add(a);
+        a = new EnglishList("Simple Future Tense", 5, covers[2]); //3
+        english.add(a);
 
-        a = new EnglishList("Past Continuous Tense", 12, covers[3]);
-        albumList.add(a);
+        a = new EnglishList("Simple Past Future Tense", 5, covers[3]); //4
+        english.add(a);
 
-        a = new EnglishList("Present Continuous Tense", 14, covers[4]);
-        albumList.add(a);
+        a = new EnglishList("Past Continuous Tense", 5, covers[4]); //5
+        english.add(a);
 
-        a = new EnglishList("Future Continuous Tense", 1, covers[5]);
-        albumList.add(a);
+        a = new EnglishList("Present Continuous Tense", 5, covers[5]); //6
+        english.add(a);
 
-        a = new EnglishList("Past Perfect Tense", 11, covers[6]);
-        albumList.add(a);
+        a = new EnglishList("Future Continuous Tense", 5, covers[6]); //7
+        english.add(a);
 
-        a = new EnglishList("Present Perfect Tense", 14, covers[7]);
-        albumList.add(a);
+        a = new EnglishList("Past Future Continuous Tense", 5, covers[7]); //8
+        english.add(a);
 
-        a = new EnglishList("Future Perfect Tense", 11, covers[8]);
-        albumList.add(a);
+        a = new EnglishList("Past Perfect Tense", 5, covers[8]); //9
+        english.add(a);
 
-        a = new EnglishList("Past Perfect Continuous Tense", 17, covers[9]);
-        albumList.add(a);
+        a = new EnglishList("Present Perfect Tense", 5, covers[9]); //10
+        english.add(a);
+
+        a = new EnglishList("Future Perfect Tense", 5, covers[9]); //11
+        english.add(a);
+
+        a = new EnglishList("Past Future Perfect Tense", 5, covers[9]); //12
+        english.add(a);
+
+        a = new EnglishList("Past Perfect Continuous Tense", 5, covers[9]); //13
+        english.add(a);
+
+        a = new EnglishList("Present Perfect Continuous Tense", 5, covers[9]); //14
+        english.add(a);
+
+        a = new EnglishList("Future Perfect Continuous Tense", 5, covers[9]); //15
+        english.add(a);
+
+        a = new EnglishList("Past Future Perfect Continuous Tense", 5, covers[9]); //16
+        english.add(a);
 
         adapter.notifyDataSetChanged();
     }

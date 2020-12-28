@@ -5,11 +5,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import id.indrasudirman.belajarbahasainggris.fragment.SimplePastFragment5;
-import id.indrasudirman.belajarbahasainggris.fragment.SimplePastFragment1;
-import id.indrasudirman.belajarbahasainggris.fragment.SimplePastFragment2;
-import id.indrasudirman.belajarbahasainggris.fragment.SimplePastFragment3;
-import id.indrasudirman.belajarbahasainggris.fragment.SimplePastFragment4;
+import id.indrasudirman.belajarbahasainggris.simplepast.SimplePastFragment5;
+import id.indrasudirman.belajarbahasainggris.simplepast.SimplePastFragment1;
+import id.indrasudirman.belajarbahasainggris.simplepast.SimplePastFragment2;
+import id.indrasudirman.belajarbahasainggris.simplepast.SimplePastFragment3;
+import id.indrasudirman.belajarbahasainggris.simplepast.SimplePastFragment4;
 
 public class SimplePastAdapter extends FragmentStateAdapter {
 

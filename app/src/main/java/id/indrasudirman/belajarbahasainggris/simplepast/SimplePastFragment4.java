@@ -1,4 +1,4 @@
-package id.indrasudirman.belajarbahasainggris.fragment;
+package id.indrasudirman.belajarbahasainggris.simplepast;
 
 import android.content.ClipData;
 import android.content.ClipDescription;
@@ -8,7 +8,6 @@ import android.os.Bundle;
 
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
-import androidx.core.widget.ImageViewCompat;
 import androidx.fragment.app.Fragment;
 
 import android.util.Log;
@@ -18,7 +17,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.Toast;
 
 import com.github.amlcurran.showcaseview.ShowcaseView;

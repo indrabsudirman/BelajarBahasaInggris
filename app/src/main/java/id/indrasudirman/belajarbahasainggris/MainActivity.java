@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Check if sharedPreferences data available
         String emailSharedPref = sharedPreferences.getString(KEY_EMAIL, null);
-        // if sharedPreferences available so direcly to MainMenu.class
+        // if sharedPreferences available so directly to MainMenu.class
         if (emailSharedPref != null) {
             Intent intent = new Intent(getApplicationContext(), MainMenu.class);
             startActivity(intent);

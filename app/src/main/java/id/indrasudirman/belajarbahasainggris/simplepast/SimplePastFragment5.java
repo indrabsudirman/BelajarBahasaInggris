@@ -1,4 +1,4 @@
-package id.indrasudirman.belajarbahasainggris.fragment;
+package id.indrasudirman.belajarbahasainggris.simplepast;
 
 import android.content.ClipData;
 import android.content.ClipDescription;

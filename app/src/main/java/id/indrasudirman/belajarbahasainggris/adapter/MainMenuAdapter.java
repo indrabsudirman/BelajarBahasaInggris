@@ -22,7 +22,7 @@ import id.indrasudirman.belajarbahasainggris.model.EnglishList;
 public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MyViewHolder> {
 
     private Context mContext;
-    private List<EnglishList> albumList;
+    private List<EnglishList> english;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView title, count;
@@ -30,16 +30,16 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MyView
 
         public MyViewHolder(View view) {
             super(view);
-            title = (TextView) view.findViewById(R.id.title);
-            count = (TextView) view.findViewById(R.id.count);
-            thumbnail = (ImageView) view.findViewById(R.id.thumbnail);
+            title = view.findViewById(R.id.title);
+            count = view.findViewById(R.id.count);
+            thumbnail = view.findViewById(R.id.thumbnail);
         }
     }
 
 
-    public MainMenuAdapter(Context mContext, List<EnglishList> albumList) {
+    public MainMenuAdapter(Context mContext, List<EnglishList> english) {
         this.mContext = mContext;
-        this.albumList = albumList;
+        this.english = english;
     }
 
     @NonNull
@@ -53,12 +53,12 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MyView
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
-        EnglishList album = albumList.get(position);
-        holder.title.setText(album.getName());
-        holder.count.setText(album.getNumOfPages() + " hal");
+        EnglishList englishList = english.get(position);
+        holder.title.setText(englishList.getName());
+        holder.count.setText(englishList.getNumOfPages() + " hal");
 
-        // loading album cover using Glide library
-        Glide.with(mContext).load(album.getThumbnail()).into(holder.thumbnail);
+        // loading englishList cover using Glide library
+        Glide.with(mContext).load(englishList.getThumbnail()).into(holder.thumbnail);
 
 
     }
@@ -68,6 +68,6 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MyView
 
     @Override
     public int getItemCount() {
-        return albumList.size();
+        return english.size();
     }
 }

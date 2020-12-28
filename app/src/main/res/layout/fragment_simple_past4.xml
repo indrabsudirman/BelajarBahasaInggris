@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.SimplePastFragment4"
+    tools:context=".simplepast.SimplePastFragment4"
     android:id="@+id/frameLayout">
 
     <id.indrasudirman.belajarbahasainggris.utils.MyScrollView

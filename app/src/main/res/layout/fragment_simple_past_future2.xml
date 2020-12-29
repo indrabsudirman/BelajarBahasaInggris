@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".simplefuture.SimpleFutureFragment2">
+    tools:context=".simplepastfuture.SimplePastFutureFragment2">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Simple Future 2" />
+        android:text="Simple Past Future Fragment 2" />
 
 </FrameLayout>

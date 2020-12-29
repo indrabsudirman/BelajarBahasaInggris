@@ -1,5 +1,10 @@
 package id.indrasudirman.belajarbahasainggris;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.viewpager2.widget.ViewPager2;
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -12,21 +17,16 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-import androidx.viewpager2.widget.ViewPager2;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
-import id.indrasudirman.belajarbahasainggris.adapter.SimpleFutureAdapter;
-import id.indrasudirman.belajarbahasainggris.adapter.SimplePastFutureAdapter;
+import id.indrasudirman.belajarbahasainggris.adapter.PastContinuousAdapter;
+import id.indrasudirman.belajarbahasainggris.adapter.PresentContinuousAdapter;
 import id.indrasudirman.belajarbahasainggris.model.User;
 
-public class SimpleFutureActivity extends AppCompatActivity {
+public class PresentContinuousActivity extends AppCompatActivity {
 
     int[] colorIntArray = {R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary};
     int[] iconIntArray = {R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_check};
@@ -39,10 +39,10 @@ public class SimpleFutureActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_simple_future);
+        setContentView(R.layout.activity_present_continuous);
 
         viewPager2 = findViewById(R.id.viewPager);
-        viewPager2.setAdapter(new SimpleFutureAdapter(this));
+        viewPager2.setAdapter(new PresentContinuousAdapter(this));
         viewPager2.setUserInputEnabled(false);
 
         user = new User();
@@ -124,7 +124,7 @@ public class SimpleFutureActivity extends AppCompatActivity {
                         score = user.getScore();
                         System.out.println("Score : " + score);
                         viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        checkAnswerSimpleFuture1();
+                        checkAnswerPresentContinuous1();
                         break;
                     case 2:
                         viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
@@ -217,7 +217,7 @@ public class SimpleFutureActivity extends AppCompatActivity {
 
     }
 
-    private void checkAnswerSimpleFuture1() {
+    private void checkAnswerPresentContinuous1() {
 
     }
 }

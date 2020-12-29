@@ -26,7 +26,7 @@ import id.indrasudirman.belajarbahasainggris.adapter.SimpleFutureAdapter;
 import id.indrasudirman.belajarbahasainggris.adapter.SimplePastFutureAdapter;
 import id.indrasudirman.belajarbahasainggris.model.User;
 
-public class SimpleFutureActivity extends AppCompatActivity {
+public class SimplePastFutureActivity extends AppCompatActivity {
 
     int[] colorIntArray = {R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary};
     int[] iconIntArray = {R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_check};
@@ -39,10 +39,10 @@ public class SimpleFutureActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_simple_future);
+        setContentView(R.layout.activity_simple_past_future);
 
         viewPager2 = findViewById(R.id.viewPager);
-        viewPager2.setAdapter(new SimpleFutureAdapter(this));
+        viewPager2.setAdapter(new SimplePastFutureAdapter(this));
         viewPager2.setUserInputEnabled(false);
 
         user = new User();
@@ -124,7 +124,7 @@ public class SimpleFutureActivity extends AppCompatActivity {
                         score = user.getScore();
                         System.out.println("Score : " + score);
                         viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        checkAnswerSimpleFuture1();
+                        checkAnswerSimplePastFuture1();
                         break;
                     case 2:
                         viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
@@ -217,7 +217,7 @@ public class SimpleFutureActivity extends AppCompatActivity {
 
     }
 
-    private void checkAnswerSimpleFuture1() {
+    private void checkAnswerSimplePastFuture1() {
 
     }
 }

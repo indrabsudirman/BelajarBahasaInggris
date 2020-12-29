@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".SimpleFutureActivity"></activity>
-        <activity android:name=".SimplePresentActivity"></activity>
+        <activity android:name=".PresentContinuousActivity"></activity>
+        <activity android:name=".PastContinuousActivity" />
+        <activity android:name=".SimplePastFutureActivity" />
+        <activity android:name=".SimpleFutureActivity" />
+        <activity android:name=".SimplePresentActivity" />
         <activity
             android:name=".AccountActivity"
             android:screenOrientation="portrait" />

@@ -98,14 +98,17 @@ public class MainMenu extends AppCompatActivity {
                             ,SimpleFutureActivity.class));
                     overridePendingTransition(0, 0);
                 } if (position == 3) { //4
-                    Toast.makeText(MainMenu.this, "Anda klik Simple Past Future Tense", Toast.LENGTH_LONG).show();
-
+                    startActivity(new Intent(getApplicationContext()
+                            ,SimplePastFutureActivity.class));
+                    overridePendingTransition(0, 0);
                 } if (position == 4) { //5
-                    Toast.makeText(MainMenu.this, "Anda klik Past Continuous Tense", Toast.LENGTH_LONG).show();
-
+                    startActivity(new Intent(getApplicationContext()
+                            ,PastContinuousActivity.class));
+                    overridePendingTransition(0, 0);
                 } if (position == 5) { //6
-                    Toast.makeText(MainMenu.this, "Anda klik Present Continuous Tense", Toast.LENGTH_LONG).show();
-
+                    startActivity(new Intent(getApplicationContext()
+                            ,PresentContinuousActivity.class));
+                    overridePendingTransition(0, 0);
                 } if (position == 6) { //7
                     Toast.makeText(MainMenu.this, "Anda klik Future Continuous Tense", Toast.LENGTH_LONG).show();
 

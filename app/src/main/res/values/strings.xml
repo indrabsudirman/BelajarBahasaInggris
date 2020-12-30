@@ -105,7 +105,16 @@
     <string name="first_exercise_meaning_test_3_4">\t Apakah Zatul senang pada pesta ulang tahunnya?</string>
     <string name="exercise_simple_past_test_3_5">5. Zatul and Lubna … happy on their \n\t\tGraduation …</string>
     <string name="first_exercise_meaning_test_3_5">\t Zatul dan Lubna senang pada wisuda \n\t\tkelulusan mereka tahun lalu.</string>
-    <string name="drop_jawaban_5_2_disini">Drop jawaban 5 (2) disini ...</string>
-    <string name="drop_jawaban_5_1_disini">Drop jawaban 5 (1) disini ...</string>
+    <string name="drop_jawaban_5_2_disini">Drop jawaban 5 (2) disini …</string>
+    <string name="drop_jawaban_5_1_disini">Drop jawaban 5 (1) disini …</string>
+
+    <!-- Simple Present Tense, Explain 1 -->
+
+    <string name="simple_present_tense"><b><u>Simple Present Tense</u></b></string>
+    <string name="simple_present_explain"><b>Simple Present Tense digunakan untuk menyatakan kejadian saat ini (sekarang), tapi bukan kejadian saat ini yang sedang berlangsung ya, karena jika kejadian saat ini sedang berlangsung itu Present Continuous Tense </b> biasanya hanya untuk menceritakan kejadian saat ini saja. Contoh Dia laki-laki makan bakso (He eats meatball). Simple Present Tense juga biasa digunakan untuk menyatakan fakta, sesuatu (kebiasaan) yang selalu dilakukan. Contoh : Saya pergi ke sekolah setiap hari (I go to school every day).</string>
+    <string name="first_bullet_simple_present">■ He eats meatball now. (kejadian saat ini)\n\n \t\t(Saat ini, dia laki-laki makan bakso)\n \t\tSekedar menceritakan saat ini \n \t\tdia laki-laki makan bakso.</string>
+    <string name="second_bullet_simple_present">■ I go to School every day. (kebiasaan yang \n \t\tselalu dilakukan)\n\n \t\t(Saya pergi ke sekolah setiap hari)</string>
+    <string name="third_bullet_simple_present">■ The Sun rises in the east. (menyatakan fakta)\n\n \t\t (Matahari terbit di sebelah timur)</string>
+
 
 </resources>

@@ -110,11 +110,13 @@ public class MainMenu extends AppCompatActivity {
                             ,PresentContinuousActivity.class));
                     overridePendingTransition(0, 0);
                 } if (position == 6) { //7
-                    Toast.makeText(MainMenu.this, "Anda klik Future Continuous Tense", Toast.LENGTH_LONG).show();
-
+                    startActivity(new Intent(getApplicationContext()
+                            ,FutureContinuousActivity.class));
+                    overridePendingTransition(0, 0);
                 } if (position == 7) { //8
-                    Toast.makeText(MainMenu.this, "Anda klik Past Future Continuous Tense", Toast.LENGTH_LONG).show();
-
+                    startActivity(new Intent(getApplicationContext()
+                            ,PastFutureContinuousActivity.class));
+                    overridePendingTransition(0, 0);
                 } if (position == 8) { //9
                     Toast.makeText(MainMenu.this, "Anda klik Past Perfect Tense", Toast.LENGTH_LONG).show();
 

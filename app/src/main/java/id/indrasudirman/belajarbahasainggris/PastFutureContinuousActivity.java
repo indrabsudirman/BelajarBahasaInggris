@@ -124,7 +124,7 @@ public class PastFutureContinuousActivity extends AppCompatActivity {
                         score = user.getScore();
                         System.out.println("Score : " + score);
                         viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        checkAnswerPastContinuous1();
+                        checkAnswerPastFutureContinuous1();
                         break;
                     case 2:
                         viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
@@ -217,7 +217,7 @@ public class PastFutureContinuousActivity extends AppCompatActivity {
 
     }
 
-    private void checkAnswerPastContinuous1() {
+    private void checkAnswerPastFutureContinuous1() {
 
     }
 }

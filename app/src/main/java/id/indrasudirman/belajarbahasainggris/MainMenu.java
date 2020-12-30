@@ -118,14 +118,17 @@ public class MainMenu extends AppCompatActivity {
                             ,PastFutureContinuousActivity.class));
                     overridePendingTransition(0, 0);
                 } if (position == 8) { //9
-                    Toast.makeText(MainMenu.this, "Anda klik Past Perfect Tense", Toast.LENGTH_LONG).show();
-
+                    startActivity(new Intent(getApplicationContext()
+                            ,PastPerfectActivity.class));
+                    overridePendingTransition(0, 0);
                 } if (position == 9) { //10
-                    Toast.makeText(MainMenu.this, "Anda klik Present Perfect Tense", Toast.LENGTH_LONG).show();
-
+                    startActivity(new Intent(getApplicationContext()
+                            ,PresentPerfectActivity.class));
+                    overridePendingTransition(0, 0);
                 } if (position == 10) { //11
-                    Toast.makeText(MainMenu.this, "Anda klik Future Perfect Tense", Toast.LENGTH_LONG).show();
-
+                    startActivity(new Intent(getApplicationContext()
+                            ,FuturePerfectActivity.class));
+                    overridePendingTransition(0, 0);
                 } if (position == 11) { //12
                     Toast.makeText(MainMenu.this, "Anda klik Past Future Perfect Tense", Toast.LENGTH_LONG).show();
 

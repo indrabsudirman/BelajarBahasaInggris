@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".PastFutureContinuousActivity"></activity>
+        <activity android:name=".FuturePerfectActivity"></activity>
+        <activity android:name=".PresentPerfectActivity" />
+        <activity android:name=".PastPerfectActivity" />
+        <activity android:name=".PastFutureContinuousActivity" />
         <activity android:name=".FutureContinuousActivity" />
         <activity android:name=".PresentContinuousActivity" />
         <activity android:name=".PastContinuousActivity" />

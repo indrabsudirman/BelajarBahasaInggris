@@ -1,5 +1,10 @@
 package id.indrasudirman.belajarbahasainggris;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.viewpager2.widget.ViewPager2;
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -12,20 +17,16 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-import androidx.viewpager2.widget.ViewPager2;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
-import id.indrasudirman.belajarbahasainggris.adapter.FuturePerfectAdapter;
+import id.indrasudirman.belajarbahasainggris.adapter.FuturePerfectContinuousAdapter;
+import id.indrasudirman.belajarbahasainggris.adapter.PresentPerfectAdapter;
 import id.indrasudirman.belajarbahasainggris.model.User;
 
-public class FuturePerfectActivity extends AppCompatActivity {
+public class FuturePerfectContinuousActivity extends AppCompatActivity {
 
     int[] colorIntArray = {R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary};
     int[] iconIntArray = {R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_check};
@@ -38,10 +39,10 @@ public class FuturePerfectActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_future_perfect);
+        setContentView(R.layout.activity_future_perfect_continuous);
 
         viewPager2 = findViewById(R.id.viewPager);
-        viewPager2.setAdapter(new FuturePerfectAdapter(this));
+        viewPager2.setAdapter(new FuturePerfectContinuousAdapter(this));
         viewPager2.setUserInputEnabled(false);
 
         user = new User();
@@ -123,7 +124,7 @@ public class FuturePerfectActivity extends AppCompatActivity {
                         score = user.getScore();
                         System.out.println("Score : " + score);
                         viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        checkAnswerFuturePerfect1();
+                        checkAnswerFuturePerfectContinuous1();
                         break;
                     case 2:
                         viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
@@ -216,7 +217,7 @@ public class FuturePerfectActivity extends AppCompatActivity {
 
     }
 
-    private void checkAnswerFuturePerfect1() {
+    private void checkAnswerFuturePerfectContinuous1() {
 
     }
 }

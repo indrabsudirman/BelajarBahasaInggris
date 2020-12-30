@@ -130,20 +130,25 @@ public class MainMenu extends AppCompatActivity {
                             ,FuturePerfectActivity.class));
                     overridePendingTransition(0, 0);
                 } if (position == 11) { //12
-                    Toast.makeText(MainMenu.this, "Anda klik Past Future Perfect Tense", Toast.LENGTH_LONG).show();
-
+                    startActivity(new Intent(getApplicationContext()
+                            ,PastFuturePerfectActivity.class));
+                    overridePendingTransition(0, 0);
                 } if (position == 12) { //13
-                    Toast.makeText(MainMenu.this, "Anda klik Past Perfect Continuous Tense", Toast.LENGTH_LONG).show();
-
+                    startActivity(new Intent(getApplicationContext()
+                            ,PastPerfectContinuousActivity.class));
+                    overridePendingTransition(0, 0);
                 } if (position == 13) { //14
-                    Toast.makeText(MainMenu.this, "Anda klik Present Perfect Continuous Tense", Toast.LENGTH_LONG).show();
-
+                    startActivity(new Intent(getApplicationContext()
+                            ,PresentPerfectContinuousActivity.class));
+                    overridePendingTransition(0, 0);
                 } if (position == 14) { //15
-                    Toast.makeText(MainMenu.this, "Anda klik Future Perfect Continuous Tense", Toast.LENGTH_LONG).show();
-
+                    startActivity(new Intent(getApplicationContext()
+                            ,FuturePerfectContinuousActivity.class));
+                    overridePendingTransition(0, 0);
                 } if (position == 15) { //16
-                    Toast.makeText(MainMenu.this, "Anda klik Past Future Perfect Continuous Tense", Toast.LENGTH_LONG).show();
-
+                    startActivity(new Intent(getApplicationContext()
+                            ,PastFuturePerfectContinuousActivity.class));
+                    overridePendingTransition(0, 0);
                 }
 
 

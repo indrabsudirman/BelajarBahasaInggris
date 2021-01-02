@@ -56,7 +56,7 @@ public class SimplePastFragment1 extends Fragment {
                 AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
                 //Set Title
                 alertDialogSimplePast.setTitle("Info");
-                alertDialogSimplePast.setMessage("Simple Past Tense adalah salah satu dari 14 Tense (waktu) yang ada dalam Grammar Bahasa Inggris")
+                alertDialogSimplePast.setMessage("Simple Past Tense adalah salah satu dari 16 Tense (waktu) yang ada dalam Grammar Bahasa Inggris")
                         .setCancelable(false)
                         .setIcon(R.mipmap.ic_info_green)
                         .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {

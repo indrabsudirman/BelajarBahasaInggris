@@ -111,10 +111,18 @@
     <!-- Simple Present Tense, Explain 1 -->
 
     <string name="simple_present_tense"><b><u>Simple Present Tense</u></b></string>
-    <string name="simple_present_explain"><b>Simple Present Tense digunakan untuk menyatakan kejadian saat ini (sekarang), tapi bukan kejadian saat ini yang sedang berlangsung ya, karena jika kejadian saat ini sedang berlangsung itu Present Continuous Tense. </b> Simple Present Tense biasanya hanya untuk menceritakan kejadian saat ini saja. Contoh Dia laki-laki makan bakso (He eats meatball). Simple Present Tense juga biasa digunakan untuk menyatakan fakta, sesuatu (kebiasaan) yang selalu dilakukan. Contoh : Saya pergi ke sekolah setiap hari (I go to school every day).</string>
-    <string name="first_bullet_simple_present">■ He eats meatball now. (kejadian saat ini)\n\n \t\t(Saat ini, dia laki-laki makan bakso)\n \t\tSekedar menceritakan saat ini \n \t\tdia laki-laki makan bakso.</string>
+    <string name="simple_present_explain"><b>Simple Present Tense digunakan untuk menyatakan kejadian saat ini (sekarang) yang selalu dilakukan, tapi bukan kejadian saat ini yang sedang berlangsung ya, karena jika kejadian saat ini sedang berlangsung itu Present Continuous Tense. </b> Simple Present Tense biasanya hanya untuk menceritakan kejadian saat ini saja yang selalu dilakukan (diulang). Contoh Dia laki-laki makan bakso setiap hari (He eats meatball every day). Simple Present Tense juga biasa digunakan untuk menyatakan fakta. Contoh : Matahari terbenam di sebelah barat (The Sun sets in the west).</string>
     <string name="second_bullet_simple_present">■ I go to School every day. (kebiasaan yang \n \t\tselalu dilakukan)\n\n \t\t(Saya pergi ke sekolah setiap hari)</string>
     <string name="third_bullet_simple_present">■ The Sun rises in the east. (menyatakan fakta)\n\n \t\t (Matahari terbit di sebelah timur)</string>
+
+
+    <!-- Simple Present Tense, Test 1 -->
+
+    <string name="contoh_dari_bentuk">\t Contoh dari bentuk?</string>
+    <string name="simple_present_tense_test1_1">1. She … Youtube every day.</string>
+    <string name="simple_present_tense_test1_1_meaning">\t Dia perempuan memonton Youtube setiap hari.</string>
+    <string name="simple_present_tense_test1_2">2. Water … at 100 celcius.</string>
+    <string name="simple_present_tense_test1_2_meaning">\t Air mendidih pada suhu 100 celcius.</string>
 
 
 </resources>

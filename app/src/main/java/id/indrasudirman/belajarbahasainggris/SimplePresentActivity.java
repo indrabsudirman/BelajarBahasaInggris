@@ -1,10 +1,12 @@
 package id.indrasudirman.belajarbahasainggris;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -21,10 +23,14 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+import com.google.android.material.textfield.TextInputEditText;
 
+
+import java.util.ArrayList;
 
 import id.indrasudirman.belajarbahasainggris.adapter.SimplePresentAdapter;
 import id.indrasudirman.belajarbahasainggris.model.User;
+import id.indrasudirman.belajarbahasainggris.utils.PasswordMD5WithSalt;
 
 public class SimplePresentActivity extends AppCompatActivity {
 
@@ -123,10 +129,6 @@ public class SimplePresentActivity extends AppCompatActivity {
                         System.out.println("Score : " + score);
                         break;
                     case 1:
-                        user.setScore(2);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
                         checkAnswerSimplePresent1();
                         break;
                     case 2:
@@ -169,18 +171,6 @@ public class SimplePresentActivity extends AppCompatActivity {
 
             }
         });
-
-    }
-
-    private void checkAnswerSimplePresent1() {
-
-    }
-
-    private void checkAnswerSimplePresent2() {
-
-    }
-
-    private void checkAnswerSimplePresent3() {
 
     }
 
@@ -229,6 +219,144 @@ public class SimplePresentActivity extends AppCompatActivity {
             }
         });
         fab.startAnimation(shrink);
+
+    }
+
+    //Check Simple Present Test 1
+    private void checkAnswerSimplePresent1() {
+        ArrayList<String> incorrectAnswerList = new ArrayList<>();
+
+        int numberOfQuestionCorrect = 0;
+
+        if (checkQuestion1()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 1 (1)");
+        }
+
+        if (checkQuestion2()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 1 (2)");
+        }
+
+        if (checkQuestion3()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 2 (1)");
+        }
+
+        if (checkQuestion4()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 2 (2)");
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (String s : incorrectAnswerList) {
+            sb.append(s);
+            sb.append("\n");
+        }
+
+        if (numberOfQuestionCorrect == 4) {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SimplePresentActivity.this);
+            alertDialogBuilder
+                    .setTitle("Selamat!")
+                    .setMessage("Anda berhasil, nilai Anda : " + numberOfQuestionCorrect + "/4\nIni Sempurna. Anda dapat melanjutkan ke pelajaran berikutnya.")
+                    .setCancelable(false)
+                    .setPositiveButton("Halaman berikutnya",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    //Set Score user to 1
+                                    score = 2;
+                                    user.setScore(score);
+                                    score = user.getScore();
+                                    System.out.println("Score : " + score);
+                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+
+                                }
+                            });
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+
+        } else {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SimplePresentActivity.this);
+            alertDialogBuilder
+                    .setTitle("Gagal!")
+                    .setMessage("Anda gagal, Nilai Anda adalah : " + numberOfQuestionCorrect + "/4\nAnda belum dapat melanjutkan pelajaran berikutnya.\n\n" + "Perbaiki jawaban Anda : \n\n" + sb.toString())
+                    .setCancelable(false)
+                    .setPositiveButton("Mulai test lagi",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem());
+
+                                }
+                            })
+
+                    .setNegativeButton("Keluar aplikasi",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    moveTaskToBack(true);
+                                    finish();
+                                }
+                            });
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+        }
+
+    }
+
+
+    private boolean checkQuestion1() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropSimplePresentOne);
+
+        String key = "2d6b6aad43dffa9125ef8420faefca18";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestion2() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropSimplePresentTwo);
+
+        String key = "6456fd664bdf27c7dbab1acdfd44f78f";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestion3() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropSimplePresentThree);
+
+        String key = "2d3f28b714c3e6767dab1c82bf293685";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestion4() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropSimplePresentFour);
+
+        String key = "fce663ae73dc87a727148bc3b94d1ffa";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private void checkAnswerSimplePresent2() {
+
+    }
+
+    private void checkAnswerSimplePresent3() {
 
     }
 }

@@ -44,16 +44,6 @@ tools:context=".simplepresent.SimplePresentFragment1">
             android:textAppearance="@android:style/TextAppearance.DeviceDefault"
             android:textColor="@color/colorBlack" />
 
-        <com.uncopt.android.widget.text.justify.JustifiedTextView
-            android:id="@+id/simplePresentTenseExample1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:autoLink="web"
-            android:lineSpacingExtra="2dp"
-            android:padding="5dp"
-            android:text="@string/first_bullet_simple_present"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
-            android:textColor="@color/colorBlack" />
 
         <com.uncopt.android.widget.text.justify.JustifiedTextView
             android:id="@+id/simplePresentTenseExample2"

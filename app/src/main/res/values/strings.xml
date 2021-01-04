@@ -124,5 +124,17 @@
     <string name="simple_present_tense_test1_2">2. Water … at 100 celcius.</string>
     <string name="simple_present_tense_test1_2_meaning">\t Air mendidih pada suhu 100 celcius.</string>
 
+    <!-- Simple Present Tense, Explain 2 -->
+
+    <string name="pola_kalimat_simple_present">Pola kalimat Simple Present</string>
+    <string name="bentuk_kalimat_verbal_simple_present">■ Bentuk kalimat verbal</string>
+    <string name="bentuk_kalimat_nominal_simple_present">■ Bentuk kalimat nominal</string>
+    <string name="bentuk_kalimat_verbal_positif_simple_present">\t\t(+) Positif : Subject + V1 (Verb 1 + \'s\'/\'es\') + Object. \n\t\tContoh : Lubna always plays Puzzle every day. \n\t\t(Lubna selalu bermain Puzzle setiap hari)</string>
+    <string name="bentuk_kalimat_verbal_negatif_simple_present">\t\t(-) Negatif : Subject + do/does + not + V1 (Verb 1) \n\t\t+ Object. \n\t\tContoh : Lubna always does not play Puzzle\n\t\tevery day.\n\t\t(Lubna selalu tidak bermain Puzzle setiap hari)</string>
+    <string name="bentuk_kalimat_verbal_question_simple_present">\t\t(?) Question : Do/Does + Subject + V1 (Verb 1) \n\t\t+ Object? \n\t\tContoh : Does Lubna always play Puzzle\n\t\tevery day?\n\t\t(Apakah Lubna selalu bermain Puzzle setiap hari?)</string>
+    <string name="bentuk_kalimat_nominal_positif_simple_present">\t\t(+) Positif : Subject + (is/am/are) + \n\t\t3 Complement. \n\t\tContoh : I am happy today. \n\t\t(Saya senang hari ini)</string>
+    <string name="bentuk_kalimat_nominal_negatif_simple_present">\t\t(-) Negatif : Subject + (is/am/are) + not + \n\t\t3 Complement. \n\t\tContoh : I am not happy today.\n\t\t(Saya tidak senang hari ini)</string>
+    <string name="bentuk_kalimat_nominal_question_simple_present">\t\t(?) Question : (is/am/are) + Subject +\n\t\t3 Complement? \n\t\tContoh : Am I happy today?\n\t\t(Apakah Saya senang hari ini?</string>
+
 
 </resources>

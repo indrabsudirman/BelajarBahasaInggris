@@ -9,24 +9,54 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".PastFuturePerfectContinuousActivity"></activity>
-        <activity android:name=".FuturePerfectContinuousActivity" />
-        <activity android:name=".PresentPerfectContinuousActivity" />
-        <activity android:name=".PastPerfectContinuousActivity" />
-        <activity android:name=".PastFuturePerfectActivity" />
-        <activity android:name=".FuturePerfectActivity" />
-        <activity android:name=".PresentPerfectActivity" />
-        <activity android:name=".PastPerfectActivity" />
-        <activity android:name=".PastFutureContinuousActivity" />
-        <activity android:name=".FutureContinuousActivity" />
-        <activity android:name=".PresentContinuousActivity" />
-        <activity android:name=".PastContinuousActivity" />
-        <activity android:name=".SimplePastFutureActivity" />
-        <activity android:name=".SimpleFutureActivity" />
-        <activity android:name=".SimplePresentActivity" />
+        <activity
+            android:name=".PastFuturePerfectContinuousActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".FuturePerfectContinuousActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PresentPerfectContinuousActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PastPerfectContinuousActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PastFuturePerfectActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".FuturePerfectActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PresentPerfectActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PastPerfectActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PastFutureContinuousActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".FutureContinuousActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PresentContinuousActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PastContinuousActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SimplePastFutureActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SimpleFutureActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SimplePresentActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".AccountActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".SimplePastActivity"
             android:screenOrientation="portrait" />

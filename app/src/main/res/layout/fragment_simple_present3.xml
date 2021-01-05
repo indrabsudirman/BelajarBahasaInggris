@@ -41,7 +41,7 @@ tools:context=".simplepresent.SimplePresentFragment3">
 
 
             <TextView
-                android:id="@+id/verbal_simple_past"
+                android:id="@+id/verbalSimplePresent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -52,7 +52,7 @@ tools:context=".simplepresent.SimplePresentFragment3">
                 android:textColor="@color/colorBlack" />
 
             <TextView
-                android:id="@+id/verbal_positif_simple_past"
+                android:id="@+id/verbalPositifSimplePresent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -63,7 +63,7 @@ tools:context=".simplepresent.SimplePresentFragment3">
                 android:textColor="@color/colorBlack" />
 
             <TextView
-                android:id="@+id/verbal_negatif_simple_past"
+                android:id="@+id/verbalNegatifSimplePresent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -74,7 +74,7 @@ tools:context=".simplepresent.SimplePresentFragment3">
                 android:textColor="@color/colorBlack" />
 
             <TextView
-                android:id="@+id/verbal_question_simple_past"
+                android:id="@+id/verbalQuestionSimplePresent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -99,7 +99,7 @@ tools:context=".simplepresent.SimplePresentFragment3">
 
 
             <TextView
-                android:id="@+id/nominal_simple_past"
+                android:id="@+id/nominalSimplePresent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -110,7 +110,7 @@ tools:context=".simplepresent.SimplePresentFragment3">
                 android:textColor="@color/colorBlack" />
 
             <TextView
-                android:id="@+id/nominal_positif_simple_past"
+                android:id="@+id/nominalPositifSimplePresent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -121,7 +121,7 @@ tools:context=".simplepresent.SimplePresentFragment3">
                 android:textColor="@color/colorBlack" />
 
             <TextView
-                android:id="@+id/nominal_negatif_simple_past"
+                android:id="@+id/nominalNegatifSimplePresent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -132,7 +132,7 @@ tools:context=".simplepresent.SimplePresentFragment3">
                 android:textColor="@color/colorBlack" />
 
             <TextView
-                android:id="@+id/nominal_question_simple_past"
+                android:id="@+id/nominalQuestionSimplePresent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"

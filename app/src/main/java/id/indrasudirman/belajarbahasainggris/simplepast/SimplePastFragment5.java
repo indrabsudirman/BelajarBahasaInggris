@@ -221,7 +221,7 @@ public class SimplePastFragment5 extends Fragment implements View.OnDragListener
                 showcaseView = new ShowcaseView.Builder(getActivity())
                         .setTarget(target)
                         .setContentTitle("Tips")
-                        .setContentText("Drop jawabanmu di sini")
+                        .setContentText("Drag jawaban ini")
                         .setStyle(R.style.CustomShowcaseTheme2)
                         .build();
             }

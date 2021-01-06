@@ -7,7 +7,7 @@
     android:id="@+id/frameLayout">
 
     <id.indrasudirman.belajarbahasainggris.utils.MyScrollView
-        android:id="@+id/scrollViewSimplePresent2"
+        android:id="@+id/scrollViewSimplePresent4"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -40,11 +40,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
                     android:paddingTop="0dp"
-                    android:text="@string/simple_present_tense_test1_1"
+                    android:text="@string/simple_present_tense_test2_1"
                     android:textColor="@color/dark_silver" />
 
-                <Button
-                    android:id="@+id/tooltipsDropSimplePastOne"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/tooltipsDropSimplePresentOne"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@mipmap/ic_tips" />
@@ -55,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="@string/simple_present_tense_test1_1_meaning"
+                android:text="@string/simple_present_tense_test2_1_meaning"
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
@@ -65,22 +65,6 @@
                 android:layout_marginStart="12dp"
                 android:hint="@string/drop_jawaban_disini"
                 android:textSize="15sp"/>
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="@string/contoh_dari_bentuk"
-                android:textColor="@color/dark_silver" />
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropSimplePresentTwo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:hint="@string/drop_jawaban_disini"
-                android:textSize="15sp"/>
-
 
             <!-- Question No 2 -->
 
@@ -93,11 +77,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
                     android:paddingTop="0dp"
-                    android:text="@string/simple_present_tense_test1_2"
+                    android:text="@string/simple_present_tense_test2_2"
                     android:textColor="@color/dark_silver" />
 
-                <Button
-                    android:id="@+id/tooltipsDropSimplePastTwo"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/tooltipsDropSimplePresentTwo"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@mipmap/ic_tips" />
@@ -108,7 +92,44 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="@string/simple_present_tense_test1_2_meaning"
+                android:text="@string/simple_present_tense_test2_2_meaning"
+                android:textColor="@color/dark_silver" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dropSimplePresentTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:hint="@string/drop_jawaban_disini"
+                android:textSize="15sp"/>
+
+            <!-- Question No 3 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/simple_present_tense_test2_3"
+                    android:textColor="@color/dark_silver" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/tooltipsDropSimplePresentThree"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/ic_tips" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/simple_present_tense_test2_3_meaning"
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
@@ -119,11 +140,33 @@
                 android:hint="@string/drop_jawaban_disini"
                 android:textSize="15sp"/>
 
+            <!-- Question No 4 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/simple_present_tense_test2_4"
+                    android:textColor="@color/dark_silver" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/tooltipsDropSimplePresentFour"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/ic_tips" />
+
+            </LinearLayout>
+
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="@string/contoh_dari_bentuk"
+                android:text="@string/simple_present_tense_test2_4_meaning"
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
@@ -134,10 +177,49 @@
                 android:hint="@string/drop_jawaban_disini"
                 android:textSize="15sp"/>
 
+            <!-- Question No 5 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/simple_present_tense_test2_5"
+                    android:textColor="@color/dark_silver" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/tooltipsDropSimplePresentFive"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/ic_tips" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/simple_present_tense_test2_5_meaning"
+                android:textColor="@color/dark_silver" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dropSimplePresentFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:hint="@string/drop_jawaban_disini"
+                android:textSize="15sp"/>
+
+            <!--Option Answers-->
+
             <LinearLayout
                 android:id="@+id/layoutOptionDrag"
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
+                android:layout_height="300dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/border"
                 android:orientation="vertical"
@@ -158,7 +240,7 @@
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="left"
+                        android:gravity="start"
                         android:paddingStart="5dp"
                         android:paddingTop="2dp"
                         android:paddingEnd="3dp"
@@ -174,7 +256,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@null"
-                    android:text="kebiasaan yang diulang"
+                    android:text="is"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -185,7 +267,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="fakta"
+                    android:text="does not"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -196,7 +278,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="boils"
+                    android:text="are"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -207,7 +289,29 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="watches"
+                    android:text="does"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/optionFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="always play"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/optionSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="always plays"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 

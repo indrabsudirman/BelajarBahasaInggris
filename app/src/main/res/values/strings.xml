@@ -108,7 +108,7 @@
     <string name="drop_jawaban_5_2_disini">Drop jawaban 5 (2) disini …</string>
     <string name="drop_jawaban_5_1_disini">Drop jawaban 5 (1) disini …</string>
 
-    <!-- Simple Present Tense, Explain 1 -->
+    <!-- Simple Present Tense, Explain 1, Hal 1 -->
 
     <string name="simple_present_tense"><b><u>Simple Present Tense</u></b></string>
     <string name="simple_present_explain"><b>Simple Present Tense digunakan untuk menyatakan kejadian saat ini (sekarang) yang selalu dilakukan, tapi bukan kejadian saat ini yang sedang berlangsung ya, karena jika kejadian saat ini sedang berlangsung itu Present Continuous Tense. </b> Simple Present Tense biasanya hanya untuk menceritakan kejadian saat ini saja yang selalu dilakukan (diulang). Contoh Dia laki-laki makan bakso setiap hari (He eats meatball every day). Simple Present Tense juga biasa digunakan untuk menyatakan fakta. Contoh : Matahari terbenam di sebelah barat (The Sun sets in the west).</string>
@@ -116,7 +116,7 @@
     <string name="third_bullet_simple_present">■ The Sun rises in the east. (menyatakan fakta)\n\n \t\t (Matahari terbit di sebelah timur)</string>
 
 
-    <!-- Simple Present Tense, Test 1 -->
+    <!-- Simple Present Tense, Test 1, Hal 2 -->
 
     <string name="contoh_dari_bentuk">\t Contoh dari bentuk?</string>
     <string name="simple_present_tense_test1_1">1. She … Youtube every day.</string>
@@ -124,7 +124,7 @@
     <string name="simple_present_tense_test1_2">2. Water … at 100 celcius.</string>
     <string name="simple_present_tense_test1_2_meaning">\t Air mendidih pada suhu 100 celcius.</string>
 
-    <!-- Simple Present Tense, Explain 2 -->
+    <!-- Simple Present Tense, Explain 2, Hal 3 -->
 
     <string name="pola_kalimat_simple_present">Pola kalimat Simple Present</string>
     <string name="bentuk_kalimat_verbal_simple_present">■ Bentuk kalimat verbal</string>
@@ -137,4 +137,17 @@
     <string name="bentuk_kalimat_nominal_question_simple_present">\t\t(?) Question : (is/am/are) + Subject +\n\t\t3 Complement? \n\t\tContoh : Am I happy today?\n\t\t(Apakah Saya senang hari ini?</string>
     <string name="info_simple_present"><b><u>Info :</u></b> \n\n- I (orang tunggal/singular) to be <b>am</b>\n- You, We, They, Budi dan Lubna (bentuk banyak/plural) to be <b>are</b>\n- She, He, It, Budi, Lubna (bentuk ketiga tunggal/singular) to be <b>is</b></string>
 
+    <!-- Simple Present Tense, Test 2, Hal 4 -->
+
+
+    <string name="simple_present_tense_test2_1">1. … Azka study every day?</string> <!-- does-->
+    <string name="simple_present_tense_test2_1_meaning">\t Apakah Azka belajar setiap hari?</string>
+    <string name="simple_present_tense_test2_2">2. Azka … study every day.</string> <!-- does not-->
+    <string name="simple_present_tense_test2_2_meaning">\t Azka tidak belajar setiap hari.</string>
+    <string name="simple_present_tense_test2_3">3. Haby … Football every Sunday.</string> <!-- always plays-->
+    <string name="simple_present_tense_test2_3_meaning">\t Haby selalu bermain Sepak bola setiap minggu.</string>
+    <string name="simple_present_tense_test2_4">4. … Ahmad sick today?</string> <!-- is-->
+    <string name="simple_present_tense_test2_4_meaning">\t Apakah Ahmad sakit hari ini?</string>
+    <string name="simple_present_tense_test2_5">5. … Ahmad and Ali sick today?</string> <!-- are-->
+    <string name="simple_present_tense_test2_5_meaning">\t Apakah Ahmad dan Ali sakit hari ini?</string>
 </resources>

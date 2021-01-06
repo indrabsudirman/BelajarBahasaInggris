@@ -40,8 +40,8 @@ public class SimplePresentActivity extends AppCompatActivity {
     private User user;
     private TabLayout tabLayout;
 
-    int[] colorIntArray = {R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary};
-    int[] iconIntArray = {R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_check};
+    int[] colorIntArray = {R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary};
+    int[] iconIntArray = {R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_next_white, R.drawable.ic_check};
 
 
 
@@ -111,6 +111,18 @@ public class SimplePresentActivity extends AppCompatActivity {
                         tab.view.setClickable(false);
                         break;
                     }
+                    case 3: {
+                        tab.setText("Hal 4");
+                        tab.setIcon(R.drawable.test);
+                        tab.view.setClickable(false);
+                        break;
+                    }
+                    case 4: {
+                        tab.setText("Hal 5");
+                        tab.setIcon(R.drawable.ic_baseline_menu_book_24);
+                        tab.view.setClickable(false);
+                        break;
+                    }
                 }
 
             }
@@ -137,6 +149,18 @@ public class SimplePresentActivity extends AppCompatActivity {
                         score = user.getScore();
                         System.out.println("Score : " + score);
                         break;
+                    case 3:
+                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                        user.setScore(4);
+                        score = user.getScore();
+                        System.out.println("Score : " + score);
+                        break;
+                    case 4:
+                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                        user.setScore(5);
+                        score = user.getScore();
+                        System.out.println("Score : " + score);
+                        break;
                 }
             }
         });
@@ -155,6 +179,12 @@ public class SimplePresentActivity extends AppCompatActivity {
                         break;
                     case 2:
                         tab.view.setClickable(score >= 2);
+                        break;
+                    case 3:
+                        tab.view.setClickable(score >= 3);
+                        break;
+                    case 4:
+                        tab.view.setClickable(score >= 4);
                         break;
                 }
 

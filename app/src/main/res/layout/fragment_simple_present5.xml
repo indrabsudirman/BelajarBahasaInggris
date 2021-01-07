@@ -38,7 +38,7 @@
                         android:layout_span="3"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/contoh_keterangan_waktu_time_signal"
+                        android:text="@string/contoh_keterangan_waktu_time_signal_simple_present"
                         android:textColor="@color/colorBlack"
                         android:textStyle="bold" />
 
@@ -46,7 +46,6 @@
                 </TableRow>
 
                 <!-- Row 2 with 3 columns -->
-
 
                 <TableRow
                     android:id="@+id/tableRow1"
@@ -60,7 +59,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/last_time"
+                        android:text="@string/time_signal"
                         android:textColor="@color/colorBlack"
                         android:textStyle="bold" />
 
@@ -70,20 +69,9 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/cardinal_time_ago"
+                        android:text="@string/artinya"
                         android:textColor="@color/colorBlack"
                         android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/TextView03"
-                        android:layout_width="200dip"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/specific_time_in_the_past"
-                        android:textColor="@color/colorBlack"
-                        android:textStyle="bold" />
-
                 </TableRow>
 
                 <!-- Row 3 with 2 columns -->
@@ -97,7 +85,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/last_sunday"
+                        android:text="@string/always"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -105,15 +93,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/one_day_ago"
-                        android:textColor="@color/colorBlack" />
-
-                    <TextView
-                        android:id="@+id/TextView06"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/yesterday"
+                        android:text="@string/selalu"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
@@ -130,7 +110,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/last_day"
+                        android:text="@string/often"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -139,15 +119,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/two_days_ago"
-                        android:textColor="@color/colorBlack" />
-
-                    <TextView
-                        android:id="@+id/TextView09"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/the_day_before_yesterday"
+                        android:text="@string/sering"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
@@ -165,7 +137,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/last_night"
+                        android:text="@string/seldom"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -174,17 +146,8 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/three_weeks_ago"
+                        android:text="@string/jarang"
                         android:textColor="@color/colorBlack" />
-
-                    <TextView
-                        android:id="@+id/TextView12"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/two_days_before_yesterday"
-                        android:textColor="@color/colorBlack" />
-
                 </TableRow>
 
 
@@ -200,7 +163,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/last_morning"
+                        android:text="@string/rarely"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -209,15 +172,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/four_years_ago"
-                        android:textColor="@color/colorBlack" />
-
-                    <TextView
-                        android:id="@+id/TextView15"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/one_week_before"
+                        android:text="@string/sangat_jarang"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
@@ -235,7 +190,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/last_week"
+                        android:text="@string/never"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -244,15 +199,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/dan_lainnya"
-                        android:textColor="@color/colorBlack" />
-
-                    <TextView
-                        android:id="@+id/TextView18"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/in_1990"
+                        android:text="@string/tidak_pernah"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
@@ -270,7 +217,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/last_month"
+                        android:text="@string/usually"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -279,15 +226,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/dan_lainnya"
-                        android:textColor="@color/colorBlack" />
-
-                    <TextView
-                        android:id="@+id/TextView21"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/dan_lainnya"
+                        android:text="@string/biasanya"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
@@ -305,7 +244,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/last_year"
+                        android:text="@string/sometimes"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -314,20 +253,204 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/dan_lainnya"
-                        android:textColor="@color/colorBlack" />
-
-                    <TextView
-                        android:id="@+id/TextView24"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/dan_lainnya"
+                        android:text="@string/kadang_kadang"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
 
-                <!-- Row 10 with 3 columns -->
+                <!-- Row 10 with 2 columns -->
+                <TableRow
+                    android:id="@+id/tableRow10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/every_time"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/setiap_saat"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 11 with 2 columns -->
+                <TableRow
+                    android:id="@+id/tableRow11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/every_day"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/setiap_hari"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 12 with 2 columns -->
+                <TableRow
+                    android:id="@+id/tableRow12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/every_night"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/setiap_malam"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 13 with 2 columns -->
+                <TableRow
+                    android:id="@+id/tableRow13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/every_week"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/setiap_minggu"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 14 with 2 columns -->
+                <TableRow
+                    android:id="@+id/tableRow14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/every_month"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/setiap_bulan"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 15 with 2 columns -->
+                <TableRow
+                    android:id="@+id/tableRow15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/every_year"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/setiap_tahun"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 16 with 2 columns -->
+                <TableRow
+                    android:id="@+id/tableRow16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/once_a_week"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/sekali_seminggu"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 17 with 2 columns -->
+                <TableRow
+                    android:id="@+id/tableRow17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/twice_a_week"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/dua_kali_seminggu"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 18 with 1 columns -->
 
                 <TableRow
                     android:layout_width="fill_parent"
@@ -350,7 +473,14 @@
 
             </TableLayout>
 
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom" />
+
         </LinearLayout>
+
 
     </ScrollView>
 

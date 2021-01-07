@@ -139,7 +139,6 @@
 
     <!-- Simple Present Tense, Test 2, Hal 4 -->
 
-
     <string name="simple_present_tense_test2_1">1. … Azka study every day?</string> <!-- does-->
     <string name="simple_present_tense_test2_1_meaning">\t Apakah Azka belajar setiap hari?</string>
     <string name="simple_present_tense_test2_2">2. Azka … study every day.</string> <!-- does not-->
@@ -150,4 +149,40 @@
     <string name="simple_present_tense_test2_4_meaning">\t Apakah Ahmad sakit hari ini?</string>
     <string name="simple_present_tense_test2_5">5. … Ahmad and Ali sick today?</string> <!-- are-->
     <string name="simple_present_tense_test2_5_meaning">\t Apakah Ahmad dan Ali sakit hari ini?</string>
+
+    <!-- Simple Present Tense, Explain 3, Hal 5 (Time Signal) -->
+
+    <string name="contoh_keterangan_waktu_time_signal_simple_present">Contoh keterangan waktu (Time signal) pada Simple Present Tense</string>
+    <string name="time_signal">Time Signal</string>
+    <string name="artinya">Artinya</string>
+    <string name="always">Always</string>
+    <string name="selalu">Selalu</string>
+    <string name="often">Often</string>
+    <string name="sering">Sering</string>
+    <string name="seldom">Seldom</string>
+    <string name="jarang">Jarang</string>
+    <string name="rarely">Rarely</string>
+    <string name="sangat_jarang">Sangat Jarang</string>
+    <string name="never">Never</string>
+    <string name="tidak_pernah">Tidak Pernah</string>
+    <string name="usually">Usually, Generally, Habitually</string>
+    <string name="biasanya">Biasanya</string>
+    <string name="sometimes">Sometimes, Occasionally</string>
+    <string name="kadang_kadang">Kadang kadang</string>
+    <string name="every_time">Every time</string>
+    <string name="setiap_saat">Setiap saat</string>
+    <string name="every_day">Every day</string>
+    <string name="setiap_hari">Setiap hari</string>
+    <string name="every_night">Every night</string>
+    <string name="setiap_malam">Setiap malam</string>
+    <string name="every_month">Every month</string>
+    <string name="setiap_bulan">Setiap bulan</string>
+    <string name="every_year">Every year</string>
+    <string name="setiap_tahun">Setiap tahun</string>
+    <string name="every_week">Every week</string>
+    <string name="setiap_minggu">Setiap minggu</string>
+    <string name="once_a_week">Once a week</string>
+    <string name="sekali_seminggu">Sekali seminggu</string>
+    <string name="twice_a_week">Twice a week</string>
+    <string name="dua_kali_seminggu">Dua kali seminggu</string>
 </resources>

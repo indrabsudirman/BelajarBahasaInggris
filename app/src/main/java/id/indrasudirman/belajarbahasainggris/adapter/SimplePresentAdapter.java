@@ -11,6 +11,7 @@ import id.indrasudirman.belajarbahasainggris.simplepresent.SimplePresentFragment
 import id.indrasudirman.belajarbahasainggris.simplepresent.SimplePresentFragment3;
 import id.indrasudirman.belajarbahasainggris.simplepresent.SimplePresentFragment4;
 import id.indrasudirman.belajarbahasainggris.simplepresent.SimplePresentFragment5;
+import id.indrasudirman.belajarbahasainggris.simplepresent.SimplePresentFragment6;
 
 public class SimplePresentAdapter extends FragmentStateAdapter {
 
@@ -30,6 +31,8 @@ public class SimplePresentAdapter extends FragmentStateAdapter {
                 return new SimplePresentFragment4();
             case 4:
                 return new SimplePresentFragment5();
+            case 5:
+                return new SimplePresentFragment6();
             default:
                 return new SimplePresentFragment1();
         }
@@ -38,6 +41,6 @@ public class SimplePresentAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 5;
+        return 6;
     }
 }

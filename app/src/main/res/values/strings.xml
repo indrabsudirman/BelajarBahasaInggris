@@ -185,4 +185,17 @@
     <string name="sekali_seminggu">Sekali seminggu</string>
     <string name="twice_a_week">Twice a week</string>
     <string name="dua_kali_seminggu">Dua kali seminggu</string>
+
+    <!-- Simple Present Tense, Test 3, Hal 6 -->
+
+    <string name="simple_present_tense_test3_1">1. Uncle Ahmad … Al-Quran …</string> <!-- always reads, every day-->
+    <string name="simple_present_tense_test3_1_meaning">\t Paman Ahmad selalu membaca Al-Quran \n\t\tsetiap hari.</string>
+    <string name="simple_present_tense_test3_2">2. Budi … every sunday.</string> <!-- rarely exercises-->
+    <string name="simple_present_tense_test3_2_meaning">\t Budi sangat jarang berolah raga setiap hari minggu.</string>
+    <string name="simple_present_tense_test3_3">3. … I visit my Grand mother in Central java.</string> <!-- twice a year -->
+    <string name="simple_present_tense_test3_3_meaning">\t Dua kali setahun, saya mengunjungi Nenek \n\t\tdi Jawa Tengah.</string>
+    <string name="simple_present_tense_test3_4">4. … your father speak English …?</string> <!-- does, every time-->
+    <string name="simple_present_tense_test3_4_meaning">\t Apakah Ayahmu berbicara bahasa inggris \n\t\tsetiap saat?</string>
+    <string name="simple_present_tense_test3_5">5. She … to do his homework</string> <!-- never forgets-->
+    <string name="simple_present_tense_test3_5_meaning">\t Dia (perempuan) tidak pernah lupa \n\t\tmengerjakan PR.</string>
 </resources>

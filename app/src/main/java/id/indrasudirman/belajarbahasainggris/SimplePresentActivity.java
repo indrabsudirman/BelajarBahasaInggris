@@ -124,6 +124,12 @@ public class SimplePresentActivity extends AppCompatActivity {
                         tab.view.setClickable(false);
                         break;
                     }
+                    case 5: {
+                        tab.setText("Hal 6");
+                        tab.setIcon(R.drawable.test);
+                        tab.view.setClickable(false);
+                        break;
+                    }
                 }
 
             }
@@ -159,6 +165,9 @@ public class SimplePresentActivity extends AppCompatActivity {
                         score = user.getScore();
                         System.out.println("Score : " + score);
                         break;
+                    case 5:
+                        checkAnswerSimplePresent3();
+                        break;
                 }
             }
         });
@@ -183,6 +192,9 @@ public class SimplePresentActivity extends AppCompatActivity {
                         break;
                     case 4:
                         tab.view.setClickable(score >= 4);
+                        break;
+                    case 5:
+                        tab.view.setClickable(score >= 5);
                         break;
                 }
 
@@ -526,6 +538,7 @@ public class SimplePresentActivity extends AppCompatActivity {
     }
 
     private void checkAnswerSimplePresent3() {
+        Toast.makeText(SimplePresentActivity.this, "Anda memilih checkAnswerSimplePresent3", Toast.LENGTH_SHORT).show();
 
     }
 }

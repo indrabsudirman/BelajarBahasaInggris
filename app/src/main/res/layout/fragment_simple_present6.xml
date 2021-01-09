@@ -7,7 +7,7 @@
     android:id="@+id/frameLayout">
 
     <id.indrasudirman.belajarbahasainggris.utils.MyScrollView
-        android:id="@+id/scrollViewSimplePresent4"
+        android:id="@+id/scrollViewSimplePresent6"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

@@ -202,9 +202,9 @@
     <!-- Simple Future Tense, Explain 1, Hal 1 -->
 
     <string name="simple_future_tense"><b><u>Simple Future Tense</u></b></string>
-    <string name="simple_future_explain"><b>Simple Future Tense digunakan untuk menyatakan kejadian (aktivitas) yang akan dilakukan di masa yang akan datang.</b> Contoh: Saya akan mengunjungi nenek minggu depan (I will visit grand mother next week). Simple Future Tense juga digunakan untuk membuat <b>kalimat conditional sentences type satu.</b> Contoh: I will buy that book if I have enough money (Saya akan membeli buku itu, jika saya punya cukup uang).</string>
+    <string name="simple_future_explain"><b>Simple Future Tense digunakan untuk menyatakan kejadian (aktivitas) yang akan dilakukan di masa yang akan datang.</b> Contoh: Saya akan mengunjungi nenek minggu depan (I will visit grand mother next week). Simple Future Tense juga digunakan untuk membuat <b>kalimat conditional sentence type satu.</b> Contoh: I will buy that book if I have enough money (Saya akan membeli buku itu, jika saya punya cukup uang).</string>
     <string name="second_bullet_simple_future">■ I will visit grand mother next week. (kejadian yang \n\t\takan dilakukan di masa yang akan datang)\n\n \t\t(Saya akan mengunjungi nenek saya \n\t\tminggu depan)</string>
-    <string name="third_bullet_simple_future">■ I will buy that book if I have enough money. \n\t\t(kalimat conditional sentences type satu)\n\n \t\t (Saya akan membeli buku itu, jika saya punya \n\t\tcukup uang)</string>
+    <string name="third_bullet_simple_future">■ I will buy that book if I have enough money. \n\t\t(kalimat conditional sentence type satu)\n\n \t\t (Saya akan membeli buku itu, jika saya punya \n\t\tcukup uang)</string>
 
 
 </resources>

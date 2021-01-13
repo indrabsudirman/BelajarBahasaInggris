@@ -5,10 +5,182 @@
     android:layout_height="match_parent"
     tools:context=".simplefuture.SimpleFutureFragment3">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Simple Future 3" />
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linear_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:text="@string/pola_kalimat_simple_future"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/verbalSimplePresent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_verbal_simple_future"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/verbalPositifSimplePresent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_verbal_positif_simple_future"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/verbalNegatifSimplePresent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_verbal_negatif_simple_future"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/verbalQuestionSimplePresent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_verbal_question_simple_future"
+                    android:textColor="@color/colorBlack" />
+
+                <!-- Bentuk kalimat nominal -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/linear_layout1"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/nominalSimplePresent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_nominal_simple_future"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/nominalPositifSimplePresent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_nominal_positif_simple_future"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/nominalNegatifSimplePresent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_nominal_negatif_simple_future"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/nominalQuestionSimplePresent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_nominal_question_simple_future"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_rectangle_green"
+                android:id="@+id/layoutQuestion1"
+                android:layout_below="@id/linear_layout2"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@mipmap/ic_info_green" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/info_simple_future"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/layoutQuestion1"
+                android:layout_gravity="bottom"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
 
 </FrameLayout>

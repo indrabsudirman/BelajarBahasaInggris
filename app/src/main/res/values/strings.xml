@@ -215,4 +215,18 @@
     <string name="simple_future_tense_test1_2">2. If it rains, I … at my office.</string> <!-- will stay, conditional sentence type satu-->
     <string name="simple_future_tense_test1_2_meaning">\t Jika hujan, saya akan tetap berada di kantor saya.</string>
 
+    <!-- Simple Future Tense, Explain 2, Hal 3 -->
+
+    <string name="pola_kalimat_simple_future">Pola kalimat Simple Future</string>
+    <string name="bentuk_kalimat_verbal_simple_future">■ Bentuk kalimat verbal</string>
+    <string name="bentuk_kalimat_nominal_simple_future">■ Bentuk kalimat nominal</string>
+    <string name="bentuk_kalimat_verbal_positif_simple_future">\t\t(+) Positif : Subject + V1 (Verb 1 + \'s\'/\'es\') + Object. \n\t\tContoh : Lubna always plays Puzzle every day. \n\t\t(Lubna selalu bermain Puzzle setiap hari)</string>
+    <string name="bentuk_kalimat_verbal_negatif_simple_future">\t\t(-) Negatif : Subject + do/does + not + V1 (Verb 1) \n\t\t+ Object. \n\t\tContoh : Lubna always does not play Puzzle\n\t\tevery day.\n\t\t(Lubna selalu tidak bermain Puzzle setiap hari)</string>
+    <string name="bentuk_kalimat_verbal_question_simple_future">\t\t(?) Question : Do/Does + Subject + V1 (Verb 1) \n\t\t+ Object? \n\t\tContoh : Does Lubna always play Puzzle\n\t\tevery day?\n\t\t(Apakah Lubna selalu bermain Puzzle setiap hari?)</string>
+    <string name="bentuk_kalimat_nominal_positif_simple_future">\t\t(+) Positif : Subject + (is/am/are) + \n\t\t3 Complement. \n\t\tContoh : I am happy today. \n\t\t(Saya senang hari ini)</string>
+    <string name="bentuk_kalimat_nominal_negatif_simple_future">\t\t(-) Negatif : Subject + (is/am/are) + not + \n\t\t3 Complement. \n\t\tContoh : I am not happy today.\n\t\t(Saya tidak senang hari ini)</string>
+    <string name="bentuk_kalimat_nominal_question_simple_future">\t\t(?) Question : (is/am/are) + Subject +\n\t\t3 Complement? \n\t\tContoh : Am I happy today?\n\t\t(Apakah Saya senang hari ini?</string>
+    <string name="info_simple_future"><b><u>Info :</u></b> \n\n- I (orang tunggal/singular) to be <b>am</b>\n- You, We, They, Budi dan Lubna (bentuk banyak/plural) to be <b>are</b>\n- She, He, It, Budi, Lubna (bentuk ketiga tunggal/singular) to be <b>is</b></string>
+
+
 </resources>

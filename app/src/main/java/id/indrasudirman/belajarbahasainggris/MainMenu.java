@@ -224,7 +224,7 @@ public class MainMenu extends AppCompatActivity {
         EnglishList a = new EnglishList("Simple Past Tense", 5, covers[0]); //1
         english.add(a);
 
-        a = new EnglishList("Simple Present Tense", 5, covers[1]); //2
+        a = new EnglishList("Simple Present Tense", 6, covers[1]); //2
         english.add(a);
 
         a = new EnglishList("Simple Future Tense", 5, covers[2]); //3

@@ -1,5 +1,6 @@
 package id.indrasudirman.belajarbahasainggris;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager2.widget.ViewPager2;
@@ -21,10 +23,14 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+import com.google.android.material.textfield.TextInputEditText;
+
+import java.util.ArrayList;
 
 import id.indrasudirman.belajarbahasainggris.adapter.SimpleFutureAdapter;
 import id.indrasudirman.belajarbahasainggris.adapter.SimplePastFutureAdapter;
 import id.indrasudirman.belajarbahasainggris.model.User;
+import id.indrasudirman.belajarbahasainggris.utils.PasswordMD5WithSalt;
 
 public class SimpleFutureActivity extends AppCompatActivity {
 
@@ -120,10 +126,6 @@ public class SimpleFutureActivity extends AppCompatActivity {
                         System.out.println("Score : " + score);
                         break;
                     case 1:
-                        user.setScore(2);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
                         checkAnswerSimpleFuture1();
                         break;
                     case 2:
@@ -217,7 +219,133 @@ public class SimpleFutureActivity extends AppCompatActivity {
 
     }
 
+    //Check Simple Future Test 1
     private void checkAnswerSimpleFuture1() {
 
+        ArrayList<String> incorrectAnswerList = new ArrayList<>();
+
+        int numberOfQuestionCorrect = 0;
+
+        if (checkQuestionSimpleFutureTestOne1()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 1 (1)");
+        }
+
+        if (checkQuestionSimpleFutureTestOne2()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 1 (2)");
+        }
+
+        if (checkQuestionSimpleFutureTestOne3()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 2 (1)");
+        }
+
+        if (checkQuestionSimpleFutureTestOne4()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 2 (2)");
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (String s : incorrectAnswerList) {
+            sb.append(s);
+            sb.append("\n");
+        }
+
+        if (numberOfQuestionCorrect == 4) {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SimpleFutureActivity.this);
+            alertDialogBuilder
+                    .setTitle("Selamat!")
+                    .setMessage("Anda berhasil, nilai Anda : " + numberOfQuestionCorrect + "/4\nIni Sempurna. Anda dapat melanjutkan ke pelajaran berikutnya.")
+                    .setCancelable(false)
+                    .setPositiveButton("Halaman berikutnya",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    //Set Score user to 1
+                                    score = 2;
+                                    user.setScore(score);
+                                    score = user.getScore();
+                                    System.out.println("Score : " + score);
+                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+
+                                }
+                            });
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+
+        } else {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SimpleFutureActivity.this);
+            alertDialogBuilder
+                    .setTitle("Gagal!")
+                    .setMessage("Anda gagal, Nilai Anda adalah : " + numberOfQuestionCorrect + "/4\nAnda belum dapat melanjutkan pelajaran berikutnya.\n\n" + "Perbaiki jawaban Anda : \n\n" + sb.toString())
+                    .setCancelable(false)
+                    .setPositiveButton("Mulai test lagi",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem());
+
+                                }
+                            })
+
+                    .setNegativeButton("Keluar aplikasi",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    moveTaskToBack(true);
+                                    finish();
+                                }
+                            });
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+        }
+
+    }
+
+    private boolean checkQuestionSimpleFutureTestOne1() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropSimpleFutureOne);
+
+        String key = "34ee889ff572e5c635c21ebefb94137e";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestionSimpleFutureTestOne2() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropSimpleFutureTwo);
+
+        String key = "bf4c0b016fa75872791703a5727973a6";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestionSimpleFutureTestOne3() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropSimpleFutureThree);
+
+        String key = "6c90a3858aa05630488a034243073ec9";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestionSimpleFutureTestOne4() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropSimpleFutureFour);
+
+        String key = "6699007d1909949b208dd3b22a4f2984";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
     }
 }

@@ -42,8 +42,8 @@
                     android:text="@string/simple_future_tense_test1_1"
                     android:textColor="@color/dark_silver" />
 
-                <Button
-                    android:id="@+id/tooltipsDropSimplePastOne"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/tooltipsDropSimpleFutureOne"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@mipmap/ic_tips" />
@@ -58,7 +58,7 @@
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropSimplePresentOne"
+                android:id="@+id/dropSimpleFutureOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -73,7 +73,7 @@
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropSimplePresentTwo"
+                android:id="@+id/dropSimpleFutureTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -95,8 +95,8 @@
                     android:text="@string/simple_future_tense_test1_2"
                     android:textColor="@color/dark_silver" />
 
-                <Button
-                    android:id="@+id/tooltipsDropSimplePastTwo"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/tooltipsDropSimpleFutureTwo"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@mipmap/ic_tips" />
@@ -111,7 +111,7 @@
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropSimplePresentThree"
+                android:id="@+id/dropSimpleFutureThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -126,7 +126,7 @@
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropSimplePresentFour"
+                android:id="@+id/dropSimpleFutureFour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -136,7 +136,7 @@
             <LinearLayout
                 android:id="@+id/layoutOptionDrag"
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
+                android:layout_height="300dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/border"
                 android:orientation="vertical"
@@ -173,7 +173,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@null"
-                    android:text="kebiasaan yang diulang"
+                    android:text="will go"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -184,7 +184,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="fakta"
+                    android:text="will stay"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -195,7 +195,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="boils"
+                    android:text="conditional sentence type satu"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -206,7 +206,29 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="watches"
+                    android:text="will goes"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/optionFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="kejadian yang akan dilakukan di masa depan"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/optionSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="will stays"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 

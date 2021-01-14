@@ -26,7 +26,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -39,8 +39,8 @@
                 </LinearLayout>
 
 
-                <TextView
-                    android:id="@+id/verbalSimplePresent"
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/verbalSimpleFutureWillShall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -49,8 +49,8 @@
                     android:text="@string/bentuk_kalimat_verbal_will_shall_simple_future"
                     android:textColor="@color/colorBlack" />
 
-                <TextView
-                    android:id="@+id/verbalPositifSimplePresent"
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/verbalPositifSimplePresentWillShall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -59,8 +59,8 @@
                     android:text="@string/bentuk_kalimat_verbal_positif_simple_future"
                     android:textColor="@color/colorBlack" />
 
-                <TextView
-                    android:id="@+id/verbalNegatifSimplePresent"
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/verbalNegatifSimplePresentWillShall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -69,8 +69,8 @@
                     android:text="@string/bentuk_kalimat_verbal_negatif_simple_future"
                     android:textColor="@color/colorBlack" />
 
-                <TextView
-                    android:id="@+id/verbalQuestionSimplePresent"
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/verbalQuestionSimplePresentWillShall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -93,7 +93,7 @@
                 android:padding="5dp">
 
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/verbalGoingToSimplePresent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
                     android:text="@string/bentuk_kalimat_verbal_goingto_simple_future"
                     android:textColor="@color/colorBlack" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/verbalGoingToPositifSimplePresent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -113,7 +113,7 @@
                     android:text="@string/bentuk_kalimat_verbal_goingto_positif_simple_future"
                     android:textColor="@color/colorBlack" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/verbalGoingToNegatifSimplePresent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -123,7 +123,7 @@
                     android:text="@string/bentuk_kalimat_verbal_goingto_negatif_simple_future"
                     android:textColor="@color/colorBlack" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/verbalGoingToQuestionSimplePresent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -146,8 +146,8 @@
                 android:padding="5dp">
 
 
-                <TextView
-                    android:id="@+id/nominalSimplePresent"
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nominalSimpleFuture"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -156,8 +156,8 @@
                     android:text="@string/bentuk_kalimat_nominal_simple_future"
                     android:textColor="@color/colorBlack" />
 
-                <TextView
-                    android:id="@+id/nominalPositifSimplePresent"
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nominalPositifSimpleFuture"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -166,8 +166,8 @@
                     android:text="@string/bentuk_kalimat_nominal_positif_simple_future"
                     android:textColor="@color/colorBlack" />
 
-                <TextView
-                    android:id="@+id/nominalNegatifSimplePresent"
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nominalNegatifSimpleFuture"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -176,8 +176,8 @@
                     android:text="@string/bentuk_kalimat_nominal_negatif_simple_future"
                     android:textColor="@color/colorBlack" />
 
-                <TextView
-                    android:id="@+id/nominalQuestionSimplePresent"
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nominalQuestionSimpleFuture"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -209,7 +209,7 @@
                     android:layout_marginStart="10dp"
                     android:background="@mipmap/ic_info_green" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"

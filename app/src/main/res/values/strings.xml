@@ -233,4 +233,17 @@
     <string name="info_simple_future"><b><u>Info :</u></b> \n\n- Shall digunakan untuk Subject <b>I dan we</b>.\n- Will digunakan untuk semua <b>Subject</b>\n- Going to dalam percakapan sering disebut <b>gonna</b></string>
 
 
+    <!-- Simple Future Tense, Test 2, Hal 4 -->
+
+    <string name="simple_future_tense_test2_1">1. … Azka study every day?</string> <!-- does-->
+    <string name="simple_future_tense_test2_1_meaning">\t Apakah Azka belajar setiap hari?</string>
+    <string name="simple_future_tense_test2_2">2. Azka … study every day.</string> <!-- does not-->
+    <string name="simple_future_tense_test2_2_meaning">\t Azka tidak belajar setiap hari.</string>
+    <string name="simple_future_tense_test2_3">3. Haby … Football every Sunday.</string> <!-- always plays-->
+    <string name="simple_future_tense_test2_3_meaning">\t Haby selalu bermain Sepak bola setiap minggu.</string>
+    <string name="simple_future_tense_test2_4">4. … Ahmad sick today?</string> <!-- is-->
+    <string name="simple_future_tense_test2_4_meaning">\t Apakah Ahmad sakit hari ini?</string>
+    <string name="simple_future_tense_test2_5">5. … Ahmad and Ali sick today?</string> <!-- are-->
+    <string name="simple_future_tense_test2_5_meaning">\t Apakah Ahmad dan Ali sakit hari ini?</string>
+
 </resources>

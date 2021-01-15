@@ -95,11 +95,19 @@
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropSimpleFutureTwo"
+                android:id="@+id/dropSimpleFutureTwoOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:hint="@string/drop_jawaban_disini"
+                android:hint="Drop jawaban 2 (1)"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dropSimpleFutureTwoTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:hint="Drop jawaban 2 (2)"
                 android:textSize="15sp"/>
 
             <!-- Question No 3 -->
@@ -169,11 +177,19 @@
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropSimpleFutureFour"
+                android:id="@+id/dropSimpleFutureFourOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:hint="@string/drop_jawaban_disini"
+                android:hint="Drop jawaban 4 (1)"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dropSimpleFutureFourTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:hint="Drop jawaban 4 (2)"
                 android:textSize="15sp"/>
 
             <!-- Question No 5 -->
@@ -187,6 +203,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
                     android:paddingTop="0dp"
+                    android:padding="5dp"
                     android:text="@string/simple_future_tense_test2_5"
                     android:textColor="@color/dark_silver" />
 
@@ -218,7 +235,7 @@
             <LinearLayout
                 android:id="@+id/layoutOptionDrag"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="380dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/border"
                 android:orientation="vertical"
@@ -255,7 +272,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@null"
-                    android:text="is"
+                    android:text="will not/won't"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -266,7 +283,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="does not"
+                    android:text="are"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -277,7 +294,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="are"
+                    android:text="will not/won'"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -288,7 +305,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="does"
+                    android:text="going to"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -299,7 +316,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="always play"
+                    android:text="will"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -310,7 +327,29 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="always plays"
+                    android:text="am going"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/optionSeven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="tonight"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/optionEight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="will study"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 

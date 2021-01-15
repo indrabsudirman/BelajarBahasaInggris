@@ -246,6 +246,95 @@ public class SimpleFutureFragment3 extends Fragment {
             }
         };
 
+        ClickableSpan clickableSpan7 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+                AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
+                //Set Title
+                alertDialogSimplePast.setTitle("Info");
+                alertDialogSimplePast.setMessage("Kalimat nominal merupakan kalimat yang predikatnya berupa kata benda, kata sifat, kata bilangan, kata ganti, atau kata keterangan.\n" +
+                        "Contoh :\n" +
+                        "\n" +
+                        "I will be happy. (happy, kata sifat)\n" +
+                        "I will not be happy.\n" +
+                        "Will I be happy?")
+                        .setCancelable(false)
+                        .setIcon(R.mipmap.ic_info_green)
+                        .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                                Toast.makeText(getActivity(), "Saya sudah paham", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog = alertDialogSimplePast.create();
+                alertDialog.show();
+            }
+        };
+
+        ClickableSpan clickableSpan8 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+                AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
+                //Set Title
+                alertDialogSimplePast.setTitle("Info");
+                alertDialogSimplePast.setMessage("Tomorrow adalah contoh time signal dalam Simple Future Tense.")
+                        .setCancelable(false)
+                        .setIcon(R.mipmap.ic_info_green)
+                        .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                                Toast.makeText(getActivity(), "Saya sudah paham", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog = alertDialogSimplePast.create();
+                alertDialog.show();
+            }
+        };
+
+        ClickableSpan clickableSpan9 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+                AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
+                //Set Title
+                alertDialogSimplePast.setTitle("Info");
+                alertDialogSimplePast.setMessage("Penambahan 'Be' sesuai dengan rumus kalimat nominal simple future di atas.")
+                        .setCancelable(false)
+                        .setIcon(R.mipmap.ic_info_green)
+                        .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                                Toast.makeText(getActivity(), "Saya sudah paham", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog = alertDialogSimplePast.create();
+                alertDialog.show();
+            }
+        };
+
+        ClickableSpan clickableSpan10 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+                AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
+                //Set Title
+                alertDialogSimplePast.setTitle("Info");
+                alertDialogSimplePast.setMessage("3 Complement terdiri atas : \n - Adjective (kata sifat)\n - Noun (kata benda)\n - Adverb (kata keterangan)")
+                        .setCancelable(false)
+                        .setIcon(R.mipmap.ic_info_green)
+                        .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                                Toast.makeText(getActivity(), "Saya sudah paham", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog = alertDialogSimplePast.create();
+                alertDialog.show();
+            }
+        };
+
         // verbalSimpleFutureWillShall
         spannableString[0].setSpan(clickableSpan0,9,34,0);
         // make text bold
@@ -294,6 +383,34 @@ public class SimpleFutureFragment3 extends Fragment {
         spannableString[6].setSpan(new StyleSpan(Typeface.BOLD), 99,107, 0);
         verbalGoingToPositifSimplePresent.setMovementMethod(LinkMovementMethod.getInstance());
         verbalGoingToPositifSimplePresent.setText(spannableString[6]);
+
+        // nominalSimpleFuture
+        spannableString[2].setSpan(clickableSpan7,9,24,0);
+        // make text bold
+        spannableString[2].setSpan(new StyleSpan(Typeface.BOLD), 9,24, 0);
+        nominalSimpleFuture.setMovementMethod(LinkMovementMethod.getInstance());
+        nominalSimpleFuture.setText(spannableString[2]);
+
+        //nominalPositifSimpleFuture time signal tomorrow
+        spannableString[9].setSpan(clickableSpan8,89,97,0);
+        // make text bold
+        spannableString[9].setSpan(new StyleSpan(Typeface.BOLD), 89,97, 0);
+        nominalPositifSimpleFuture.setMovementMethod(LinkMovementMethod.getInstance());
+        nominalPositifSimpleFuture.setText(spannableString[9]);
+
+        //nominalPositifSimpleFuture time signal tomorrow
+        spannableString[9].setSpan(clickableSpan9,80,82,0);
+        // make text bold
+        spannableString[9].setSpan(new StyleSpan(Typeface.BOLD), 80,82, 0);
+        nominalPositifSimpleFuture.setMovementMethod(LinkMovementMethod.getInstance());
+        nominalPositifSimpleFuture.setText(spannableString[9]);
+
+        //nominalNegatifSimpleFuture
+        spannableString[10].setSpan(clickableSpan10,53,65,0);
+        // make text bold
+        spannableString[10].setSpan(new StyleSpan(Typeface.BOLD), 53,65, 0);
+        nominalNegatifSimpleFuture.setMovementMethod(LinkMovementMethod.getInstance());
+        nominalNegatifSimpleFuture.setText(spannableString[10]);
     }
 
 }

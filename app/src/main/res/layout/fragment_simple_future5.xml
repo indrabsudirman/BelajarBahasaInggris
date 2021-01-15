@@ -5,10 +5,180 @@
     android:layout_height="match_parent"
     tools:context=".simplefuture.SimpleFutureFragment5">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Simple Future Fragment 5" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+
+                <!-- Row 1 with single column -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+
+                    <TextView
+                        android:id="@+id/time_signal_simple_past"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/perbedaan_will_dan_be_going_to"
+                        android:textColor="@color/colorBlack"/>
+
+
+                </TableRow>
+
+                <!-- Row 2 with 3 columns -->
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="100dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:layout_width="200dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/menyatakan_prediksi"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="200dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/artinya"
+                        android:textColor="@color/colorBlack"/>
+                </TableRow>
+
+                <!-- Row 3 with 2 columns -->
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="100dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:layout_width="200dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/menyatakan_rencana_pasti"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:layout_width="200dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/artinya"
+                        android:textColor="@color/colorBlack"/>
+
+                </TableRow>
+
+                <!-- Row 4 with 3 columns -->
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="100dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:layout_width="200dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/menyatakan_keinginan"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:layout_width="200dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/artinya"
+                        android:textColor="@color/colorBlack"/>
+
+                </TableRow>
+
+
+
+
+                <!-- Row 18 with 1 columns -->
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="dan contoh lainnya ..."
+                        android:textColor="@color/colorBlack" />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 </FrameLayout>

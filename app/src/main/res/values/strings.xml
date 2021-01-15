@@ -246,4 +246,11 @@
     <string name="simple_future_tense_test2_5">5. Agus and Imam … take the extra class \n\t\tnext week.</string> <!-- will not/won't-->
     <string name="simple_future_tense_test2_5_meaning">\t Agus dan Imam tidak akan mengambil kelas \n\t\ttambahan minggu depan</string>
 
+    <!-- Simple Future Tense, Explain 3, Hal 5 (Perbedaan 'will' dan 'be going to') -->
+
+    <string name="perbedaan_will_dan_be_going_to">Perbedaan <b>Will</b> dan <b>Be Going to</b></string>
+    <string name="menyatakan_prediksi">Menyatakan Prediksi</string>
+    <string name="menyatakan_rencana_pasti">Menyatakan rencana yang sudah pasti karena sudah direncanakan sebelumnya</string>
+    <string name="menyatakan_keinginan">Menyatakan keinginan</string>
+
 </resources>

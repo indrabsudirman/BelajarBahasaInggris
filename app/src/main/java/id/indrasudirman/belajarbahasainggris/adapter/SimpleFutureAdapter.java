@@ -10,6 +10,7 @@ import id.indrasudirman.belajarbahasainggris.simplefuture.SimpleFutureFragment2;
 import id.indrasudirman.belajarbahasainggris.simplefuture.SimpleFutureFragment3;
 import id.indrasudirman.belajarbahasainggris.simplefuture.SimpleFutureFragment4;
 import id.indrasudirman.belajarbahasainggris.simplefuture.SimpleFutureFragment5;
+import id.indrasudirman.belajarbahasainggris.simplefuture.SimpleFutureFragment6;
 
 public class SimpleFutureAdapter extends FragmentStateAdapter {
 
@@ -29,6 +30,8 @@ public class SimpleFutureAdapter extends FragmentStateAdapter {
                 return new SimpleFutureFragment4();
             case 4:
                 return new SimpleFutureFragment5();
+            case 5:
+                return new SimpleFutureFragment6();
             default:
                 return new SimpleFutureFragment1();
         }
@@ -37,6 +40,6 @@ public class SimpleFutureAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 5;
+        return 6;
     }
 }

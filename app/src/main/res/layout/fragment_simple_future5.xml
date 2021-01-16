@@ -32,19 +32,17 @@
 
 
                     <TextView
-                        android:id="@+id/time_signal_simple_past"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_span="3"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/perbedaan_will_dan_be_going_to"
+                        android:text="@string/time_signal_simple_future_tense"
                         android:textColor="@color/colorBlack"/>
-
 
                 </TableRow>
 
-                <!-- Row 2 with 3 columns -->
+                <!-- Row 2 with 2 columns -->
 
                 <TableRow
                     android:id="@+id/tableRow1"
@@ -52,21 +50,15 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:layout_width="100dip"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="1"
-                        android:textColor="@color/colorBlack"/>
-
-                    <TextView
+                        android:id="@+id/TextView01"
                         android:layout_width="200dip"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/menyatakan_prediksi"
-                        android:textColor="@color/colorBlack"/>
+                        android:text="@string/time_signal"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/TextView02"
@@ -75,7 +67,8 @@
                         android:gravity="center"
                         android:padding="10dp"
                         android:text="@string/artinya"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
                 </TableRow>
 
                 <!-- Row 3 with 2 columns -->
@@ -85,70 +78,119 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:layout_width="100dip"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="2"
-                        android:textColor="@color/colorBlack"/>
-
-                    <TextView
-                        android:layout_width="200dip"
-                        android:layout_height="match_parent"
+                        android:id="@+id/TextView04"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/menyatakan_rencana_pasti"
-                        android:textColor="@color/colorBlack"/>
+                        android:text="@string/tomorrow"
+                        android:textColor="@color/colorBlack" />
 
                     <TextView
-                        android:layout_width="200dip"
+                        android:id="@+id/TextView05"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/artinya"
-                        android:textColor="@color/colorBlack"/>
+                        android:text="@string/besok"
+                        android:textColor="@color/colorBlack" />
 
                 </TableRow>
 
-                <!-- Row 4 with 3 columns -->
+                <!-- Row 4 with 2 columns -->
                 <TableRow
                     android:id="@+id/tableRow3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:layout_width="100dip"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="3"
-                        android:textColor="@color/colorBlack"/>
-
-                    <TextView
-                        android:layout_width="200dip"
+                        android:id="@+id/TextView07"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/menyatakan_keinginan"
-                        android:textColor="@color/colorBlack"/>
+                        android:text="@string/tonight"
+                        android:textColor="@color/colorBlack" />
 
                     <TextView
-                        android:layout_width="200dip"
+                        android:id="@+id/TextView08"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/artinya"
-                        android:textColor="@color/colorBlack"/>
+                        android:text="@string/malam_ini"
+                        android:textColor="@color/colorBlack" />
 
                 </TableRow>
 
+                <!-- Row 5 with 2 columns -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/next_week"
+                        android:textColor="@color/colorBlack" />
 
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/minggu_depan"
+                        android:textColor="@color/colorBlack" />
 
-                <!-- Row 18 with 1 columns -->
+                </TableRow>
 
+                <!-- Row 6 with 2 columns -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/next_month"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/bulan_depan"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 7 with 2 columns -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/next_time"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/kapan_kapan"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 8 with 1 column -->
                 <TableRow
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -166,14 +208,212 @@
 
 
                 </TableRow>
-
-
             </TableLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="bottom"
+                android:background="@android:color/darker_gray"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+
+                <!-- Row 1 with single column -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+
+                    <TextView
+                        android:id="@+id/time_signal_simple_past"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/perbedaan_will_dan_be_going_to"
+                        android:textColor="@color/colorBlack"/>
+
+                </TableRow>
+            </TableLayout>
+
+<!--            Menyatakan prediksi-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:paddingTop="0dp"
+                        android:text="@string/menyatakan_prediksi"
+                        android:textColor="@color/dark_silver"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/will_dan_be_going_to"
+                    android:textColor="@color/dark_silver" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/example"
+                android:textColor="@color/dark_silver" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/menyatakan_prediksi_bullet_one"
+                android:textColor="@color/dark_silver" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/menyatakan_prediksi_bullet_two"
+                android:textColor="@color/dark_silver" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/menyatakan_prediksi_bullet_three"
+                android:textColor="@color/dark_silver" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/menyatakan_prediksi_bullet_four"
+                android:textColor="@color/dark_silver" />
+
+<!--            Rencana Pasti-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:paddingTop="0dp"
+                        android:text="@string/menyatakan_rencana_pasti"
+                        android:textColor="@color/dark_silver"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/be_going_to"
+                android:textColor="@color/dark_silver" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/example"
+                android:textColor="@color/dark_silver" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/menyatakan_rencana_pasti_bullet_one"
+                android:textColor="@color/dark_silver" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/menyatakan_rencana_pasti_bullet_two"
+                android:textColor="@color/dark_silver" />
+
+            <!--            Menyatakan keinginan-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/menyatakan_keinginan"
+                    android:textColor="@color/dark_silver"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/will"
+                android:textColor="@color/dark_silver" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/example"
+                android:textColor="@color/dark_silver" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/menyatakan_keinginan_bullet_one"
+                android:textColor="@color/dark_silver" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/menyatakan_keinginan_bullet_two"
+                android:textColor="@color/dark_silver" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/contoh_lainnya"
+                    android:textColor="@color/dark_silver"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
 
             <View
                 android:id="@+id/view"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="80dp"
                 android:layout_gravity="bottom" />
 
         </LinearLayout>

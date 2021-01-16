@@ -246,11 +246,37 @@
     <string name="simple_future_tense_test2_5">5. Agus and Imam … take the extra class \n\t\tnext week.</string> <!-- will not/won't-->
     <string name="simple_future_tense_test2_5_meaning">\t Agus dan Imam tidak akan mengambil kelas \n\t\ttambahan minggu depan</string>
 
+
+    <!-- Simple Future Tense, Explain 3, Hal 5 (Time Signal) -->
+    <string name="time_signal_simple_future_tense">Keterangan waktu <b>(Time signal)</b> pada Simple Future Tense</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="besok">Besok</string>
+    <string name="tonight">Tonight</string>
+    <string name="malam_ini">Malam ini</string>
+    <string name="next_week">Next week</string>
+    <string name="minggu_depan">Minggu depan</string>
+    <string name="next_month">Next month</string>
+    <string name="bulan_depan">Bulan depan</string>
+    <string name="next_time">Next time</string>
+    <string name="kapan_kapan">Kapan-kapan</string>
+
     <!-- Simple Future Tense, Explain 3, Hal 5 (Perbedaan 'will' dan 'be going to') -->
 
     <string name="perbedaan_will_dan_be_going_to">Perbedaan <b>Will</b> dan <b>Be Going to</b></string>
-    <string name="menyatakan_prediksi">Menyatakan Prediksi</string>
-    <string name="menyatakan_rencana_pasti">Menyatakan rencana yang sudah pasti karena sudah direncanakan sebelumnya</string>
-    <string name="menyatakan_keinginan">Menyatakan keinginan</string>
+    <string name="menyatakan_prediksi">1. Menyatakan Prediksi</string>
+    <string name="menyatakan_rencana_pasti">2. Menyatakan rencana yang sudah pasti karena \n\t\tsudah direncanakan sebelumnya</string>
+    <string name="menyatakan_keinginan">3. Menyatakan keinginan</string>
+    <string name="will_dan_be_going_to">Will dan Be going to</string>
+    <string name="menyatakan_prediksi_bullet_one">■ According to the weather report, it <b>will</b> be \n\t\tcloudy tomorrow.</string>
+    <string name="menyatakan_prediksi_bullet_two">■ According to the weather report, it <b>is going to</b> \n\t\tbe cloudy tomorrow.</string>
+    <string name="menyatakan_prediksi_bullet_three">■ Be careful! You <b>will</b> hurt yourself!</string>
+    <string name="menyatakan_prediksi_bullet_four">■ Watch out! You <b>are going to</b> hurt yourself!</string>
+    <string name="be_going_to">Be going to</string>
+    <string name="menyatakan_rencana_pasti_bullet_one">■ (a) Why did you buy this paint?\n\t\t(b) I <b>am going to</b> paint my bedroom tomorrow.</string>
+    <string name="menyatakan_rencana_pasti_bullet_two">■ I talked to Hasan yesterday. He is tired of taking \n\t\tthe bus to work. He <b>is going to</b> buy a car.</string>
+    <string name="will">Will</string>
+    <string name="menyatakan_keinginan_bullet_one">■ (a) The phone is ringing.\n\t\t(b) I <b>will</b> get it.</string>
+    <string name="menyatakan_keinginan_bullet_two">■ (a) I don\'t understand this lesson.\n\t\t(b) Ask your teacher about it. She <b>will</b> help you.</string>
+    <string name="contoh_lainnya">dan contoh lainnya …</string>
 
 </resources>

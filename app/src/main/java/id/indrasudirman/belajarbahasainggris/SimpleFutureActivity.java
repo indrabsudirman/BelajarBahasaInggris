@@ -648,8 +648,9 @@ public class SimpleFutureActivity extends AppCompatActivity {
                                     user.setScore(score);
                                     score = user.getScore();
                                     System.out.println("Score : " + score);
-                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-
+                                    startActivity(new Intent(getApplicationContext()
+                                            ,MainMenu.class));
+                                    overridePendingTransition(0, 0);
                                 }
                             });
 

@@ -281,7 +281,7 @@
 
     <!-- Simple Future Tense, Test 3, Hal 6 -->
 
-    <string name="simple_future_tense_test3_1">1. Be careful! … drop the dishes!</string> <!-- You\'re going to, menyatakan prediksi -->
+    <string name="simple_future_tense_test3_1">1. Be careful! … drop the dishes!</string> <!-- you're going to, menyatakan prediksi -->
     <string name="simple_future_tense_test3_1_meaning">\t Hati-hati! kamu bisa menjatuhkan piring-piring.</string>
     <string name="simple_future_tense_test3_2">2. According to a new research, Coronavirus \n\t\tDisease (COVID-19) … end in 2022.</string> <!-- will be, menyatakan prediksi-->
     <string name="simple_future_tense_test3_2_meaning">\t Berdasarkan penelitian baru, Pandemi Virus Corona \n\t\t(COVID-19) akan berakhir di tahun 2022.</string>

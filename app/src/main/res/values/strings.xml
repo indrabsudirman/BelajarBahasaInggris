@@ -13,7 +13,7 @@
     <string name="backdrop_subtitle">Indra Sudirman</string>
     <string name="exercises"><b><u>Latihan :</u></b></string>
     <string name="hint">Ketik jawaban disini … \t </string>
-    <string name="dragndrop"><b>Drag</b> pilihan di bawah ini, kemudian <b>Drop</b> pada isian di atas</string>
+    <string name="dragndrop">Tahan lama untuk <b>Drag</b> pilihan di bawah ini, kemudian <b>Drop</b> pada isian di atas</string>
 
 
     <!-- Simple Past Tense, Explain 1 -->
@@ -278,5 +278,19 @@
     <string name="menyatakan_keinginan_bullet_one">■ (a) The phone is ringing.\n\t\t(b) I <b>will</b> get it.</string>
     <string name="menyatakan_keinginan_bullet_two">■ (a) I don\'t understand this lesson.\n\t\t(b) Ask your teacher about it. She <b>will</b> help you.</string>
     <string name="contoh_lainnya">dan contoh lainnya …</string>
+
+    <!-- Simple Future Tense, Test 3, Hal 6 -->
+
+    <string name="simple_future_tense_test3_1">1. Be careful! … drop the dishes!</string> <!-- You\'re going to, menyatakan prediksi -->
+    <string name="simple_future_tense_test3_1_meaning">\t Hati-hati! kamu bisa menjatuhkan piring-piring.</string>
+    <string name="simple_future_tense_test3_2">2. According to a new research, Coronavirus \n\t\tDisease (COVID-19) … end in 2022.</string> <!-- will be, menyatakan prediksi-->
+    <string name="simple_future_tense_test3_2_meaning">\t Berdasarkan penelitian baru, Pandemi Virus Corona \n\t\t(COVID-19) akan berakhir di tahun 2022.</string>
+    <string name="simple_future_tense_test3_3">3. (a) Why did you buy this Laptop?\n\t\t(b) I … learn computer science.</string> <!-- am going to, menyatakan rencana yang sudah pasti -->
+    <string name="simple_future_tense_test3_3_meaning">\t (a) Kenapa kamu membeli Laptop ini?\n\t (b) Saya akan belajar komputer.</string>
+    <string name="simple_future_tense_test3_4">4. (a) Lubna doesn\'t understand her lesson.\n\t\t(b) Read the book again. \n\t\t\t\t You … well understand.</string> <!-- will, menyatakan keinginan-->
+    <string name="simple_future_tense_test3_4_meaning">\t  (a) Lubna tidak mengerti pelajarannya.\n\t  (b) Baca buku lagi. Kamu akan mengerti \n\t\t\t\t dengan baik.</string>
+    <string name="simple_future_tense_test3_5">5. … I will visit your Home again.</string> <!-- next time-->
+    <string name="simple_future_tense_test3_5_meaning">\t kapan-kapan, saya akan mengunjungi \n\t\trumah kamu lagi.</string>
+
 
 </resources>

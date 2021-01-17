@@ -39,7 +39,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
                     android:paddingTop="0dp"
-                    android:text="@string/simple_present_tense_test3_1"
+                    android:text="@string/simple_future_tense_test3_1"
                     android:textColor="@color/dark_silver" />
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -54,7 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="@string/simple_present_tense_test3_1_meaning"
+                android:text="@string/simple_future_tense_test3_1_meaning"
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
@@ -65,8 +65,15 @@
                 android:hint="Drop jawaban disini 1 (1)"
                 android:textSize="15sp"/>
 
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/contoh_dari_bentuk"
+                android:textColor="@color/dark_silver" />
+
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropSimpleFutureTwo"
+                android:id="@+id/dropSimpleFutureOneTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -82,9 +89,10 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
                     android:layout_marginEnd="10dp"
                     android:paddingTop="0dp"
-                    android:text="@string/simple_present_tense_test3_2"
+                    android:text="@string/simple_future_tense_test3_2"
                     android:textColor="@color/dark_silver" />
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -99,15 +107,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="@string/simple_present_tense_test3_2_meaning"
+                android:text="@string/simple_future_tense_test3_2_meaning"
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropSimpleFutureThree"
+                android:id="@+id/dropSimpleFutureTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:hint="@string/drop_jawaban_disini"
+                android:hint="Drop jawaban disini 2 (1)"
+                android:textSize="15sp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/contoh_dari_bentuk"
+                android:textColor="@color/dark_silver" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dropSimpleFutureTwoTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:hint="Drop jawaban disini 2 (2)"
                 android:textSize="15sp"/>
 
             <!-- Question No 3 -->
@@ -119,9 +142,10 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
                     android:layout_marginEnd="10dp"
                     android:paddingTop="0dp"
-                    android:text="@string/simple_present_tense_test3_3"
+                    android:text="@string/simple_future_tense_test3_3"
                     android:textColor="@color/dark_silver" />
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -136,15 +160,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="@string/simple_present_tense_test3_3_meaning"
+                android:text="@string/simple_future_tense_test3_3_meaning"
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropSimpleFutureFour"
+                android:id="@+id/dropSimpleFutureThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:hint="@string/drop_jawaban_disini"
+                android:hint="Drop jawaban disini 3 (1)"
+                android:textSize="15sp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/contoh_dari_bentuk"
+                android:textColor="@color/dark_silver" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dropSimpleFutureThreeTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:hint="Drop jawaban disini 3 (2)"
                 android:textSize="15sp"/>
 
             <!-- Question No 4 -->
@@ -156,9 +195,10 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
                     android:layout_marginEnd="10dp"
                     android:paddingTop="0dp"
-                    android:text="@string/simple_present_tense_test3_4"
+                    android:text="@string/simple_future_tense_test3_4"
                     android:textColor="@color/dark_silver" />
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -173,24 +213,32 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="@string/simple_present_tense_test3_4_meaning"
+                android:text="@string/simple_future_tense_test3_4_meaning"
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropSimpleFutureFive"
+                android:id="@+id/dropSimpleFutureFour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:hint="Drop jawaban disini 4 (1)"
                 android:textSize="15sp"/>
 
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/contoh_dari_bentuk"
+                android:textColor="@color/dark_silver" />
+
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropSimpleFutureSix"
+                android:id="@+id/dropSimpleFutureFourTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:hint="Drop jawaban disini 4 (2)"
                 android:textSize="15sp"/>
+
 
             <!-- Question No 5 -->
 
@@ -203,7 +251,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
                     android:paddingTop="0dp"
-                    android:text="@string/simple_present_tense_test3_5"
+                    android:text="@string/simple_future_tense_test3_5"
                     android:textColor="@color/dark_silver" />
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -218,11 +266,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="@string/simple_present_tense_test3_5_meaning"
+                android:text="@string/simple_future_tense_test3_5_meaning"
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropSimpleFutureSeven"
+                android:id="@+id/dropSimpleFutureFive"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"

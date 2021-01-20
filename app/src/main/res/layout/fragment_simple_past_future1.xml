@@ -36,6 +36,20 @@
                 android:textColor="@color/colorBlack" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Perhatikan gambar ini!"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:textColor="@color/colorBlack"/>
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/simplePastFutureImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"/>
+
+            <TextView
                 android:id="@+id/simple_past_tense_example"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

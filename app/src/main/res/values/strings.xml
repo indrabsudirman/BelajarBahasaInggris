@@ -295,9 +295,10 @@
     <!-- Simple Past Future Tense, Explain 1, Hal 1 -->
 
     <string name="simple_past_future_tense"><b><u>Simple Past Future Tense</u></b></string>
-    <string name="simple_past_future_explain">Simple Past Future Tense digunakan untuk menyatakan kejadian (aktivitas) yang akan dilakukan di masa yang akan datang.<b> TAPI, berada di masa lalu</b> Contoh: Lubna promised to me, she Would give me a box of Donut. (Lubna sudah berjanji kepada saya, dia akan memberikan sebox Donut untuk saya). \n\nPada saat bercerita bahwa Lubna sudah berjanji akan memberikan sebox Donut, itu bercerita di masa sekarang. Tapi kejadian Lubna berjanji akan memberi sebox donut, itu dimasa lalu. Oleh karena itu Tense ini diberi nama Past Future <b>(Masa depan (Future) tetapi yang sudah berlalu (in Past))</b></string>
-    <string name="second_bullet_simple_past_future">■ I will visit grand mother next week. (kejadian yang \n\t\takan dilakukan di masa yang akan datang)\n\n \t\t(Saya akan mengunjungi nenek saya \n\t\tminggu depan)</string>
-    <string name="third_bullet_simple_past_future">■ I will buy that book if I have enough money. \n\t\t(kalimat conditional sentence type satu)\n\n \t\t (Saya akan membeli buku itu, jika saya punya \n\t\tcukup uang)</string>
+    <string name="simple_past_future_explain">Simple Past Future Tense digunakan untuk menyatakan kejadian (aktivitas) yang akan dilakukan di masa depan.<b> Tapi, berada di masa lalu (sudah berlalu)</b> Contoh: Lubna promised to me, she Would give me a box of Donut. (Lubna sudah berjanji kepada saya, dia akan memberikan sebox Donut). \n\nPada saat bercerita bahwa Lubna sudah berjanji akan memberikan sebox Donut, itu bercerita di masa sekarang. Tapi kejadian Lubna berjanji akan memberi sebox donut, itu dimasa lalu. Oleh karena itu Tense ini diberi nama Past Future <b>(Masa depan (Future) tetapi yang sudah berlalu (in Past)).</b>\n\nSelain itu, Simple Past Future juga bisa digunakan untuk <b>menyatakan prediksi</b> Contoh: I believe, my Mother would give me a gift. (Saya yakin, ibu saya akan memberikan saya kado).</string>
+    <string name="second_bullet_simple_past_future">■ Lubna promised to me, she Would give me \n\t\ta box of Donut. (kejadian yang akan dilakukan \n\t\tdi masa depan, tapi sudah berlalu)\n\n \t\t(Lubna sudah berjanji kepada saya, \n\t\tdia akan memberikan sebox Donut)</string>
+    <string name="third_bullet_simple_past_future">■ I believe, my Mother would give me a gift. \n\t\t(menyatakan prediksi)\n\n \t\t (Saya yakin, ibu saya akan memberikan \n\t\tsaya kado).</string>
+    <string name="perhatikan_gambar_ini"><b><u>Perhatikan gambar ini!</u></b></string>
 
 
 </resources>

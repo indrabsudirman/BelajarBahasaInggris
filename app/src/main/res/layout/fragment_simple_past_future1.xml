@@ -25,7 +25,7 @@
                 android:textSize="18dp" />
 
             <com.uncopt.android.widget.text.justify.JustifiedTextView
-                android:id="@+id/simpleFutureExplain"
+                android:id="@+id/simplePastFutureExplain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="web"
@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Perhatikan gambar ini!"
+                android:text="@string/perhatikan_gambar_ini"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault"
                 android:textColor="@color/colorBlack"/>
 
@@ -59,7 +59,7 @@
                 android:textColor="@color/colorBlack" />
 
             <com.uncopt.android.widget.text.justify.JustifiedTextView
-                android:id="@+id/simpleFutureExample1"
+                android:id="@+id/simplePastFutureExample1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="web"
@@ -70,7 +70,7 @@
                 android:textColor="@color/colorBlack" />
 
             <com.uncopt.android.widget.text.justify.JustifiedTextView
-                android:id="@+id/simpleFutureExample2"
+                android:id="@+id/simplePastFutureExample2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="web"

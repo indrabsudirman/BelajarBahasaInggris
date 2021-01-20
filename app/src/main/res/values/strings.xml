@@ -300,5 +300,12 @@
     <string name="third_bullet_simple_past_future">■ I believe, my Mother would give me a gift. \n\t\t(menyatakan prediksi)\n\n \t\t (Saya yakin, ibu saya akan memberikan \n\t\tsaya kado).</string>
     <string name="perhatikan_gambar_ini"><b><u>Perhatikan gambar ini!</u></b></string>
 
+    <!-- Simple Past Future Tense, Test 1, Hal 2 -->
+
+    <string name="simple_past_future_tense_test1_1">1. Indra … to German next week.</string> <!-- will go, kejadian yang akan dilakukan di masa depan-->
+    <string name="simple_past_future_tense_test1_1_meaning">\t Indra akan pergi ke Jerman minggu depan.</string>
+    <string name="simple_past_future_tense_test1_2">2. If it rains, I … at my office.</string> <!-- will stay, conditional sentence type satu-->
+    <string name="simple_past_future_tense_test1_2_meaning">\t Jika hujan, saya akan tetap berada di kantor saya.</string>
+
 
 </resources>

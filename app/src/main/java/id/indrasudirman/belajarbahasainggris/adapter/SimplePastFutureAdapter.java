@@ -9,6 +9,8 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import id.indrasudirman.belajarbahasainggris.simplepastfuture.SimplePastFutureFragment1;
 import id.indrasudirman.belajarbahasainggris.simplepastfuture.SimplePastFutureFragment2;
 import id.indrasudirman.belajarbahasainggris.simplepastfuture.SimplePastFutureFragment3;
+import id.indrasudirman.belajarbahasainggris.simplepastfuture.SimplePastFutureFragment4;
+import id.indrasudirman.belajarbahasainggris.simplepastfuture.SimplePastFutureFragment5;
 
 public class SimplePastFutureAdapter extends FragmentStateAdapter {
 
@@ -24,6 +26,10 @@ public class SimplePastFutureAdapter extends FragmentStateAdapter {
                 return new SimplePastFutureFragment2();
             case 2:
                 return new SimplePastFutureFragment3();
+            case 3:
+                return new SimplePastFutureFragment4();
+            case 4:
+                return new SimplePastFutureFragment5();
             default:
                 return new SimplePastFutureFragment1();
         }
@@ -31,6 +37,6 @@ public class SimplePastFutureAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 3;
+        return 5;
     }
 }

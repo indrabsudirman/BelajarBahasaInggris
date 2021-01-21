@@ -120,6 +120,97 @@ public class SimplePastFutureFragment3 extends Fragment {
             }
         };
 
+        ClickableSpan clickableSpanVerbalPositifSimplePastPresentTwo = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+                AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
+                //Set Title
+                alertDialogSimplePast.setTitle("Info");
+                alertDialogSimplePast.setMessage("Kata 'Would learn' adalah bentuk dari Simple Past Future Tense.")
+                        .setCancelable(false)
+                        .setIcon(R.mipmap.ic_info_green)
+                        .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                                Toast.makeText(getActivity(), "Saya sudah paham", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog = alertDialogSimplePast.create();
+                alertDialog.show();
+            }
+        };
+
+        ClickableSpan clickableSpanVerbalNegatifSimplePastPresentTwo = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+                AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
+                //Set Title
+                alertDialogSimplePast.setTitle("Info");
+                alertDialogSimplePast.setMessage("Kata 'not' adalah bentuk negatif dari Simple Past Future Tense.")
+                        .setCancelable(false)
+                        .setIcon(R.mipmap.ic_info_green)
+                        .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                                Toast.makeText(getActivity(), "Saya sudah paham", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog = alertDialogSimplePast.create();
+                alertDialog.show();
+            }
+        };
+
+        ClickableSpan clickableSpanNominalSimplePastFuture = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+                AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
+                //Set Title
+                alertDialogSimplePast.setTitle("Info");
+                alertDialogSimplePast.setMessage("Kalimat nominal merupakan kalimat yang predikatnya berupa kata benda, kata sifat, kata bilangan, kata ganti, atau kata keterangan.\n" +
+                        "Contoh :\n" +
+                        "\n" +
+                        "I would be happy. (happy, kata sifat)\n" +
+                        "I would not be happy.\n" +
+                        "Would I be happy?")
+                        .setCancelable(false)
+                        .setIcon(R.mipmap.ic_info_green)
+                        .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                                Toast.makeText(getActivity(), "Saya sudah paham", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog = alertDialogSimplePast.create();
+                alertDialog.show();
+            }
+        };
+
+        ClickableSpan clickableSpanNominalPositifSimplePastFuture = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+                AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
+                //Set Title
+                alertDialogSimplePast.setTitle("Info");
+                alertDialogSimplePast.setMessage("3 Complement terdiri atas : \n - Adjective (kata sifat)\n - Noun (kata benda)\n - Adverb (kata keterangan)")
+                        .setCancelable(false)
+                        .setIcon(R.mipmap.ic_info_green)
+                        .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                                Toast.makeText(getActivity(), "Saya sudah paham", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog = alertDialogSimplePast.create();
+                alertDialog.show();
+            }
+        };
+
+
+
         // VerbalSimplePastFuture
         spannableString[0].setSpan(clickableSpanVerbalSimplePastFuture, 9, 23, 0);
         // make text bold
@@ -134,5 +225,35 @@ public class SimplePastFutureFragment3 extends Fragment {
         verbalPositifSimplePastPresent.setMovementMethod(LinkMovementMethod.getInstance());
         verbalPositifSimplePastPresent.setText(spannableString[2]);
 
+        // verbalPositifSimplePastPresentTwo
+        spannableString[2].setSpan(clickableSpanVerbalPositifSimplePastPresentTwo, 83, 94, 0);
+        // make text bold
+        spannableString[2].setSpan(new StyleSpan(Typeface.BOLD), 83, 94, 0);
+        verbalPositifSimplePastPresent.setMovementMethod(LinkMovementMethod.getInstance());
+        verbalPositifSimplePastPresent.setText(spannableString[2]);
+
+        // VerbalNegatifSimplePastPresentTwo
+        spannableString[3].setSpan(clickableSpanVerbalNegatifSimplePastPresentTwo, 95, 98, 0);
+        // make text bold
+        spannableString[3].setSpan(new StyleSpan(Typeface.BOLD), 95, 98, 0);
+        verbalNegatifSimplePastPresent.setMovementMethod(LinkMovementMethod.getInstance());
+        verbalNegatifSimplePastPresent.setText(spannableString[3]);
+
+        // nominalSimplePastFuture
+        spannableString[1].setSpan(clickableSpanNominalSimplePastFuture, 9, 24, 0);
+        // make text bold
+        spannableString[1].setSpan(new StyleSpan(Typeface.BOLD), 9, 24, 0);
+        nominalSimplePastFuture.setMovementMethod(LinkMovementMethod.getInstance());
+        nominalSimplePastFuture.setText(spannableString[1]);
+
+        // clickableSpanNominalPositifSimplePastFuture
+        spannableString[5].setSpan(clickableSpanNominalPositifSimplePastFuture, 49, 61, 0);
+        // make text bold
+        spannableString[5].setSpan(new StyleSpan(Typeface.BOLD), 49, 61, 0);
+        nominalPositifSimplePastFuture.setMovementMethod(LinkMovementMethod.getInstance());
+        nominalPositifSimplePastFuture.setText(spannableString[5]);
+
     }
+
+
 }

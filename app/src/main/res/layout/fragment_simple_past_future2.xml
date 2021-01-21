@@ -136,7 +136,7 @@
             <LinearLayout
                 android:id="@+id/layoutOptionDrag"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="320dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/border"
                 android:orientation="vertical"
@@ -173,7 +173,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@null"
-                    android:text="will go"
+                    android:text="knew I would"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -184,7 +184,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="will stay"
+                    android:text="know I would"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -195,7 +195,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="conditional sentence type satu"
+                    android:text="menyatakan prediksi"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -206,7 +206,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="will goes"
+                    android:text="told me you would"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -217,7 +217,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="kejadian yang akan dilakukan di masa depan"
+                    android:text="kejadian yang akan dilakukan di masa depan, tapi sudah berlalu"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -228,7 +228,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="will stays"
+                    android:text="tell me you would"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 

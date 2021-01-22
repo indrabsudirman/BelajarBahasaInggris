@@ -329,9 +329,13 @@
     <string name="simple_past_future_tense_test2_3">3. … I come to her birthday party?</string> <!-- should-->
     <string name="simple_past_future_tense_test2_3_meaning">\t Apakah saya akan datang ke pesta ulang tahunnya \n\t (dia perempuan)?</string>
     <string name="simple_past_future_tense_test2_4">4.You … be lie.</string> <!-- would not/wouldn't, negatif nominal (would not/wouldn,t) -->
-    <string name="simple_past_future_tense_test2_4_meaning">\t Kamu tidak akan berbohong</string>
+    <string name="simple_past_future_tense_test2_4_meaning">\t Kamu tidak akan berbohong.</string>
     <string name="simple_past_future_tense_test2_5">5. … Lubna be happy?</string> <!-- would -->
     <string name="simple_past_future_tense_test2_5_meaning">\t Apakah Lubna akan senang?</string>
+
+    <!-- Simple Past Future Tense, Hal 5, Time Signal (Sama dengan time signal, simple past -->
+
+    <string name="info_time_signal_past_future_tense">Time Signal pada Simple Past Future Tense <b>sama dengan</b> Time Signal yang ada pada Simple Past Tense.</string>
 
 
 

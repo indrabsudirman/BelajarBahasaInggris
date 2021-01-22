@@ -307,7 +307,7 @@
     <string name="simple_past_future_tense_test1_2">2. Ahmad … pick me up at Airport.</string> <!-- told me you would, kejadian yang akan dilakukan di masa depan, tapi sudah berlalu (tell me you would) -->
     <string name="simple_past_future_tense_test1_2_meaning">\t Ahmad memberi tahu saya, kamu akan \n\t\tmenjemput saya di Airport.</string>
 
-    <!-- Simple Future Tense, Explain 2, Hal 3 -->
+    <!-- Simple Past Future Tense, Explain 2, Hal 3 -->
 
     <string name="pola_kalimat_simple_past_future">Pola kalimat Simple Past Future</string>
     <string name="bentuk_kalimat_verbal_simple_past_future">■ Bentuk kalimat verbal</string>
@@ -319,6 +319,20 @@
     <string name="bentuk_kalimat_nominal_negatif_simple_past_future">\t\t(-) Negatif : Subject + Would/Should + not + be + \n\t\t3 Complement. \n\t\tContoh : Haby would not be happy.\n\t\t(Haby tidak akan senang)</string>
     <string name="bentuk_kalimat_nominal_question_simple_past_future">\t\t(?) Question : Would/Should + Subject +\n\t\tbe + 3 Complement? \n\t\tContoh : Would Haby be happy?\n\t\t(Apakah Haby akan senang?)</string>
     <string name="info_simple_past_future"><b><u>Info :</u></b> \n\n- Should sering digunakan untuk Subject <b>I dan we</b>.\n- Would digunakan untuk semua <b>Subject</b>\n- Should not to dalam percakapan sering disebut <b>Shouldn\'t</b>\n- Would not to dalam percakapan sering disebut <b>Wouldn\'t</b></string>
+
+    <!-- Simple Past Future Tense, Test 2, Hal 4 -->
+
+    <string name="simple_past_future_tense_test2_1">1. We … to the wedding party yesterday.</string> <!-- should come-->
+    <string name="simple_past_future_tense_test2_1_meaning">\t Kami akan datang di pesta pernikahan kemarin</string>
+    <string name="simple_past_future_tense_test2_2">2. Budi … that he … come in \n\t\tYogyakarta yesterday.</string> <!-- said, would (say)-->
+    <string name="simple_past_future_tense_test2_2_meaning">\t Budi mengatakan bahwa dia akan datang ke \n\t\tYogyakarta kemarin.</string>
+    <string name="simple_past_future_tense_test2_3">3. … I come to her birthday party?</string> <!-- should-->
+    <string name="simple_past_future_tense_test2_3_meaning">\t Apakah saya akan datang ke pesta ulang tahunnya \n\t (dia perempuan)?</string>
+    <string name="simple_past_future_tense_test2_4">4.You … be lie.</string> <!-- would not/wouldn't, negatif nominal (would not/wouldn,t) -->
+    <string name="simple_past_future_tense_test2_4_meaning">\t Kamu tidak akan berbohong</string>
+    <string name="simple_past_future_tense_test2_5">5. … Lubna be happy?</string> <!-- would -->
+    <string name="simple_past_future_tense_test2_5_meaning">\t Apakah Lubna akan senang?</string>
+
 
 
 </resources>

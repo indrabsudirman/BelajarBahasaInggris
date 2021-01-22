@@ -209,6 +209,27 @@ public class SimplePastFutureFragment3 extends Fragment {
             }
         };
 
+        ClickableSpan clickableSpanNominalNegatifSimplePastFuture = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+                AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
+                //Set Title
+                alertDialogSimplePast.setTitle("Info");
+                alertDialogSimplePast.setMessage("Kata 'Would not' bisa juga disingkat menjadi Wouldn't.")
+                        .setCancelable(false)
+                        .setIcon(R.mipmap.ic_info_green)
+                        .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                                Toast.makeText(getActivity(), "Saya sudah paham", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog = alertDialogSimplePast.create();
+                alertDialog.show();
+            }
+        };
+
 
 
         // VerbalSimplePastFuture
@@ -252,6 +273,13 @@ public class SimplePastFutureFragment3 extends Fragment {
         spannableString[5].setSpan(new StyleSpan(Typeface.BOLD), 49, 61, 0);
         nominalPositifSimplePastFuture.setMovementMethod(LinkMovementMethod.getInstance());
         nominalPositifSimplePastFuture.setText(spannableString[5]);
+
+        //nominalNegatifSimplePastFuture
+        spannableString[6].setSpan(clickableSpanNominalNegatifSimplePastFuture, 86, 95, 0);
+        // make text bold
+        spannableString[6].setSpan(new StyleSpan(Typeface.BOLD), 86, 95, 0);
+        nominalNegatifSimplePastFuture.setMovementMethod(LinkMovementMethod.getInstance());
+        nominalNegatifSimplePastFuture.setText(spannableString[6]);
 
     }
 

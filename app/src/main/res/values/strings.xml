@@ -337,6 +337,13 @@
 
     <string name="info_time_signal_past_future_tense">Time Signal pada Simple Past Future Tense <b>sama dengan</b> Time Signal yang ada pada Simple Past Tense.</string>
 
+    <!-- Past Continuous Tense, Explain 1, Hal 1 -->
+
+    <string name="past_continuous_tense"><b><u>Past Continuous Tense</u></b></string>
+    <string name="past_continuous_tense_explain">Past Continuous Tense digunakan untuk menyatakan kejadian (aktivitas) yang <b>sedang terjadi pada waktu tertentu di masa lalu.</b> Contoh: Lubna was studying when I called her yesterday. (Lubna sedang belajar ketika saya menelpon dia kemarin). \n\n<b><u>Penjelasannya:</u></b> \n\nPada saat saya menelpon Lubna kemarin (sudah berlalu), dia (Lubna) sedang belajar. Nah, Lubna sedang belajar ini yang termasuk dalam Past Continuous Tense.<b> Kejadian yang sedang dilakukan tapi di masa lalu.</b></string>
+    <string name="second_bullet_past_continuous_tense">■ Lubna was studying when I called her yesterday. \n\n \t\t(Lubna sedang belajar ketika saya \n\t\tmenelpon dia kemarin).</string>
+    <string name="third_bullet_past_continuous_tense">■ It was raining, when my father came last night. \n\n \t\t (Sedang hujan ketika ayah saya datang semalam).</string>
+
 
 
 </resources>

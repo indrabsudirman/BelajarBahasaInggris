@@ -5,10 +5,101 @@
     android:layout_height="match_parent"
     tools:context=".pastcontinuous.PastContinuousFragment1">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Past Continuous Fragment 1" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/simple_past_tense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/past_continuous_tense"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:textSize="18dp" />
+
+            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                android:id="@+id/simplePastFutureExplain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:lineSpacingExtra="2dp"
+                android:padding="5dp"
+                android:text="@string/past_continuous_tense_explain"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/simple_past_tense_example"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/example"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:textColor="@color/colorBlack" />
+
+            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                android:id="@+id/simplePastFutureExample1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:lineSpacingExtra="2dp"
+                android:padding="5dp"
+                android:text="@string/second_bullet_past_continuous_tense"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:textColor="@color/colorBlack" />
+
+            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                android:id="@+id/simplePastFutureExample2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:lineSpacingExtra="2dp"
+                android:padding="5dp"
+                android:text="@string/third_bullet_past_continuous_tense"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:textColor="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_rectangle_green"
+                android:id="@+id/layoutQuestion">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@mipmap/ic_question" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/mengerti"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 </FrameLayout>

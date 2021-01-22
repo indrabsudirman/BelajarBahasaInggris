@@ -6,4 +6,6 @@ Saat ini, dalam pengembangan aplikasi Android Belajar Bahasa Inggris
 Aplikasi Android rencananya akan menggunakan :
 
 1. Database SQLite untuk Login, login menggunakan hash + salt untuk passwordnya.
-2. SharedPreferences untuk simpan login session
+2. SharedPreferences untuk simpan login session.
+3. Recycler View untuk display pilihan belajar.
+4. Drag and Drop untuk kuis.

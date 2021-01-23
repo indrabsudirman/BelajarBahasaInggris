@@ -15,7 +15,7 @@
             android:orientation="vertical"
             android:padding="10dp">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/simple_past_tense"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
                 android:textSize="18dp" />
 
             <com.uncopt.android.widget.text.justify.JustifiedTextView
-                android:id="@+id/simplePastFutureExplain"
+                android:id="@+id/pastContinuousExplain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="web"
@@ -35,8 +35,7 @@
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault"
                 android:textColor="@color/colorBlack" />
 
-            <TextView
-                android:id="@+id/simple_past_tense_example"
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
@@ -45,7 +44,7 @@
                 android:textColor="@color/colorBlack" />
 
             <com.uncopt.android.widget.text.justify.JustifiedTextView
-                android:id="@+id/simplePastFutureExample1"
+                android:id="@+id/pastContinuousExample1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="web"
@@ -56,7 +55,7 @@
                 android:textColor="@color/colorBlack" />
 
             <com.uncopt.android.widget.text.justify.JustifiedTextView
-                android:id="@+id/simplePastFutureExample2"
+                android:id="@+id/pastContinuousExample2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="web"
@@ -80,7 +79,7 @@
                     android:layout_marginStart="10dp"
                     android:background="@mipmap/ic_question" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"

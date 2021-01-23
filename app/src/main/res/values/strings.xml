@@ -344,13 +344,26 @@
     <string name="second_bullet_past_continuous_tense">■ Lubna was studying when I called her yesterday. \n\n \t\t(Lubna sedang belajar ketika saya \n\t\tmenelpon dia kemarin).</string>
     <string name="third_bullet_past_continuous_tense">■ It was raining, when my father came last night. \n\n \t\t (Sedang hujan ketika ayah saya datang semalam).</string>
 
-    <!-- Simple Future Tense, Test 1, Hal 2 -->
-
+    <!-- Past Continuous, Test 1, Hal 2 -->
 
     <string name="past_continuous_tense_test1_1">1. Haby … when Mother entered to the room.</string> <!-- was playing, is playing -->
     <string name="past_continuous_tense_test1_1_meaning">\t Haby sedang bermain, ketika ibu masuk ke kamar.</string>
     <string name="past_continuous_tense_test1_2">2. Fanin … in WhatsApp when I called her.</string> <!-- was typing, is typing-->
     <string name="past_continuous_tense_test1_2_meaning">\t Fanin sedang mengetik di WhatsApp \n\t ketika saya panggil dia.</string>
+
+    <!-- Past Continuous, Explain 2, Hal 3 -->
+    <string name="pola_kalimat_past_continuous">Pola kalimat Past Continuous</string>
+    <string name="bentuk_kalimat_verbal_past_continuous">■ Bentuk kalimat verbal</string>
+    <string name="bentuk_kalimat_nominal_past_continuous">■ Bentuk kalimat nominal</string>
+    <string name="bentuk_kalimat_verbal_positif_past_continuous">\t\t(+) Positif : Subject + Was/Were + V1 (Verb 1)\n\t\t + ing + Object. \n\t\tContoh : I was eating Bakso when school\'s \n\t\tbell rang. \n\t\t(Saya sedang makan Bakso ketika \n\t\tbel sekolah bunyi)</string>
+    <string name="bentuk_kalimat_verbal_negatif_past_continuous">\t\t(-) Negatif : Subject + Was/Were + not \n\t\t+ V1 (Verb 1) + ing + Object. \n\t\tContoh : I was not eating Bakso when \n\t\tschool\'s bell rang.\n\t\t(Saya tidak sedang makan Bakso \n\t\tketika bel sekolah bunyi)</string>
+    <string name="bentuk_kalimat_verbal_question_past_continuous">\t\t(?) Question : Was/Were + Subject \n\t\t+ V1 (Verb 1) + ing + Object? \n\t\tContoh : Was I eating Bakso when \n\t\tschool\'s bell rang?\n\t\t(Apakah Saya sedang makan Bakso \n\t\tketika bel sekolah bunyi?)</string>
+    <string name="bentuk_kalimat_nominal_positif_past_continuous">\t\t(+) Positif : Subject + Was/Were + \n\t\t3 Complement. \n\t\tContoh : I was happy. \n\t\t(Haby senang)</string>
+    <string name="bentuk_kalimat_nominal_negatif_past_continuous">\t\t(-) Negatif : Subject + Was/Were + not +\n\t\t3 Complement. \n\t\tContoh : I was not happy. \n\t\t(Haby tidak senang)</string>
+    <string name="bentuk_kalimat_nominal_question_past_continuous">\t\t(?) Question : Was/Were + Subject \n\t\t+ 3 Complement? \n\t\tContoh : Was I happy?\n\t\t(Apakah saya senang?)</string>
+    <string name="info_past_continuous"><b><u>Info :</u></b> \n\n- Was digunakan untuk Subject <b>I, She, He, It dan orang ketiga tunggal. Seperti: Lubna, Ahmad, dan lain-lain.</b>\n- Were digunakan untuk subjek <b>You, We dan They.</b></string>
+
+
 
 
 </resources>

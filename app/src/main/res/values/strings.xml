@@ -344,6 +344,13 @@
     <string name="second_bullet_past_continuous_tense">■ Lubna was studying when I called her yesterday. \n\n \t\t(Lubna sedang belajar ketika saya \n\t\tmenelpon dia kemarin).</string>
     <string name="third_bullet_past_continuous_tense">■ It was raining, when my father came last night. \n\n \t\t (Sedang hujan ketika ayah saya datang semalam).</string>
 
+    <!-- Simple Future Tense, Test 1, Hal 2 -->
+
+
+    <string name="past_continuous_tense_test1_1">1. Haby … when Mother entered to the room.</string> <!-- was playing, is playing -->
+    <string name="past_continuous_tense_test1_1_meaning">\t Haby sedang bermain, ketika ibu masuk ke kamar.</string>
+    <string name="past_continuous_tense_test1_2">2. Fanin … in WhatsApp when I called her.</string> <!-- was typing, is typing-->
+    <string name="past_continuous_tense_test1_2_meaning">\t Fanin sedang mengetik di WhatsApp \n\t ketika saya panggil dia.</string>
 
 
 </resources>

@@ -1,10 +1,12 @@
 package id.indrasudirman.belajarbahasainggris;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -21,10 +23,13 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+import com.google.android.material.textfield.TextInputEditText;
+
+import java.util.ArrayList;
 
 import id.indrasudirman.belajarbahasainggris.adapter.PastContinuousAdapter;
-import id.indrasudirman.belajarbahasainggris.adapter.SimpleFutureAdapter;
 import id.indrasudirman.belajarbahasainggris.model.User;
+import id.indrasudirman.belajarbahasainggris.utils.PasswordMD5WithSalt;
 
 public class PastContinuousActivity extends AppCompatActivity {
 
@@ -102,6 +107,18 @@ public class PastContinuousActivity extends AppCompatActivity {
                         tab.view.setClickable(false);
                         break;
                     }
+                    case 3: {
+                        tab.setText("Hal 4");
+                        tab.setIcon(R.drawable.test);
+                        tab.view.setClickable(false);
+                        break;
+                    }
+                    case 4: {
+                        tab.setText("Hal 5");
+                        tab.setIcon(R.drawable.test);
+                        tab.view.setClickable(false);
+                        break;
+                    }
                 }
 
             }
@@ -120,15 +137,23 @@ public class PastContinuousActivity extends AppCompatActivity {
                         System.out.println("Score : " + score);
                         break;
                     case 1:
-                        user.setScore(2);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
                         checkAnswerPastContinuous1();
                         break;
                     case 2:
                         viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
                         user.setScore(3);
+                        score = user.getScore();
+                        System.out.println("Score : " + score);
+                        break;
+                    case 3:
+                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                        user.setScore(4);
+                        score = user.getScore();
+                        System.out.println("Score : " + score);
+                        break;
+                    case 4:
+                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                        user.setScore(5);
                         score = user.getScore();
                         System.out.println("Score : " + score);
                         break;
@@ -150,6 +175,12 @@ public class PastContinuousActivity extends AppCompatActivity {
                         break;
                     case 2:
                         tab.view.setClickable(score >= 2);
+                        break;
+                    case 3:
+                        tab.view.setClickable(score >= 3);
+                        break;
+                    case 4:
+                        tab.view.setClickable(score >= 4);
                         break;
                 }
 
@@ -217,7 +248,103 @@ public class PastContinuousActivity extends AppCompatActivity {
 
     }
 
+    //Check Past Continuous Test 1
     private void checkAnswerPastContinuous1() {
 
+        ArrayList<String> incorrectAnswerList = new ArrayList<>();
+
+        int numberOfQuestionCorrect = 0;
+
+        if (checkQuestionPastContinuousTestOne1()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 1");
+        }
+
+        if (checkQuestionPastContinuousTestOne2()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 2");
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (String s : incorrectAnswerList) {
+            sb.append(s);
+            sb.append("\n");
+        }
+
+        if (numberOfQuestionCorrect == 2) {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(PastContinuousActivity.this);
+            alertDialogBuilder
+                    .setTitle("Selamat!")
+                    .setMessage("Anda berhasil, nilai Anda : " + numberOfQuestionCorrect + "/2\nIni Sempurna. Anda dapat melanjutkan ke pelajaran berikutnya.")
+                    .setCancelable(false)
+                    .setPositiveButton("Halaman berikutnya",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    //Set Score user to 1
+                                    score = 2;
+                                    user.setScore(score);
+                                    score = user.getScore();
+                                    System.out.println("Score : " + score);
+                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+
+                                }
+                            });
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+
+        } else {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(PastContinuousActivity.this);
+            alertDialogBuilder
+                    .setTitle("Gagal!")
+                    .setMessage("Anda gagal, Nilai Anda adalah : " + numberOfQuestionCorrect + "/2\nAnda belum dapat melanjutkan pelajaran berikutnya.\n\n" + "Perbaiki jawaban Anda : \n\n" + sb.toString())
+                    .setCancelable(false)
+                    .setPositiveButton("Mulai test lagi",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem());
+
+                                }
+                            })
+
+                    .setNegativeButton("Keluar aplikasi",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    moveTaskToBack(true);
+                                    finish();
+                                }
+                            });
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+        }
+
     }
+
+    private boolean checkQuestionPastContinuousTestOne1() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropPastContinuousOne);
+
+        String key = "fece4cc5f569126fe32fec847488f2e1";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestionPastContinuousTestOne2() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropPastContinuousTwo);
+
+        String key = "21f5c25efe111a5fd361ed6f6d8451b3";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+
 }

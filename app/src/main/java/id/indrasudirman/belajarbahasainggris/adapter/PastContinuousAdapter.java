@@ -8,6 +8,8 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import id.indrasudirman.belajarbahasainggris.pastcontinuous.PastContinuousFragment1;
 import id.indrasudirman.belajarbahasainggris.pastcontinuous.PastContinuousFragment2;
 import id.indrasudirman.belajarbahasainggris.pastcontinuous.PastContinuousFragment3;
+import id.indrasudirman.belajarbahasainggris.pastcontinuous.PastContinuousFragment4;
+import id.indrasudirman.belajarbahasainggris.pastcontinuous.PastContinuousFragment5;
 
 public class PastContinuousAdapter extends FragmentStateAdapter {
 
@@ -23,6 +25,10 @@ public class PastContinuousAdapter extends FragmentStateAdapter {
                 return new PastContinuousFragment2();
             case 2:
                 return new PastContinuousFragment3();
+            case 3:
+                return new PastContinuousFragment4();
+            case 4:
+                return new PastContinuousFragment5();
             default:
                 return new PastContinuousFragment1();
         }
@@ -30,6 +36,6 @@ public class PastContinuousAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 3;
+        return 5;
     }
 }

@@ -40,7 +40,7 @@
 
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/verbalSimplePastFuture"
+                    android:id="@+id/verbalPastContinuous"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -51,7 +51,7 @@
                     android:textColor="@color/colorBlack" />
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/verbalPositifSimplePastPresent"
+                    android:id="@+id/verbalPositifPastContinuous"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -62,7 +62,7 @@
                     android:textColor="@color/colorBlack" />
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/verbalNegatifSimplePastPresent"
+                    android:id="@+id/verbalNegatifPastContinuous"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -73,7 +73,7 @@
                     android:textColor="@color/colorBlack" />
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/verbalQuestionSimplePastPresent"
+                    android:id="@+id/verbalQuestionPastContinuous"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -98,7 +98,7 @@
 
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/nominalSimplePastFuture"
+                    android:id="@+id/nominalPastContinuous"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -109,7 +109,7 @@
                     android:textColor="@color/colorBlack" />
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/nominalPositifSimplePastFuture"
+                    android:id="@+id/nominalPositifPastContinuous"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -120,7 +120,7 @@
                     android:textColor="@color/colorBlack" />
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/nominalNegatifSimplePastFuture"
+                    android:id="@+id/nominalNegatifPastContinuous"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -131,7 +131,7 @@
                     android:textColor="@color/colorBlack" />
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/nominalQuestionSimplePastFuture"
+                    android:id="@+id/nominalQuestionPastContinuous"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"

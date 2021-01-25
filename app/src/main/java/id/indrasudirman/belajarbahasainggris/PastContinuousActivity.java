@@ -149,10 +149,7 @@ public class PastContinuousActivity extends AppCompatActivity {
                         checkAnswerPastContinuous2();
                         break;
                     case 4:
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        user.setScore(5);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
+                        finishOnPastContinuous();
                         break;
                 }
             }
@@ -537,5 +534,29 @@ public class PastContinuousActivity extends AppCompatActivity {
         return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
     }
 
+    private void finishOnPastContinuous() {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(PastContinuousActivity.this);
+        alertDialogBuilder
+                .setTitle("Selamat!")
+                .setMessage("Pembelajaran Past Continuous Tense sudah selesai. Anda dapat melanjutkan ke pelajaran berikutnya Present Continuous Tense.")
+                .setCancelable(false)
+                .setPositiveButton("Present Continuous Tense",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                //Set Score user to 1
+                                score = 4;
+                                user.setScore(score);
+                                score = user.getScore();
+                                System.out.println("Score : " + score);
+                                startActivity(new Intent(getApplicationContext()
+                                        ,MainMenu.class));
+                                overridePendingTransition(0, 0);
+                            }
+                        });
+
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
+    }
 
 }

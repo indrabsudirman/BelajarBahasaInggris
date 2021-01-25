@@ -8,6 +8,8 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import id.indrasudirman.belajarbahasainggris.presentcontinuous.PresentContinuousFragment1;
 import id.indrasudirman.belajarbahasainggris.presentcontinuous.PresentContinuousFragment2;
 import id.indrasudirman.belajarbahasainggris.presentcontinuous.PresentContinuousFragment3;
+import id.indrasudirman.belajarbahasainggris.presentcontinuous.PresentContinuousFragment4;
+import id.indrasudirman.belajarbahasainggris.presentcontinuous.PresentContinuousFragment5;
 
 public class PresentContinuousAdapter extends FragmentStateAdapter {
 
@@ -23,6 +25,10 @@ public class PresentContinuousAdapter extends FragmentStateAdapter {
                 return new PresentContinuousFragment2();
             case 2:
                 return new PresentContinuousFragment3();
+            case 3:
+                return new PresentContinuousFragment4();
+            case 4:
+                return new PresentContinuousFragment5();
             default:
                 return new PresentContinuousFragment1();
         }
@@ -30,6 +36,6 @@ public class PresentContinuousAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 3;
+        return 5;
     }
 }

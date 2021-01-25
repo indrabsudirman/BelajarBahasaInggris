@@ -380,6 +380,13 @@
 
     <string name="info_time_signal_past_continuous_tense">Time Signal pada Past Continuous Tense <b>sama dengan</b> Time Signal yang ada pada Simple Past Tense. Hanya saja ada penambahan seperti : <b>at this time yesterday</b>, <b>at 9 o\'clock last night.</b></string>
 
+    <!-- Present Continuous Tense, Explain 1, Hal 1 -->
+
+    <string name="present_continuous_tense"><b><u>Present Continuous Tense</u></b></string>
+    <string name="present_continuous_tense_explain">Present Continuous Tense digunakan untuk menyatakan kejadian (aktivitas) yang <b>sedang terjadi pada saat ini.</b> Contoh: Lubna is studying in her room. (Lubna sedang belajar di kamarnya). \n\n<b><u>Penjelasannya :</u></b> \n\n Lubna saat ini, saat kita berbicara. Dia sedang belajar di kamarnya. <b>Jadi jelas, Present Continuous Tense adalah kejadian yang sedang dilakukan saat ini.</b></string>
+    <string name="second_bullet_present_continuous_tense">■ Lubna is studying in her room. \n\n \t\t(Lubna sedang belajar di kamarnya).</string>
+    <string name="third_bullet_present_continuous_tense">■ I am eating Sate right now. \n\n \t\t (Saya sedang makan Sate saat ini).</string>
+
 
 
 </resources>

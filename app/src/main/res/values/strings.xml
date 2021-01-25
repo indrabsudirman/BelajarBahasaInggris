@@ -363,6 +363,18 @@
     <string name="bentuk_kalimat_nominal_question_past_continuous">\t\t(?) Question : Was/Were + Subject \n\t\t+ 3 Complement? \n\t\tContoh : Was I happy?\n\t\t(Apakah saya senang?)</string>
     <string name="info_past_continuous"><b><u>Info :</u></b> \n\n- Was digunakan untuk Subject <b>I, She, He, It dan orang ketiga tunggal. Seperti: Lubna, Ahmad, dan lain-lain.</b>\n- Were digunakan untuk subjek <b>You, We dan They.</b></string>
 
+    <!-- Simple Past Continuous Tense, Test 2, Hal 4 -->
+
+    <string name="past_continuous_tense_test2_1">1. I … well for the exam in last month.</string> <!-- wasn't preparing -->
+    <string name="past_continuous_tense_test2_1_meaning">\t Saya tidak menyiapkan dengan baik untuk test \n\t saya bulan lalu.</string>
+    <string name="past_continuous_tense_test2_2">2. Munawwir … his shoes when I … him.</string> <!-- was washing, called -->
+    <string name="past_continuous_tense_test2_2_meaning">\t Munawwir sedang mencuci sepatunya \n\t ketika saya panggil dia.</string>
+    <string name="past_continuous_tense_test2_3">3. … Ahmad sick yesterday?</string> <!-- was  -->
+    <string name="past_continuous_tense_test2_3_meaning">\t Apakah Ahmad sakit kemarin?</string>
+    <string name="past_continuous_tense_test2_4">4.… Fanin and Lubna … their exercise last week?</string> <!-- were, doing (did) -->
+    <string name="past_continuous_tense_test2_4_meaning">\t Apakah Fanin dan Lubna mengerjakan tugas \n\t mereka minggu lalu?</string>
+    <string name="past_continuous_tense_test2_5">5. I … Iqra when I … a kid?</string> <!-- was always studying, was -->
+    <string name="past_continuous_tense_test2_5_meaning">\t Saya selalu belajar Iqra ketika saya kecil.</string>
 
 
 

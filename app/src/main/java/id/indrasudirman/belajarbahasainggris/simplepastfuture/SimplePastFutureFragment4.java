@@ -174,7 +174,6 @@ public class SimplePastFutureFragment4 extends Fragment implements View.OnDragLi
 
         mainLayout.setOnDragListener(this);
 
-
     }
 
     private void implementEventTooltips() {

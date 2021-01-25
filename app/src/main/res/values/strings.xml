@@ -376,6 +376,10 @@
     <string name="past_continuous_tense_test2_5">5. I … Iqra when I … a kid?</string> <!-- was always studying, was -->
     <string name="past_continuous_tense_test2_5_meaning">\t Saya selalu belajar Iqra ketika saya kecil.</string>
 
+    <!-- Simple Past Continuous Tense, Hal 5, Time Signal (Sama dengan time signal, simple past -->
+
+    <string name="info_time_signal_past_continuous_tense">Time Signal pada Past Continuous Tense <b>sama dengan</b> Time Signal yang ada pada Simple Past Tense. Hanya saja ada penambahan seperti : <b>at this time yesterday</b>, <b>at 9 o\'clock last night.</b></string>
+
 
 
 </resources>

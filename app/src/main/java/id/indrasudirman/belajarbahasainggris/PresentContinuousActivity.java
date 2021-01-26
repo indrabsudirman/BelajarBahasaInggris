@@ -1,10 +1,12 @@
 package id.indrasudirman.belajarbahasainggris;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -21,10 +23,14 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+import com.google.android.material.textfield.TextInputEditText;
+
+import java.util.ArrayList;
 
 import id.indrasudirman.belajarbahasainggris.adapter.PastContinuousAdapter;
 import id.indrasudirman.belajarbahasainggris.adapter.PresentContinuousAdapter;
 import id.indrasudirman.belajarbahasainggris.model.User;
+import id.indrasudirman.belajarbahasainggris.utils.PasswordMD5WithSalt;
 
 public class PresentContinuousActivity extends AppCompatActivity {
 
@@ -132,10 +138,6 @@ public class PresentContinuousActivity extends AppCompatActivity {
                         System.out.println("Score : " + score);
                         break;
                     case 1:
-                        user.setScore(2);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
                         checkAnswerPresentContinuous1();
                         break;
                     case 2:
@@ -247,7 +249,99 @@ public class PresentContinuousActivity extends AppCompatActivity {
 
     }
 
+    // checkAnswerPresentContinuous1
     private void checkAnswerPresentContinuous1() {
+        ArrayList<String> incorrectAnswerList = new ArrayList<>();
 
+        int numberOfQuestionCorrect = 0;
+
+        if (checkQuestionPresentContinuousTestOne1()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 1");
+        }
+
+        if (checkQuestionPresentContinuousTestOne2()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 2");
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (String s : incorrectAnswerList) {
+            sb.append(s);
+            sb.append("\n");
+        }
+
+        if (numberOfQuestionCorrect == 2) {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(PresentContinuousActivity.this);
+            alertDialogBuilder
+                    .setTitle("Selamat!")
+                    .setMessage("Anda berhasil, nilai Anda : " + numberOfQuestionCorrect + "/2\nIni Sempurna. Anda dapat melanjutkan ke pelajaran berikutnya.")
+                    .setCancelable(false)
+                    .setPositiveButton("Halaman berikutnya",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    //Set Score user to 1
+                                    score = 2;
+                                    user.setScore(score);
+                                    score = user.getScore();
+                                    System.out.println("Score : " + score);
+                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+
+                                }
+                            });
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+
+        } else {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(PresentContinuousActivity.this);
+            alertDialogBuilder
+                    .setTitle("Gagal!")
+                    .setMessage("Anda gagal, Nilai Anda adalah : " + numberOfQuestionCorrect + "/2\nAnda belum dapat melanjutkan pelajaran berikutnya.\n\n" + "Perbaiki jawaban Anda : \n\n" + sb.toString())
+                    .setCancelable(false)
+                    .setPositiveButton("Mulai test lagi",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem());
+
+                                }
+                            })
+
+                    .setNegativeButton("Keluar aplikasi",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    moveTaskToBack(true);
+                                    finish();
+                                }
+                            });
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+        }
+
+    }
+    private boolean checkQuestionPresentContinuousTestOne1() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropPresentContinuousOne);
+
+        String key = "7b90c4c610ffdaa3436ecb85753466d8";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestionPresentContinuousTestOne2() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropPresentContinuousTwo);
+
+        String key = "e5bbe1023f9de5953029b3466d028ae2";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
     }
 }

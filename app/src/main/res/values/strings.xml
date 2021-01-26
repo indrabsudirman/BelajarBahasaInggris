@@ -391,7 +391,7 @@
 
     <string name="present_continuous_tense_test1_1">1. Azka and I … Iqra at TPA Azka Ainiya\n\t Gunung Sindur.</string> <!-- are learning (is learning) -->
     <string name="present_continuous_tense_test1_1_meaning">\t Azka dan saya sedang belajar Iqra di \n\t TPA Azka Ainiya Gunung Sindur.</string>
-    <string name="present_continuous_tense_test1_2">2. My friend … a book at the school\s library now.</string> <!-- is reading (is reads)-->
+    <string name="present_continuous_tense_test1_2">2. My friend … a book at the school\'s library now.</string> <!-- is reading (is reads)-->
     <string name="present_continuous_tense_test1_2_meaning">\t Teman saya sedang membaca buku \n\t di Perpustakaan sekolah saat ini.</string>
 
 

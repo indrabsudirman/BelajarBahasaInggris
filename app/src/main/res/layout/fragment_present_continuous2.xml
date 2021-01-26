@@ -6,7 +6,7 @@
     tools:context=".presentcontinuous.PresentContinuousFragment2">
 
     <id.indrasudirman.belajarbahasainggris.utils.MyScrollView
-        android:id="@+id/scrollViewPastContinuous2"
+        android:id="@+id/scrollViewPresentContinuous2"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

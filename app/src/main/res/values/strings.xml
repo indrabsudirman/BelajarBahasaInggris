@@ -439,4 +439,18 @@
     <string name="tahun_ini">Tahun ini</string>
     <string name="mengerti_time_signal_present_continuous">Bagaimana, sudah mengerti mengenai Time Signal pada Present Continuous Tense? Jika sudah paham klik <b>next</b> untuk mencoba mengerjakan test.</string>
 
+    <!-- Present Continuous Tense, Test 3, Hal 6 -->
+
+    <string name="present_continuous_tense_test3_1">1. Haby … a book.</string> <!-- is reading -->
+    <string name="present_continuous_tense_test3_1_meaning">\t Haby sedang membaca buku.</string>
+    <string name="present_continuous_tense_test3_2">2. They … lunch right now.</string> <!-- are eating (is eating) -->
+    <string name="present_continuous_tense_test3_2_meaning">\t Mereka sedang makan siang saat ini.</string>
+    <string name="present_continuous_tense_test3_3">3. … Teacher and Student at the \n\t\tschool\'s field now?</string> <!-- are  -->
+    <string name="present_continuous_tense_test3_3_meaning">\t Apakah Guru dan Siswa di lapangan \n\t\tsekolah saat ini?</string>
+    <string name="present_continuous_tense_test3_4">4.… Kids … their milk?</string> <!-- are, drinking (is) -->
+    <string name="present_continuous_tense_test3_4_meaning">\t Apakah anak-anak sedang meminum susunya?</string>
+    <string name="present_continuous_tense_test3_5">5. Android … operation system right now.</string> <!-- is a famous (are a familiar) -->
+    <string name="present_continuous_tense_test3_5_meaning">\t Android adalah operasi sistem yang \n\t\tterkenal saat ini.</string>
+
+
 </resources>

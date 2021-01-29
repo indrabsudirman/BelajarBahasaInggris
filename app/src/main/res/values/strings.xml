@@ -398,14 +398,14 @@
     <string name="pola_kalimat_present_continuous">Pola kalimat Present Continuous</string>
     <string name="bentuk_kalimat_verbal_present_continuous">■ Bentuk kalimat verbal</string>
     <string name="bentuk_kalimat_nominal_present_continuous">■ Bentuk kalimat nominal</string>
-    <string name="bentuk_kalimat_verbal_positif_present_continuous">\t\t(+) Positif : Subject + (is/am/are) + V1 (Verb 1)\n\t\t + ing + Object. \n\t\tContoh : I was eating Bakso when school\'s \n\t\tbell rang. \n\t\t(Saya sedang makan Bakso ketika \n\t\tbel sekolah bunyi)</string>
-    <string name="bentuk_kalimat_verbal_negatif_present_continuous">\t\t(-) Negatif : Subject + (is/am/are) + not \n\t\t+ V1 (Verb 1) + ing + Object. \n\t\tContoh : I was not eating Bakso when \n\t\tschool\'s bell rang.\n\t\t(Saya tidak sedang makan Bakso \n\t\tketika bel sekolah bunyi)</string>
-    <string name="bentuk_kalimat_verbal_question_present_continuous">\t\t(?) Question : (is/am/are) + Subject \n\t\t+ V1 (Verb 1) + ing + Object? \n\t\tContoh : Was I eating Bakso when \n\t\tschool\'s bell rang?\n\t\t(Apakah Saya sedang makan Bakso \n\t\tketika bel sekolah bunyi?)</string>
-    <string name="bentuk_kalimat_nominal_positif_present_continuous">\t\t(+) Positif : Subject + (is/am/are) + \n\t\tNominal. \n\t\tContoh : I was happy. \n\t\t(Haby senang)</string>
-    <string name="bentuk_kalimat_nominal_negatif_present_continuous">\t\t(-) Negatif : Subject + (is/am/are) + not +\n\t\tNominal. \n\t\tContoh : I was not happy. \n\t\t(Haby tidak senang)</string>
-    <string name="bentuk_kalimat_nominal_question_present_continuous">\t\t(?) Question : (is/am/are) + Subject \n\t\t+ Nominal? \n\t\tContoh : Was I happy?\n\t\t(Apakah saya senang?)</string>
-    <string name="info_present_continuous"><b><u>Info :</u></b> \n\n- Was digunakan untuk Subject <b>I, She, He, It dan orang ketiga tunggal. Seperti: Lubna, Ahmad, dan lain-lain.</b>\n- Were digunakan untuk subjek <b>You, We dan They.</b></string>
+    <string name="bentuk_kalimat_verbal_positif_present_continuous">\t\t(+) Positif : Subject + (is/am/are) + V1 (Verb 1)\n\t\t + ing + Object. \n\t\tContoh : I am learning Computer science now. \n\t\t(Saya sedang belajar komputer saat ini)</string>
+    <string name="bentuk_kalimat_verbal_negatif_present_continuous">\t\t(-) Negatif : Subject + (is/am/are) + not \n\t\t+ V1 (Verb 1) + ing + Object. \n\t\tContoh : I am not learning Computer science now. \n\t\t(Saya tidak sedang belajar komputer saat ini)</string>
+    <string name="bentuk_kalimat_verbal_question_present_continuous">\t\t(?) Question : (is/am/are) + Subject \n\t\t+ V1 (Verb 1) + ing + Object? \n\t\tContoh : Am I learning Computer science now?\n\t\t(Apakah Saya sedang belajar komputer saat ini?)</string>
+    <string name="bentuk_kalimat_nominal_positif_present_continuous">\t\t(+) Positif : Subject + (is/am/are) + \n\t\t3 Complement. \n\t\tContoh : Lubna is a good student in our school. \n\t\t(Lubna murid yang baik di sekolah kami)</string>
+    <string name="bentuk_kalimat_nominal_negatif_present_continuous">\t\t(-) Negatif : Subject + (is/am/are) + not +\n\t\t3 Complement. \n\t\tContoh : Lubna is not a good student in our school. \n\t\t(Lubna bukan murid yang baik di sekolah kami)</string>
+    <string name="bentuk_kalimat_nominal_question_present_continuous">\t\t(?) Question : (is/am/are) + Subject \n\t\t+ 3 Complement? \n\t\tContoh : Is Lubna a good student in our school?\n\t\t(Apakah Lubna murid yang baik di sekolah kami?)</string>
 
 
+<!--    Ganti kata-kata complement menjadi nominal-->
 
 </resources>

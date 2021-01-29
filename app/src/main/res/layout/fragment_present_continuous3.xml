@@ -165,7 +165,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:text="@string/info_present_continuous"
+                    android:text="@string/info_simple_present"
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault"
                     android:textColor="@color/colorWhite" />
 

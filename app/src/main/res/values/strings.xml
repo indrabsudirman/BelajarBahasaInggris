@@ -363,7 +363,7 @@
     <string name="bentuk_kalimat_nominal_question_past_continuous">\t\t(?) Question : Was/Were + Subject \n\t\t+ 3 Complement? \n\t\tContoh : Was I happy?\n\t\t(Apakah saya senang?)</string>
     <string name="info_past_continuous"><b><u>Info :</u></b> \n\n- Was digunakan untuk Subject <b>I, She, He, It dan orang ketiga tunggal. Seperti: Lubna, Ahmad, dan lain-lain.</b>\n- Were digunakan untuk subjek <b>You, We dan They.</b></string>
 
-    <!-- Simple Past Continuous Tense, Test 2, Hal 4 -->
+    <!-- Past Continuous Tense, Test 2, Hal 4 -->
 
     <string name="past_continuous_tense_test2_1">1. I … well for the exam in last month.</string> <!-- wasn't preparing -->
     <string name="past_continuous_tense_test2_1_meaning">\t Saya tidak menyiapkan dengan baik untuk test \n\t saya bulan lalu.</string>
@@ -376,7 +376,7 @@
     <string name="past_continuous_tense_test2_5">5. I … Iqra when I … a kid?</string> <!-- was always studying, was -->
     <string name="past_continuous_tense_test2_5_meaning">\t Saya selalu belajar Iqra ketika saya kecil.</string>
 
-    <!-- Simple Past Continuous Tense, Hal 5, Time Signal (Sama dengan time signal, simple past -->
+    <!-- Past Continuous Tense, Hal 5, Time Signal (Sama dengan time signal, simple past -->
 
     <string name="info_time_signal_past_continuous_tense">Time Signal pada Past Continuous Tense <b>sama dengan</b> Time Signal yang ada pada Simple Past Tense. Hanya saja ada penambahan seperti : <b>at this time yesterday</b>, <b>at 9 o\'clock last night.</b></string>
 
@@ -406,6 +406,17 @@
     <string name="bentuk_kalimat_nominal_question_present_continuous">\t\t(?) Question : (is/am/are) + Subject \n\t\t+ 3 Complement? \n\t\tContoh : Is Lubna a good student in our school?\n\t\t(Apakah Lubna murid yang baik di sekolah kami?)</string>
 
 
-<!--    Ganti kata-kata complement menjadi nominal-->
+    <!-- Present Continuous Tense, Test 2, Hal 4 -->
+
+    <string name="present_continuous_tense_test2_1">1. Haby … a book.</string> <!-- is reading -->
+    <string name="present_continuous_tense_test2_1_meaning">\t Haby sedang membaca buku.</string>
+    <string name="present_continuous_tense_test2_2">2. They … lunch right now.</string> <!-- are eating (is eating) -->
+    <string name="present_continuous_tense_test2_2_meaning">\t Mereka sedang makan siang saat ini.</string>
+    <string name="present_continuous_tense_test2_3">3. … Teacher and Student at the \n\t\tschool\'s field now?</string> <!-- are  -->
+    <string name="present_continuous_tense_test2_3_meaning">\t Apakah Guru dan Siswa di lapangan \n\t\tsekolah saat ini?</string>
+    <string name="present_continuous_tense_test2_4">4.… Kids … their milk?</string> <!-- are, drinking (is) -->
+    <string name="present_continuous_tense_test2_4_meaning">\t Apakah anak-anak sedang meminum susunya?</string>
+    <string name="present_continuous_tense_test2_5">5. Android … operation system right now.</string> <!-- is a famous (are a familiar) -->
+    <string name="present_continuous_tense_test2_5_meaning">\t Android adalah operasi sistem yang \n\t\tterkenal saat ini.</string>
 
 </resources>

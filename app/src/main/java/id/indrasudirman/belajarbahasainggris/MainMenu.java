@@ -236,7 +236,7 @@ public class MainMenu extends AppCompatActivity {
         a = new EnglishList("Past Continuous Tense", 5, covers[4]); //5
         english.add(a);
 
-        a = new EnglishList("Present Continuous Tense", 5, covers[5]); //6
+        a = new EnglishList("Present Continuous Tense", 6, covers[5]); //6
         english.add(a);
 
         a = new EnglishList("Future Continuous Tense", 5, covers[6]); //7

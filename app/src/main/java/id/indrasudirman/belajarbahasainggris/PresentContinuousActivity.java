@@ -34,8 +34,8 @@ import id.indrasudirman.belajarbahasainggris.utils.PasswordMD5WithSalt;
 
 public class PresentContinuousActivity extends AppCompatActivity {
 
-    int[] colorIntArray = {R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary};
-    int[] iconIntArray = {R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_check};
+    int[] colorIntArray = {R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary, R.color.colorPrimary};
+    int[] iconIntArray = {R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_next_white, R.drawable.ic_check, R.drawable.ic_next_white, R.drawable.ic_check};
     private ViewPager2 viewPager2;
     private FloatingActionButton floatingActionButton;
     private int score = 0;
@@ -116,6 +116,12 @@ public class PresentContinuousActivity extends AppCompatActivity {
                     }
                     case 4: {
                         tab.setText("Hal 5");
+                        tab.setIcon(R.drawable.ic_baseline_menu_book_24);
+                        tab.view.setClickable(false);
+                        break;
+                    }
+                    case 5: {
+                        tab.setText("Hal 6");
                         tab.setIcon(R.drawable.test);
                         tab.view.setClickable(false);
                         break;
@@ -155,6 +161,12 @@ public class PresentContinuousActivity extends AppCompatActivity {
                         score = user.getScore();
                         System.out.println("Score : " + score);
                         break;
+                    case 5:
+                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                        user.setScore(6);
+                        score = user.getScore();
+                        System.out.println("Score : " + score);
+                        break;
                 }
             }
         });
@@ -179,6 +191,9 @@ public class PresentContinuousActivity extends AppCompatActivity {
                         break;
                     case 4:
                         tab.view.setClickable(score >= 4);
+                        break;
+                    case 5:
+                        tab.view.setClickable(score >= 5);
                         break;
                 }
 

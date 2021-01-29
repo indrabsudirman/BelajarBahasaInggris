@@ -10,6 +10,7 @@ import id.indrasudirman.belajarbahasainggris.presentcontinuous.PresentContinuous
 import id.indrasudirman.belajarbahasainggris.presentcontinuous.PresentContinuousFragment3;
 import id.indrasudirman.belajarbahasainggris.presentcontinuous.PresentContinuousFragment4;
 import id.indrasudirman.belajarbahasainggris.presentcontinuous.PresentContinuousFragment5;
+import id.indrasudirman.belajarbahasainggris.presentcontinuous.PresentContinuousFragment6;
 
 public class PresentContinuousAdapter extends FragmentStateAdapter {
 
@@ -29,6 +30,8 @@ public class PresentContinuousAdapter extends FragmentStateAdapter {
                 return new PresentContinuousFragment4();
             case 4:
                 return new PresentContinuousFragment5();
+            case 5:
+                return new PresentContinuousFragment6();
             default:
                 return new PresentContinuousFragment1();
         }
@@ -36,6 +39,6 @@ public class PresentContinuousAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 5;
+        return 6;
     }
 }

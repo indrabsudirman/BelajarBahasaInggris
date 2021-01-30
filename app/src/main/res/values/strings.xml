@@ -441,16 +441,16 @@
 
     <!-- Present Continuous Tense, Test 3, Hal 6 -->
 
-    <string name="present_continuous_tense_test3_1">1. Haby … a book.</string> <!-- is reading -->
-    <string name="present_continuous_tense_test3_1_meaning">\t Haby sedang membaca buku.</string>
-    <string name="present_continuous_tense_test3_2">2. They … lunch right now.</string> <!-- are eating (is eating) -->
-    <string name="present_continuous_tense_test3_2_meaning">\t Mereka sedang makan siang saat ini.</string>
-    <string name="present_continuous_tense_test3_3">3. … Teacher and Student at the \n\t\tschool\'s field now?</string> <!-- are  -->
-    <string name="present_continuous_tense_test3_3_meaning">\t Apakah Guru dan Siswa di lapangan \n\t\tsekolah saat ini?</string>
-    <string name="present_continuous_tense_test3_4">4.… Kids … their milk?</string> <!-- are, drinking (is) -->
-    <string name="present_continuous_tense_test3_4_meaning">\t Apakah anak-anak sedang meminum susunya?</string>
-    <string name="present_continuous_tense_test3_5">5. Android … operation system right now.</string> <!-- is a famous (are a familiar) -->
-    <string name="present_continuous_tense_test3_5_meaning">\t Android adalah operasi sistem yang \n\t\tterkenal saat ini.</string>
+    <string name="present_continuous_tense_test3_1">1. … you … a car … ?</string> <!-- are, driving, right now (drive) -->
+    <string name="present_continuous_tense_test3_1_meaning">\t Apakah kamu sedang mengendarai mobil saat ini?</string>
+    <string name="present_continuous_tense_test3_2">2. Lubna … English course … .</string> <!-- is taking, this semester (is take) -->
+    <string name="present_continuous_tense_test3_2_meaning">\t Lubna sedang mengikuti kursus Bahasa Inggris \n\t\tsemester ini.</string>
+    <string name="present_continuous_tense_test3_3">3. My parent … to mount Semeru this … .</string> <!-- are travelling, week (is travelling, month)  -->
+    <string name="present_continuous_tense_test3_3_meaning">\t Orang tua saya sedang jalan-jalan ke \n\t\tgunung Semeru minggu ini.</string>
+    <string name="present_continuous_tense_test3_4">4.Teacher … the lesson at this time.</string> <!-- is explaining -->
+    <string name="present_continuous_tense_test3_4_meaning">\t Guru sedang menjelaskan pelajaran saat ini</string>
+    <string name="present_continuous_tense_test3_5">5. … the Buses … at Monas.</string> <!-- today, are arriving -->
+    <string name="present_continuous_tense_test3_5_meaning">\t hari ini bus-bus sedang datang ke Monas.</string>
 
 
 </resources>

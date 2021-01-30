@@ -452,5 +452,12 @@
     <string name="present_continuous_tense_test3_5">5. … the Buses … at Monas.</string> <!-- today, are arriving -->
     <string name="present_continuous_tense_test3_5_meaning">\t hari ini bus-bus sedang datang ke Monas.</string>
 
+    <!-- Future Continuous Tense, Explain 1, Hal 1 -->
+
+    <string name="future_continuous_tense"><b><u>Future Continuous Tense</u></b></string>
+    <string name="future_continuous_tense_explain">Future Continuous Tense digunakan untuk menyatakan kejadian (aktivitas) yang <b>sedang terjadi pada saat ini.</b> Contoh: Lubna is studying in her room. (Lubna sedang belajar di kamarnya). \n\n<b><u>Penjelasannya :</u></b> \n\n Lubna saat ini, saat kita berbicara. Dia sedang belajar di kamarnya. <b>Jadi jelas, Present Continuous Tense adalah kejadian yang sedang dilakukan saat ini.</b></string>
+    <string name="second_bullet_future_continuous_tense">■ Lubna is studying in her room. \n\n \t\t(Lubna sedang belajar di kamarnya).</string>
+    <string name="third_bullet_future_continuous_tense">■ I am eating Sate right now. \n\n \t\t (Saya sedang makan Sate saat ini).</string>
+
 
 </resources>

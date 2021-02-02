@@ -82,18 +82,74 @@ public class FutureContinuousFragment1 extends Fragment {
             }
         };
 
+        ClickableSpan clickableSpanFutureContinuousExample1 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+                AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
+                //Set Title
+                alertDialogSimplePast.setTitle("Info");
+                alertDialogSimplePast.setMessage("Kata 'will be studying' adalah bentuk dari Future Continuous Tense, terdiri dari rumus will + be + verb 1 + ing. Studying dari kata kerja study artinya belajar.")
+                        .setCancelable(false)
+                        .setIcon(R.mipmap.ic_info_green)
+                        .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                                Toast.makeText(getActivity(), "Saya sudah paham", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog = alertDialogSimplePast.create();
+                alertDialog.show();
+            }
+        };
+
+        ClickableSpan clickableSpanFutureContinuousExample2 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+                AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
+                //Set Title
+                alertDialogSimplePast.setTitle("Info");
+                alertDialogSimplePast.setMessage("Kata 'will be eating' adalah bentuk dari Future Continuous Tense, terdiri dari rumus will + be + verb 1 + ing. Eating dari kata kerja eat artinya makan.")
+                        .setCancelable(false)
+                        .setIcon(R.mipmap.ic_info_green)
+                        .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                                Toast.makeText(getActivity(), "Saya sudah paham", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog = alertDialogSimplePast.create();
+                alertDialog.show();
+            }
+        };
+
         // simpleFutureExplain
-        spannableString[0].setSpan(clickableSpanPresentContinuousExplain,0,24,0);
+        spannableString[0].setSpan(clickableSpanPresentContinuousExplain,0,23,0);
         // make text bold
-        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 0, 24, 0);
+        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 0, 23, 0);
         // akan sedang dilakukan di masa depan.
-        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 77, 115, 0);
+        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 77, 113, 0);
         //Penjelasannya
-        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 330, 348, 0);
-        spannableString[0].setSpan(new UnderlineSpan(), 330, 348, 0);
+        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 330, 345, 0);
+        spannableString[0].setSpan(new UnderlineSpan(), 330, 345, 0);
         //Jadi Future Continuous Tense.
         spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 552, 581, 0);
         futureContinuousExplain.setMovementMethod(LinkMovementMethod.getInstance());
         futureContinuousExplain.setText(spannableString[0]);
+
+        // futureContinuousExample1
+        spannableString[1].setSpan(clickableSpanFutureContinuousExample1,8,24,0);
+        // make text bold
+        spannableString[1].setSpan(new StyleSpan(Typeface.BOLD), 8, 24, 0);
+        futureContinuousExample1.setMovementMethod(LinkMovementMethod.getInstance());
+        futureContinuousExample1.setText(spannableString[1]);
+
+        // futureContinuousExample2
+        spannableString[2].setSpan(clickableSpanFutureContinuousExample2,4,18,0);
+        // make text bold
+        spannableString[2].setSpan(new StyleSpan(Typeface.BOLD), 4, 18, 0);
+        futureContinuousExample2.setMovementMethod(LinkMovementMethod.getInstance());
+        futureContinuousExample2.setText(spannableString[2]);
     }
 }

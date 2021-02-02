@@ -466,4 +466,15 @@
     <string name="future_continuous_tense_test1_2">2. I … with my sister for two weeks.</string> <!-- will be staying (will staying)-->
     <string name="future_continuous_tense_test1_2_meaning">\t Saya akan tinggal bersama saudara \n\t perempuan saya selama 2 minggu.</string>
 
+    <!-- Future Continuous, Explain 2, Hal 3 -->
+    <string name="pola_kalimat_future_continuous">Pola kalimat Future Continuous</string>
+    <string name="bentuk_kalimat_verbal_future_continuous">■ Bentuk kalimat verbal</string>
+    <string name="bentuk_kalimat_nominal_future_continuous">■ Bentuk kalimat nominal</string>
+    <string name="bentuk_kalimat_verbal_positif_future_continuous">\t\t(+) Positif : Subject + Will/Shall + be + V1 (Verb 1) + ing + \n\t\t+ Object. \n\t\tContoh : I am learning Computer science now. \n\t\t(Saya sedang belajar komputer saat ini)</string>
+    <string name="bentuk_kalimat_verbal_negatif_future_continuous">\t\t(-) Negatif : Subject + Will/Shall + not + be + V1 (Verb 1) \n\t\t+ ing + Object. \n\t\tContoh : I am not learning Computer science now. \n\t\t(Saya tidak sedang belajar komputer saat ini)</string>
+    <string name="bentuk_kalimat_verbal_question_future_continuous">\t\t(?) Question : Will/Shall + Subject \n\t\t+ be + V1 (Verb 1) + ing + Object? \n\t\tContoh : Am I learning Computer science now?\n\t\t(Apakah Saya sedang belajar komputer saat ini?)</string>
+    <string name="bentuk_kalimat_nominal_positif_future_continuous">\t\t(+) Positif : Subject + (is/am/are) + \n\t\t3 Complement. \n\t\tContoh : Lubna is a good student in our school. \n\t\t(Lubna murid yang baik di sekolah kami)</string>
+    <string name="bentuk_kalimat_nominal_negatif_future_continuous">\t\t(-) Negatif : Subject + (is/am/are) + not +\n\t\t3 Complement. \n\t\tContoh : Lubna is not a good student in our school. \n\t\t(Lubna bukan murid yang baik di sekolah kami)</string>
+    <string name="bentuk_kalimat_nominal_question_future_continuous">\t\t(?) Question : (is/am/are) + Subject \n\t\t+ 3 Complement? \n\t\tContoh : Is Lubna a good student in our school?\n\t\t(Apakah Lubna murid yang baik di sekolah kami?)</string>
+
 </resources>

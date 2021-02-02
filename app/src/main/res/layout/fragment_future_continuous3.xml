@@ -5,10 +5,182 @@
     android:layout_height="match_parent"
     tools:context=".futurecontinuous.FutureContinuousFragment3">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Future Continuous Fragment 3" />
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linear_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:text="@string/pola_kalimat_future_continuous"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/verbalPresentContinuous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_verbal_future_continuous"
+                    android:textColor="@color/colorBlack" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/verbalPositifPresentContinuous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_verbal_positif_future_continuous"
+                    android:textColor="@color/colorBlack" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/verbalNegatifPresentContinuous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_verbal_negatif_future_continuous"
+                    android:textColor="@color/colorBlack" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/verbalQuestionPresentContinuous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_verbal_question_future_continuous"
+                    android:textColor="@color/colorBlack" />
+
+                <!-- Bentuk kalimat nominal -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/linear_layout1"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nominalPresentContinuous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_nominal_future_continuous"
+                    android:textColor="@color/colorBlack" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nominalPositifPresentContinuous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_nominal_positif_future_continuous"
+                    android:textColor="@color/colorBlack" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nominalNegatifPresentContinuous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_nominal_negatif_future_continuous"
+                    android:textColor="@color/colorBlack" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nominalQuestionPresentContinuous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/bentuk_kalimat_nominal_question_future_continuous"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_rectangle_green"
+                android:id="@+id/layoutQuestion1"
+                android:layout_below="@id/linear_layout2"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@mipmap/ic_info_green" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/info_simple_present"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/layoutQuestion1"
+                android:layout_gravity="bottom"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
 
 </FrameLayout>

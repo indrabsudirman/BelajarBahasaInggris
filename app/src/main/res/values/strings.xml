@@ -459,5 +459,11 @@
     <string name="second_bullet_future_continuous_tense">■ Lubna will be studying in her room \n\t\tat 8 o\'clock tonight. \n\n \t\t(Lubna akan sedang belajar di kamarnya \n\t\tpada jam 8 malam ini).</string>
     <string name="third_bullet_future_continuous_tense">■ I will be eating breakfast at \n\t\t7 o\'clock tomorrow morning. \n\n \t\t (Saya akan sedang sarapan jam 7 \n\t\tbesok pagi).</string>
 
+    <!-- Future Continuous, Test 1, Hal 2 -->
+
+    <string name="future_continuous_tense_test1_1">1. Haby … at eight o\'clock tonight.</string> <!-- will be sleeping (will sleeping) -->
+    <string name="future_continuous_tense_test1_1_meaning">\t Haby akan sedang tidur pada pukul \n\t 8 nanti malam.</string>
+    <string name="future_continuous_tense_test1_2">2. I … with my sister for two weeks.</string> <!-- will be staying (will staying)-->
+    <string name="future_continuous_tense_test1_2_meaning">\t Saya akan tinggal bersama saudara \n\t perempuan saya selama 2 minggu.</string>
 
 </resources>

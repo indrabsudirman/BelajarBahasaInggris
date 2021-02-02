@@ -70,6 +70,13 @@ public class PresentContinuousFragment2 extends Fragment implements View.OnDragL
         findView();
         implementEventTooltips();
         implementEvent();
+        //SCROLLVIEW
+        scrollViewPresentContinuous2.setOnScrollViewListener(new MyScrollView.OnScrollViewListener() {
+            @Override
+            public void onScrollChanged1(MyScrollView.OnScrollViewListener listener) {
+                mScrollDistance = scrollViewPresentContinuous2.getScrollY();
+            }
+        });
 
         return view;
     }

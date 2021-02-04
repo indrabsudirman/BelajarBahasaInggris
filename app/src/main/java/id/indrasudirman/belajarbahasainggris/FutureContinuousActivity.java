@@ -148,10 +148,7 @@ public class FutureContinuousActivity extends AppCompatActivity {
                         System.out.println("Score : " + score);
                         break;
                     case 3:
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        user.setScore(4);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
+                        checkAnswerFutureContinuous2();
                         break;
                     case 4:
                         viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
@@ -341,6 +338,216 @@ public class FutureContinuousActivity extends AppCompatActivity {
         TextInputEditText editTextQuestion = findViewById(R.id.dropFutureContinuousTwo);
 
         String key = "c0958edc0d4aee815ec91d5bb2fd1820";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    // checkAnswerFutureContinuous2
+    private void checkAnswerFutureContinuous2() {
+
+        ArrayList<String> incorrectAnswerList = new ArrayList<>();
+
+        int numberOfQuestionCorrect = 0;
+
+        if (checkQuestionFutureContinuousTestTwo1()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 1");
+        }
+
+        if (checkQuestionFutureContinuousTestTwo2()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 2 (1)");
+        }
+
+        if (checkQuestionFutureContinuousTestTwo3()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 2 (2)");
+        }
+
+        if (checkQuestionFutureContinuousTestTwo4()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 3 (1)");
+        }
+
+        if (checkQuestionFutureContinuousTestTwo5()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 3 (2)");
+        }
+
+        if (checkQuestionFutureContinuousTestTwo6()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 4 (1)");
+        }
+
+        if (checkQuestionFutureContinuousTestTwo7()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 4 (2)");
+        }
+
+        if (checkQuestionFutureContinuousTestTwo8()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 5 (1)");
+        }
+
+        if (checkQuestionFutureContinuousTestTwo9()) {
+            numberOfQuestionCorrect++;
+        } else {
+            incorrectAnswerList.add("Soal No 5 (1)");
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (String s : incorrectAnswerList) {
+            sb.append(s);
+            sb.append("\n");
+        }
+
+        if (numberOfQuestionCorrect == 9) {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(FutureContinuousActivity.this);
+            alertDialogBuilder
+                    .setTitle("Selamat!")
+                    .setMessage("Anda berhasil, nilai Anda : " + numberOfQuestionCorrect + "/9\nIni Sempurna. Anda dapat melanjutkan ke pelajaran berikutnya.")
+                    .setCancelable(false)
+                    .setPositiveButton("Halaman berikutnya",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    //Set Score user to 1
+                                    score = 2;
+                                    user.setScore(score);
+                                    score = user.getScore();
+                                    System.out.println("Score : " + score);
+                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+
+                                }
+                            });
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+
+        } else {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(FutureContinuousActivity.this);
+            alertDialogBuilder
+                    .setTitle("Gagal!")
+                    .setMessage("Anda gagal, Nilai Anda adalah : " + numberOfQuestionCorrect + "/9\nAnda belum dapat melanjutkan pelajaran berikutnya.\n\n" + "Perbaiki jawaban Anda : \n\n" + sb.toString())
+                    .setCancelable(false)
+                    .setPositiveButton("Mulai test lagi",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem());
+
+                                }
+                            })
+
+                    .setNegativeButton("Keluar aplikasi",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    moveTaskToBack(true);
+                                    finish();
+                                }
+                            });
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+        }
+
+    }
+
+    private boolean checkQuestionFutureContinuousTestTwo1() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropFutureContinuousOne);
+
+        String key = "c904f121a174a9195bdaf52cc0ce0ffc";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestionFutureContinuousTestTwo2() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropFutureContinuousTwoOne);
+
+        String key = "18218139eec55d83cf82679934e5cd75";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestionFutureContinuousTestTwo3() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropFutureContinuousTwoTwo);
+
+        String key = "9070104ead638cf6f455957960d1f10b";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestionFutureContinuousTestTwo4() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropFutureContinuousThreeOne);
+
+        String key = "18218139eec55d83cf82679934e5cd75";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestionFutureContinuousTestTwo5() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropFutureContinuousThreeTwo);
+
+        String key = "ab6b9e6961944336a75371643038d0a9";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestionFutureContinuousTestTwo6() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropFutureContinuousFourOne);
+
+        String key = "18218139eec55d83cf82679934e5cd75";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestionFutureContinuousTestTwo7() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropFutureContinuousFourTwo);
+
+        String key = "4b003aa6d54189dda49503e6725c4200";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestionFutureContinuousTestTwo8() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropFutureContinuousFiveOne);
+
+        String key = "eeaba41a1b7e3f05b37a52ed30243699";
+
+        PasswordMD5WithSalt p = new PasswordMD5WithSalt();
+
+        return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private boolean checkQuestionFutureContinuousTestTwo9() {
+        TextInputEditText editTextQuestion = findViewById(R.id.dropFutureContinuousFiveTwo);
+
+        String key = "9b49b1d83e042314833b3661cb2f0624";
 
         PasswordMD5WithSalt p = new PasswordMD5WithSalt();
 

@@ -53,9 +53,9 @@ public class FutureContinuousFragment4 extends Fragment implements View.OnDragLi
     private AppCompatButton tooltipsDropFutureContinuousThree;
     private AppCompatButton tooltipsDropFutureContinuousFour;
     private AppCompatButton tooltipsDropFutureContinuousFive;
-    private static final String TEXT_VIEW_OPTION_ONE = "Shall";
+    private static final String TEXT_VIEW_OPTION_ONE = "shall";
     private static final String TEXT_VIEW_OPTION_TWO = "be frying";
-    private static final String TEXT_VIEW_OPTION_THREE = "not climbing";
+    private static final String TEXT_VIEW_OPTION_THREE = "be climbing";
     private static final String TEXT_VIEW_OPTION_FOUR = "will";
     private static final String TEXT_VIEW_OPTION_FIVE = "be waiting";
     private static final String TEXT_VIEW_OPTION_SIX = "will";

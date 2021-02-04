@@ -303,7 +303,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="Shall"
+                    android:text="shall"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -314,7 +314,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="not climbing"
+                    android:text="be climbing"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 

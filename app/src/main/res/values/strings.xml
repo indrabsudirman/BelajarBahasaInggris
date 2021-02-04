@@ -470,11 +470,12 @@
     <string name="pola_kalimat_future_continuous">Pola kalimat Future Continuous</string>
     <string name="bentuk_kalimat_verbal_future_continuous">■ Bentuk kalimat verbal</string>
     <string name="bentuk_kalimat_nominal_future_continuous">■ Bentuk kalimat nominal</string>
-    <string name="bentuk_kalimat_verbal_positif_future_continuous">\t\t(+) Positif : Subject + Will/Shall + be + V1 (Verb 1) + ing + \n\t\t+ Object. \n\t\tContoh : I am learning Computer science now. \n\t\t(Saya sedang belajar komputer saat ini)</string>
-    <string name="bentuk_kalimat_verbal_negatif_future_continuous">\t\t(-) Negatif : Subject + Will/Shall + not + be + V1 (Verb 1) \n\t\t+ ing + Object. \n\t\tContoh : I am not learning Computer science now. \n\t\t(Saya tidak sedang belajar komputer saat ini)</string>
-    <string name="bentuk_kalimat_verbal_question_future_continuous">\t\t(?) Question : Will/Shall + Subject \n\t\t+ be + V1 (Verb 1) + ing + Object? \n\t\tContoh : Am I learning Computer science now?\n\t\t(Apakah Saya sedang belajar komputer saat ini?)</string>
-    <string name="bentuk_kalimat_nominal_positif_future_continuous">\t\t(+) Positif : Subject + (is/am/are) + \n\t\t3 Complement. \n\t\tContoh : Lubna is a good student in our school. \n\t\t(Lubna murid yang baik di sekolah kami)</string>
-    <string name="bentuk_kalimat_nominal_negatif_future_continuous">\t\t(-) Negatif : Subject + (is/am/are) + not +\n\t\t3 Complement. \n\t\tContoh : Lubna is not a good student in our school. \n\t\t(Lubna bukan murid yang baik di sekolah kami)</string>
-    <string name="bentuk_kalimat_nominal_question_future_continuous">\t\t(?) Question : (is/am/are) + Subject \n\t\t+ 3 Complement? \n\t\tContoh : Is Lubna a good student in our school?\n\t\t(Apakah Lubna murid yang baik di sekolah kami?)</string>
+    <string name="bentuk_kalimat_verbal_positif_future_continuous">\t\t(+) Positif : Subject + Will/Shall + be + V1 (Verb 1)\n\t\t + ing + Object. \n\t\tContoh : My parent will be travelling to Yogyakarta \n\t\tthis afternoon. \n\t\t(Orang tua saya akan sedang pergi ke Yogyakarta \n\t\tsiang ini)</string>
+    <string name="bentuk_kalimat_verbal_negatif_future_continuous">\t\t(-) Negatif : Subject + Will/Shall + not + be \n\t\t+ V1 (Verb 1) + ing + Object. \n\t\tContoh : My parent will not be travelling \n\t\tto Yogyakarta this week. \n\t\t(Orang tua saya tidak akan sedang \n\t\tpergi ke Yogyakarta siang ini)</string>
+    <string name="bentuk_kalimat_verbal_question_future_continuous">\t\t(?) Question : Will/Shall + Subject \n\t\t+ be + V1 (Verb 1) + ing + Object? \n\t\tContoh : Will my parent be travelling to Yogyakarta \n\t\tthis afternoon?\n\t\t(Apakah Orang tua saya akan sedang pergi \n\t\tke Yogyakarta siang ini?)</string>
+    <string name="bentuk_kalimat_nominal_positif_future_continuous">\t\t(+) Positif : Subject + Will/Shall + be + \n\t\t3 Complement. \n\t\tContoh : Lubna will be a student next year. \n\t\t(Lubna akan menjadi murid tahun depan)</string>
+    <string name="bentuk_kalimat_nominal_negatif_future_continuous">\t\t(-) Negatif : Subject + Will/Shall + not + be +\n\t\t3 Complement. \n\t\tContoh : Lubna will not be a student next year. \n\t\t(Lubna tidak akan menjadi murid tahun depan)</string>
+    <string name="bentuk_kalimat_nominal_question_future_continuous">\t\t(?) Question : Will/Shall + Subject + be\n\t\t+ 3 Complement? \n\t\tContoh : Will Lubna be a student next year?\n\t\t(Apakah Lubna akan menjadi murid tahun depan?)</string>
+    <string name="info_future_continuous"><b><u>Info :</u></b> \n\n- Shall digunakan untuk Subject <b>I dan we</b>.\n- Will digunakan untuk semua <b>Subject</b></string>
 
 </resources>

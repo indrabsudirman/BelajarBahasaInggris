@@ -478,4 +478,17 @@
     <string name="bentuk_kalimat_nominal_question_future_continuous">\t\t(?) Question : Will/Shall + Subject + be\n\t\t+ 3 Complement? \n\t\tContoh : Will Lubna be a student next year?\n\t\t(Apakah Lubna akan menjadi murid tahun depan?)</string>
     <string name="info_future_continuous"><b><u>Info :</u></b> \n\n- Shall digunakan untuk Subject <b>I dan we</b>.\n- Will digunakan untuk semua <b>Subject</b></string>
 
+    <!-- Future Continuous Tense, Test 2, Hal 4 -->
+
+    <string name="future_continuous_tense_test2_1">1. Ahmad will … at University next semester.</string> <!-- be studying  -->
+    <string name="future_continuous_tense_test2_1_meaning">\t Ahmad akan belajar di Universitas \n\t\tsemester depan.</string>
+    <string name="future_continuous_tense_test2_2">2. He … not … next year.</string> <!-- will, be teacher -->
+    <string name="future_continuous_tense_test2_2_meaning">\t Dia laki-laki tidak akan menjadi \n\t\tguru tahun depan.</string>
+    <string name="future_continuous_tense_test2_3">3. … She … you there this night?</string> <!-- will, be waiting  -->
+    <string name="future_continuous_tense_test2_3_meaning">\t Apakah dia perempuan akan sedang \n\t\tmenunggumu di sana malam ini?</string>
+    <string name="future_continuous_tense_test2_4">4.Indra … be … Semeru mount during \n\t\teruption this week.</string> <!-- will, not climbing -->
+    <string name="future_continuous_tense_test2_4_meaning">\t Indra tidak akan sedang mendaki Gunung Semeru \n\t\tselama erupsi minggu ini.</string>
+    <string name="future_continuous_tense_test2_5">5. … we … tempe tomorrow morning?</string> <!-- Shall, be frying -->
+    <string name="future_continuous_tense_test2_5_meaning">\t Apakah kita akan sedang menggoreng \n\t\ttempe besok pagi?</string>
+
 </resources>

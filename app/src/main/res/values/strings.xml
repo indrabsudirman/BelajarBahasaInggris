@@ -491,4 +491,24 @@
     <string name="future_continuous_tense_test2_5">5. … we … tempe tomorrow morning?</string> <!-- shall, be frying -->
     <string name="future_continuous_tense_test2_5_meaning">\t Apakah kita akan sedang menggoreng \n\t\ttempe besok pagi?</string>
 
+    <!-- Future Continuous Tense, Explain 3, Hal 5 (Time Signal) -->
+    <string name="time_signal_future_continuous_tense">Keterangan waktu <b>(Time signal)</b> pada Present Continuous Tense</string>
+<!--    <string name="now">Now</string>-->
+<!--    <string name="right_now">Right now</string>-->
+<!--    <string name="at_present">At present</string>-->
+<!--    <string name="at_this_time">This time</string>-->
+<!--    <string name="at_this_moment">This moment</string>-->
+<!--    <string name="sekarang_saat_ini">Sekarang / Saat ini</string>-->
+<!--    <string name="today">Today</string>-->
+<!--    <string name="hari_ini">Hari ini</string>-->
+<!--    <string name="this_semester">This semester</string>-->
+<!--    <string name="semester_ini">Semester ini</string>-->
+<!--    <string name="this_week">This week</string>-->
+<!--    <string name="minggu_ini">Minggu ini</string>-->
+<!--    <string name="this_month">This month</string>-->
+<!--    <string name="bulan_ini">Bulan ini</string>-->
+<!--    <string name="this_year">This year</string>-->
+<!--    <string name="tahun_ini">Tahun ini</string>-->
+    <string name="mengerti_time_signal_future_continuous">Bagaimana, sudah mengerti mengenai Time Signal pada Present Continuous Tense? Jika sudah paham klik <b>next</b> untuk mencoba mengerjakan test.</string>
+
 </resources>

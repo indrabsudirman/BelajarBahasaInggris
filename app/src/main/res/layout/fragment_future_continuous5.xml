@@ -37,7 +37,7 @@
                         android:layout_span="3"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/time_signal_present_continuous_tense"
+                        android:text="@string/time_signal_future_continuous_tense"
                         android:textColor="@color/colorBlack"/>
 
                 </TableRow>
@@ -82,7 +82,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/now"
+                        android:text="@string/tomorrow"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -90,7 +90,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/sekarang_saat_ini"
+                        android:text="@string/besok"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
@@ -107,7 +107,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/right_now"
+                        android:text="@string/tonight"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -116,7 +116,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/sekarang_saat_ini"
+                        android:text="@string/malam_ini"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
@@ -131,7 +131,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/at_present"
+                        android:text="@string/next_week"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -139,7 +139,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/sekarang_saat_ini"
+                        android:text="@string/minggu_depan"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
@@ -154,7 +154,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/at_this_time"
+                        android:text="@string/next_month"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -162,7 +162,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/sekarang_saat_ini"
+                        android:text="@string/bulan_depan"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
@@ -170,15 +170,14 @@
                 <!-- Row 7 with 2 columns -->
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/at_this_moment"
+                        android:text="today"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -186,24 +185,22 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/sekarang_saat_ini"
-                        android:textColor="@color/colorBlack"
-                        android:layout_span="3"/>
+                        android:text="hari ini"
+                        android:textColor="@color/colorBlack" />
 
                 </TableRow>
 
                 <!-- Row 8 with 2 columns -->
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/today"
+                        android:text="this morning"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -211,24 +208,22 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/hari_ini"
-                        android:textColor="@color/colorBlack"
-                        android:layout_span="3"/>
+                        android:text="pagi ini"
+                        android:textColor="@color/colorBlack" />
 
                 </TableRow>
 
                 <!-- Row 9 with 2 columns -->
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/this_semester"
+                        android:text="today"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -236,24 +231,22 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/semester_ini"
-                        android:textColor="@color/colorBlack"
-                        android:layout_span="3"/>
+                        android:text="hari ini"
+                        android:textColor="@color/colorBlack" />
 
                 </TableRow>
 
                 <!-- Row 10 with 2 columns -->
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/this_week"
+                        android:text="at eight o'clock tonight"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -261,65 +254,14 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/minggu_ini"
-                        android:textColor="@color/colorBlack"
-                        android:layout_span="3"/>
-
-                </TableRow>
-
-                <!-- Row 11 with 2 columns -->
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
-
-                    <TextView
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/this_month"
+                        android:text="malam ini pukul 8"
                         android:textColor="@color/colorBlack" />
 
-                    <TextView
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/bulan_ini"
-                        android:textColor="@color/colorBlack"
-                        android:layout_span="3"/>
-
                 </TableRow>
 
-                <!-- Row 12 with 2 columns -->
+                <!-- Row 11 with 1 column -->
                 <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
-
-                    <TextView
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/this_year"
-                        android:textColor="@color/colorBlack" />
-
-                    <TextView
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/tahun_ini"
-                        android:textColor="@color/colorBlack"
-                        android:layout_span="3"/>
-
-                </TableRow>
-
-                <!-- Row 13 with 1 column -->
-                <TableRow
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal">
 
@@ -359,12 +301,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:text="@string/mengerti_time_signal_present_continuous"
+                    android:text="@string/info_time_signal_future_continuous_tense"
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault"
                     android:textColor="@color/colorWhite" />
 
             </LinearLayout>
-
 
             <View
                 android:id="@+id/view"

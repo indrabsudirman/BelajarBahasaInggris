@@ -151,10 +151,7 @@ public class FutureContinuousActivity extends AppCompatActivity {
                         checkAnswerFutureContinuous2();
                         break;
                     case 4:
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        user.setScore(5);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
+                        finishOnFutureContinuous();
                         break;
                 }
             }
@@ -422,7 +419,7 @@ public class FutureContinuousActivity extends AppCompatActivity {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
                                     //Set Score user to 1
-                                    score = 2;
+                                    score = 3;
                                     user.setScore(score);
                                     score = user.getScore();
                                     System.out.println("Score : " + score);
@@ -552,5 +549,30 @@ public class FutureContinuousActivity extends AppCompatActivity {
         PasswordMD5WithSalt p = new PasswordMD5WithSalt();
 
         return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private void finishOnFutureContinuous() {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(FutureContinuousActivity.this);
+        alertDialogBuilder
+                .setTitle("Selamat!")
+                .setMessage("Pembelajaran Future Continuous Tense sudah selesai. Anda dapat melanjutkan ke pelajaran berikutnya Past Future Continuous Tense.")
+                .setCancelable(false)
+                .setPositiveButton("Past Future Continuous Tense",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                //Set Score user to 1
+                                score = 4;
+                                user.setScore(score);
+                                score = user.getScore();
+                                System.out.println("Score : " + score);
+                                startActivity(new Intent(getApplicationContext()
+                                        ,MainMenu.class));
+                                overridePendingTransition(0, 0);
+                            }
+                        });
+
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
     }
 }

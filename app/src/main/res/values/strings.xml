@@ -495,4 +495,11 @@
     <string name="time_signal_future_continuous_tense">Keterangan waktu <b>(Time signal)</b> pada Present Continuous Tense</string>
     <string name="info_time_signal_future_continuous_tense">Time Signal pada Future Continuous Tense <b>hampir sama dengan</b> Time Signal pada Simple Future Tense.</string>
 
+    <!-- Past Future Continuous Tense, Explain 1, Hal 1 -->
+
+    <string name="past_future_continuous_tense"><b><u>Past Future Continuous Tense</u></b></string>
+    <string name="past_future_continuous_tense_explain">Past Future Continuous Tense digunakan untuk menyatakan kejadian (aktivitas) yang <b>akan sedang dilakukan di masa depan. Tapi diwaktu lampau (sudah berlalu)</b> Itulah sebabnya ditambahkan kata <b>Past,</b> menjadi Past Future Continuous Tense. Contoh: Haby <b>should be studying</b> hard last week. (Haby akan sedang belajar dengan sungguh-sungguh minggu lalu). \n\n<b><u>Penjelasannya :</u></b> \n\n Haby sedang belajar dengan sungguh-sungguh minggu lalu, kejadian yang akan (sedang) dikerjakan tetapi di masa lalu, sudah berakhir kejadiannya. Sehingga dikenal dengan Past Future Continuous Tense.</string>
+    <string name="second_bullet_past_future_continuous_tense">■ Haby should be studying hard \n\t\tlast week. \n\n \t\t(Haby akan sedang belajar dengan \n\t\tsungguh-sungguh minggu lalu).</string>
+    <string name="third_bullet_past_future_continuous_tense">■ My motorcycle should be parking here last night. \n\n \t\t (Motor saya akan sedang parkir di sini \n\t\tsemalam).</string>
+
 </resources>

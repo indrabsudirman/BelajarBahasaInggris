@@ -143,7 +143,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@null"
-                    android:text="will be staying"
+                    android:text="should be sleeping"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -154,7 +154,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="will staying"
+                    android:text="should sleeping"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -165,7 +165,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="will sleeping"
+                    android:text="should driving"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -176,7 +176,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="will be sleeping"
+                    android:text="should be driving"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 

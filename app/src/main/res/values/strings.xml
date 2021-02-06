@@ -502,4 +502,10 @@
     <string name="second_bullet_past_future_continuous_tense">■ Haby should be studying hard \n\t\tlast week. \n\n \t\t(Haby akan sedang belajar dengan \n\t\tsungguh-sungguh minggu lalu).</string>
     <string name="third_bullet_past_future_continuous_tense">■ My motorcycle should be parking here last night. \n\n \t\t (Motor saya akan sedang parkir di sini \n\t\tsemalam).</string>
 
+    <!-- Past Future Continuous, Test 1, Hal 2 -->
+
+    <string name="past_future_continuous_tense_test1_1">1. Haby … at eight o\'clock tonight.</string> <!-- will be sleeping (will sleeping) -->
+    <string name="past_future_continuous_tense_test1_1_meaning">\t Haby akan sedang tidur pada pukul \n\t 8 nanti malam.</string>
+    <string name="past_future_continuous_tense_test1_2">2. I … with my sister for two weeks.</string> <!-- will be staying (will staying)-->
+    <string name="past_future_continuous_tense_test1_2_meaning">\t Saya akan tinggal bersama saudara \n\t perempuan saya selama 2 minggu.</string>
 </resources>

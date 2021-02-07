@@ -508,4 +508,17 @@
     <string name="past_future_continuous_tense_test1_1_meaning">\t Nury akan sedang mengendarai mobilnya semalam.</string>
     <string name="past_future_continuous_tense_test1_2">2. I … at eleven o\'clock in the night 2 days ago.</string> <!-- should be sleeping (should sleeping)-->
     <string name="past_future_continuous_tense_test1_2_meaning">\t Saya akan sedang tidur jam 11 malam \n\t\t2 hari yang lalu.</string>
+
+    <!-- Past Future Continuous, Explain 2, Hal 3 -->
+    <string name="pola_kalimat_past_future_continuous">Pola kalimat Past Future Continuous</string>
+    <string name="bentuk_kalimat_verbal_past_future_continuous">■ Bentuk kalimat verbal</string>
+    <string name="bentuk_kalimat_nominal_past_future_continuous">■ Bentuk kalimat nominal</string>
+    <string name="bentuk_kalimat_verbal_positif_past_future_continuous">\t\t(+) Positif : Subject + Will/Shall + be + V1 (Verb 1)\n\t\t + ing + Object. \n\t\tContoh : My parent will be travelling to Yogyakarta \n\t\tthis afternoon. \n\t\t(Orang tua saya akan sedang pergi ke Yogyakarta \n\t\tsiang ini)</string>
+    <string name="bentuk_kalimat_verbal_negatif_past_future_continuous">\t\t(-) Negatif : Subject + Will/Shall + not + be \n\t\t+ V1 (Verb 1) + ing + Object. \n\t\tContoh : My parent will not be travelling \n\t\tto Yogyakarta this week. \n\t\t(Orang tua saya tidak akan sedang \n\t\tpergi ke Yogyakarta siang ini)</string>
+    <string name="bentuk_kalimat_verbal_question_past_future_continuous">\t\t(?) Question : Will/Shall + Subject \n\t\t+ be + V1 (Verb 1) + ing + Object? \n\t\tContoh : Will my parent be travelling to Yogyakarta \n\t\tthis afternoon?\n\t\t(Apakah Orang tua saya akan sedang pergi \n\t\tke Yogyakarta siang ini?)</string>
+    <string name="bentuk_kalimat_nominal_positif_past_future_continuous">\t\t(+) Positif : Subject + Will/Shall + be + \n\t\t3 Complement. \n\t\tContoh : Lubna will be a student next year. \n\t\t(Lubna akan menjadi murid tahun depan)</string>
+    <string name="bentuk_kalimat_nominal_negatif_past_future_continuous">\t\t(-) Negatif : Subject + Will/Shall + not + be +\n\t\t3 Complement. \n\t\tContoh : Lubna will not be a student next year. \n\t\t(Lubna tidak akan menjadi murid tahun depan)</string>
+    <string name="bentuk_kalimat_nominal_question_past_future_continuous">\t\t(?) Question : Will/Shall + Subject + be\n\t\t+ 3 Complement? \n\t\tContoh : Will Lubna be a student next year?\n\t\t(Apakah Lubna akan menjadi murid tahun depan?)</string>
+    <string name="info_past_future_continuous"><b><u>Info :</u></b> \n\n- Shall digunakan untuk Subject <b>I dan we</b>.\n- Will digunakan untuk semua <b>Subject</b></string>
+
 </resources>

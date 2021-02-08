@@ -36,7 +36,7 @@ public class FutureContinuousFragment3 extends Fragment {
 
     public FutureContinuousFragment3() {
         // Required empty public constructor
-        view = null;
+
     }
 
 

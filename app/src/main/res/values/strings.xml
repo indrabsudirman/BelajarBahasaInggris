@@ -521,4 +521,17 @@
     <string name="bentuk_kalimat_nominal_question_past_future_continuous">\t\t(?) Question : Would/Should + Subject + be\n\t\t+ 3 Complement? \n\t\tContoh : Would Lubna be a student last year?\n\t\t(Apakah Lubna akan menjadi murid tahun lalu?)</string>
     <string name="info_past_future_continuous"><b><u>Info :</u></b> \n\n- Should digunakan untuk Subject <b>I dan we</b>.\n- Would digunakan untuk semua <b>Subject</b></string>
 
+    <!-- Past Future Continuous Tense, Test 2, Hal 4 -->
+
+    <string name="past_future_continuous_tense_test2_1">1. Ahmad will … at University next semester.</string> <!-- be studying  -->
+    <string name="past_future_continuous_tense_test2_1_meaning">\t Ahmad akan belajar di Universitas \n\t\tsemester depan.</string>
+    <string name="past_future_continuous_tense_test2_2">2. He … not … next year.</string> <!-- will, be teacher -->
+    <string name="past_future_continuous_tense_test2_2_meaning">\t Dia laki-laki tidak akan menjadi \n\t\tguru tahun depan.</string>
+    <string name="past_future_continuous_tense_test2_3">3. … She … you there this night?</string> <!-- will, be waiting  -->
+    <string name="past_future_continuous_tense_test2_3_meaning">\t Apakah dia perempuan akan sedang \n\t\tmenunggumu di sana malam ini?</string>
+    <string name="past_future_continuous_tense_test2_4">4.Indra … not … Semeru mount during \n\t\teruption this week.</string> <!-- will, be climbing -->
+    <string name="past_future_continuous_tense_test2_4_meaning">\t Indra tidak akan sedang mendaki Gunung Semeru \n\t\tselama erupsi minggu ini.</string>
+    <string name="past_future_continuous_tense_test2_5">5. … we … tempe tomorrow morning?</string> <!-- shall, be frying -->
+    <string name="past_future_continuous_tense_test2_5_meaning">\t Apakah kita akan sedang menggoreng \n\t\ttempe besok pagi?</string>
+
 </resources>

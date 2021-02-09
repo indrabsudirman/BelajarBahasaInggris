@@ -149,10 +149,7 @@ public class PastFutureContinuousActivity extends AppCompatActivity {
                         checkAnswerPastFutureContinuous2();
                         break;
                     case 4:
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        user.setScore(5);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
+                        finishOnPastFutureContinuous();
                         break;
                 }
             }
@@ -565,5 +562,30 @@ public class PastFutureContinuousActivity extends AppCompatActivity {
         PasswordMD5WithSalt p = new PasswordMD5WithSalt();
 
         return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private void finishOnPastFutureContinuous() {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(PastFutureContinuousActivity.this);
+        alertDialogBuilder
+                .setTitle("Selamat!")
+                .setMessage("Pembelajaran Past Future Continuous Tense sudah selesai. Anda dapat melanjutkan ke pelajaran berikutnya Past Perfect Tense.")
+                .setCancelable(false)
+                .setPositiveButton("Past Perfect Tense",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                //Set Score user to 5
+                                score = 5;
+                                user.setScore(score);
+                                score = user.getScore();
+                                System.out.println("Score : " + score);
+                                startActivity(new Intent(getApplicationContext()
+                                        ,MainMenu.class));
+                                overridePendingTransition(0, 0);
+                            }
+                        });
+
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
     }
 }

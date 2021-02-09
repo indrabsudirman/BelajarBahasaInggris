@@ -492,7 +492,7 @@
     <string name="future_continuous_tense_test2_5_meaning">\t Apakah kita akan sedang menggoreng \n\t\ttempe besok pagi?</string>
 
     <!-- Future Continuous Tense, Explain 3, Hal 5 (Time Signal) -->
-    <string name="time_signal_future_continuous_tense">Keterangan waktu <b>(Time signal)</b> pada Present Continuous Tense</string>
+    <string name="time_signal_future_continuous_tense">Keterangan waktu <b>(Time signal)</b> pada Future Continuous Tense</string>
     <string name="info_time_signal_future_continuous_tense">Time Signal pada Future Continuous Tense <b>hampir sama dengan</b> Time Signal pada Simple Future Tense.</string>
 
     <!-- Past Future Continuous Tense, Explain 1, Hal 1 -->
@@ -533,5 +533,9 @@
     <string name="past_future_continuous_tense_test2_4_meaning">\t Fatin dan saya tidak akan sedang bermain \n\t\tsepak bola kemarin.</string>
     <string name="past_future_continuous_tense_test2_5">5. Lubna and Haby … (1) … (2) Al Quran \n\t\twhen they are kids.</string> <!-- would, be learning -->
     <string name="past_future_continuous_tense_test2_5_meaning">\t Lubna dan Haby akan sedang belajar \n\t\tAl Quran ketika mereka anak-anak.</string>
+
+    <!-- Past Future Continuous Tense, Explain 3, Hal 5 (Time Signal) -->
+    <string name="time_signal_past_future_continuous_tense">Keterangan waktu <b>(Time signal)</b> pada Past Future Continuous Tense</string>
+    <string name="info_time_signal_past_future_continuous_tense">Time Signal pada Past Future Continuous Tense <b>hampir sama dengan</b> Time Signal pada Simple Past Tense.</string>
 
 </resources>

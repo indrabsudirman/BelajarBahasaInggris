@@ -6,7 +6,7 @@
     tools:context=".pastfuturecontinuous.PastFutureContinuousFragment4">
 
     <id.indrasudirman.belajarbahasainggris.utils.MyScrollView
-        android:id="@+id/scrollViewPastFutureContinuous4"
+        android:id="@+id/scrollViewTest"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -43,7 +43,7 @@
                     android:textColor="@color/dark_silver" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/tooltipsDropFutureContinuousOne"
+                    android:id="@+id/tooltipsDropOne"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@mipmap/ic_tips" />
@@ -58,11 +58,19 @@
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropFutureContinuousOne"
+                android:id="@+id/dropAnswerOneOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:hint="@string/drop_jawaban_disini"
+                android:hint="Drop jawaban 1 (1)"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dropAnswerOneTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:hint="Drop jawaban 1 (2)"
                 android:textSize="15sp"/>
 
             <!-- Question No 2 -->
@@ -81,7 +89,7 @@
                     android:textColor="@color/dark_silver" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/tooltipsDropFutureContinuousTwo"
+                    android:id="@+id/tooltipsDropTwo"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@mipmap/ic_tips" />
@@ -96,7 +104,7 @@
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropFutureContinuousTwoOne"
+                android:id="@+id/dropAnswerTwoOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -104,7 +112,7 @@
                 android:textSize="15sp"/>
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropFutureContinuousTwoTwo"
+                android:id="@+id/dropAnswerTwoTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -127,7 +135,7 @@
                     android:textColor="@color/dark_silver" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/tooltipsDropFutureContinuousThree"
+                    android:id="@+id/tooltipsDropThree"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@mipmap/ic_tips" />
@@ -142,7 +150,7 @@
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropFutureContinuousThreeOne"
+                android:id="@+id/dropAnswerThreeOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -150,7 +158,7 @@
                 android:textSize="15sp"/>
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropFutureContinuousThreeTwo"
+                android:id="@+id/dropAnswerThreeTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -173,7 +181,7 @@
                     android:textColor="@color/dark_silver" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/tooltipsDropFutureContinuousFour"
+                    android:id="@+id/tooltipsDropFour"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@mipmap/ic_tips" />
@@ -188,7 +196,7 @@
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropFutureContinuousFourOne"
+                android:id="@+id/dropAnswerFourOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -197,7 +205,7 @@
 
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropFutureContinuousFourTwo"
+                android:id="@+id/dropAnswerFourTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -220,7 +228,7 @@
                     android:textColor="@color/dark_silver" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/tooltipsDropFutureContinuousFive"
+                    android:id="@+id/tooltipsDropFive"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@mipmap/ic_tips" />
@@ -235,7 +243,7 @@
                 android:textColor="@color/dark_silver" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropFutureContinuousFiveOne"
+                android:id="@+id/dropAnswerFiveOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -243,7 +251,7 @@
                 android:textSize="15sp"/>
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dropFutureContinuousFiveTwo"
+                android:id="@+id/dropAnswerFiveTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -255,7 +263,7 @@
             <LinearLayout
                 android:id="@+id/layoutOptionDrag"
                 android:layout_width="match_parent"
-                android:layout_height="420dp"
+                android:layout_height="460dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/border"
                 android:orientation="vertical"
@@ -292,7 +300,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@null"
-                    android:text="be frying"
+                    android:text="last"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -303,7 +311,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="shall"
+                    android:text="should be eating"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -314,7 +322,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="be climbing"
+                    android:text="be camping"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -325,7 +333,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="will"
+                    android:text="should"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -336,7 +344,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="be waiting"
+                    android:text="be a student"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -347,7 +355,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="will"
+                    android:text="would"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -358,7 +366,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="be teacher"
+                    android:text="be playing"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -369,7 +377,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="will"
+                    android:text="would"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -380,7 +388,18 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="be studying"
+                    android:text="be learning"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/optionTen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="would"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 

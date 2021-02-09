@@ -523,15 +523,15 @@
 
     <!-- Past Future Continuous Tense, Test 2, Hal 4 -->
 
-    <string name="past_future_continuous_tense_test2_1">1. Ahmad will … at University next semester.</string> <!-- be studying  -->
-    <string name="past_future_continuous_tense_test2_1_meaning">\t Ahmad akan belajar di Universitas \n\t\tsemester depan.</string>
-    <string name="past_future_continuous_tense_test2_2">2. He … not … next year.</string> <!-- will, be teacher -->
-    <string name="past_future_continuous_tense_test2_2_meaning">\t Dia laki-laki tidak akan menjadi \n\t\tguru tahun depan.</string>
-    <string name="past_future_continuous_tense_test2_3">3. … She … you there this night?</string> <!-- will, be waiting  -->
-    <string name="past_future_continuous_tense_test2_3_meaning">\t Apakah dia perempuan akan sedang \n\t\tmenunggumu di sana malam ini?</string>
-    <string name="past_future_continuous_tense_test2_4">4.Indra … not … Semeru mount during \n\t\teruption this week.</string> <!-- will, be climbing -->
-    <string name="past_future_continuous_tense_test2_4_meaning">\t Indra tidak akan sedang mendaki Gunung Semeru \n\t\tselama erupsi minggu ini.</string>
-    <string name="past_future_continuous_tense_test2_5">5. … we … tempe tomorrow morning?</string> <!-- shall, be frying -->
-    <string name="past_future_continuous_tense_test2_5_meaning">\t Apakah kita akan sedang menggoreng \n\t\ttempe besok pagi?</string>
+    <string name="past_future_continuous_tense_test2_1">1. I … at Restaurant … Sunday.</string> <!-- should be eating, last  -->
+    <string name="past_future_continuous_tense_test2_1_meaning">\t Saya akan sedang makan di restoran \n\t\tminggu lalu.</string>
+    <string name="past_future_continuous_tense_test2_2">2. We … not … at Gede mount last holiday.</string> <!-- should, be camping -->
+    <string name="past_future_continuous_tense_test2_2_meaning">\t Kami tidak akan sedang berkemah di \n\t\tGunung Gede liburan kemarin.</string>
+    <string name="past_future_continuous_tense_test2_3">3. … She … last year?</string> <!-- would, be a student  -->
+    <string name="past_future_continuous_tense_test2_3_meaning">\t Apakah dia perempuan akan menjadi \n\t\tseorang siswa tahun lalu?</string>
+    <string name="past_future_continuous_tense_test2_4">4.Fatin and I … not … Football \n\t\yesterday.</string> <!-- would, be playing -->
+    <string name="past_future_continuous_tense_test2_4_meaning">\t Fatin dan saya tidak akan sedang bermain \n\t\tsepak bola kemarin.</string>
+    <string name="past_future_continuous_tense_test2_5">5. Lubna and Haby … (1) … (2) Al Quran \n\t\twhen they are kids.</string> <!-- would, be learning -->
+    <string name="past_future_continuous_tense_test2_5_meaning">\t Lubna dan Haby akan sedang belajar \n\t\tAl Quran ketika mereka anak-anak.</string>
 
 </resources>

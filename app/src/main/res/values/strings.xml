@@ -541,8 +541,8 @@
     <!-- Past Perfect Tense, Explain 1, Hal 1 -->
 
     <string name="past_perfect_tense"><b><u>Past Perfect Tense</u></b></string>
-    <string name="past_perfect_explain">Past Perfect Tense digunakan untuk menyatakan kejadian (aktivitas) yang <b>akan sedang dilakukan di masa depan. Tapi diwaktu lampau (sudah berlalu)</b> Itulah sebabnya ditambahkan kata <b>Past,</b> menjadi Past Future Continuous Tense. Contoh: Haby <b>should be studying</b> hard last week. (Haby akan sedang belajar dengan sungguh-sungguh minggu lalu). \n\n<b><u>Penjelasannya :</u></b> \n\n Haby sedang belajar dengan sungguh-sungguh minggu lalu, kejadian yang akan (sedang) dikerjakan tetapi di masa lalu, sudah berakhir kejadiannya. Sehingga dikenal dengan Past Future Continuous Tense.</string>
-    <string name="second_bullet_past_perfect_tense">■ Haby should be studying hard \n\t\tlast week. \n\n \t\t(Haby akan sedang belajar dengan \n\t\tsungguh-sungguh minggu lalu).</string>
-    <string name="third_bullet_past_perfect_tense">■ My motorcycle should be parking here last night. \n\n \t\t (Motor saya akan sedang parkir di sini \n\t\tsemalam).</string>
+    <string name="past_perfect_explain">Past Perfect Tense digunakan untuk menyatakan kejadian (aktivitas) yang <b>sudah selesai di masa lampau (past), sebelum kejadian lain yang sudah selesai juga.</b> \n\nItulah sebabnya menjadi kata <b>Past Perfect</b> yang lalu sudah selesai semua. Jadi kalimat dalam Past Perfect ini telah terjadi dimasa lalu. Contoh: When I met Nury, <b>she had looked</b> very different. (Ketika saya bertemu Nury, dia (perempuan) terlihat sangat berbeda). \n\n<b><u>Penjelasannya :</u></b> \n\n Pada Past Perfect Tense terdapat istilah kejadian ke satu dan kejadian ke dua. Kalimat Past Perfect Tense berada di kejadian ke satu. Sedangkan kejadian lalu yang mengikuti Past Perfect adalah Simple Past (kejadian ke dua).</string>
+    <string name="second_bullet_past_perfect_tense">■ When I met Nury, she had looked very different.\n\n \t\t(Ketika saya bertemu Nury, dia (perempuan/Nury) \n\t\tterlihat sangat berbeda).</string>
+    <string name="third_bullet_past_perfect_tense">■ Haby had arrived, before I arrived at school \n\t\tthis morning. \n\n \t\t (Haby sudah tiba, sebelum saya tiba \n\t\tdi sekolah pagi).</string>
 
 </resources>

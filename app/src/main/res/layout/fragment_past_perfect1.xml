@@ -24,7 +24,7 @@
                 android:textSize="18dp" />
 
             <com.uncopt.android.widget.text.justify.JustifiedTextView
-                android:id="@+id/pastFutureContinuousExplain"
+                android:id="@+id/explainTheTense"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="web"
@@ -43,7 +43,7 @@
                 android:textColor="@color/colorBlack" />
 
             <com.uncopt.android.widget.text.justify.JustifiedTextView
-                android:id="@+id/pastFutureContinuousExample1"
+                android:id="@+id/exampleTheTense1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="web"
@@ -54,7 +54,7 @@
                 android:textColor="@color/colorBlack" />
 
             <com.uncopt.android.widget.text.justify.JustifiedTextView
-                android:id="@+id/pastFutureContinuousExample2"
+                android:id="@+id/exampleTheTense2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="web"

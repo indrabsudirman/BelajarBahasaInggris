@@ -552,4 +552,16 @@
     <string name="past_perfect_tense_test1_2">2. I … my work before I got home.</string> <!-- had finished (had finish)-->
     <string name="past_perfect_tense_test1_2_meaning">\t Saya sudah menyelesaikan kerjaan saya, sebelum \n\t\tsaya sampai ke rumah.</string>
 
+    <!-- Past Perfect Tense, Explain 2, Hal 3 -->
+    <string name="pola_kalimat_past_perfect">Pola kalimat Past Perfect Tense</string>
+    <string name="bentuk_kalimat_verbal_past_perfect">■ Bentuk kalimat verbal</string>
+    <string name="bentuk_kalimat_nominal_past_perfect">■ Bentuk kalimat nominal</string>
+    <string name="bentuk_kalimat_verbal_positif_past_perfect">\t\t(+) Positif : Subject + had + V3 (Verb 3) \n\t\t+ Object. \n\t\tContoh : I had eaten breakfast when school\'s \n\t\tbus arrived. \n\t\t(Saya sudah selesai sarapan ketika \n\t\tbus sekolah datang)</string>
+    <string name="bentuk_kalimat_verbal_negatif_past_perfect">\t\t(-) Negatif : Subject + had + not + V3 (Verb 3) \n\t\t+ Object. \n\t\tContoh : I had not eaten breakfast when school\'s \n\t\tbus arrived. \n\t\t(Saya tidak selesai sarapan ketika \n\t\tbus sekolah datang)</string>
+    <string name="bentuk_kalimat_verbal_question_past_perfect">\t\t(?) Question : Had + Subject + V3 (Verb 3) \n\t\t  + Object? \n\t\tContoh : Had you eaten breakfast when school\'s \n\t\tbus arrived.?\n\t\t(Apakah kamu sudah selesai sarapan ketika \n\t\tbus sekolah datang?)</string>
+    <string name="bentuk_kalimat_nominal_positif_past_perfect">\t\t(+) Positif : Subject + had + been + \n\t\t3 Complement. \n\t\tContoh : Lubna had been a student. \n\t\t(Lubna sudah menjadi seorang siswa)</string>
+    <string name="bentuk_kalimat_nominal_negatif_past_perfect">\t\t(-) Negatif : Subject + had + not + been +\n\t\t3 Complement. \n\t\tContoh : Lubna had not been a student. \n\t\t(Lubna tidak menjadi seorang siswa)</string>
+    <string name="bentuk_kalimat_nominal_question_past_perfect">\t\t(?) Question : Had + Subject + been\n\t\t+ 3 Complement? \n\t\tContoh : Had Lubna been a student?\n\t\t(Apakah Lubna sudah menjadi seorang siswa?)</string>
+    <string name="info_past_perfect"><b><u>Info :</u></b> \n\n- Had digunakan untuk semua <b>Subject</b> I, You, He, She, They, Lubna and Haby, dan lainnya</string>
+
 </resources>

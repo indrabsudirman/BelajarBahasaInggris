@@ -545,4 +545,11 @@
     <string name="second_bullet_past_perfect_tense">■ When I met Nury, she had looked very different.\n\n \t\t(Ketika saya bertemu Nury, dia (perempuan/Nury) \n\t\tterlihat sangat berbeda).</string>
     <string name="third_bullet_past_perfect_tense">■ Haby had arrived, before I arrived at school \n\t\tthis morning. \n\n \t\t (Haby sudah tiba, sebelum saya tiba \n\t\tdi sekolah pagi).</string>
 
+    <!-- Past Perfect Tense, Test 1, Hal 2 -->
+
+    <string name="past_perfect_tense_test1_1">1. Lubna … when we came to her home last night.</string> <!-- had eaten, (had ate) -->
+    <string name="past_perfect_tense_test1_1_meaning">\t Lubna sudah selesai makan, ketika kami datang \n\t\tke rumahnya semalam.</string>
+    <string name="past_perfect_tense_test1_2">2. I … my work before I got home.</string> <!-- had finished (had finish)-->
+    <string name="past_perfect_tense_test1_2_meaning">\t Saya sudah menyelesaikan kerjaan saya, sebelum saya sampai ke rumah.</string>
+
 </resources>

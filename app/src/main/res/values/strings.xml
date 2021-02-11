@@ -562,6 +562,19 @@
     <string name="bentuk_kalimat_nominal_positif_past_perfect">\t\t(+) Positif : Subject + had + been + \n\t\t3 Complement. \n\t\tContoh : Lubna had been a student. \n\t\t(Lubna sudah menjadi seorang siswa)</string>
     <string name="bentuk_kalimat_nominal_negatif_past_perfect">\t\t(-) Negatif : Subject + had + not + been +\n\t\t3 Complement. \n\t\tContoh : Lubna had not been a student. \n\t\t(Lubna tidak menjadi seorang siswa)</string>
     <string name="bentuk_kalimat_nominal_question_past_perfect">\t\t(?) Question : Had + Subject + been\n\t\t+ 3 Complement? \n\t\tContoh : Had Lubna been a student?\n\t\t(Apakah Lubna sudah menjadi seorang siswa?)</string>
-    <string name="info_past_perfect"><b><u>Info :</u></b> \n\n- Had digunakan untuk semua <b>Subject</b> I, You, He, She, They, Lubna and Haby, dan lainnya</string>
+    <string name="info_past_perfect"><b><u>Info :</u></b> \n\n- Had digunakan untuk semua <b>Subject</b> I, You, He, She, They, Lubna and Haby, dan lainnya. Had not dapat disingkat menjadi <b>hadn\'t</b></string>
+
+    <!-- Past Perfect Tense, Test 2, Hal 4 -->
+
+    <string name="past_perfect_tense_test2_1">1. He had … Japanese before he … to Tokyo.</string> <!-- studied, moved  -->
+    <string name="past_perfect_tense_test2_1_meaning">\t Dia laki-laki sudah selesai belajar \n\t\tbahasa Jepang sebelum dia pindah ke Tokyo.</string>
+    <string name="past_perfect_tense_test2_2">2. We had … at School before teacher … .</string> <!-- come, came -->
+    <string name="past_perfect_tense_test2_2_meaning">\t Kami sudah datang di kelas sebelum guru datang.</string>
+    <string name="past_perfect_tense_test2_3">3. … Ahmad … a programmer?</string> <!-- had, been  -->
+    <string name="past_perfect_tense_test2_3_meaning">\t Apakah Ahmad sudah menjadi seorang \n\t\tProgrammer?</string>
+    <string name="past_perfect_tense_test2_4">4.Hasan  had … as leader … since our \n\t\tjourney started.</string> <!--  not believed, be playing -->
+    <string name="past_perfect_tense_test2_4_meaning">\t Hasan sudah tidak dipercaya sebagai \n\t\tpemimpin sejak perjalanan kita dimulai.</string>
+    <string name="past_perfect_tense_test2_5">5. Lubna and Haby had … Al Quran when \n\t\tyou … them.</string> <!-- read, called -->
+    <string name="past_perfect_tense_test2_5_meaning">\t Lubna dan Haby sudah selesai membaca \n\t\tAl Quran ketika kamu paling mereka.</string>
 
 </resources>

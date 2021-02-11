@@ -246,9 +246,9 @@ public class PastPerfectFragment3 extends Fragment {
         nominal.setText(spannableString[4]);
 
         //nominalPositive, 3 Complement
-        spannableString[5].setSpan(clickableSpan3Complement,42,57,0);
+        spannableString[5].setSpan(clickableSpan3Complement,42,55,0);
         // make text bold
-        spannableString[5].setSpan(new StyleSpan(Typeface.BOLD), 42,57, 0);
+        spannableString[5].setSpan(new StyleSpan(Typeface.BOLD), 42,55, 0);
         nominalPositive.setMovementMethod(LinkMovementMethod.getInstance());
         nominalPositive.setText(spannableString[5]);
     }

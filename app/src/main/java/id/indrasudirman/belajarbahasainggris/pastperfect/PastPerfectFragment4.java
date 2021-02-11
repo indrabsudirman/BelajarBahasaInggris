@@ -58,7 +58,7 @@ public class PastPerfectFragment4 extends Fragment implements View.OnDragListene
     private static final String TEXT_VIEW_OPTION_ONE = "read";
     private static final String TEXT_VIEW_OPTION_TWO = "called";
     private static final String TEXT_VIEW_OPTION_THREE = "not believed";
-    private static final String TEXT_VIEW_OPTION_FOUR = "be playing";
+    private static final String TEXT_VIEW_OPTION_FOUR = "started";
     private static final String TEXT_VIEW_OPTION_FIVE = "had";
     private static final String TEXT_VIEW_OPTION_SIX = "been";
     private static final String TEXT_VIEW_OPTION_SEVEN = "come";

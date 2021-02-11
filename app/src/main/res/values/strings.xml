@@ -581,4 +581,11 @@
     <string name="time_signal_past_perfect_tense">Keterangan waktu <b>(Time signal)</b> pada Past Perfect Tense</string>
     <string name="info_time_signal_past_perfect_tense">Time Signal pada Past Perfect Tense <b>hampir sama dengan</b> Time Signal pada Simple Past Tense.</string>
 
+    <!-- Present Perfect Tense, Explain 1, Hal 1 -->
+
+    <string name="present_perfect_tense"><b><u>Present Perfect Tense</u></b></string>
+    <string name="present_perfect_explain">Present Perfect Tense digunakan untuk menyatakan kejadian (aktivitas) yang <b>sudah selesai di masa lampau (past), sebelum kejadian lain yang sudah selesai juga.</b> \n\nItulah sebabnya menjadi kata <b>Past Perfect</b> yang lalu sudah selesai semua. Jadi kalimat dalam Past Perfect ini telah terjadi dimasa lalu. Contoh: When I met Nury, <b>she had looked</b> very different. (Ketika saya bertemu Nury, dia (perempuan) terlihat sangat berbeda). \n\n<b><u>Penjelasannya :</u></b> \n\n Pada Past Perfect Tense terdapat istilah kejadian ke satu dan kejadian ke dua. Kalimat Past Perfect Tense berada di kejadian ke satu. Sedangkan kejadian lalu yang mengikuti Past Perfect adalah Simple Past (kejadian ke dua).</string>
+    <string name="second_bullet_present_perfect_tense">■ When I met Nury, she had looked very different.\n\n \t\t(Ketika saya bertemu Nury, dia (perempuan/Nury) \n\t\tterlihat sangat berbeda).</string>
+    <string name="third_bullet_present_perfect_tense">■ Haby had arrived, before I arrived at school \n\t\tthis morning. \n\n \t\t (Haby sudah tiba, sebelum saya tiba \n\t\tdi sekolah pagi).</string>
+
 </resources>

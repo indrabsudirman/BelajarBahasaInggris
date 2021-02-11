@@ -577,4 +577,8 @@
     <string name="past_perfect_tense_test2_5">5. Lubna and Haby had … Al Quran when \n\t\tyou … them.</string> <!-- read, called -->
     <string name="past_perfect_tense_test2_5_meaning">\t Lubna dan Haby sudah selesai membaca \n\t\tAl Quran ketika kamu paling mereka.</string>
 
+    <!-- Past Perfect Tense, Explain 3, Hal 5 (Time Signal) -->
+    <string name="time_signal_past_perfect_tense">Keterangan waktu <b>(Time signal)</b> pada Past Perfect Tense</string>
+    <string name="info_time_signal_past_perfect_tense">Time Signal pada Past Perfect Tense <b>hampir sama dengan</b> Time Signal pada Simple Past Tense.</string>
+
 </resources>

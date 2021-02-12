@@ -588,4 +588,11 @@
     <string name="second_bullet_present_perfect_tense">■ My Daughter has learned how to walk.\n\n \t\t(Anak perempuan saya sudah belajar berjalan).</string>
     <string name="third_bullet_present_perfect_tense">■ I think I have seen Lubna before. \n\n \t\t (Saya pikir saya sudah pernah melihat Lubna sebelumnya).</string>
 
+    <!-- Present Perfect Tense, Test 1, Hal 2 -->
+
+    <string name="present_perfect_tense_test1_1">1. My father … as a teacher since June.</string> <!-- has worked, (had worked) -->
+    <string name="present_perfect_tense_test1_1_meaning">\t Ayah saya sudah bekerja sebagai guru \n\t\tsejak Juni.</string>
+    <string name="present_perfect_tense_test1_2">2. I … in Banjarnegara since year ago.</string> <!-- have lived (had lived)-->
+    <string name="present_perfect_tense_test1_2_meaning">\t Saya sudah tinggal di Banjarnegara sejak 1 tahun lalu.</string>
+
 </resources>

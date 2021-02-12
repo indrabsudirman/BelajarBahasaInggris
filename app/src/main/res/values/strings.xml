@@ -558,7 +558,7 @@
     <string name="bentuk_kalimat_nominal_past_perfect">■ Bentuk kalimat nominal</string>
     <string name="bentuk_kalimat_verbal_positif_past_perfect">\t\t(+) Positif : Subject + had + V3 (Verb 3) \n\t\t+ Object. \n\t\tContoh : I had eaten breakfast when school\'s \n\t\tbus arrived. \n\t\t(Saya sudah selesai sarapan ketika \n\t\tbus sekolah datang)</string>
     <string name="bentuk_kalimat_verbal_negatif_past_perfect">\t\t(-) Negatif : Subject + had + not + V3 (Verb 3) \n\t\t+ Object. \n\t\tContoh : I had not eaten breakfast when school\'s \n\t\tbus arrived. \n\t\t(Saya tidak selesai sarapan ketika \n\t\tbus sekolah datang)</string>
-    <string name="bentuk_kalimat_verbal_question_past_perfect">\t\t(?) Question : Had + Subject + V3 (Verb 3) \n\t\t  + Object? \n\t\tContoh : Had you eaten breakfast when school\'s \n\t\tbus arrived.?\n\t\t(Apakah kamu sudah selesai sarapan ketika \n\t\tbus sekolah datang?)</string>
+    <string name="bentuk_kalimat_verbal_question_past_perfect">\t\t(?) Question : Had + Subject + V3 (Verb 3) \n\t\t  + Object? \n\t\tContoh : Had you eaten breakfast when school\'s \n\t\tbus arrived?\n\t\t(Apakah kamu sudah selesai sarapan ketika \n\t\tbus sekolah datang?)</string>
     <string name="bentuk_kalimat_nominal_positif_past_perfect">\t\t(+) Positif : Subject + had + been + \n\t\t3 Complement. \n\t\tContoh : Lubna had been a student. \n\t\t(Lubna sudah menjadi seorang siswa)</string>
     <string name="bentuk_kalimat_nominal_negatif_past_perfect">\t\t(-) Negatif : Subject + had + not + been +\n\t\t3 Complement. \n\t\tContoh : Lubna had not been a student. \n\t\t(Lubna tidak menjadi seorang siswa)</string>
     <string name="bentuk_kalimat_nominal_question_past_perfect">\t\t(?) Question : Had + Subject + been\n\t\t+ 3 Complement? \n\t\tContoh : Had Lubna been a student?\n\t\t(Apakah Lubna sudah menjadi seorang siswa?)</string>
@@ -593,6 +593,18 @@
     <string name="present_perfect_tense_test1_1">1. My father … as a teacher since June.</string> <!-- has worked, (had worked) -->
     <string name="present_perfect_tense_test1_1_meaning">\t Ayah saya sudah bekerja sebagai guru \n\t\tsejak Juni.</string>
     <string name="present_perfect_tense_test1_2">2. I … in Banjarnegara since year ago.</string> <!-- have lived (had lived)-->
-    <string name="present_perfect_tense_test1_2_meaning">\t Saya sudah tinggal di Banjarnegara sejak 1 tahun lalu.</string>
+    <string name="present_perfect_tense_test1_2_meaning">\t Saya sudah tinggal di Banjarnegara sejak \n\t\t1 tahun lalu.</string>
+
+    <!-- Present Perfect Tense, Explain 2, Hal 3 -->
+    <string name="pola_kalimat_present_perfect">Pola kalimat Present Perfect Tense</string>
+    <string name="bentuk_kalimat_verbal_present_perfect">■ Bentuk kalimat verbal</string>
+    <string name="bentuk_kalimat_nominal_present_perfect">■ Bentuk kalimat nominal</string>
+    <string name="bentuk_kalimat_verbal_positif_present_perfect">\t\t(+) Positif : Subject + have/has + V3 (Verb 3) \n\t\t+ Object. \n\t\tContoh : My Daugther has studied at Boarding school \n\t\tsince 2 years ago.\n\t\t(Anak perempuan saya sudah belajar di Pesantren \n\t\tsejak 2 tahun lalu)</string>
+    <string name="bentuk_kalimat_verbal_negatif_present_perfect">\t\t(-) Negatif : Subject + have/has + not + V3 (Verb 3) \n\t\t+ Object. \n\t\tContoh : My Daughter has not studied at Boarding school \n\t\tsince 2 years ago. \n\t\t(Anak perempuan saya sudah tidak belajar di \n\t\tPesantren sejak 2 tahun lalu)</string>
+    <string name="bentuk_kalimat_verbal_question_present_perfect">\t\t(?) Question : Have/has + Subject + V3 (Verb 3) \n\t\t  + Object? \n\t\tContoh : Has my daugther studied at Boarding school \n\t\tsince 2 years ago?\n\t\t(Apakah Anak perempuan saya sudah belajar di \n\t\tPesantren sejak 2 tahun lalu?)</string>
+    <string name="bentuk_kalimat_nominal_positif_present_perfect">\t\t(+) Positif : Subject + have/has + been + \n\t\t3 Complement. \n\t\tContoh : I have been a pilot. \n\t\t(Saya sudah menjadi seorang pilot)</string>
+    <string name="bentuk_kalimat_nominal_negatif_present_perfect">\t\t(-) Negatif : Subject + have/has + not + been +\n\t\t3 Complement. \n\t\tContoh : I have not been a pilot. \n\t\t(Saya tidak menjadi seorang pilot)</string>
+    <string name="bentuk_kalimat_nominal_question_present_perfect">\t\t(?) Question : Have/has + Subject + been\n\t\t+ 3 Complement? \n\t\tContoh : Have I been a pilot?\n\t\t(Apakah Saya sudah menjadi seorang pilot?)</string>
+    <string name="info_present_perfect"><b><u>Info :</u></b> \n\n- <b>Have</b> untuk : \nI, You, We, They, Budi dan Lubna (bentuk banyak/plural).\n\n- <b>Has</b> untuk : \nShe, He, It, Budi, Lubna (bentuk ketiga tunggal/singular).</string>
 
 </resources>

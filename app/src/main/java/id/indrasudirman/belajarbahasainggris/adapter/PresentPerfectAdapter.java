@@ -5,12 +5,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import id.indrasudirman.belajarbahasainggris.pastcontinuous.PastContinuousFragment1;
-import id.indrasudirman.belajarbahasainggris.pastcontinuous.PastContinuousFragment2;
-import id.indrasudirman.belajarbahasainggris.pastcontinuous.PastContinuousFragment3;
 import id.indrasudirman.belajarbahasainggris.presentperfect.PresentPerfectFragment1;
 import id.indrasudirman.belajarbahasainggris.presentperfect.PresentPerfectFragment2;
 import id.indrasudirman.belajarbahasainggris.presentperfect.PresentPerfectFragment3;
+import id.indrasudirman.belajarbahasainggris.presentperfect.PresentPerfectFragment4;
+import id.indrasudirman.belajarbahasainggris.presentperfect.PresentPerfectFragment5;
 
 public class PresentPerfectAdapter extends FragmentStateAdapter {
 
@@ -26,6 +25,10 @@ public class PresentPerfectAdapter extends FragmentStateAdapter {
                 return new PresentPerfectFragment2();
             case 2:
                 return new PresentPerfectFragment3();
+            case 3:
+                return new PresentPerfectFragment4();
+            case 4:
+                return new PresentPerfectFragment5();
             default:
                 return new PresentPerfectFragment1();
         }
@@ -33,6 +36,6 @@ public class PresentPerfectAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 3;
+        return 5;
     }
 }

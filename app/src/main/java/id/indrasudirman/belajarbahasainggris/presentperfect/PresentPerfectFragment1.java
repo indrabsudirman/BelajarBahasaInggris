@@ -56,9 +56,9 @@ public class PresentPerfectFragment1 extends Fragment {
 
     private void mSpannableString() {
         SpannableString[] spannableString = new SpannableString[]{
-                new SpannableString((getActivity().getResources().getString(R.string.past_perfect_explain))),
-                new SpannableString((getActivity().getResources().getString(R.string.second_bullet_past_perfect_tense))),
-                new SpannableString((getActivity().getResources().getString(R.string.third_bullet_past_perfect_tense)))};
+                new SpannableString((getActivity().getResources().getString(R.string.present_perfect_explain))),
+                new SpannableString((getActivity().getResources().getString(R.string.second_bullet_present_perfect_tense))),
+                new SpannableString((getActivity().getResources().getString(R.string.third_bullet_present_perfect_tense)))};
 
         ClickableSpan clickableSpanExplainTheTense = new ClickableSpan() {
             @Override
@@ -66,7 +66,7 @@ public class PresentPerfectFragment1 extends Fragment {
                 AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
                 //Set Title
                 alertDialogSimplePast.setTitle("Info");
-                alertDialogSimplePast.setMessage("Past Perfect Tense adalah salah satu dari 16 Tense (waktu) yang ada dalam Grammar Bahasa Inggris.")
+                alertDialogSimplePast.setMessage("Present Perfect Tense adalah salah satu dari 16 Tense (waktu) yang ada dalam Grammar Bahasa Inggris.")
                         .setCancelable(false)
                         .setIcon(R.mipmap.ic_info_green)
                         .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
@@ -87,7 +87,7 @@ public class PresentPerfectFragment1 extends Fragment {
                 AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
                 //Set Title
                 alertDialogSimplePast.setTitle("Info");
-                alertDialogSimplePast.setMessage("Kata 'had looked' adalah bentuk dari Past Perfect Tense, terdiri dari rumus had + verb 3. looked dari kata kerja look artinya melihat/terlihat.")
+                alertDialogSimplePast.setMessage("Kata 'has learned' adalah bentuk dari Present Perfect Tense, terdiri dari rumus have + verb 3. learned dari kata kerja learn artinya belajar.")
                         .setCancelable(false)
                         .setIcon(R.mipmap.ic_info_green)
                         .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
@@ -108,7 +108,7 @@ public class PresentPerfectFragment1 extends Fragment {
                 AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
                 //Set Title
                 alertDialogSimplePast.setTitle("Info");
-                alertDialogSimplePast.setMessage("Kata 'had arrived' adalah bentuk dari Past Perfect Tense, terdiri dari rumus had + verb 3. arrived dari kata kerja arrive artinya datang/tiba.")
+                alertDialogSimplePast.setMessage("Kata 'have seen' adalah bentuk dari Present Perfect Tense, terdiri dari rumus have + verb 3. seen dari kata kerja see artinya melihat.")
                         .setCancelable(false)
                         .setIcon(R.mipmap.ic_info_green)
                         .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
@@ -124,33 +124,35 @@ public class PresentPerfectFragment1 extends Fragment {
         };
 
         // explainTheTense
-        spannableString[0].setSpan(clickableSpanExplainTheTense,0,18,0);
+        spannableString[0].setSpan(clickableSpanExplainTheTense,0,21,0);
         // make text bold
-        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 0, 18, 0);
-        // sudah selesai di masa lampau (past). Sebelum ...
-        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 72, 154, 0);
-        // Past Perfect
-        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 186, 199, 0);
-        // she had looked
-        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 318, 333, 0);
+        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 0, 21, 0);
+        // dimulai pada masa lalu tapi masih ...
+        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 75, 134, 0);
+        // Present Perfect
+        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 166, 181, 0);
+        // has learned
+        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 344, 355, 0);
+        // have seen
+        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 676, 685, 0);
         //Penjelasannya
-        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 419, 434, 0);
-        spannableString[0].setSpan(new UnderlineSpan(), 419, 434, 0);
+        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 417, 432, 0);
+        spannableString[0].setSpan(new UnderlineSpan(), 417, 432, 0);
 
         explainTheTense.setMovementMethod(LinkMovementMethod.getInstance());
         explainTheTense.setText(spannableString[0]);
 
         // exampleTheTense1
-        spannableString[1].setSpan(clickableSpanExampleTheTense1,23,33,0);
+        spannableString[1].setSpan(clickableSpanExampleTheTense1,14,25,0);
         // make text bold
-        spannableString[1].setSpan(new StyleSpan(Typeface.BOLD), 23,33, 0);
+        spannableString[1].setSpan(new StyleSpan(Typeface.BOLD), 14,25, 0);
         exampleTheTense1.setMovementMethod(LinkMovementMethod.getInstance());
         exampleTheTense1.setText(spannableString[1]);
 
         // exampleTheTense2
-        spannableString[2].setSpan(clickableSpanExampleTheTense2,7,18,0);
+        spannableString[2].setSpan(clickableSpanExampleTheTense2,12,21,0);
         // make text bold
-        spannableString[2].setSpan(new StyleSpan(Typeface.BOLD), 7,18, 0);
+        spannableString[2].setSpan(new StyleSpan(Typeface.BOLD), 12,21, 0);
         exampleTheTense2.setMovementMethod(LinkMovementMethod.getInstance());
         exampleTheTense2.setText(spannableString[2]);
     }

@@ -620,4 +620,9 @@
     <string name="present_perfect_tense_test2_5">5. Lubna and Haby (1) … (2) … their \n\t\tlesson last night.</string> <!-- have, read -->
     <string name="present_perfect_tense_test2_5_meaning">\t Lubna dan Haby sudah membaca \n\t\tpelajaran mereka semalam.</string>
 
+
+    <!-- Present Perfect Tense, Explain 3, Hal 5 (Time Signal) -->
+    <string name="time_signal_present_perfect_tense">Keterangan waktu <b>(Time signal)</b> pada Present Perfect Tense</string>
+    <string name="info_time_signal_present_perfect_tense">Time Signal pada Present Perfect Tense <b>hampir sama dengan</b> Time Signal pada Simple Past Tense.</string>
+
 </resources>

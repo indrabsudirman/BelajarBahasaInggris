@@ -150,10 +150,7 @@ public class PresentPerfectActivity extends AppCompatActivity {
                         checkAnswerTest2();
                         break;
                     case 4:
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        user.setScore(5);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
+                        finishOnTheLastPage();
                         break;
                 }
             }
@@ -566,5 +563,30 @@ public class PresentPerfectActivity extends AppCompatActivity {
         PasswordMD5WithSalt p = new PasswordMD5WithSalt();
 
         return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
+    }
+
+    private void finishOnTheLastPage() {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(PresentPerfectActivity.this);
+        alertDialogBuilder
+                .setTitle("Selamat!")
+                .setMessage("Pembelajaran Present Perfect Tense sudah selesai. Anda dapat melanjutkan ke pelajaran berikutnya Future Perfect Tense.")
+                .setCancelable(false)
+                .setPositiveButton("Future Perfect Tense",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                //Set Score user to 5
+                                score = 5;
+                                user.setScore(score);
+                                score = user.getScore();
+                                System.out.println("Score : " + score);
+                                startActivity(new Intent(getApplicationContext()
+                                        ,MainMenu.class));
+                                overridePendingTransition(0, 0);
+                            }
+                        });
+
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
     }
 }

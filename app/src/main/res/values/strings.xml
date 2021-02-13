@@ -572,7 +572,7 @@
     <string name="past_perfect_tense_test2_2_meaning">\t Kami sudah datang di kelas sebelum guru datang.</string>
     <string name="past_perfect_tense_test2_3">3. … Ahmad … a programmer?</string> <!-- had, been  -->
     <string name="past_perfect_tense_test2_3_meaning">\t Apakah Ahmad sudah menjadi seorang \n\t\tProgrammer?</string>
-    <string name="past_perfect_tense_test2_4">4.Hasan  had … as leader since our \n\t\tjourney … .</string> <!--  not believed, started -->
+    <string name="past_perfect_tense_test2_4">4.Hasan had … as leader since our \n\t\tjourney … .</string> <!--  not believed, started -->
     <string name="past_perfect_tense_test2_4_meaning">\t Hasan sudah tidak dipercaya sebagai \n\t\tpemimpin sejak perjalanan kita dimulai.</string>
     <string name="past_perfect_tense_test2_5">5. Lubna and Haby had … Al Quran when \n\t\tyou … them.</string> <!-- read, called -->
     <string name="past_perfect_tense_test2_5_meaning">\t Lubna dan Haby sudah selesai membaca \n\t\tAl Quran ketika kamu paling mereka.</string>
@@ -606,5 +606,18 @@
     <string name="bentuk_kalimat_nominal_negatif_present_perfect">\t\t(-) Negatif : Subject + have/has + not + been +\n\t\t3 Complement. \n\t\tContoh : I have not been a pilot. \n\t\t(Saya tidak menjadi seorang pilot)</string>
     <string name="bentuk_kalimat_nominal_question_present_perfect">\t\t(?) Question : Have/has + Subject + been\n\t\t+ 3 Complement? \n\t\tContoh : Have I been a pilot?\n\t\t(Apakah Saya sudah menjadi seorang pilot?)</string>
     <string name="info_present_perfect"><b><u>Info :</u></b> \n\n- <b>Have</b> untuk : \nI, You, We, They, Budi dan Lubna (bentuk banyak/plural).\n\n- <b>Has</b> untuk : \nShe, He, It, Budi, Lubna (bentuk ketiga tunggal/singular).</string>
+
+    <!-- Present Perfect Tense, Test 2, Hal 4 -->
+
+    <string name="present_perfect_tense_test2_1">1. … Lubna … English yesterday?</string> <!-- has, studied -->
+    <string name="present_perfect_tense_test2_1_meaning">\t Apakah Lubna sudah belajar \n\t\tbahasa inggris kemarin?</string>
+    <string name="present_perfect_tense_test2_2">2. I (1) … (2) …  my bicycle this morning.</string> <!-- have, washed -->
+    <string name="present_perfect_tense_test2_2_meaning">\t Saya sudah mencuci sepeda saya pagi ini.</string>
+    <string name="present_perfect_tense_test2_3">3. … students … the classroom yesterday?</string> <!-- have, cleaned  -->
+    <string name="present_perfect_tense_test2_3_meaning">\t Apakah siswa-siswa sudah membersihkan \n\t\tkelas kemarin?</string>
+    <string name="present_perfect_tense_test2_4">4.Ali (1) … (2) … a mechanic in the \n\t\tworkshop for 4 years.</string> <!--  has, been -->
+    <string name="present_perfect_tense_test2_4_meaning">\t Ali sudah menjadi mekanik di \n\t\tbengkel selama 4 tahun.</string>
+    <string name="present_perfect_tense_test2_5">5. Lubna and Haby (1) … (2) … their \n\t\tlesson last night.</string> <!-- have, read -->
+    <string name="present_perfect_tense_test2_5_meaning">\t Lubna dan Haby sudah membaca \n\t\tpelajaran mereka semalam.</string>
 
 </resources>

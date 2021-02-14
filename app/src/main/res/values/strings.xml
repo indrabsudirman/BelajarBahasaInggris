@@ -625,4 +625,11 @@
     <string name="time_signal_present_perfect_tense">Keterangan waktu <b>(Time signal)</b> pada Present Perfect Tense</string>
     <string name="info_time_signal_present_perfect_tense">Time Signal pada Present Perfect Tense <b>hampir sama dengan</b> Time Signal pada Simple Past Tense.</string>
 
+    <!-- Future Perfect Tense, Explain 1, Hal 1 -->
+
+    <string name="future_perfect_tense"><b><u>Future Perfect Tense</u></b></string>
+    <string name="future_perfect_explain">Future Perfect Tense digunakan untuk menyatakan kejadian (aktivitas) yang <b>dimulai pada masa lalu tapi masih berlanjut hingga saat ini</b> \n\nItulah sebabnya menjadi kata <b>Present Perfect</b>. Jadi kalimat dalam Present Perfect ini telah terjadi dimasa lalu dan masih berlangsung hingga saat ini atau masih dirasakan hingga saat ini. Contoh: My Daughter <b>has learned</b> how to walk. (Anak perempuan saya sudah belajar berjalan). \n\n<b><u>Penjelasannya :</u></b> \n\nPada saat saya bercerita anak perempuan saya sudah belajar berjalan, anak saya masih terus melancarkan berjalan. Oleh karena itu kejadian belajar berjalan dimulai di masa lalu dan masih dilakukan sampai sekarang.\n\n Contoh lainnya: I think I <b>have seen</b> Lubna before. (Saya pikir saya sudah pernah melihat Lubna sebelumnya). Kalimat pernah melihat Lubna sebelumnya menunjukkan bentuk Present Perfect Tense, karena kalimat tersebut dimulai di masa lalu (walau tidak ingat kapan kejadiannya) dan masa dirasakan sampai saat ini berbicara.</string>
+    <string name="second_bullet_future_perfect_tense">■ My Daughter has learned how to walk.\n\n \t\t(Anak perempuan saya sudah belajar berjalan).</string>
+    <string name="third_bullet_future_perfect_tense">■ I think I have seen Lubna before. \n\n \t\t (Saya pikir saya sudah pernah melihat Lubna sebelumnya).</string>
+
 </resources>

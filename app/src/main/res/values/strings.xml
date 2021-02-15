@@ -639,4 +639,16 @@
     <string name="future_perfect_tense_test1_2">2. Teacher … in at 12:30 p.m.</string> <!-- will have teached (will has teached)-->
     <string name="future_perfect_tense_test1_2_meaning">\t Guru akan selesai mengajar pukul 12:30 siang.</string>
 
+    <!-- Future Perfect Tense, Explain 2, Hal 3 -->
+    <string name="pola_kalimat_future_perfect">Pola kalimat Future Perfect Tense</string>
+    <string name="bentuk_kalimat_verbal_future_perfect">■ Bentuk kalimat verbal</string>
+    <string name="bentuk_kalimat_nominal_future_perfect">■ Bentuk kalimat nominal</string>
+    <string name="bentuk_kalimat_verbal_positive_future_perfect">\t\t(+) Positif : Subject + will + have + V3 (Verb 3) \n\t\t+ Object. \n\t\tContoh : I will have finished my homework \n\t\tat 8:30 p.m.\n\t\t(Saya akan menyelesaikan PR saya pukul \n\t\t8:30 malam)</string>
+    <string name="bentuk_kalimat_verbal_negative_future_perfect">\t\t(-) Negatif : Subject + will + not + have + \n\t\tV3 (Verb 3) + Object. \n\t\tContoh : I will not have finished my homework \n\t\tat 8:30 p.m. \n\t\t(Saya tidak akan menyelesaikan PR saya \n\t\tpukul 8:30 malam)</string>
+    <string name="bentuk_kalimat_verbal_question_future_perfect">\t\t(?) Question : Will + Subject + have + V3 (Verb 3) \n\t\t  + Object? \n\t\tContoh : Will I have finished my homework \n\t\tat 8:30 p.m?\n\t\t(Apakah saya akan menyelesaikan PR saya \n\t\tpukul 8:30 malam?)</string>
+    <string name="bentuk_kalimat_nominal_positive_future_perfect">\t\t(+) Positif : Subject + will + have + been + \n\t\t3 Complement. \n\t\tContoh : My sister will have been a teacher. \n\t\t(Saudari perempuan saya akan menjadi \n\t\tseorang guru)</string>
+    <string name="bentuk_kalimat_nominal_negative_future_perfect">\t\t(-) Negatif : Subject + will + not + have + been +\n\t\t3 Complement. \n\t\tContoh : My sister will not have been a teacher. \n\t\t(Saudari perempuan saya tidak akan \n\t\tmenjadi seorang guru)</string>
+    <string name="bentuk_kalimat_nominal_question_future_perfect">\t\t(?) Question : Will + Subject + have + been\n\t\t+ 3 Complement? \n\t\tContoh : Will my sister have been a teacher?\n\t\t(Apakah saudari perempuan saya akan \n\t\tmenjadi seorang guru?)</string>
+    <string name="info_future_perfect"><b><u>Info :</u></b> \n\n- <b>Have</b> untuk : \nI, You, He, She, It, We, They, Budi dan Lubna (bentuk banyak/plural), Budi, Lubna (bentuk ketiga tunggal/singular).  <b>Have untuk semua subject</b>.</string>
+
 </resources>

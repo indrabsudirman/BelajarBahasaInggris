@@ -143,7 +143,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@null"
-                    android:text="had worked"
+                    android:text="will has teached"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -154,7 +154,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="has worked"
+                    android:text="will has gone"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -165,7 +165,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="have lived"
+                    android:text="will have gone"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -176,7 +176,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="had lived"
+                    android:text="will have teached"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 

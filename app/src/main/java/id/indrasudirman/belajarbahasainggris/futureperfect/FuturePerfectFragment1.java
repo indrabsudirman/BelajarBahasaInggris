@@ -128,15 +128,15 @@ public class FuturePerfectFragment1 extends Fragment {
         // make text bold
         spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 0, 20, 0);
         // akan selesai, di waktu masa depan
-        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 74, 107, 0);
+        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 74, 123, 0);
         // Future Perfect
-        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 138, 153, 0);
+        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 155, 169, 0);
         // will have arrived
-        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 250, 267, 0);
+        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 266, 283, 0);
 
         //Penjelasannya
-        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 334, 349, 0);
-        spannableString[0].setSpan(new UnderlineSpan(), 334, 349, 0);
+        spannableString[0].setSpan(new StyleSpan(Typeface.BOLD), 349, 364, 0);
+        spannableString[0].setSpan(new UnderlineSpan(), 349, 364, 0);
 
         explainTheTense.setMovementMethod(LinkMovementMethod.getInstance());
         explainTheTense.setText(spannableString[0]);

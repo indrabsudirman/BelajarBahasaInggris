@@ -628,15 +628,15 @@
     <!-- Future Perfect Tense, Explain 1, Hal 1 -->
 
     <string name="future_perfect_tense"><b><u>Future Perfect Tense</u></b></string>
-    <string name="future_perfect_explain">Future Perfect Tense digunakan untuk menyatakan kejadian (aktivitas) yang <b>akan selesai, di waktu masa depan</b> \n\nItulah sebabnya menjadi kata <b>Future Perfect</b>. Jadi kalimat dalam Future Perfect ini akan selesai di waktu masa depan (future). Contoh: Lubna <b>will have arrived</b> at home at 4:30 p.m. (Lubna akan sampai rumah pukul 4.30 sore). \n\n<b><u>Penjelasannya :</u></b> \n\nPada saat bercerita Lubna belum sampai rumah, sebelum pukul 4:30 sore. Mungkin di sekolah, kampus atau kantor. Tapi karena sudah pasti pukul 4:30 sore Lubna sudah sampai di rumah. Maka menggunakan kata will have arrived at home at 4:30 p.m</string>
+    <string name="future_perfect_explain">Future Perfect Tense digunakan untuk menyatakan kejadian (aktivitas) yang <b>akan selesai (pasti selesai), di waktu masa depan</b> \n\nItulah sebabnya menjadi kata <b>Future Perfect</b>. Jadi kalimat dalam Future Perfect ini akan selesai di waktu masa depan (future). Contoh: Lubna <b>will have arrived</b> at home at 4:30 p.m. (Lubna akan sampai rumah pukul 4.30 sore). \n\n<b><u>Penjelasannya :</u></b> \n\nPada saat bercerita Lubna belum sampai rumah, sebelum pukul 4:30 sore. Mungkin di sekolah, kampus atau kantor. Tapi karena sudah pasti pukul 4:30 sore Lubna sudah sampai di rumah. Maka menggunakan kata will have arrived at home at 4:30 p.m</string>
     <string name="second_bullet_future_perfect_tense">■ Lubna <b>will have arrived</b> at home at \n\t\t4:30 p.m.\n\n \t\t (Lubna akan sampai rumah pukul 4.30 sore).</string>
     <string name="third_bullet_future_perfect_tense">■ I <b>will have finished</b> this job tomorrow morning. \n\n \t\t (Saya akan menyelesaikan pekerjaan ini besok pagi).</string>
 
     <!-- Future Perfect Tense, Test 1, Hal 2 -->
 
-    <string name="future_perfect_tense_test1_1">1. Test soalMy father … as a teacher since June.</string> <!-- has worked, (had worked) -->
-    <string name="future_perfect_tense_test1_1_meaning">\t Ayah saya sudah bekerja sebagai guru \n\t\tsejak Juni.</string>
-    <string name="future_perfect_tense_test1_2">2. I … in Banjarnegara since year ago.</string> <!-- have lived (had lived)-->
-    <string name="future_perfect_tense_test1_2_meaning">\t Saya sudah tinggal di Banjarnegara sejak \n\t\t1 tahun lalu.</string>
+    <string name="future_perfect_tense_test1_1">1. My father … to Bandung on monday \n\t\tmorning.</string> <!-- will have gone, (will has gone) -->
+    <string name="future_perfect_tense_test1_1_meaning">\t Ayah saya akan pergi ke Bandung senin pagi.</string>
+    <string name="future_perfect_tense_test1_2">2. Teacher … in at 12:30 p.m.</string> <!-- will have teached (will has teached)-->
+    <string name="future_perfect_tense_test1_2_meaning">\t Guru akan selesai mengajar pukul 12:30 siang.</string>
 
 </resources>

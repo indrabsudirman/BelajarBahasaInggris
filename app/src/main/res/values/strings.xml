@@ -634,7 +634,7 @@
 
     <!-- Future Perfect Tense, Test 1, Hal 2 -->
 
-    <string name="future_perfect_tense_test1_1">1. My father … as a teacher since June.</string> <!-- has worked, (had worked) -->
+    <string name="future_perfect_tense_test1_1">1. Test soalMy father … as a teacher since June.</string> <!-- has worked, (had worked) -->
     <string name="future_perfect_tense_test1_1_meaning">\t Ayah saya sudah bekerja sebagai guru \n\t\tsejak Juni.</string>
     <string name="future_perfect_tense_test1_2">2. I … in Banjarnegara since year ago.</string> <!-- have lived (had lived)-->
     <string name="future_perfect_tense_test1_2_meaning">\t Saya sudah tinggal di Banjarnegara sejak \n\t\t1 tahun lalu.</string>

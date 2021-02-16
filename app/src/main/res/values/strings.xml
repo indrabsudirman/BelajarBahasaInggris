@@ -651,4 +651,22 @@
     <string name="bentuk_kalimat_nominal_question_future_perfect">\t\t(?) Question : Will + Subject + have + been\n\t\t+ 3 Complement? \n\t\tContoh : Will my sister have been a teacher?\n\t\t(Apakah saudari perempuan saya akan \n\t\tmenjadi seorang guru?)</string>
     <string name="info_future_perfect"><b><u>Info :</u></b> \n\n- <b>Have</b> untuk : \nI, You, He, She, It, We, They, Budi dan Lubna (bentuk banyak/plural), Budi, Lubna (bentuk ketiga tunggal/singular).  <b>Have untuk semua subject</b>.</string>
 
+    <!-- Future Perfect Tense, Test 2, Hal 4 -->
+
+    <string name="future_perfect_tense_test2_1">1. … Ali … dinner tonight?</string> <!-- will, have not eaten  -->
+    <string name="future_perfect_tense_test2_1_meaning">\t Apakah Ali tidak akan selesai makan malam \n\t\tnanti malam?</string>
+    <string name="future_perfect_tense_test2_2">2. I (1) … (2) …  a Doctor.</string> <!-- will not, have been -->
+    <string name="future_perfect_tense_test2_2_meaning">\t Saya tidak akan menjadi seorang dokter.</string>
+    <string name="future_perfect_tense_test2_3">3. Fatimah … have … next year.</string> <!-- will, married  -->
+    <string name="future_perfect_tense_test2_3_meaning">\t Fatimah akan selesai menikah tahun depan.</string>
+    <string name="future_perfect_tense_test2_4">4. … Lubna … that letter?</string> <!--  will, have received -->
+    <string name="future_perfect_tense_test2_4_meaning">\t Apakah Lubna akan terima surat itu?</string>
+    <string name="future_perfect_tense_test2_5">5. The repairman (1) … (2) … my laptop \n\t\ttomorrow.</string> <!-- will, have repaired -->
+    <string name="future_perfect_tense_test2_5_meaning">\t Tukang servis akan selesai memperbaiki \n\t\tlaptop saya besok.</string>
+
+    <!-- Future Perfect Tense, Explain 3, Hal 5 (Time Signal) -->
+    <string name="time_signal_future_perfect_tense">Keterangan waktu <b>(Time signal)</b> pada Future Perfect Tense</string>
+    <string name="info_time_signal_future_perfect_tense">Time Signal pada Future Perfect Tense <b>hampir sama dengan</b> Time Signal pada Simple Past Tense.</string>
+
+
 </resources>

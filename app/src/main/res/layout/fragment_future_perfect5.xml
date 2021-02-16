@@ -19,7 +19,7 @@
 
             <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:shrinkColumns="*"
                 android:stretchColumns="*">
 
@@ -32,21 +32,17 @@
 
 
                     <TextView
-                        android:id="@+id/time_signal_simple_past"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_span="3"
                         android:gravity="center"
                         android:padding="10dp"
                         android:text="@string/time_signal_future_perfect_tense"
-                        android:textColor="@color/colorBlack"
-                        android:textStyle="bold" />
-
+                        android:textColor="@color/colorBlack"/>
 
                 </TableRow>
 
-                <!-- Row 2 with 3 columns -->
-
+                <!-- Row 2 with 2 columns -->
 
                 <TableRow
                     android:id="@+id/tableRow1"
@@ -60,7 +56,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/last_time"
+                        android:text="@string/time_signal"
                         android:textColor="@color/colorBlack"
                         android:textStyle="bold" />
 
@@ -70,20 +66,9 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/cardinal_time_ago"
+                        android:text="@string/artinya"
                         android:textColor="@color/colorBlack"
                         android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/TextView03"
-                        android:layout_width="200dip"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/specific_time_in_the_past"
-                        android:textColor="@color/colorBlack"
-                        android:textStyle="bold" />
-
                 </TableRow>
 
                 <!-- Row 3 with 2 columns -->
@@ -97,7 +82,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/last_sunday"
+                        android:text="@string/tomorrow"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -105,20 +90,12 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/one_day_ago"
-                        android:textColor="@color/colorBlack" />
-
-                    <TextView
-                        android:id="@+id/TextView06"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/yesterday"
+                        android:text="@string/besok"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
 
-                <!-- Row 4 with 3 columns -->
+                <!-- Row 4 with 2 columns -->
                 <TableRow
                     android:id="@+id/tableRow3"
                     android:layout_width="match_parent"
@@ -130,7 +107,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/last_day"
+                        android:text="@string/tonight"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -139,196 +116,242 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/two_days_ago"
-                        android:textColor="@color/colorBlack" />
-
-                    <TextView
-                        android:id="@+id/TextView09"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/the_day_before_yesterday"
+                        android:text="@string/malam_ini"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
 
-
-                <!-- Row 5 with 3 columns -->
+                <!-- Row 5 with 2 columns -->
                 <TableRow
-                    android:id="@+id/tableRow5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/TextView10"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/last_night"
+                        android:text="@string/next_week"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
-                        android:id="@+id/TextView11"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/three_weeks_ago"
-                        android:textColor="@color/colorBlack" />
-
-                    <TextView
-                        android:id="@+id/TextView12"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/two_days_before_yesterday"
+                        android:text="@string/minggu_depan"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
 
-
-                <!-- Row 6 with 3 columns -->
+                <!-- Row 6 with 2 columns -->
                 <TableRow
-                    android:id="@+id/tableRow6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/TextView13"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/last_morning"
+                        android:text="@string/next_month"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
-                        android:id="@+id/TextView14"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/four_years_ago"
-                        android:textColor="@color/colorBlack" />
-
-                    <TextView
-                        android:id="@+id/TextView15"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/one_week_before"
+                        android:text="@string/bulan_depan"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
 
-
-                <!-- Row 7 with 3 columns -->
+                <!-- Row 7 with 2 columns -->
                 <TableRow
-                    android:id="@+id/tableRow7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/TextView16"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/last_week"
+                        android:text="at"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
-                        android:id="@+id/TextView17"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/dan_lainnya"
-                        android:textColor="@color/colorBlack" />
-
-                    <TextView
-                        android:id="@+id/TextView18"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/in_1990"
+                        android:text="pada"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
 
-
-                <!-- Row 8 with 3 columns -->
+                <!-- Row 8 with 2 columns -->
                 <TableRow
-                    android:id="@+id/tableRow8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/TextView19"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/last_month"
+                        android:text="before"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
-                        android:id="@+id/TextView20"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/dan_lainnya"
-                        android:textColor="@color/colorBlack" />
-
-                    <TextView
-                        android:id="@+id/TextView21"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/dan_lainnya"
+                        android:text="sebelum"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
 
-
-                <!-- Row 9 with 3 columns -->
+                <!-- Row 9 with 2 columns -->
                 <TableRow
-                    android:id="@+id/tableRow9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/TextView22"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/last_year"
+                        android:text="when"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
-                        android:id="@+id/TextView23"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/dan_lainnya"
-                        android:textColor="@color/colorBlack" />
-
-                    <TextView
-                        android:id="@+id/TextView24"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="@string/dan_lainnya"
+                        android:text="ketika"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
 
-                <!-- Row 10 with 3 columns -->
+                <!-- Row 10 with 2 columns -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="as soon as"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="secepatnya"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 11 with 2 columns -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="at this time next week"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="pada waktu yang sama pada saat ini di minggu depan"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 12 with 2 columns -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="by next saturday"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="tidak melebihi hari sabtu depan"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 13 with 2 columns -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="by 9 p.m"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="tidak melebihi pukul 9 malam"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 14 with 2 columns -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="in 4 years time"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="dalam waktu empat tahun"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 8 with 1 column -->
                 <TableRow
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -346,8 +369,6 @@
 
 
                 </TableRow>
-
-
             </TableLayout>
 
             <LinearLayout
@@ -372,7 +393,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:text="@string/info_time_signal_present_perfect_tense"
+                    android:text="@string/info_time_signal_future_perfect_tense"
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault"
                     android:textColor="@color/colorWhite" />
 

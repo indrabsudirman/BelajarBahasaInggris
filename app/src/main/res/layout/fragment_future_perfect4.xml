@@ -300,7 +300,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@null"
-                    android:text="have not eaten"
+                    android:text="have eaten"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -311,7 +311,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="will"
+                    android:text="will not"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 

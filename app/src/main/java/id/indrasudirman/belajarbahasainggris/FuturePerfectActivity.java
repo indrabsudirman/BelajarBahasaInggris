@@ -467,7 +467,7 @@ public class FuturePerfectActivity extends AppCompatActivity {
     private boolean checkQuestionTestTwo1() {
         TextInputEditText editTextQuestion = findViewById(R.id.dropAnswerOneOne);
 
-        String key = "18218139eec55d83cf82679934e5cd75";
+        String key = "893dafacdd4419d50ee09e6bfab8ae79";
 
         PasswordMD5WithSalt p = new PasswordMD5WithSalt();
 
@@ -477,7 +477,7 @@ public class FuturePerfectActivity extends AppCompatActivity {
     private boolean checkQuestionTestTwo2() {
         TextInputEditText editTextQuestion = findViewById(R.id.dropAnswerOneTwo);
 
-        String key = "77d07f04c4f1d62e015892acf0060275";
+        String key = "6ce08e2c5b743c7e0aafdf5db506fe9f";
 
         PasswordMD5WithSalt p = new PasswordMD5WithSalt();
 

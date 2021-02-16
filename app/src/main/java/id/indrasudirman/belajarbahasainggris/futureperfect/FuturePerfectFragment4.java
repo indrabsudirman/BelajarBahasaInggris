@@ -55,8 +55,8 @@ public class FuturePerfectFragment4 extends Fragment implements View.OnDragListe
     private AppCompatButton tooltipsDropThree;
     private AppCompatButton tooltipsDropFour;
     private AppCompatButton tooltipsDropFive;
-    private static final String TEXT_VIEW_OPTION_ONE = "will";
-    private static final String TEXT_VIEW_OPTION_TWO = "have not eaten";
+    private static final String TEXT_VIEW_OPTION_ONE = "will not";
+    private static final String TEXT_VIEW_OPTION_TWO = "have eaten";
     private static final String TEXT_VIEW_OPTION_THREE = "will not";
     private static final String TEXT_VIEW_OPTION_FOUR = "have been";
     private static final String TEXT_VIEW_OPTION_FIVE = "will";

@@ -83,10 +83,10 @@ public class FuturePerfectFragment3 extends Fragment {
                 alertDialogSimplePast.setMessage("Kalimat Verbal merupakan kalimat yang memiliki predikat yang berupa kata kerja (Verb).\n" +
                         "Contoh :\n" +
                         "\n" +
-                        "I have eaten breakfast.\n" +
-                        "I have not eaten breakfast.\n" +
-                        "Have you eaten breakfast?\n" +
-                        "eaten (eat) adalah kata kerja (verb 3) dari eat")
+                        "I will have finished my homework.\n" +
+                        "I will not have finished my homework.\n" +
+                        "Will I have finished my homework?\n" +
+                        "finished (finish) adalah kata kerja (verb 3) dari finish")
                         .setCancelable(false)
                         .setIcon(R.mipmap.ic_info_green)
                         .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
@@ -107,7 +107,7 @@ public class FuturePerfectFragment3 extends Fragment {
                 AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
                 //Set Title
                 alertDialogSimplePast.setTitle("Info");
-                alertDialogSimplePast.setMessage("Kata 'has studied' adalah bentuk dari Present Perfect Tense, terdiri dari rumus have/has + verb 3 (past participle). studied dari kata kerja Study artinya Belajar.")
+                alertDialogSimplePast.setMessage("Kata 'will have finished' adalah bentuk dari Future Perfect Tense, terdiri dari rumus will + have + verb 3 (past participle). finished dari kata kerja finish artinya selesai/menyelesaikan.")
                         .setCancelable(false)
                         .setIcon(R.mipmap.ic_info_green)
                         .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
@@ -173,9 +173,9 @@ public class FuturePerfectFragment3 extends Fragment {
                 alertDialogSimplePast.setMessage("Kalimat nominal merupakan kalimat yang predikatnya berupa kata benda, kata sifat, kata bilangan, kata ganti, atau kata keterangan.\n" +
                         "Contoh :\n" +
                         "\n" +
-                        "Lubna has been a student. (student, kata benda/noun).\n" +
-                        "Lubna has not been a student.\n" +
-                        "Has Lubna been a student?")
+                        "My sister will have been a teacher. (teacher, kata benda/noun).\n" +
+                        "My sister will not have been a teacher.\n" +
+                        "Will my sister have been a teacher?")
                         .setCancelable(false)
                         .setIcon(R.mipmap.ic_info_green)
                         .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
@@ -219,23 +219,23 @@ public class FuturePerfectFragment3 extends Fragment {
         verbal.setText(spannableString[0]);
 
         // verbalPositive
-        spannableString[1].setSpan(clickableSpanVerbalPositive,86,97,0);
+        spannableString[1].setSpan(clickableSpanVerbalPositive,79,97,0);
         // make text bold
-        spannableString[1].setSpan(new StyleSpan(Typeface.BOLD), 86,97, 0);
+        spannableString[1].setSpan(new StyleSpan(Typeface.BOLD), 79,97, 0);
         verbalPositive.setMovementMethod(LinkMovementMethod.getInstance());
         verbalPositive.setText(spannableString[1]);
 
         // verbalNegative
-        spannableString[2].setSpan(clickableSpanVerbalNegative,96,99,0);
+        spannableString[2].setSpan(clickableSpanVerbalNegative,90,93,0);
         // make text bold
-        spannableString[2].setSpan(new StyleSpan(Typeface.BOLD), 96,99, 0);
+        spannableString[2].setSpan(new StyleSpan(Typeface.BOLD), 90,93, 0);
         verbalNegative.setMovementMethod(LinkMovementMethod.getInstance());
         verbalNegative.setText(spannableString[2]);
 
         // verbalQuestion
-        spannableString[3].setSpan(clickableSpanVerbalQuestion,38,49,0);
+        spannableString[3].setSpan(clickableSpanVerbalQuestion,41,52,0);
         // make text bold
-        spannableString[3].setSpan(new StyleSpan(Typeface.BOLD), 38,49, 0);
+        spannableString[3].setSpan(new StyleSpan(Typeface.BOLD), 41,52, 0);
         verbalQuestion.setMovementMethod(LinkMovementMethod.getInstance());
         verbalQuestion.setText(spannableString[3]);
 
@@ -247,9 +247,9 @@ public class FuturePerfectFragment3 extends Fragment {
         nominal.setText(spannableString[4]);
 
         //nominalPositive, 3 Complement
-        spannableString[5].setSpan(clickableSpan3Complement,44,60,0);
+        spannableString[5].setSpan(clickableSpan3Complement,47,63,0);
         // make text bold
-        spannableString[5].setSpan(new StyleSpan(Typeface.BOLD), 44,60, 0);
+        spannableString[5].setSpan(new StyleSpan(Typeface.BOLD), 47,63, 0);
         nominalPositive.setMovementMethod(LinkMovementMethod.getInstance());
         nominalPositive.setText(spannableString[5]);
     }

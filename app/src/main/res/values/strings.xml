@@ -636,7 +636,7 @@
 
     <string name="future_perfect_tense_test1_1">1. My father … to Bandung on monday \n\t\tmorning.</string> <!-- will have gone, (will has gone) -->
     <string name="future_perfect_tense_test1_1_meaning">\t Ayah saya akan pergi ke Bandung senin pagi.</string>
-    <string name="future_perfect_tense_test1_2">2. Teacher … in at 12:30 p.m.</string> <!-- will have teached (will has teached)-->
+    <string name="future_perfect_tense_test1_2">2. Teacher … in at 12:30 p.m.</string> <!-- will have taught (will has teached)-->
     <string name="future_perfect_tense_test1_2_meaning">\t Guru akan selesai mengajar pukul 12:30 siang.</string>
 
     <!-- Future Perfect Tense, Explain 2, Hal 3 -->
@@ -674,6 +674,13 @@
     <string name="past_future_perfect_explain">Past Future Perfect Tense digunakan untuk menyatakan kejadian (aktivitas) yang <b>tidak terjadi, mungkin bisa terjadi atau sebenarnya dapat dilakukan. Namun tidak berhasil dilakukan di masa lalu.</b> \n\nItulah sebabnya menjadi kata <b>Past Future Perfect</b>. Penjelasan lainnya, Past Future Perfect bisa dikatakan sebagai sebuah pengandaian yang seharusnya terjadi di masa lalu, tapi tidak terjadi. Contoh: Lubna <b>should have understood</b> the arabic lesson at school. (Lubna seharusnya sudah mengerti pelajaran bahasa arab di sekolah). \n\n<b><u>Penjelasannya :</u></b> \n\nKalimat <b>Lubna seharusnya sudah mengerti pelajaran bahasa arab di sekolah</b> adalah contoh dari Past Future Perfect tense karena mengandung aktivitas yang tidak terjadi, mungkin bisa terjadi atau sebenarnya dapat dilakukan di masa lalu.</string>
     <string name="second_bullet_past_future_perfect_tense">■ Lubna <b>should have understood</b> the arabic \n\t\tlesson at school.\n\n \t\t (Lubna seharusnya sudah mengerti pelajaran \n\t\tbahasa arab di sekolah).</string>
     <string name="third_bullet_past_future_perfect_tense">■ You <b>should have received</b> your package by now. \n\n \t\t (Kamu seharusnya sudah terima paketmu sejak \n\t\tsaat ini (sekarang)).</string>
+
+    <!-- Past Future Perfect Tense, Test 1, Hal 2 -->
+
+    <string name="past_future_perfect_tense_test1_1">1. I … as new employee at that office.</string> <!-- should have worked, (should have pass) -->
+    <string name="past_future_perfect_tense_test1_1_meaning">\t Saya seharusnya sudah bekerja sebagai karyawan \n\t\tbaru di kantor itu.</string>
+    <string name="past_future_perfect_tense_test1_2">2. Laila … to the Mekkah last year.</string> <!-- should have gone (should have go)-->
+    <string name="past_future_perfect_tense_test1_2_meaning">\t Laila seharusnya sudah pergi ke Mekkah tahun lalu.</string>
 
     //Tambahkan di tips hal 3 should/would/must dll
 

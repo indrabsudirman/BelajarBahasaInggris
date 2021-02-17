@@ -40,7 +40,7 @@ public class FuturePerfectFragment2 extends Fragment implements View.OnDragListe
     private static final String TEXT_VIEW_OPTION_ONE = "will has gone";
     private static final String TEXT_VIEW_OPTION_TWO = "will has teached";
     private static final String TEXT_VIEW_OPTION_THREE = "will have gone";
-    private static final String TEXT_VIEW_OPTION_FOUR = "will have teached";
+    private static final String TEXT_VIEW_OPTION_FOUR = "will have taught";
 
     private AppCompatButton tooltipsDropOne;
     private AppCompatButton tooltipsDropTwo;

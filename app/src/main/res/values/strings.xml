@@ -671,9 +671,10 @@
     <!-- Past Future Perfect Tense, Explain 1, Hal 1 -->
 
     <string name="past_future_perfect_tense"><b><u>Past Future Perfect Tense</u></b></string>
-    <string name="past_future_perfect_explain">Past Future Perfect Tense digunakan untuk menyatakan kejadian (aktivitas) yang <b>akan selesai (pasti selesai), di waktu masa depan</b> \n\nItulah sebabnya menjadi kata <b>Future Perfect</b>. Jadi kalimat dalam Future Perfect ini akan selesai di waktu masa depan (future). Contoh: Lubna <b>will have arrived</b> at home at 4:30 p.m. (Lubna akan sampai rumah pukul 4.30 sore). \n\n<b><u>Penjelasannya :</u></b> \n\nPada saat bercerita Lubna belum sampai rumah, sebelum pukul 4:30 sore. Mungkin di sekolah, kampus atau kantor. Tapi karena sudah pasti pukul 4:30 sore Lubna sudah sampai di rumah. Maka menggunakan kata will have arrived at home at 4:30 p.m</string>
-    <string name="second_bullet_past_future_perfect_tense">■ Lubna <b>will have arrived</b> at home at \n\t\t4:30 p.m.\n\n \t\t (Lubna akan sampai rumah pukul 4.30 sore).</string>
-    <string name="third_bullet_past_future_perfect_tense">■ I <b>will have finished</b> this job tomorrow morning. \n\n \t\t (Saya akan menyelesaikan pekerjaan ini besok pagi).</string>
+    <string name="past_future_perfect_explain">Past Future Perfect Tense digunakan untuk menyatakan kejadian (aktivitas) yang <b>tidak terjadi, mungkin bisa terjadi atau sebenarnya dapat dilakukan. Namun tidak berhasil dilakukan di masa lalu.</b> \n\nItulah sebabnya menjadi kata <b>Past Future Perfect</b>. Penjelasan lainnya, Past Future Perfect bisa dikatakan sebagai sebuah pengandaian yang seharusnya terjadi di masa lalu, tapi tidak terjadi. Contoh: Lubna <b>should have understood</b> the arabic lesson at school. (Lubna seharusnya sudah mengerti pelajaran bahasa arab di sekolah). \n\n<b><u>Penjelasannya :</u></b> \n\nKalimat <b>Lubna seharusnya sudah mengerti pelajaran bahasa arab di sekolah</b> adalah contoh dari Past Future Perfect tense karena mengandung aktivitas yang tidak terjadi, mungkin bisa terjadi atau sebenarnya dapat dilakukan di masa lalu.</string>
+    <string name="second_bullet_past_future_perfect_tense">■ Lubna <b>should have understood</b> the arabic \n\t\tlesson at school.\n\n \t\t (Lubna seharusnya sudah mengerti pelajaran \n\t\tbahasa arab di sekolah).</string>
+    <string name="third_bullet_past_future_perfect_tense">■ You <b>should have received</b> your package by now. \n\n \t\t (Kamu seharusnya sudah terima paketmu sejak \n\t\tsaat ini (sekarang)).</string>
 
+    //Tambahkan di tips hal 3 should/would/must dll
 
 </resources>

@@ -300,7 +300,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@null"
-                    android:text="have eaten"
+                    android:text="would"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -311,7 +311,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="will not"
+                    android:text="have arrived"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -322,7 +322,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="will not"
+                    android:text="should"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -333,7 +333,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="have been"
+                    android:text="started"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -344,7 +344,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="will"
+                    android:text="not"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -355,7 +355,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="married"
+                    android:text="came"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -366,7 +366,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="will"
+                    android:text="would"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -377,7 +377,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="have received"
+                    android:text="have been"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -388,7 +388,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="have repaired"
+                    android:text="would"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -399,7 +399,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="will"
+                    android:text="done"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 

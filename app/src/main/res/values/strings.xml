@@ -694,7 +694,17 @@
     <string name="bentuk_kalimat_nominal_question_past_future_perfect">\t\t(?) Question : Would/Should + Subject + \n\t\thave + been + 3 Complement? \n\t\tContoh : Would my brother have been \n\t\ta policeman?\n\t\t(Apakah saudara laki-laki saya akan sudah \n\t\tmenjadi seorang polisi?)</string>
     <string name="info_past_future_perfect"><b><u>Info :</u></b> \n\n- Should digunakan untuk Subject <b>I dan we</b>.\n- Would digunakan untuk semua <b>Subject</b></string>
 
+    <!-- Past Future Perfect Tense, Test 2, Hal 4 -->
 
-    //Tambahkan di tips hal 3 should/would/must dll
+    <string name="past_future_perfect_tense_test2_1">1. … Ali … dinner tonight?</string> <!-- will not, have eaten  -->
+    <string name="past_future_perfect_tense_test2_1_meaning">\t Apakah Ali tidak akan selesai makan malam \n\t\tnanti malam?</string>
+    <string name="past_future_perfect_tense_test2_2">2. I (1) … (2) …  a Doctor.</string> <!-- will not, have been -->
+    <string name="past_future_perfect_tense_test2_2_meaning">\t Saya tidak akan menjadi seorang dokter.</string>
+    <string name="past_future_perfect_tense_test2_3">3. Fatimah … have … next year.</string> <!-- will, married  -->
+    <string name="past_future_perfect_tense_test2_3_meaning">\t Fatimah akan selesai menikah tahun depan.</string>
+    <string name="past_future_perfect_tense_test2_4">4. … Lubna … that letter?</string> <!--  will, have received -->
+    <string name="past_future_perfect_tense_test2_4_meaning">\t Apakah Lubna akan terima surat itu?</string>
+    <string name="past_future_perfect_tense_test2_5">5. The repairman (1) … (2) … my laptop \n\t\ttomorrow.</string> <!-- will, have repaired -->
+    <string name="past_future_perfect_tense_test2_5_meaning">\t Tukang servis akan selesai memperbaiki \n\t\tlaptop saya besok.</string>
 
 </resources>

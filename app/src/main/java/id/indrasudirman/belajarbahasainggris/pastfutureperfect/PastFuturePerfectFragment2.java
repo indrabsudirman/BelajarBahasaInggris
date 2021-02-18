@@ -37,9 +37,9 @@ public class PastFuturePerfectFragment2 extends Fragment implements View.OnDragL
     private AppCompatTextView optionThree;
     private AppCompatTextView optionFour;
 
-    private static final String TEXT_VIEW_OPTION_ONE = "should have gone";
+    private static final String TEXT_VIEW_OPTION_ONE = "would have gone";
     private static final String TEXT_VIEW_OPTION_TWO = "should have pass";
-    private static final String TEXT_VIEW_OPTION_THREE = "should have go";
+    private static final String TEXT_VIEW_OPTION_THREE = "would have go";
     private static final String TEXT_VIEW_OPTION_FOUR = "should have worked";
 
     private AppCompatButton tooltipsDropOne;

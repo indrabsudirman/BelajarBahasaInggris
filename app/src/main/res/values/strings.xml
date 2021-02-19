@@ -718,5 +718,12 @@
     <string name="second_bullet_past_perfect_continuous_tense">■ Lubna <b>had been studying</b> at Boarding School. \n\n \t\t(Lubna telah sedang belajar di Pondok Pesantren).</string>
     <string name="third_bullet_past_perfect_continuous_tense">■ Haby <b>had been living</b> in Germany. \n\n \t\t(Haby telah sedang tinggal di Jerman).</string>
 
+    <!-- Past Perfect Continuous Tense, Test 1, Hal 2 -->
+
+    <string name="past_perfect_continuous_tense_test1_1">1. I … at new office last week.</string> <!-- had been working, (have been worked) -->
+    <string name="past_perfect_continuous_tense_test1_1_meaning">\t Saya telah sedang bekerja di kantor \n\t\tbaru minggu lalu.</string>
+    <string name="past_perfect_continuous_tense_test1_2">2. Haby … at park last sunday.</string> <!-- had been walking (have been walked)-->
+    <string name="past_perfect_continuous_tense_test1_2_meaning">\t Haby telah sedang berjalan di taman \n\t\thari minggu kemarin.</string>
+
 
 </resources>

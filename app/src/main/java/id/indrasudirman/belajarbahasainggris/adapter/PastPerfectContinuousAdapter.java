@@ -8,6 +8,8 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import id.indrasudirman.belajarbahasainggris.pastperfectcontinuous.PastPerfectContinuousFragment1;
 import id.indrasudirman.belajarbahasainggris.pastperfectcontinuous.PastPerfectContinuousFragment2;
 import id.indrasudirman.belajarbahasainggris.pastperfectcontinuous.PastPerfectContinuousFragment3;
+import id.indrasudirman.belajarbahasainggris.pastperfectcontinuous.PastPerfectContinuousFragment4;
+import id.indrasudirman.belajarbahasainggris.pastperfectcontinuous.PastPerfectContinuousFragment5;
 
 public class PastPerfectContinuousAdapter extends FragmentStateAdapter {
 
@@ -23,6 +25,10 @@ public class PastPerfectContinuousAdapter extends FragmentStateAdapter {
                 return new PastPerfectContinuousFragment2();
             case 2:
                 return new PastPerfectContinuousFragment3();
+            case 3:
+                return new PastPerfectContinuousFragment4();
+            case 4:
+                return new PastPerfectContinuousFragment5();
             default:
                 return new PastPerfectContinuousFragment1();
         }
@@ -30,6 +36,6 @@ public class PastPerfectContinuousAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 3;
+        return 5;
     }
 }

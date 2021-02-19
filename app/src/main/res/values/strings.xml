@@ -705,7 +705,7 @@
     <string name="past_future_perfect_tense_test2_4">4. The competition … have … yesterday.</string> <!--  should , started -->
     <string name="past_future_perfect_tense_test2_4_meaning">\t Kompetisi seharusnya sudah dimulai kemarin.</string>
     <string name="past_future_perfect_tense_test2_5">5. … you … on time if I had borrowed the bike?</string> <!-- would, have arrived -->
-    <string name="past_future_perfect_tense_test2_5_meaning">\t Apakah kamu akan datang tepat waktu jika \n\t\tsaya pinjamkan sepeda?.</string>
+    <string name="past_future_perfect_tense_test2_5_meaning">\t Apakah kamu akan datang tepat waktu jika \n\t\tsaya pinjamkan sepeda?</string>
 
     <!-- Past Future Perfect Tense, Explain 3, Hal 5 (Time Signal) -->
     <string name="time_signal_past_future_perfect_tense">Keterangan waktu <b>(Time signal)</b> pada Past Future Perfect Tense</string>
@@ -739,15 +739,15 @@
 
     <!-- Past Perfect Continuous Tense, Test 2, Hal 4 -->
 
-    <string name="past_perfect_continuous_tense_test2_1">1. Imam … have … his homework last night.</string> <!-- would, done  -->
-    <string name="past_perfect_continuous_tense_test2_1_meaning">\t Imam seharusnya sudah menyelesaikan PR nya \n\t\tsemalam.</string>
-    <string name="past_perfect_continuous_tense_test2_2">2. I (1) … (2) …  a Fireman.</string> <!-- would, have been -->
-    <string name="past_perfect_continuous_tense_test2_2_meaning">\t Saya akan sudah menjadi seorang pemadam \n\t\tkebakaran.</string>
-    <string name="past_perfect_continuous_tense_test2_3">3. Ali would … have … in my wedding \n\t\tparty last week.</string> <!-- not , came  -->
-    <string name="past_perfect_continuous_tense_test2_3_meaning">\t Ali tidak akan datang pada pesta pernikahan \n\t\tsaya minggu lalu.</string>
-    <string name="past_perfect_continuous_tense_test2_4">4. The competition … have … yesterday.</string> <!--  should , started -->
-    <string name="past_perfect_continuous_tense_test2_4_meaning">\t Kompetisi seharusnya sudah dimulai kemarin.</string>
-    <string name="past_perfect_continuous_tense_test2_5">5. … you … on time if I had borrowed the bike?</string> <!-- would, have arrived -->
-    <string name="past_perfect_continuous_tense_test2_5_meaning">\t Apakah kamu akan datang tepat waktu jika \n\t\tsaya pinjamkan sepeda?.</string>
+    <string name="past_perfect_continuous_tense_test2_1">1. I had (1) … (2) … Computer programming \n\t\tfor five years</string> <!-- been, practicing  -->
+    <string name="past_perfect_continuous_tense_test2_1_meaning">\t Saya telah mempraktekkan program \n\t\tkomputer selama 5 tahun.</string>
+    <string name="past_perfect_continuous_tense_test2_2">2. Haby (1) … (2) …  Milk when \n\t\tMother slept.</string> <!-- had been, drinking -->
+    <string name="past_perfect_continuous_tense_test2_2_meaning">\t Haby telah sedang meminum susu \n\t\tketika Ibu tidur.</string>
+    <string name="past_perfect_continuous_tense_test2_3">3. … Ali … playing tennis at tennis \n\t\tcourt?</string> <!-- had, been  -->
+    <string name="past_perfect_continuous_tense_test2_3_meaning">\t Apakah Ali telah sedang bermain tenis di \n\t\tlapangan tenis?</string>
+    <string name="past_perfect_continuous_tense_test2_4">4. Agus … been … math well at \n\t\tschool.</string> <!--  had not, learning -->
+    <string name="past_perfect_continuous_tense_test2_4_meaning">\t Agus telah tidak sedang belajar matematika \n\t\tdengan baik di sekolah.</string>
+    <string name="past_perfect_continuous_tense_test2_5">5. She (1) … (2) … since worked at \n\t\ther office.</string> <!-- had been, careful -->
+    <string name="past_perfect_continuous_tense_test2_5_meaning">\t Dia perempuan telah sedang hati-hati \n\t\tsejak bekerja di kantornya.</string>
 
 </resources>

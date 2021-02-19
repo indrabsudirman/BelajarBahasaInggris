@@ -39,6 +39,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
                     android:paddingTop="0dp"
+                    android:padding="5dp"
                     android:text="@string/past_perfect_continuous_tense_test2_1"
                     android:textColor="@color/dark_silver" />
 
@@ -300,7 +301,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@null"
-                    android:text="would"
+                    android:text="careful"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -311,7 +312,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="have arrived"
+                    android:text="had been"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -322,7 +323,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="should"
+                    android:text="learning"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -333,7 +334,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="started"
+                    android:text="had not"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -344,7 +345,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="not"
+                    android:text="been"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -355,7 +356,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="came"
+                    android:text="had"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -366,7 +367,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="would"
+                    android:text="drinking"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -377,7 +378,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="have been"
+                    android:text="had been"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -388,7 +389,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="would"
+                    android:text="practicing"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -399,7 +400,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@null"
-                    android:text="done"
+                    android:text="been"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 

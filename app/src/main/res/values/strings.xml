@@ -761,4 +761,11 @@
     <string name="second_bullet_present_perfect_continuous_tense">■ Lubna <b>has been learning</b> al Quran since \n\t\ta kid. \n\n \t\t(Lubna telah sedang belajar Al Quran sejak \n\t\tkecil/anak-anak).</string>
     <string name="third_bullet_present_perfect_continuous_tense">■ I <b>have been living</b> in Banjarnegara \n\t\tsince 2020. \n\n \t\t(Saya telah sedang tinggal di Banjarnegara \n\t\tsejak 2020).</string>
 
+
+    <!-- Present Perfect Continuous Tense, Test 1, Hal 2 -->
+
+    <string name="present_perfect_continuous_tense_test1_1">1. Azka … a book for a week now.</string> <!-- has been reading, (have been reading) -->
+    <string name="present_perfect_continuous_tense_test1_1_meaning">\t Azka telah sedang membaca buku selama \n\t\tseminggu ini.</string>
+    <string name="present_perfect_continuous_tense_test1_2">2. They … football for a month continuously.</string> <!-- have been practicing (has been practicing)-->
+    <string name="present_perfect_continuous_tense_test1_2_meaning">\t Mereka telah sedang mempraktekkan sepak bola \n\t\tselama sebulan terus menerus.</string>
 </resources>

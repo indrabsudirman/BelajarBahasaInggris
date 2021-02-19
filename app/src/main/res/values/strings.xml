@@ -737,5 +737,17 @@
     <string name="bentuk_kalimat_nominal_question_past_perfect_continuous">\t\t(?) Question : Had + subject + \n\t\tbeen + 3 Complement? \n\t\tContoh : Had my brother been sleepy?\n\t\t(Apakah saudara laki-laki saya telah sedang \n\t\tmengantuk?)</string>
     <string name="info_past_perfect_continuous"><b><u>Info :</u></b> \n\n- Had digunakan untuk semua <b>Subject</b>\n\n- Had not dapat disingkat menjadi <b>Hadn\'t</b></string>
 
+    <!-- Past Perfect Continuous Tense, Test 2, Hal 4 -->
+
+    <string name="past_perfect_continuous_tense_test2_1">1. Imam … have … his homework last night.</string> <!-- would, done  -->
+    <string name="past_perfect_continuous_tense_test2_1_meaning">\t Imam seharusnya sudah menyelesaikan PR nya \n\t\tsemalam.</string>
+    <string name="past_perfect_continuous_tense_test2_2">2. I (1) … (2) …  a Fireman.</string> <!-- would, have been -->
+    <string name="past_perfect_continuous_tense_test2_2_meaning">\t Saya akan sudah menjadi seorang pemadam \n\t\tkebakaran.</string>
+    <string name="past_perfect_continuous_tense_test2_3">3. Ali would … have … in my wedding \n\t\tparty last week.</string> <!-- not , came  -->
+    <string name="past_perfect_continuous_tense_test2_3_meaning">\t Ali tidak akan datang pada pesta pernikahan \n\t\tsaya minggu lalu.</string>
+    <string name="past_perfect_continuous_tense_test2_4">4. The competition … have … yesterday.</string> <!--  should , started -->
+    <string name="past_perfect_continuous_tense_test2_4_meaning">\t Kompetisi seharusnya sudah dimulai kemarin.</string>
+    <string name="past_perfect_continuous_tense_test2_5">5. … you … on time if I had borrowed the bike?</string> <!-- would, have arrived -->
+    <string name="past_perfect_continuous_tense_test2_5_meaning">\t Apakah kamu akan datang tepat waktu jika \n\t\tsaya pinjamkan sepeda?.</string>
 
 </resources>

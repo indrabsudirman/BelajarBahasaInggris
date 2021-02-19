@@ -106,7 +106,7 @@ public class PastPerfectContinuousFragment3 extends Fragment {
                 AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
                 //Set Title
                 alertDialogSimplePast.setTitle("Info");
-                alertDialogSimplePast.setMessage("Kata 'should have studied' adalah bentuk dari Past Future Perfect Tense, terdiri dari rumus would/should + have + verb 3 (past participle). studied dari kata kerja study artinya belajar.")
+                alertDialogSimplePast.setMessage("Kata 'had been studying' adalah bentuk dari Past Perfect Continuous Tense, terdiri dari rumus had + been + verb 1 + ing. studied dari kata kerja study artinya belajar.")
                         .setCancelable(false)
                         .setIcon(R.mipmap.ic_info_green)
                         .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
@@ -148,7 +148,7 @@ public class PastPerfectContinuousFragment3 extends Fragment {
                 AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
                 //Set Title
                 alertDialogSimplePast.setTitle("Info");
-                alertDialogSimplePast.setMessage("V3 atau Verb 3 atau Past Participle artinya adalah kata kerja ketiga.")
+                alertDialogSimplePast.setMessage("V1 atau Verb 1 artinya adalah kata kerja kesatu.")
                         .setCancelable(false)
                         .setIcon(R.mipmap.ic_info_green)
                         .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
@@ -172,9 +172,9 @@ public class PastPerfectContinuousFragment3 extends Fragment {
                 alertDialogSimplePast.setMessage("Kalimat nominal merupakan kalimat yang predikatnya berupa kata benda, kata sifat, kata bilangan, kata ganti, atau kata keterangan.\n" +
                         "Contoh :\n" +
                         "\n" +
-                        "My brother would have been a policeman. (policeman, kata benda/noun).\n" +
-                        "My brother would not have been a policeman.\n" +
-                        "Would my brother have been a policeman?")
+                        "My brother had been sleepy. (sleepy, kata sifat).\n" +
+                        "My brother had not been sleepy.\n" +
+                        "Had my brother been sleepy?")
                         .setCancelable(false)
                         .setIcon(R.mipmap.ic_info_green)
                         .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {
@@ -218,23 +218,23 @@ public class PastPerfectContinuousFragment3 extends Fragment {
         verbal.setText(spannableString[0]);
 
         // verbalPositive
-        spannableString[1].setSpan(clickableSpanVerbalPositive,87,104,0);
+        spannableString[1].setSpan(clickableSpanVerbalPositive,84,101,0);
         // make text bold
-        spannableString[1].setSpan(new StyleSpan(Typeface.BOLD), 87,104, 0);
+        spannableString[1].setSpan(new StyleSpan(Typeface.BOLD), 84,101, 0);
         verbalPositive.setMovementMethod(LinkMovementMethod.getInstance());
         verbalPositive.setText(spannableString[1]);
 
         // verbalNegative
-        spannableString[2].setSpan(clickableSpanVerbalNegative,100,103,0);
+        spannableString[2].setSpan(clickableSpanVerbalNegative,94,97,0);
         // make text bold
-        spannableString[2].setSpan(new StyleSpan(Typeface.BOLD), 100,103, 0);
+        spannableString[2].setSpan(new StyleSpan(Typeface.BOLD), 94,97, 0);
         verbalNegative.setMovementMethod(LinkMovementMethod.getInstance());
         verbalNegative.setText(spannableString[2]);
 
         // verbalQuestion
-        spannableString[3].setSpan(clickableSpanVerbalQuestion,51,63,0);
+        spannableString[3].setSpan(clickableSpanVerbalQuestion,43,54,0);
         // make text bold
-        spannableString[3].setSpan(new StyleSpan(Typeface.BOLD), 51,63, 0);
+        spannableString[3].setSpan(new StyleSpan(Typeface.BOLD), 43,54, 0);
         verbalQuestion.setMovementMethod(LinkMovementMethod.getInstance());
         verbalQuestion.setText(spannableString[3]);
 
@@ -246,9 +246,9 @@ public class PastPerfectContinuousFragment3 extends Fragment {
         nominal.setText(spannableString[4]);
 
         //nominalPositive, 3 Complement
-        spannableString[5].setSpan(clickableSpan3Complement,58,71,0);
+        spannableString[5].setSpan(clickableSpan3Complement,39,52,0);
         // make text bold
-        spannableString[5].setSpan(new StyleSpan(Typeface.BOLD), 58,71, 0);
+        spannableString[5].setSpan(new StyleSpan(Typeface.BOLD), 39,52, 0);
         nominalPositive.setMovementMethod(LinkMovementMethod.getInstance());
         nominalPositive.setText(spannableString[5]);
     }

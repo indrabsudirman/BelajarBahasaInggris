@@ -750,4 +750,15 @@
     <string name="past_perfect_continuous_tense_test2_5">5. She (1) … (2) … since worked at \n\t\ther office.</string> <!-- had been, careful -->
     <string name="past_perfect_continuous_tense_test2_5_meaning">\t Dia perempuan telah sedang hati-hati \n\t\tsejak bekerja di kantornya.</string>
 
+    <!-- Past Perfect Continuous Tense, Explain 3, Hal 5 (Time Signal) -->
+    <string name="time_signal_past_perfect_continuous_tense">Keterangan waktu <b>(Time signal)</b> pada Past Perfect Continuous Tense</string>
+    <string name="info_time_signal_past_perfect_continuous_tense">Time Signal pada Past Perfect Continuous Tense <b>hampir sama dengan</b> Time Signal pada Simple Past Tense.</string>
+
+    <!-- Present Perfect Continuous Tense, Explain 1, Hal 1 -->
+
+    <string name="present_perfect_continuous_tense"><b><u>Present Perfect Continuous Tense</u></b></string>
+    <string name="present_perfect_continuous_explain">Present Perfect Continuous Tense digunakan untuk menyatakan kejadian (aktivitas) yang <b>telah terjadi dimasa lalu dan terus (masih) berlangsung dimasa lalu.</b> Jadi kesimpulannya semua kejadian Past Perfect Continuous Tense terjadi di masa lalu. Contoh: Lubna <b>had been studying</b> at Boarding School. (Lubna telah sedang belajar di Pondok Pesantren). \n\nLubna pernah belajar, kegiatan yang berlangsung lama di Pondok Pesantren tadi itu semua sudah berlalu. Mungkin pada saat Lubna kecil dan sekarang Lubna sudah besar. Itulah sebabnya menjadi kata <b>Past Perfect Continuous Tense</b> Kegiatan yang sedang berlangsung tapi semua sudah berlalu (dimasa lalu).\n\nContoh lainnya : Haby <b>had been living</b> in Germany. (Haby telah sedang tinggal di Jerman). Jadi Haby pernah sedang tinggal di Jerman tapi itu sudah berlalu. Mungkin sudah 2 tahun lalu atau 5 tahun lalu, jadi semua itu sudah berlalu. Kalimat Past Perfect Continuous Tense biasanya hanya digunakan untuk cerita saja, mengingat kejadiannya yang sudah berlalu.</string>
+    <string name="second_bullet_present_perfect_continuous_tense">■ Lubna <b>had been studying</b> at Boarding School. \n\n \t\t(Lubna telah sedang belajar di Pondok Pesantren).</string>
+    <string name="third_bullet_present_perfect_continuous_tense">■ Haby <b>had been living</b> in Germany. \n\n \t\t(Haby telah sedang tinggal di Jerman).</string>
+
 </resources>

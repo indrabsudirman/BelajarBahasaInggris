@@ -85,7 +85,7 @@ public class PastFuturePerfectFragment3 extends Fragment {
                         "\n" +
                         "I should have studied at University.\n" +
                         "I should not have studied at University.\n" +
-                        "Should I have studied at University.?\n" +
+                        "Should I have studied at University?\n" +
                         "studied (study) adalah kata kerja (verb 3) dari study")
                         .setCancelable(false)
                         .setIcon(R.mipmap.ic_info_green)

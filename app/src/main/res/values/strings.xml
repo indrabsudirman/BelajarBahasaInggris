@@ -725,5 +725,17 @@
     <string name="past_perfect_continuous_tense_test1_2">2. Haby … at park last sunday.</string> <!-- had been walking (have been walked)-->
     <string name="past_perfect_continuous_tense_test1_2_meaning">\t Haby telah sedang berjalan di taman \n\t\thari minggu kemarin.</string>
 
+    <!-- Past Perfect Continuous Tense, Explain 2, Hal 3 -->
+    <string name="pola_kalimat_past_perfect_continuous">Pola kalimat Past Perfect Continuous Tense</string>
+    <string name="bentuk_kalimat_verbal_past_perfect_continuous">■ Bentuk kalimat verbal</string>
+    <string name="bentuk_kalimat_nominal_past_perfect_continuous">■ Bentuk kalimat nominal</string>
+    <string name="bentuk_kalimat_verbal_positive_past_perfect_continuous">\t\t(+) Positif : Subject + had + been + \n\t\tV1 (Verb 1) + ing + Object. \n\t\tContoh : I had been studying at school all \n\t\tafternoon.\n\t\t(Saya telah sedang belajar di sekolah \n\t\tsepanjang siang)</string>
+    <string name="bentuk_kalimat_verbal_negative_past_perfect_continuous">\t\t(-) Negatif : Subject + had + not + been + \n\t\tV1 (Verb 1) + ing + Object. \n\t\tContoh : I had not been studying at school \n\t\tall afternoon. \n\t\t(Saya telah tidak sedang belajar di sekolah \n\t\tsepanjang siang)</string>
+    <string name="bentuk_kalimat_verbal_question_past_perfect_continuous">\t\t(?) Question : Had + Subject + been + \n\t\tV1 (Verb 1)  + Object? \n\t\tContoh : Had I been studying at school \n\t\tall afternoon.?\n\t\t(Apakah saya telah sedang belajar di \n\t\tsekolah sepanjang siang?)</string>
+    <string name="bentuk_kalimat_nominal_positive_past_perfect_continuous">\t\t(+) Positif : Subject + had + been + 3 Complement. \n\t\tContoh : My brother had been sleepy. \n\t\t(Saudara laki-laki telah sedang mengantuk)</string>
+    <string name="bentuk_kalimat_nominal_negative_past_perfect_continuous">\t\t(-) Negatif : Subject + had + not + been + \n\t\t3 Complement. \n\t\tContoh : My brother had not been sleepy. \n\t\t(Saudara laki-laki telah tidak sedang mengantuk)</string>
+    <string name="bentuk_kalimat_nominal_question_past_perfect_continuous">\t\t(?) Question : Had + subject + \n\t\tbeen + 3 Complement? \n\t\tContoh : Had my brother been sleepy?\n\t\t(Apakah saudara laki-laki saya telah sedang \n\t\tmengantuk?)</string>
+    <string name="info_past_perfect_continuous"><b><u>Info :</u></b> \n\n- Had digunakan untuk semua <b>Subject</b>\n\n- Had not dapat disingkat menjadi <b>Hadn\'t</b></string>
+
 
 </resources>

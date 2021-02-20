@@ -814,5 +814,13 @@
     <string name="since">Since</string>
     <string name="sejak">Sejak</string>
 
+    <!-- Future Perfect Continuous Tense, Explain 1, Hal 1 -->
+
+    <string name="future_perfect_continuous_tense"><b><u>Future Perfect Continuous Tense</u></b></string>
+    <string name="future_perfect_continuous_explain">Future Perfect Continuous Tense digunakan untuk menyatakan kejadian (aktivitas) yang <b>dimulai pada masa lalu (lampau) dan masih berlanjut hingga saat ini (waktu sekarang).</b> Jadi kesimpulannya kejadian pada Present Perfect Continuous Tense dimulai di masa lalu dan masih terus belangsung hingga saat ini. Sehingga nama tense Present Perfect Continuous Tense. Contoh: Lubna <b>has been learning</b> al Quran since a kid. (Lubna telah sedang belajar Al Quran sejak kecil/anak-anak). \n\nLubna telah sedang belajar Al Quran sejak kecil, adalah kegiatan yang sudah berlangsung (sejak Lubna kecil) dan masih berlangsung belajar Al Qurannya hingga usia Lubna saat ini, bisa jadi usia Lubna sudah dewasa atau sudah menjadi orang tua. Itulah sebabnya menjadi kalimat <b>Present Perfect Continuous Tense.</b>\n\nContoh lainnya : I <b>have been living</b> in Banjarnegara since 2020. (Saya telah sedang tinggal di Banjarnegara sejak 2020). Jadi Saya telah dan masih (sedang) tinggal di Banjarnegara sejak tahun 2020. Kegiatan yang sudah dimulai dimasa lalu (tahun 2020) dan masih berlangsung hingga saat ini (tahun 2021).</string>
+    <string name="second_bullet_future_perfect_continuous_tense">■ Lubna <b>has been learning</b> al Quran since \n\t\ta kid. \n\n \t\t(Lubna telah sedang belajar Al Quran sejak \n\t\tkecil/anak-anak).</string>
+    <string name="third_bullet_future_perfect_continuous_tense">■ I <b>have been living</b> in Banjarnegara \n\t\tsince 2020. \n\n \t\t(Saya telah sedang tinggal di Banjarnegara \n\t\tsejak 2020).</string>
+
+
 
 </resources>

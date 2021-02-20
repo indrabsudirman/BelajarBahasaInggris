@@ -106,7 +106,7 @@ public class PastPerfectContinuousFragment3 extends Fragment {
                 AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
                 //Set Title
                 alertDialogSimplePast.setTitle("Info");
-                alertDialogSimplePast.setMessage("Kata 'had been studying' adalah bentuk dari Past Perfect Continuous Tense, terdiri dari rumus had + been + verb 1 + ing. studied dari kata kerja study artinya belajar.")
+                alertDialogSimplePast.setMessage("Kata 'had been studying' adalah bentuk dari Past Perfect Continuous Tense, terdiri dari rumus had + been + verb 1 + ing. studying dari kata kerja study artinya belajar.")
                         .setCancelable(false)
                         .setIcon(R.mipmap.ic_info_green)
                         .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {

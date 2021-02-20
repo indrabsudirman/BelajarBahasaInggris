@@ -731,7 +731,7 @@
     <string name="bentuk_kalimat_nominal_past_perfect_continuous">■ Bentuk kalimat nominal</string>
     <string name="bentuk_kalimat_verbal_positive_past_perfect_continuous">\t\t(+) Positif : Subject + had + been + \n\t\tV1 (Verb 1) + ing + Object. \n\t\tContoh : I had been studying at school all \n\t\tafternoon.\n\t\t(Saya telah sedang belajar di sekolah \n\t\tsepanjang siang)</string>
     <string name="bentuk_kalimat_verbal_negative_past_perfect_continuous">\t\t(-) Negatif : Subject + had + not + been + \n\t\tV1 (Verb 1) + ing + Object. \n\t\tContoh : I had not been studying at school \n\t\tall afternoon. \n\t\t(Saya telah tidak sedang belajar di sekolah \n\t\tsepanjang siang)</string>
-    <string name="bentuk_kalimat_verbal_question_past_perfect_continuous">\t\t(?) Question : Had + Subject + been + \n\t\tV1 (Verb 1)  + Object? \n\t\tContoh : Had I been studying at school \n\t\tall afternoon.?\n\t\t(Apakah saya telah sedang belajar di \n\t\tsekolah sepanjang siang?)</string>
+    <string name="bentuk_kalimat_verbal_question_past_perfect_continuous">\t\t(?) Question : Had + Subject + been + \n\t\tV1 (Verb 1)  + Object? \n\t\tContoh : Had I been studying at school \n\t\tall afternoon?\n\t\t(Apakah saya telah sedang belajar di \n\t\tsekolah sepanjang siang?)</string>
     <string name="bentuk_kalimat_nominal_positive_past_perfect_continuous">\t\t(+) Positif : Subject + had + been + 3 Complement. \n\t\tContoh : My brother had been sleepy. \n\t\t(Saudara laki-laki telah sedang mengantuk)</string>
     <string name="bentuk_kalimat_nominal_negative_past_perfect_continuous">\t\t(-) Negatif : Subject + had + not + been + \n\t\t3 Complement. \n\t\tContoh : My brother had not been sleepy. \n\t\t(Saudara laki-laki telah tidak sedang mengantuk)</string>
     <string name="bentuk_kalimat_nominal_question_past_perfect_continuous">\t\t(?) Question : Had + subject + \n\t\tbeen + 3 Complement? \n\t\tContoh : Had my brother been sleepy?\n\t\t(Apakah saudara laki-laki saya telah sedang \n\t\tmengantuk?)</string>
@@ -768,4 +768,18 @@
     <string name="present_perfect_continuous_tense_test1_1_meaning">\t Azka telah sedang membaca buku selama \n\t\tseminggu ini.</string>
     <string name="present_perfect_continuous_tense_test1_2">2. They … football for a month continuously.</string> <!-- have been practicing (has been practicing)-->
     <string name="present_perfect_continuous_tense_test1_2_meaning">\t Mereka telah sedang mempraktekkan sepak bola \n\t\tselama sebulan terus menerus.</string>
+
+    <!-- Present Perfect Continuous Tense, Explain 2, Hal 3 -->
+    <string name="pola_kalimat_present_perfect_continuous">Pola kalimat Present Perfect Continuous Tense</string>
+    <string name="bentuk_kalimat_verbal_present_perfect_continuous">■ Bentuk kalimat verbal</string>
+    <string name="bentuk_kalimat_nominal_present_perfect_continuous">■ Bentuk kalimat nominal</string>
+    <string name="bentuk_kalimat_verbal_positive_present_perfect_continuous">\t\t(+) Positif : Subject + have/has + been + \n\t\tV1 (Verb 1) + ing + Object. \n\t\tContoh : I have been waiting the bus for \n\t\t2 hours. \n\t\t(Saya telah sedang menunggu bis \n\t\tselama 2 jam)</string>
+    <string name="bentuk_kalimat_verbal_negative_present_perfect_continuous">\t\t(-) Negatif : Subject + have/has + not + been + \n\t\tV1 (Verb 1) + ing + Object. \n\t\tContoh : I have not been waiting the bus \n\t\tfor 2 hours. \n\t\t(Saya telah tidak sedang menunggu \n\t\tbis selama 2 jam)</string>
+    <string name="bentuk_kalimat_verbal_question_present_perfect_continuous">\t\t(?) Question : Have/Has + Subject + been + \n\t\tV1 (Verb 1)  + Object? \n\t\tContoh : Have I been waiting the bus \n\t\tfor 2 hours?\n\t\t(Apakah saya telah sedang menunggu bis selama \n\t\t2 jam?)</string>
+    <string name="bentuk_kalimat_nominal_positive_present_perfect_continuous">\t\t(+) Positif : Subject + have/has + been + being + \n\t\t3 Complement. \n\t\tContoh : My sister has been being a teacher \n\t\tfor 1 month. \n\t\t(Saudara perempuan saya telah sedang menjadi \n\t\tseorang guru sejak 1 bulan)</string>
+    <string name="bentuk_kalimat_nominal_negative_present_perfect_continuous">\t\t(-) Negatif : Subject + have/has + not + been + \n\t\t3 Complement. \n\t\tContoh : My sister has not been being a teacher \n\t\tfor 1 month. \n\t\t(Saudara perempuan saya telah tidak sedang \n\t\tmenjadi seorang guru sejak 1 bulan)</string>
+    <string name="bentuk_kalimat_nominal_question_present_perfect_continuous">\t\t(?) Question : Have/Has + subject + been + \n\t\t3 Complement? \n\t\tContoh : Has my sister has been being a teacher \n\t\tfor 1 month?\n\t\t(Apakah saudara perempuan saya telah sedang \n\t\tmenjadi seorang guru sejak 1 bulan?)</string>
+    <string name="info_present_perfect_continuous"><b><u>Info :</u></b> \n\n- <b>Have</b> untuk : \nI, You, We, They, Budi dan Lubna (bentuk banyak/plural).\n\n- <b>Has</b> untuk : \nShe, He, It, Budi, Lubna (bentuk ketiga tunggal/singular).</string>
+
+
 </resources>

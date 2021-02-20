@@ -794,5 +794,25 @@
     <string name="present_perfect_continuous_tense_test2_5">5. I (1) … (2) … well lately.</string> <!-- have not, feeling -->
     <string name="present_perfect_continuous_tense_test2_5_meaning">\t Saya telah tidak sedang merasa sehat \n\t\takhir-akhir ini.</string>
 
+    <!-- Present Perfect Continuous Tense, Explain 3, Hal 5 (Time Signal) -->
+    <string name="time_signal_present_perfect_continuous_tense">Keterangan waktu <b>(Time signal)</b> pada Present Perfect Continuous Tense</string>
+    <string name="info_time_signal_present_perfect_continuous_tense">Time Signal pada Present Perfect Continuous Tense <b>hampir sama dengan</b> Time Signal pada Simple Present Tense.</string>
+    <string name="so_far">So far</string>
+    <string name="sampai_saat_ini">Sampai saat ini</string>
+    <string name="all_day_all_night_all_week">All day / all night / all week</string>
+    <string name="sepanjang_hari_malam_minggu">Sepanjang hari / malam / minggu</string>
+    <string name="all_my_life">All my life</string>
+    <string name="sepanjang_hidup_ku">Sepanjang hidupku</string>
+    <string name="recently">Recently</string>
+    <string name="baru_baru_ini">Baru-baru ini</string>
+    <string name="lately">Lately</string>
+    <string name="akhir_akhir_ini">Akhir-akhir ini</string>
+    <string name="for_for_1_week">For 1 week</string>
+    <string name="selama_1_minggu">Selama 1 minggu</string>
+    <string name="for_present_perfect_continuous">For</string>
+    <string name="selama">Selama</string>
+    <string name="since">Since</string>
+    <string name="sejak">Sejak</string>
+
 
 </resources>

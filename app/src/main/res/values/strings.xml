@@ -821,5 +821,12 @@
     <string name="second_bullet_future_perfect_continuous_tense">■ Lubna <b>will have been travelling</b> by train \n\t\tfor 12 hours. \n\n \t\t(Lubna akan telah perjalanan dengan kereta \n\t\tselama 12 jam).</string>
     <string name="third_bullet_future_perfect_continuous_tense">■ I <b>will have been typing</b> code for 2 hours. \n\n \t\t(Saya akan telah mengetik kode selama 2 jam).</string>
 
+    <!-- Future Perfect Continuous Tense, Test 1, Hal 2 -->
+
+    <string name="future_perfect_continuous_tense_test1_1">1. I will be tired because the train … for \n\t\t10 hours.</string> <!-- will have been running, (will has been running) -->
+    <string name="future_perfect_continuous_tense_test1_1_meaning">\t Saya akan merasa lelah karena kereta akan \n\t\tbejalan selama 10 jam.</string>
+    <string name="future_perfect_continuous_tense_test1_2">2. I … here for ten years next month.</string> <!-- will have been living (will have been lived)-->
+    <string name="future_perfect_continuous_tense_test1_2_meaning">\t Saya akan telah tinggal di sini selama \n\t\t10 tahun bulan depan.</string>
+
 
 </resources>

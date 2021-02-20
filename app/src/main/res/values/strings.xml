@@ -777,9 +777,22 @@
     <string name="bentuk_kalimat_verbal_negative_present_perfect_continuous">\t\t(-) Negatif : Subject + have/has + not + been + \n\t\tV1 (Verb 1) + ing + Object. \n\t\tContoh : I have not been waiting the bus \n\t\tfor 2 hours. \n\t\t(Saya telah tidak sedang menunggu \n\t\tbis selama 2 jam)</string>
     <string name="bentuk_kalimat_verbal_question_present_perfect_continuous">\t\t(?) Question : Have/Has + Subject + been + \n\t\tV1 (Verb 1)  + Object? \n\t\tContoh : Have I been waiting the bus \n\t\tfor 2 hours?\n\t\t(Apakah saya telah sedang menunggu bis selama \n\t\t2 jam?)</string>
     <string name="bentuk_kalimat_nominal_positive_present_perfect_continuous">\t\t(+) Positif : Subject + have/has + been + being + \n\t\t3 Complement. \n\t\tContoh : My sister has been being a teacher \n\t\tfor 1 month. \n\t\t(Saudara perempuan saya telah sedang menjadi \n\t\tseorang guru sejak 1 bulan)</string>
-    <string name="bentuk_kalimat_nominal_negative_present_perfect_continuous">\t\t(-) Negatif : Subject + have/has + not + been + \n\t\t3 Complement. \n\t\tContoh : My sister has not been being a teacher \n\t\tfor 1 month. \n\t\t(Saudara perempuan saya telah tidak sedang \n\t\tmenjadi seorang guru sejak 1 bulan)</string>
+    <string name="bentuk_kalimat_nominal_negative_present_perfect_continuous">\t\t(-) Negatif : Subject + have/has + not + been + being + \n\t\t3 Complement. \n\t\tContoh : My sister has not been being a teacher \n\t\tfor 1 month. \n\t\t(Saudara perempuan saya telah tidak sedang \n\t\tmenjadi seorang guru sejak 1 bulan)</string>
     <string name="bentuk_kalimat_nominal_question_present_perfect_continuous">\t\t(?) Question : Have/Has + subject + been + \n\t\t3 Complement? \n\t\tContoh : Has my sister has been being a teacher \n\t\tfor 1 month?\n\t\t(Apakah saudara perempuan saya telah sedang \n\t\tmenjadi seorang guru sejak 1 bulan?)</string>
     <string name="info_present_perfect_continuous"><b><u>Info :</u></b> \n\n- <b>Have</b> untuk : \nI, You, We, They, Budi dan Lubna (bentuk banyak/plural).\n\n- <b>Has</b> untuk : \nShe, He, It, Budi, Lubna (bentuk ketiga tunggal/singular).</string>
+
+    <!-- Present Perfect Continuous Tense, Test 2, Hal 4 -->
+
+    <string name="present_perfect_continuous_tense_test2_1">1. I have  (1) … (2) … a student at University \n\t\tfor 1 year now.</string> <!-- been, being  -->
+    <string name="present_perfect_continuous_tense_test2_1_meaning">\t Saya telah sedang menjadi siswa di Universitas \n\t\tsejak 1 tahun ini.</string>
+    <string name="present_perfect_continuous_tense_test2_2">2. Lubna (1) … (2) …  her project for 1 week.</string> <!-- have been, doing -->
+    <string name="present_perfect_continuous_tense_test2_2_meaning">\t Lubna telah sedang mengerjakan projeknya \n\t\tsejak 1 minggu.</string>
+    <string name="present_perfect_continuous_tense_test2_3">3. … you … to Bali for 2 weeks?</string> <!-- have, been travelling  -->
+    <string name="present_perfect_continuous_tense_test2_3_meaning">\t Apakah kamu telah sedang perjalanan \n\t\tke Bali sejak 2 minggu?</string>
+    <string name="present_perfect_continuous_tense_test2_4">4. Amin … been … physics for 2 years.</string> <!--  have not, learning -->
+    <string name="present_perfect_continuous_tense_test2_4_meaning">\t Amin telah tidak sedang belajar fisika \n\t\tsejak 2 tahun.</string>
+    <string name="present_perfect_continuous_tense_test2_5">5. I (1) … (2) … well lately.</string> <!-- have not, feeling -->
+    <string name="present_perfect_continuous_tense_test2_5_meaning">\t Saya telah tidak sedang merasa sehat \n\t\takhir-akhir ini.</string>
 
 
 </resources>

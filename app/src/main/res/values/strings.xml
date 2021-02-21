@@ -775,10 +775,10 @@
     <string name="bentuk_kalimat_nominal_present_perfect_continuous">■ Bentuk kalimat nominal</string>
     <string name="bentuk_kalimat_verbal_positive_present_perfect_continuous">\t\t(+) Positif : Subject + have/has + been + \n\t\tV1 (Verb 1) + ing + Object. \n\t\tContoh : I have been waiting the bus for \n\t\t2 hours. \n\t\t(Saya telah sedang menunggu bis \n\t\tselama 2 jam)</string>
     <string name="bentuk_kalimat_verbal_negative_present_perfect_continuous">\t\t(-) Negatif : Subject + have/has + not + been + \n\t\tV1 (Verb 1) + ing + Object. \n\t\tContoh : I have not been waiting the bus \n\t\tfor 2 hours. \n\t\t(Saya telah tidak sedang menunggu \n\t\tbis selama 2 jam)</string>
-    <string name="bentuk_kalimat_verbal_question_present_perfect_continuous">\t\t(?) Question : Have/Has + Subject + been + \n\t\tV1 (Verb 1)  + Object? \n\t\tContoh : Have I been waiting the bus \n\t\tfor 2 hours?\n\t\t(Apakah saya telah sedang menunggu bis selama \n\t\t2 jam?)</string>
+    <string name="bentuk_kalimat_verbal_question_present_perfect_continuous">\t\t(?) Question : Have/Has + Subject + been + \n\t\tV1 (Verb 1) + ing + Object? \n\t\tContoh : Have I been waiting the bus \n\t\tfor 2 hours?\n\t\t(Apakah saya telah sedang menunggu bis selama \n\t\t2 jam?)</string>
     <string name="bentuk_kalimat_nominal_positive_present_perfect_continuous">\t\t(+) Positif : Subject + have/has + been + being + \n\t\t3 Complement. \n\t\tContoh : My sister has been being a teacher \n\t\tfor 1 month. \n\t\t(Saudara perempuan saya telah sedang menjadi \n\t\tseorang guru sejak 1 bulan)</string>
     <string name="bentuk_kalimat_nominal_negative_present_perfect_continuous">\t\t(-) Negatif : Subject + have/has + not + been + being + \n\t\t3 Complement. \n\t\tContoh : My sister has not been being a teacher \n\t\tfor 1 month. \n\t\t(Saudara perempuan saya telah tidak sedang \n\t\tmenjadi seorang guru sejak 1 bulan)</string>
-    <string name="bentuk_kalimat_nominal_question_present_perfect_continuous">\t\t(?) Question : Have/Has + subject + been + \n\t\t3 Complement? \n\t\tContoh : Has my sister has been being a teacher \n\t\tfor 1 month?\n\t\t(Apakah saudara perempuan saya telah sedang \n\t\tmenjadi seorang guru sejak 1 bulan?)</string>
+    <string name="bentuk_kalimat_nominal_question_present_perfect_continuous">\t\t(?) Question : Have/Has + subject + been + being + \n\t\t3 Complement? \n\t\tContoh : Has my sister has been being a teacher \n\t\tfor 1 month?\n\t\t(Apakah saudara perempuan saya telah sedang \n\t\tmenjadi seorang guru sejak 1 bulan?)</string>
     <string name="info_present_perfect_continuous"><b><u>Info :</u></b> \n\n- <b>Have</b> untuk : \nI, You, We, They, Budi dan Lubna (bentuk banyak/plural).\n\n- <b>Has</b> untuk : \nShe, He, It, Budi, Lubna (bentuk ketiga tunggal/singular).</string>
 
     <!-- Present Perfect Continuous Tense, Test 2, Hal 4 -->
@@ -827,6 +827,18 @@
     <string name="future_perfect_continuous_tense_test1_1_meaning">\t Saya akan merasa lelah karena kereta akan \n\t\tbejalan selama 10 jam.</string>
     <string name="future_perfect_continuous_tense_test1_2">2. I … here for ten years next month.</string> <!-- will have been living (will have been lived)-->
     <string name="future_perfect_continuous_tense_test1_2_meaning">\t Saya akan telah tinggal di sini selama \n\t\t10 tahun bulan depan.</string>
+
+    <!-- Future Perfect Continuous Tense, Explain 2, Hal 3 -->
+    <string name="pola_kalimat_future_perfect_continuous">Pola kalimat Future Perfect Continuous Tense</string>
+    <string name="bentuk_kalimat_verbal_future_perfect_continuous">■ Bentuk kalimat verbal</string>
+    <string name="bentuk_kalimat_nominal_future_perfect_continuous">■ Bentuk kalimat nominal</string>
+    <string name="bentuk_kalimat_verbal_positive_future_perfect_continuous">\t\t(+) Positif : Subject + will + have + been + \n\t\tV1 (Verb 1) + ing + Object. \n\t\tContoh : I will have been studying in Egypt \n\t\tfor 5 years. \n\t\t(Saya akan telah belajar di Mesir selama \n\t\t5 tahun)</string>
+    <string name="bentuk_kalimat_verbal_negative_future_perfect_continuous">\t\t(-) Negatif : Subject + will + not + have   + been + \n\t\tV1 (Verb 1) + ing + Object. \n\t\tContoh : I will not have been studying in Egypt \n\t\tfor 5 years. \n\t\t(Saya tidak akan telah belajar di Mesir selama \n\t\t5 tahun)</string>
+    <string name="bentuk_kalimat_verbal_question_future_perfect_continuous">\t\t(?) Question : Will + Subject + have + been + \n\t\tV1 (Verb 1) + ing  + Object? \n\t\tContoh : Will I have been studying in Egypt \n\t\tfor 5 years?\n\t\t(Apakah saya akan telah belajar di Mesir \n\t\tselama 5 tahun?)</string>
+    <string name="bentuk_kalimat_nominal_positive_future_perfect_continuous">\t\t(+) Positif : Subject + will + have + been + being + \n\t\t3 Complement. \n\t\tContoh : My sister will have been being a student \n\t\tfor 4 years. \n\t\t(Saudara perempuan saya akan telah \n\t\tmenjadi seorang murid selama 4 tahun)</string>
+    <string name="bentuk_kalimat_nominal_negative_future_perfect_continuous">\t\t(-) Negatif : Subject + will + not + have + been \n\t\t+ being + 3 Complement. \n\t\tContoh : My sister will not have been being \n\t\ta student for 4 years. \n\t\t(Saudara perempuan saya tidak akan telah \n\t\tmenjadi seorang murid selama 4 tahun)</string>
+    <string name="bentuk_kalimat_nominal_question_future_perfect_continuous">\t\t(?) Question : Will + subject + have + \n\t\tbeen + being + 3 Complement? \n\t\tContoh : Will my sister have been being a student \n\t\tfor 4 years?\n\t\t(Apakah saudara perempuan saya akan telah \n\t\tmenjadi seorang murid selama 4 tahun?)</string>
+    <string name="info_future_perfect_continuous"><b><u>Info :</u></b> \n\n- <b>Have</b> untuk : \nI, You, He, She, It, We, They, Budi dan Lubna (bentuk banyak/plural), Budi, Lubna (bentuk ketiga tunggal/singular).  <b>Have untuk semua subject</b>.</string>
 
 
 </resources>

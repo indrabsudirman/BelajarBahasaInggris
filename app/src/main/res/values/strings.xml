@@ -847,10 +847,23 @@
     <string name="future_perfect_continuous_tense_test2_2">2. Next month, I … have  …  Arabic for \n\t\t2 years.</string> <!-- will,  been studying -->
     <string name="future_perfect_continuous_tense_test2_2_meaning">\t Bulan depan, Saya akan telah belajar bahasa \n\t\tarab selama 2 tahun.</string>
     <string name="future_perfect_continuous_tense_test2_3">3. By next year, Lubna (1) … (2) … on \n\t\tpilgrimage for 1 month.</string> <!-- will have, been going  -->
-    <string name="future_perfect_continuous_tense_test2_3_meaning">\t Pada tahun depan, Lubna akan telah pergi \n\t\thaji selama 1 bulan.</string>
+    <string name="future_perfect_continuous_tense_test2_3_meaning">\t Menjelang tahun depan, Lubna akan telah pergi \n\t\thaji selama 1 bulan.</string>
     <string name="future_perfect_continuous_tense_test2_4">4. By next semester, my favorite \n\t\tteacher … have … for 2 years.</string> <!--  will not, been teaching -->
-    <string name="future_perfect_continuous_tense_test2_4_meaning">\t Pada semester depan, guru favorit saya tidak \n\t\takan telah mengajar selama 2 tahun</string>
+    <string name="future_perfect_continuous_tense_test2_4_meaning">\t Menjelang semester depan, guru favorit saya tidak \n\t\takan telah mengajar selama 2 tahun</string>
     <string name="future_perfect_continuous_tense_test2_5">5. Will my brother … been … a doctor by \n\t\tthe end of this year?</string> <!-- have, being -->
     <string name="future_perfect_continuous_tense_test2_5_meaning">\t Apakah saudara laki-laki saya akan telah menjadi \n\t\tseorang dokter pada akhir tahun ini?</string>
 
+    <!-- Future Perfect Continuous Tense, Explain 3, Hal 5 (Time Signal) -->
+    <string name="time_signal_future_perfect_continuous_tense">Keterangan waktu <b>(Time signal)</b> pada Future Perfect Continuous Tense</string>
+    <string name="info_time_signal_future_perfect_continuous_tense">Time Signal pada Future Perfect Continuous Tense <b>hampir sama dengan</b> Time Signal pada Simple Future Tense.</string>
+    <string name="by_next_week">by next week</string>
+    <string name="menjelang_minggu_depan">menjelang minggu depan</string>
+    <string name="by_next_month">by next month</string>
+    <string name="menjelang_bulan_depan">menjelang bulan depan</string>
+    <string name="by_next_year">by next year</string>
+    <string name="menjelang_tahun_depan">menjelang tahun depan</string>
+    <string name="by_next_year_for_2_years">by next year … for 2 years</string>
+    <string name="menjelang_akhir_tahun_depan_selama_2_tahun">menjelang tahun depan … selama 2 tahun</string>
+    <string name="by_the_end_of_next_year">by the end of next year … for 3 years</string>
+    <string name="menjelang_akhir_tahun_depan">menjelang akhir tahun depan … selama 3 tahun</string>
 </resources>

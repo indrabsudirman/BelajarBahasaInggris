@@ -866,4 +866,12 @@
     <string name="menjelang_akhir_tahun_depan_selama_2_tahun">menjelang tahun depan … selama 2 tahun</string>
     <string name="by_the_end_of_next_year">by the end of next year … for 3 years</string>
     <string name="menjelang_akhir_tahun_depan">menjelang akhir tahun depan … selama 3 tahun</string>
+
+    <!-- Past Future Perfect Continuous Tense, Explain 1, Hal 1 -->
+
+    <string name="past_future_perfect_continuous_tense"><b><u>Past Future Perfect Continuous Tense</u></b></string>
+    <string name="past_future_perfect_continuous_explain">Past Future Perfect Continuous Tense digunakan untuk menyatakan kejadian (aktivitas) <b>pada waktu tertentu atau selama beberapa waktu tertentu tapi semua itu pada masa lalu.</b> Beberapa referensi menjelaskan bahwa Past Future Perfect Continuous Tense itu biasa digunakan untuk kalimat pengadaian yang sudah lewat. Contoh: Lubna <b>should have been learning</b> math but she was slept. (Lubna seharusnya akan belajar matematika, tapi tidak jadi karena dia tidur). \n\nPada contoh di atas, Lubna seharusnya belajar matematika tidak jadi belajar, karena dia tidur. Kalimat tersebut menunjukkan kejadian yang harus/akan terjadi di masa depan, tapi sudah berlalu. Itulah sebabnya menjadi kalimat <b>Past Future Perfect Continuous Tense.</b> Kegiatan yang akan dilakukan pada masa depan, tapi sudah berakhir (past) \n\nContoh lainnya : If Covid-19 pandemic was end, He <b>should have been going</b> to Saudi Arabia for Umrah. (Jika pandemi Covid-19 sudah berakhir, dia laki-laki seharusnya akan pergi ke Arab Saudi untuk Umrah). Jadi, seandaikan pandemi Covid-19 sudah berakhir, dia akan pergi ke Arab Saudi untuk umrah. Tapi kenyataan saat ini pandemi belum berakhir. Ini adalah contoh dari kalimat pengandaian di Past Future Perfect Continuous Tense.</string>
+    <string name="second_bullet_past_future_perfect_continuous_tense">■ Lubna <b>should have been learning</b> math \n\t\tbut she was slept. \n\n \t\t(Lubna seharusnya akan belajar matematika, tapi \n\t\ttidak jadi karena dia tidur).</string>
+    <string name="third_bullet_past_future_perfect_continuous_tense">■ If Covid-19 pandemic was end, He <b>should have \n\t\tbeen going</b> to Saudi Arabia for Umrah. \n\n \t\t(Jika pandemi Covid-19 sudah berakhir, dia laki-laki \n\t\tseharusnya akan pergi ke Arab Saudi untuk \n\t\tUmrah).</string>
+
 </resources>

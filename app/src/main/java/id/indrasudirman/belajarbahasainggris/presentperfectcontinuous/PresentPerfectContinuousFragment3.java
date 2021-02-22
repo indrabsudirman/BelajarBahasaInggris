@@ -104,7 +104,7 @@ public class PresentPerfectContinuousFragment3 extends Fragment {
                 AlertDialog.Builder alertDialogSimplePast = new AlertDialog.Builder(getActivity());
                 //Set Title
                 alertDialogSimplePast.setTitle("Info");
-                alertDialogSimplePast.setMessage("Kata 'have been waiting' adalah bentuk dari Present Perfect Continuous Tense, terdiri dari rumus have/has + been + verb 1 + ing. waiting dari kata wait study artinya menunggu.")
+                alertDialogSimplePast.setMessage("Kata 'have been waiting' adalah bentuk dari Present Perfect Continuous Tense, terdiri dari rumus have/has + been + verb 1 + ing. waiting dari kata wait artinya menunggu.")
                         .setCancelable(false)
                         .setIcon(R.mipmap.ic_info_green)
                         .setPositiveButton("Sudah paham", new DialogInterface.OnClickListener() {

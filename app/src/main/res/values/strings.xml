@@ -874,4 +874,11 @@
     <string name="second_bullet_past_future_perfect_continuous_tense">■ Lubna <b>should have been learning</b> math \n\t\tbut she was slept. \n\n \t\t(Lubna seharusnya akan belajar matematika, tapi \n\t\ttidak jadi karena dia tidur).</string>
     <string name="third_bullet_past_future_perfect_continuous_tense">■ If Covid-19 pandemic was end, He <b>should have \n\t\tbeen going</b> to Saudi Arabia for Umrah. \n\n \t\t(Jika pandemi Covid-19 sudah berakhir, dia laki-laki \n\t\tseharusnya akan pergi ke Arab Saudi untuk \n\t\tUmrah).</string>
 
+    <!-- Past Future Perfect Continuous Tense, Test 1, Hal 2 -->
+
+    <string name="past_future_perfect_continuous_tense_test1_1">1. I … the bus, but it was never came.</string> <!-- should have been waiting, (should have be waiting) -->
+    <string name="past_future_perfect_continuous_tense_test1_1_meaning">\t Saya seharusnya akan menunggu bis, tapi busnya\n\t\t tidak pernah datang.</string>
+    <string name="past_future_perfect_continuous_tense_test1_2">2. They … at University for 4 years.</string> <!-- would have been studying (would have be studying)-->
+    <string name="past_future_perfect_continuous_tense_test1_2_meaning">\t Mereka seharusnya akan belajar di Universitas\n\t\t selama 4 tahun.</string>
+
 </resources>

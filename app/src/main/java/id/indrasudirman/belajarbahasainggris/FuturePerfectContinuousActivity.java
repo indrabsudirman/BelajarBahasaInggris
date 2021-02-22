@@ -339,6 +339,7 @@ public class FuturePerfectContinuousActivity extends AppCompatActivity {
 
         return p.passKey(editTextQuestion.getText().toString().toLowerCase().trim()).equalsIgnoreCase(key);
     }
+
     // checkAnswerTest2
     private void checkAnswerTest2() {
 

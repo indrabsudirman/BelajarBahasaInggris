@@ -840,5 +840,17 @@
     <string name="bentuk_kalimat_nominal_question_future_perfect_continuous">\t\t(?) Question : Will + subject + have + \n\t\tbeen + being + 3 Complement? \n\t\tContoh : Will my sister have been being a student \n\t\tfor 4 years?\n\t\t(Apakah saudara perempuan saya akan telah \n\t\tmenjadi seorang murid selama 4 tahun?)</string>
     <string name="info_future_perfect_continuous"><b><u>Info :</u></b> \n\n- <b>Have</b> untuk : \nI, You, He, She, It, We, They, Budi dan Lubna (bentuk banyak/plural), Budi, Lubna (bentuk ketiga tunggal/singular).  <b>Have untuk semua subject</b>.</string>
 
+    <!-- Future Perfect Continuous Tense, Test 2, Hal 4 -->
+
+    <string name="future_perfect_continuous_tense_test2_1">1. My cousin  will … been … in Germany for \n\t\t4 years.</string> <!-- have, working  -->
+    <string name="future_perfect_continuous_tense_test2_1_meaning">\t Sepupu saya akan telah bekerja di Jerman \n\t\tselama 4 tahun.</string>
+    <string name="future_perfect_continuous_tense_test2_2">2. Next month, I … have  …  Arabic for \n\t\t2 years.</string> <!-- will,  been studying -->
+    <string name="future_perfect_continuous_tense_test2_2_meaning">\t Bulan depan, Saya akan telah belajar bahasa \n\t\tarab selama 2 tahun.</string>
+    <string name="future_perfect_continuous_tense_test2_3">3. By next year, Lubna (1) … (2) … on \n\t\tpilgrimage for 1 month.</string> <!-- will have, been going  -->
+    <string name="future_perfect_continuous_tense_test2_3_meaning">\t Pada tahun depan, Lubna akan telah pergi \n\t\thaji selama 1 bulan.</string>
+    <string name="future_perfect_continuous_tense_test2_4">4. By next semester, my favorite \n\t\tteacher … have … for 2 years.</string> <!--  will not, been teaching -->
+    <string name="future_perfect_continuous_tense_test2_4_meaning">\t Pada semester depan, guru favorit saya tidak \n\t\takan telah mengajar selama 2 tahun</string>
+    <string name="future_perfect_continuous_tense_test2_5">5. Will my brother … been … a doctor by \n\t\tthe end of this year?</string> <!-- have, being -->
+    <string name="future_perfect_continuous_tense_test2_5_meaning">\t Apakah saudara laki-laki saya akan telah menjadi \n\t\tseorang dokter pada akhir tahun ini?</string>
 
 </resources>

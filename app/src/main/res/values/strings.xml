@@ -881,4 +881,16 @@
     <string name="past_future_perfect_continuous_tense_test1_2">2. They … at University for 4 years.</string> <!-- would have been studying (would have be studying)-->
     <string name="past_future_perfect_continuous_tense_test1_2_meaning">\t Mereka seharusnya akan belajar di Universitas\n\t\t selama 4 tahun.</string>
 
+    <!-- Past Future Perfect Continuous Tense, Explain 2, Hal 3 -->
+    <string name="pola_kalimat_past_future_perfect_continuous">Pola kalimat Past Future Perfect Continuous Tense</string>
+    <string name="bentuk_kalimat_verbal_past_future_perfect_continuous">■ Bentuk kalimat verbal</string>
+    <string name="bentuk_kalimat_nominal_past_future_perfect_continuous">■ Bentuk kalimat nominal</string>
+    <string name="bentuk_kalimat_verbal_positive_past_future_perfect_continuous">\t\t(+) Positif : Subject + would/should + have + \n\t\tbeen + V1 (Verb 1) + ing + Object. \n\t\tContoh : He should have been paying the bill \n\t\tbut the money was lost. \n\t\t(Dia laki-laki seharusnya akan membayar tagihan, \n\t\ttapi tidak bisa uangnya hilang)</string>
+    <string name="bentuk_kalimat_verbal_negative_past_future_perfect_continuous">\t\t(-) Negatif : Subject + would/should + not + have \n\t\t+ been + V1 (Verb 1) + ing + Object. \n\t\tContoh : He should not have been paying the bill \n\t\tbut the money was lost. \n\t\t(Dia laki-laki seharusnya tidak akan membayar \n\t\ttagihan, tapi tidak bisa uangnya hilang)</string>
+    <string name="bentuk_kalimat_verbal_question_past_future_perfect_continuous">\t\t(?) Question : Would/Should + Subject + have + \n\t\tbeen + V1 (Verb 1) + ing  + Object? \n\t\tContoh : Should he have been paying the bill?\n\t\t(Apakah dia laki-laki seharusnya akan membayar \n\t\ttagihan?)</string>
+    <string name="bentuk_kalimat_nominal_positive_past_future_perfect_continuous">\t\t(+) Positif : Subject + would/should + have + been \n\t\t+ being + 3 Complement. \n\t\tContoh : My sister would have been being \n\t\ta student. \n\t\t(Saudara perempuan saya akan telah \n\t\tmenjadi seorang murid)</string>
+    <string name="bentuk_kalimat_nominal_negative_past_future_perfect_continuous">\t\t(-) Negatif : Subject + would/should + not + \n\t\thave + been + being + 3 Complement. \n\t\tContoh : My sister would not have been being \n\t\ta student. \n\t\t(Saudara perempuan saya tidak akan telah \n\t\tmenjadi seorang murid)</string>
+    <string name="bentuk_kalimat_nominal_question_past_future_perfect_continuous">\t\t(?) Question : Would/Should + subject + have + \n\t\tbeen + being + 3 Complement? \n\t\tContoh : Would my sister have been being \n\t\ta student?\n\t\t(Apakah saudara perempuan saya akan telah \n\t\tmenjadi seorang murid?)</string>
+    <string name="info_past_future_perfect_continuous"><b><u>Info :</u></b> \n\n- Should digunakan untuk Subject <b>I dan we</b>.\n- Would digunakan untuk semua <b>Subject</b>.</string>
+
 </resources>

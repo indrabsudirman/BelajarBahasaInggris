@@ -849,7 +849,7 @@
     <string name="future_perfect_continuous_tense_test2_3">3. By next year, Lubna (1) … (2) … on \n\t\tpilgrimage for 1 month.</string> <!-- will have, been going  -->
     <string name="future_perfect_continuous_tense_test2_3_meaning">\t Menjelang tahun depan, Lubna akan telah pergi \n\t\thaji selama 1 bulan.</string>
     <string name="future_perfect_continuous_tense_test2_4">4. By next semester, my favorite \n\t\tteacher … have … for 2 years.</string> <!--  will not, been teaching -->
-    <string name="future_perfect_continuous_tense_test2_4_meaning">\t Menjelang semester depan, guru favorit saya tidak \n\t\takan telah mengajar selama 2 tahun</string>
+    <string name="future_perfect_continuous_tense_test2_4_meaning">\t Menjelang semester depan, guru favorit saya tidak \n\t\takan telah mengajar selama 2 tahun.</string>
     <string name="future_perfect_continuous_tense_test2_5">5. Will my brother … been … a doctor by \n\t\tthe end of this year?</string> <!-- have, being -->
     <string name="future_perfect_continuous_tense_test2_5_meaning">\t Apakah saudara laki-laki saya akan telah menjadi \n\t\tseorang dokter pada akhir tahun ini?</string>
 
@@ -892,5 +892,18 @@
     <string name="bentuk_kalimat_nominal_negative_past_future_perfect_continuous">\t\t(-) Negatif : Subject + would/should + not + \n\t\thave + been + being + 3 Complement. \n\t\tContoh : My sister would not have been being \n\t\ta student. \n\t\t(Saudara perempuan saya tidak akan telah \n\t\tmenjadi seorang murid)</string>
     <string name="bentuk_kalimat_nominal_question_past_future_perfect_continuous">\t\t(?) Question : Would/Should + subject + have + \n\t\tbeen + being + 3 Complement? \n\t\tContoh : Would my sister have been being \n\t\ta student?\n\t\t(Apakah saudara perempuan saya akan telah \n\t\tmenjadi seorang murid?)</string>
     <string name="info_past_future_perfect_continuous"><b><u>Info :</u></b> \n\n- Should digunakan untuk Subject <b>I dan we</b>.\n- Would digunakan untuk semua <b>Subject</b>.</string>
+
+    <!-- Past Future Perfect Continuous Tense, Test 2, Hal 4 -->
+
+    <string name="past_future_perfect_continuous_tense_test2_1">1. I  will … been … the homework but \n\t\tmy book was lost.</string> <!-- should have , collecting  -->
+    <string name="past_future_perfect_continuous_tense_test2_1_meaning">\t Saya seharusnya akan mengumpulkan tugas PR \n\t\ttapi tidak jadi karena buku hilang.</string>
+    <string name="past_future_perfect_continuous_tense_test2_2">2. Lubna told me that she … been … a cup of \n\t\tmilk when she did her homework yesterday.</string> <!-- would have,  making -->
+    <string name="past_future_perfect_continuous_tense_test2_2_meaning">\t Lubna memberitahu saya bahwa dia akan \n\t\tmembuat segelas susu ketika dia mengerjakan \n\t\tPR kemarin.</string>
+    <string name="past_future_perfect_continuous_tense_test2_3">3. By the end of last year, Azka (1) … (2) … \n\t\tin Banjarnegara for more than 3 years.</string> <!-- would have, been living  -->
+    <string name="past_future_perfect_continuous_tense_test2_3_meaning">\t Pada akhir tahun lalu, Azka sudah akan \n\t\ttinggal di Banjarnegara selama lebih dari 3 tahun.</string>
+    <string name="past_future_perfect_continuous_tense_test2_4">4. Student … have … for an hour \n\t\tif the bus came on time.</string> <!--  would not, been standing -->
+    <string name="past_future_perfect_continuous_tense_test2_4_meaning">\t Murid tidak akan sudah berdiri selama \n\t\t1 jam jika bus datang tepat waktu.</string>
+    <string name="past_future_perfect_continuous_tense_test2_5">5. … you … your job?</string> <!-- would, have been finishing -->
+    <string name="past_future_perfect_continuous_tense_test2_5_meaning">\t Apakah kamu seharusnya akan sudah mengerjakan \n\t\tpekerjaanmu?</string>
 
 </resources>

@@ -9,6 +9,8 @@ import android.os.Bundle;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.core.graphics.BlendModeColorFilterCompat;
+import androidx.core.graphics.BlendModeCompat;
 import androidx.fragment.app.Fragment;
 
 import android.util.Log;
@@ -203,7 +205,7 @@ public class FuturePerfectContinuousFragment2 extends Fragment implements View.O
                     return false;
                 } else {
 
-                    view.getBackground().setColorFilter(Color.RED, PorterDuff.Mode.SRC_IN);
+                    view.getBackground().setColorFilter(BlendModeColorFilterCompat.createBlendModeColorFilterCompat(Color.RED, BlendModeCompat.SRC_ATOP));
 
                     // Invalidate the view to force a redraw in the new tint
                     view.invalidate();
@@ -256,7 +258,7 @@ public class FuturePerfectContinuousFragment2 extends Fragment implements View.O
                     String dragData = item.getText().toString();
 
                     // Displays a message containing the dragged data.
-                    Toast.makeText(getActivity(), "Anda memilih " + dragData, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Anda memilih kelas " + dragData, Toast.LENGTH_SHORT).show();
 
                     // Turns off any color tints
                     view.getBackground().clearColorFilter();

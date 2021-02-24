@@ -5,10 +5,296 @@
     android:layout_height="match_parent"
     tools:context=".pastfutureperfectcontinuous.PastFuturePerfectContinuousFragment5">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Past Future Perfect Continuous Fragment 5" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+
+                <!-- Row 1 with single column -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/time_signal_past_future_perfect_continuous_tense"
+                        android:textColor="@color/colorBlack"/>
+
+                </TableRow>
+
+                <!-- Row 2 with 2 columns -->
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="200dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/time_signal"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="200dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/artinya"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <!-- Row 3 with 2 columns -->
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/for_present_perfect_continuous"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/TextView05"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/selama"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 4 with 2 columns -->
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/TextView07"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/next_week"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/TextView08"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/minggu_depan"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 5 with 2 columns -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/by_next_week"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/menjelang_minggu_depan"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 6 with 2 columns -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/by_next_month"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/menjelang_bulan_depan"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 7 with 2 columns -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/by_next_year"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/menjelang_tahun_depan"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 8 with 2 columns -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/by_next_year_for_2_years"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/menjelang_akhir_tahun_depan_selama_2_tahun"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+                <!-- Row 9 with 2 columns -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/by_the_end_of_next_year"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/menjelang_akhir_tahun_depan"
+                        android:textColor="@color/colorBlack" />
+
+                </TableRow>
+
+
+
+                <!-- Row 10 with 1 column -->
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="dan contoh lainnya ..."
+                        android:textColor="@color/colorBlack" />
+
+
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_rectangle_green"
+                android:id="@+id/layoutQuestion1"
+                android:layout_below="@id/linear_layout3"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@mipmap/ic_info_green" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/info_time_signal_past_future_perfect_continuous_tense"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 </FrameLayout>

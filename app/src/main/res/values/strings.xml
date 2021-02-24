@@ -906,4 +906,8 @@
     <string name="past_future_perfect_continuous_tense_test2_5">5. … you … your job?</string> <!-- would, have been finishing -->
     <string name="past_future_perfect_continuous_tense_test2_5_meaning">\t Apakah kamu seharusnya akan sudah mengerjakan \n\t\tpekerjaanmu?</string>
 
+    <!-- Past Future Perfect Continuous Tense, Explain 3, Hal 5 (Time Signal) -->
+    <string name="time_signal_past_future_perfect_continuous_tense">Keterangan waktu <b>(Time signal)</b> pada Past Future Perfect Continuous Tense</string>
+    <string name="info_time_signal_past_future_perfect_continuous_tense">Time Signal pada Past Future Perfect Continuous Tense <b>hampir sama dengan</b> Time Signal pada Simple Future Tense.</string>
+
 </resources>

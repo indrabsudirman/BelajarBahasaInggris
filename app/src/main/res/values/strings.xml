@@ -908,6 +908,19 @@
 
     <!-- Past Future Perfect Continuous Tense, Explain 3, Hal 5 (Time Signal) -->
     <string name="time_signal_past_future_perfect_continuous_tense">Keterangan waktu <b>(Time signal)</b> pada Past Future Perfect Continuous Tense</string>
-    <string name="info_time_signal_past_future_perfect_continuous_tense">Time Signal pada Past Future Perfect Continuous Tense <b>hampir sama dengan</b> Time Signal pada Simple Future Tense.</string>
+    <string name="info_time_signal_past_future_perfect_continuous_tense">Time Signal pada Past Future Perfect Continuous Tense <b>hampir sama dengan</b> Time Signal pada Simple Past Future Tense.</string>
+    <string name="by_last">by last</string>
+    <string name="menjelang_akhir">menjelang akhir</string>
+    <string name="by_last_week">by last week</string>
+    <string name="menjelang_akhir_minggu_lalu">menjelang akhir minggu lalu</string>
+    <string name="by_last_month">by last month</string>
+    <string name="menjelang_akhir_bulan_lalu">menjelang akhir bulan lalu</string>
+    <string name="by_the_end_of_this_week">by the end of this week</string>
+    <string name="menjelang_akhir_minggu_ini">menjelang akhir minggu ini</string>
+    <string name="by_the_end_of_this_month">by the end of this month</string>
+    <string name="menjelang_akhir_bulan_ini">menjelang akhir bulan ini</string>
+    <string name="by_the_end_of_this_year">by the end of this year</string>
+    <string name="menjelang_akhir_tahun_ini">menjelang akhir tahun ini</string>
+
 
 </resources>

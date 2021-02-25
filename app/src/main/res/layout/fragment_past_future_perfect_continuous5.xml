@@ -107,7 +107,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/next_week"
+                        android:text="@string/by_last"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -116,7 +116,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/minggu_depan"
+                        android:text="@string/menjelang_akhir"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
@@ -131,7 +131,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/by_next_week"
+                        android:text="@string/by_last_week"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -139,7 +139,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/menjelang_minggu_depan"
+                        android:text="@string/menjelang_akhir_minggu_lalu"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
@@ -154,7 +154,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/by_next_month"
+                        android:text="@string/by_last_month"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -162,7 +162,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/menjelang_bulan_depan"
+                        android:text="@string/menjelang_akhir_bulan_lalu"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
@@ -177,7 +177,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/by_next_year"
+                        android:text="@string/by_the_end_of_this_week"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -185,7 +185,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/menjelang_tahun_depan"
+                        android:text="@string/menjelang_akhir_minggu_ini"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
@@ -200,7 +200,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/by_next_year_for_2_years"
+                        android:text="@string/by_the_end_of_this_month"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -208,7 +208,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/menjelang_akhir_tahun_depan_selama_2_tahun"
+                        android:text="@string/menjelang_akhir_bulan_ini"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>
@@ -223,7 +223,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/by_the_end_of_next_year"
+                        android:text="@string/by_the_end_of_this_year"
                         android:textColor="@color/colorBlack" />
 
                     <TextView
@@ -231,7 +231,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/menjelang_akhir_tahun_depan"
+                        android:text="@string/menjelang_akhir_tahun_ini"
                         android:textColor="@color/colorBlack" />
 
                 </TableRow>

@@ -374,8 +374,13 @@ public class PastPerfectFragment4 extends Fragment implements View.OnDragListene
                     return true;
                 }
             case DragEvent.ACTION_DRAG_ENDED:
-                // Turns off any color tinting
-                view.getBackground().clearColorFilter();
+
+                if (view == null){
+
+                    view = mainLayout;
+                    // Turns off any color tinting
+                    view.getBackground().clearColorFilter();
+                }
 
                 // Invalidates the view to force a redraw
                 view.invalidate();

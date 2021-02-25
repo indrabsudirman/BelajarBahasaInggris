@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.github.amlcurran.showcaseview.ShowcaseView;
@@ -54,6 +55,8 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
 
     private int mScrollDistance;
     private MyScrollView scrollView;
+
+    private LinearLayout mainLayout;
 
 
     public SimplePastFragment4() {
@@ -116,6 +119,8 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
         imageViewCompat = view.findViewById(R.id.imageInfo);
 
         scrollView = view.findViewById(R.id.scrollViewSimplePast4);
+
+        mainLayout = view.findViewById(R.id.mainLayout);
     }
 
     //Implement long click and drag listener
@@ -129,6 +134,8 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
         answerSimplePastDrop1.setOnDragListener(this);
         answerSimplePastDrop2.setOnDragListener(this);
         answerSimplePastDrop3.setOnDragListener(this);
+
+        mainLayout.setOnDragListener(this);
 
     }
 
@@ -166,12 +173,17 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
                 // Applies a YELLOW or any color tint to the View, when the dragged view entered into drag acceptable view
                 // Return true; the return value is ignored.
 
-                view.getBackground().setColorFilter(BlendModeColorFilterCompat.createBlendModeColorFilterCompat(Color.RED, BlendModeCompat.SRC_ATOP));
+                if (view.getId() == R.id.mainLayout) {
+                    return false;
+                } else {
 
-                // Invalidate the view to force a redraw in the new tint
-                view.invalidate();
+                    view.getBackground().setColorFilter(BlendModeColorFilterCompat.createBlendModeColorFilterCompat(Color.RED, BlendModeCompat.SRC_ATOP));
 
-                return true;
+                    // Invalidate the view to force a redraw in the new tint
+                    view.invalidate();
+
+                    return true;
+                }
             case DragEvent.ACTION_DRAG_LOCATION:
                 // Enable ScrollView while dragging
                 int y = Math.round(view.getY())+Math.round(event.getY());
@@ -181,12 +193,12 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
                 // make a scrolling up due the y has passed the threshold
                 if (translatedY < 200) {
                     // make a scroll up by 30 px
-                    scrollView.smoothScrollBy(0, -15);
+                    scrollView.smoothScrollBy(0, -5);
                 }
                 // make a autoscrolling down due y has passed the 500 px border
                 if (translatedY + threshold > 500) {
                     // make a scroll down by 30 px
-                    scrollView.smoothScrollBy(0, 15);
+                    scrollView.smoothScrollBy(0, 5);
                 }
 
                 break;
@@ -197,41 +209,54 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
                 //  view.getBackground().setColorFilter(Color.BLUE, PorterDuff.Mode.SRC_IN);
 
                 //If u had not provided any color in ACTION_DRAG_STARTED then clear color filter.
-                view.getBackground().clearColorFilter();
-                // Invalidate the view to force a redraw in the new tint
-                view.invalidate();
+                if (view.getId() == R.id.mainLayout) {
+                    return false;
+                } else {
+                    view.getBackground().clearColorFilter();
+                    // Invalidate the view to force a redraw in the new tint
+                    view.invalidate();
 
-                return true;
+                    return true;
+                }
             case DragEvent.ACTION_DROP:
-                // Gets the item containing the dragged data
-                ClipData.Item item = event.getClipData().getItemAt(0);
+                if (view.getId() == R.id.mainLayout) {
+                    return false;
+                } else {
+                    // Gets the item containing the dragged data
+                    ClipData.Item item = event.getClipData().getItemAt(0);
 
-                // Gets the text data from the item.
-                String dragData = item.getText().toString();
+                    // Gets the text data from the item.
+                    String dragData = item.getText().toString();
 
-                // Displays a message containing the dragged data.
-                Toast.makeText(getActivity(), "Anda memilih " + dragData, Toast.LENGTH_SHORT).show();
+                    // Displays a message containing the dragged data.
+                    Toast.makeText(getActivity(), "Anda memilih " + dragData, Toast.LENGTH_SHORT).show();
 
-                // Turns off any color tints
-                view.getBackground().clearColorFilter();
+                    // Turns off any color tints
+                    view.getBackground().clearColorFilter();
 
-                // Invalidates the view to force a redraw
-                view.invalidate();
+                    // Invalidates the view to force a redraw
+                    view.invalidate();
 
-                View v = (View) event.getLocalState();
-                ViewGroup owner = (ViewGroup) v.getParent();
-                owner.removeView(v);//remove the dragged view
-                TextInputEditText container = (TextInputEditText) view;//caste the view into LinearLayout as our drag acceptable layout is LinearLayout
-                container.setFocusableInTouchMode(true);
-                container.setText(dragData);
+                    View v = (View) event.getLocalState();
+                    ViewGroup owner = (ViewGroup) v.getParent();
+                    owner.removeView(v);//remove the dragged view
+                    TextInputEditText container = (TextInputEditText) view;//caste the view into LinearLayout as our drag acceptable layout is LinearLayout
+                    container.setFocusableInTouchMode(true);
+                    container.setText(dragData);
 //                container.addView(v);//Add the dragged view
-                v.setVisibility(View.VISIBLE);//finally set Visibility to VISIBLE
+                    v.setVisibility(View.VISIBLE);//finally set Visibility to VISIBLE
 
-                // Returns true. DragEvent.getResult() will return true.
-                return true;
+                    // Returns true. DragEvent.getResult() will return true.
+                    return true;
+                }
             case DragEvent.ACTION_DRAG_ENDED:
-                // Turns off any color tinting
-                view.getBackground().clearColorFilter();
+
+                if (view == null){
+
+                    view = mainLayout;
+                    // Turns off any color tinting
+                    view.getBackground().clearColorFilter();
+                }
 
                 // Invalidates the view to force a redraw
                 view.invalidate();

@@ -136,39 +136,36 @@ public class SimplePresentActivity extends AppCompatActivity {
         });
         tabLayoutMediator.attach();
 
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int position = tabLayout.getSelectedTabPosition();
-                switch (position) {
-                    case 0:
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        user.setScore(1);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
-                        break;
-                    case 1:
-                        checkAnswerSimplePresent1();
-                        break;
-                    case 2:
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        user.setScore(3);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
-                        break;
-                    case 3:
-                        checkAnswerSimplePresent2();
-                        break;
-                    case 4:
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        user.setScore(5);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
-                        break;
-                    case 5:
-                        checkAnswerSimplePresent3();
-                        break;
-                }
+        floatingActionButton.setOnClickListener(view -> {
+            int position = tabLayout.getSelectedTabPosition();
+            switch (position) {
+                case 0:
+                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                    user.setScore(1);
+                    score = user.getScore();
+                    System.out.println("Score : " + score);
+                    break;
+                case 1:
+                    checkAnswerSimplePresent1();
+                    break;
+                case 2:
+                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                    user.setScore(3);
+                    score = user.getScore();
+                    System.out.println("Score : " + score);
+                    break;
+                case 3:
+                    checkAnswerSimplePresent2();
+                    break;
+                case 4:
+                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                    user.setScore(5);
+                    score = user.getScore();
+                    System.out.println("Score : " + score);
+                    break;
+                case 5:
+                    checkAnswerSimplePresent3();
+                    break;
             }
         });
 
@@ -305,17 +302,14 @@ public class SimplePresentActivity extends AppCompatActivity {
                     .setMessage("Anda berhasil, nilai Anda : " + numberOfQuestionCorrect + "/4\nIni Sempurna. Anda dapat melanjutkan ke pelajaran berikutnya.")
                     .setCancelable(false)
                     .setPositiveButton("Halaman berikutnya",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    //Set Score user to 1
-                                    score = 2;
-                                    user.setScore(score);
-                                    score = user.getScore();
-                                    System.out.println("Score : " + score);
-                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                            (dialogInterface, i) -> {
+                                //Set Score user to 1
+                                score = 2;
+                                user.setScore(score);
+                                score = user.getScore();
+                                System.out.println("Score : " + score);
+                                viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
 
-                                }
                             });
 
             AlertDialog alertDialog = alertDialogBuilder.create();
@@ -328,21 +322,12 @@ public class SimplePresentActivity extends AppCompatActivity {
                     .setMessage("Anda gagal, Nilai Anda adalah : " + numberOfQuestionCorrect + "/4\nAnda belum dapat melanjutkan pelajaran berikutnya.\n\n" + "Perbaiki jawaban Anda : \n\n" + sb.toString())
                     .setCancelable(false)
                     .setPositiveButton("Mulai test lagi",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem());
-
-                                }
-                            })
+                            (dialogInterface, i) -> viewPager2.setCurrentItem(viewPager2.getCurrentItem()))
 
                     .setNegativeButton("Keluar aplikasi",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    moveTaskToBack(true);
-                                    finish();
-                                }
+                            (dialogInterface, i) -> {
+                                moveTaskToBack(true);
+                                finish();
                             });
 
             AlertDialog alertDialog = alertDialogBuilder.create();

@@ -71,12 +71,10 @@ public class SimplePresentFragment2 extends Fragment implements View.OnDragListe
 
         //SCROLLVIEW
         scrollView = view.findViewById(R.id.scrollViewSimplePresent2);
-        scrollView.setOnScrollViewListener(new MyScrollView.OnScrollViewListener() {
-            @Override
-            public void onScrollChanged1(MyScrollView.OnScrollViewListener listener) {
-                mScrollDistance = scrollView.getScrollY();
-            }
-        });
+        scrollView.setOnScrollViewListener(listener ->
+                mScrollDistance = scrollView.getScrollY());
+
+
 
         return view;
     }

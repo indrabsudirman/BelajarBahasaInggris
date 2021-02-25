@@ -8,6 +8,8 @@ import android.os.Bundle;
 
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.core.graphics.BlendModeColorFilterCompat;
+import androidx.core.graphics.BlendModeCompat;
 import androidx.fragment.app.Fragment;
 
 import android.util.Log;
@@ -164,7 +166,7 @@ public class SimplePastFragment4 extends Fragment implements View.OnDragListener
                 // Applies a YELLOW or any color tint to the View, when the dragged view entered into drag acceptable view
                 // Return true; the return value is ignored.
 
-                view.getBackground().setColorFilter(Color.RED, PorterDuff.Mode.SRC_IN);
+                view.getBackground().setColorFilter(BlendModeColorFilterCompat.createBlendModeColorFilterCompat(Color.RED, BlendModeCompat.SRC_ATOP));
 
                 // Invalidate the view to force a redraw in the new tint
                 view.invalidate();

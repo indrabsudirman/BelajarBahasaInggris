@@ -9,6 +9,8 @@ import android.os.Bundle;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.core.graphics.BlendModeColorFilterCompat;
+import androidx.core.graphics.BlendModeCompat;
 import androidx.fragment.app.Fragment;
 
 import android.util.Log;
@@ -202,7 +204,7 @@ public class PastFutureContinuousFragment2 extends Fragment implements View.OnDr
                     return false;
                 } else {
 
-                    view.getBackground().setColorFilter(Color.RED, PorterDuff.Mode.SRC_IN);
+                    view.getBackground().setColorFilter(BlendModeColorFilterCompat.createBlendModeColorFilterCompat(Color.RED, BlendModeCompat.SRC_ATOP));
 
                     // Invalidate the view to force a redraw in the new tint
                     view.invalidate();

@@ -94,7 +94,7 @@ tools:context=".simplepresent.SimplePresentFragment1">
         <View
             android:id="@+id/view"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="70dp"
             android:layout_gravity="bottom"/>
 
 

@@ -130,12 +130,15 @@
                             android:textColor="@color/colorBlack"/>
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/simplePastTense"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Simple Past Tense"
                             android:textSize="18sp"
                             android:textColor="@color/colorBlack"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_round_check_dark"
+                            android:drawablePadding="10dp"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -164,7 +167,10 @@
                             android:text="Simple Present Tense"
                             android:textSize="18sp"
                             android:textColor="@color/colorBlack"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_round_check_dark"
+                            android:drawablePadding="10dp"
+                            android:id="@+id/simplePresentTense"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -193,7 +199,10 @@
                             android:text="Simple Future Tense"
                             android:textSize="18sp"
                             android:textColor="@color/colorBlack"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_round_check_dark"
+                            android:drawablePadding="10dp"
+                            android:id="@+id/simpleFutureTense"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -222,7 +231,10 @@
                             android:text="Simple Past Future Tense"
                             android:textSize="18sp"
                             android:textColor="@color/colorBlack"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_round_check_dark"
+                            android:drawablePadding="10dp"
+                            android:id="@+id/simplePastFutureTense"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -251,7 +263,10 @@
                             android:text="Past Continuous Tense"
                             android:textSize="18sp"
                             android:textColor="@color/colorBlack"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_round_check_dark"
+                            android:drawablePadding="10dp"
+                            android:id="@+id/pastContinuousTense"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -280,7 +295,10 @@
                             android:text="Present Continuous Tense"
                             android:textSize="18sp"
                             android:textColor="@color/colorBlack"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_round_check_dark"
+                            android:drawablePadding="10dp"
+                            android:id="@+id/presentContinuousTense"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -309,7 +327,10 @@
                             android:text="Future Continuous Tense"
                             android:textSize="18sp"
                             android:textColor="@color/colorBlack"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_round_check_dark"
+                            android:drawablePadding="10dp"
+                            android:id="@+id/futureContinuousTense"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -338,7 +359,10 @@
                             android:text="Past Future Continuous Tense"
                             android:textSize="18sp"
                             android:textColor="@color/colorBlack"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_round_check_dark"
+                            android:drawablePadding="10dp"
+                            android:id="@+id/pastFutureContinuousTense"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -367,7 +391,10 @@
                             android:text="Past Perfect Tense"
                             android:textSize="18sp"
                             android:textColor="@color/colorBlack"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_round_check_dark"
+                            android:drawablePadding="10dp"
+                            android:id="@+id/pastPerfectTense"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -396,7 +423,10 @@
                             android:text="Present Perfect Tense"
                             android:textSize="18sp"
                             android:textColor="@color/colorBlack"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_round_check_dark"
+                            android:drawablePadding="10dp"
+                            android:id="@+id/presentPerfectTense"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -425,7 +455,10 @@
                             android:text="Future Perfect Tense"
                             android:textSize="18sp"
                             android:textColor="@color/colorBlack"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_round_check_dark"
+                            android:drawablePadding="10dp"
+                            android:id="@+id/futurePerfectTense"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -454,7 +487,10 @@
                             android:text="Past Future Perfect Tense"
                             android:textSize="18sp"
                             android:textColor="@color/colorBlack"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_round_check_dark"
+                            android:drawablePadding="10dp"
+                            android:id="@+id/pastFuturePerfectTense"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -483,7 +519,10 @@
                             android:text="Past Perfect Continuous Tense"
                             android:textSize="18sp"
                             android:textColor="@color/colorBlack"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_round_check_dark"
+                            android:drawablePadding="10dp"
+                            android:id="@+id/pastPerfectContinuousTense"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -512,7 +551,10 @@
                             android:text="Present Perfect Continuous Tense"
                             android:textSize="18sp"
                             android:textColor="@color/colorBlack"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_round_check_dark"
+                            android:drawablePadding="10dp"
+                            android:id="@+id/presentPerfectContinuousTense"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -541,7 +583,10 @@
                             android:text="Future Perfect Continuous Tense"
                             android:textSize="18sp"
                             android:textColor="@color/colorBlack"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_round_check_dark"
+                            android:drawablePadding="10dp"
+                            android:id="@+id/futurePerfectContinuousTense"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -570,7 +615,10 @@
                             android:text="Past Future Perfect Continuous Tense"
                             android:textSize="18sp"
                             android:textColor="@color/colorBlack"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_round_check_dark"
+                            android:drawablePadding="10dp"
+                            android:id="@+id/pastFuturePerfectContinuousTense"/>
 
                         <View
                             android:layout_width="match_parent"

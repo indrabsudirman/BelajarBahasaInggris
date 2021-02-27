@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
@@ -20,6 +21,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class AccountActivity extends AppCompatActivity {
 
     private AppCompatImageView editAccount;
+    private AppCompatTextView simplePastTense;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class AccountActivity extends AppCompatActivity {
         //Initialize and assign variable
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNav);
         editAccount = findViewById(R.id.editAccount);
+        simplePastTense = findViewById(R.id.simplePastTense);
 
         //Set Recycler View Learn English as default
         bottomNavigationView.setSelectedItemId(R.id.user_account);
@@ -56,7 +59,10 @@ public class AccountActivity extends AppCompatActivity {
 
         editAccount.setOnClickListener(view ->
                 Toast.makeText(getApplicationContext(), "Anda click icon edit",Toast.LENGTH_SHORT).show());
-            }
+
+        simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.ic_round_check_success,0);
+
+    }
 
 
 

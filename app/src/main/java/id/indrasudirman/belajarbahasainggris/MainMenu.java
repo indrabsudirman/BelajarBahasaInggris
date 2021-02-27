@@ -194,7 +194,7 @@ public class MainMenu extends AppCompatActivity {
                     scrollRange = appBarLayout.getTotalScrollRange();
                 }
                 if (scrollRange + verticalOffset == 0) {
-                    collapsingToolbar.setTitle(Html.fromHtml("<font color='#008577'>"+getString(R.string.app_name)+"</font>"));
+                    collapsingToolbar.setTitle(Html.fromHtml("<font color='#009650'>"+getString(R.string.app_name)+"</font>"));
                     isShow = true;
                 } else if (isShow) {
                     collapsingToolbar.setTitle(" ");

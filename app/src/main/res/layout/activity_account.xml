@@ -7,10 +7,72 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorContent"
         android:layout_width="match_parent"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="57dp"
         android:layout_height="match_parent">
 
-        <!-- This coordinator Layout matches the parent's height, I want to height to match till the BottomNaviagtionView and not below it -->
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grad">
+
+            <RelativeLayout
+                android:id="@+id/layoutImageUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle_border"
+                android:gravity="center_horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="9dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/circle"
+                    android:padding="1dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/gl_pro" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutImageUser"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-light"
+                android:text="Indra Sudirman"
+                android:textColor="@color/colorWhite"
+                android:textSize="28sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewUserName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-light"
+                android:text="indra.indrabayu@gmail.com"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_setting"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp" />
+
+
+        </RelativeLayout>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

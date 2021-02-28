@@ -125,6 +125,39 @@
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:text="Score anda :"
+                            android:textSize="13sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="16"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="sans-serif-light"
+                            android:drawableEnd="@drawable/ic_baseline_score"
+                            android:drawablePadding="5dp"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/solidCircle"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:text="Pembelajaran I"
                             android:textSize="13sp"
                             android:textColor="@color/colorBlack"/>

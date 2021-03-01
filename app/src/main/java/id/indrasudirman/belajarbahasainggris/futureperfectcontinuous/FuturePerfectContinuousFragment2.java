@@ -258,7 +258,7 @@ public class FuturePerfectContinuousFragment2 extends Fragment implements View.O
                     String dragData = item.getText().toString();
 
                     // Displays a message containing the dragged data.
-                    Toast.makeText(getActivity(), "Anda memilih kelas " + dragData, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Anda memilih " + dragData, Toast.LENGTH_SHORT).show();
 
                     // Turns off any color tints
                     view.getBackground().clearColorFilter();

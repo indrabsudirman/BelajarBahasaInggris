@@ -10,13 +10,18 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+
+import id.indrasudirman.belajarbahasainggris.utils.BottomSheetEditAccount;
 
 public class AccountActivity extends AppCompatActivity {
 
@@ -57,8 +62,11 @@ public class AccountActivity extends AppCompatActivity {
 
 //        initCollapsingToolbar();
 
-        editAccount.setOnClickListener(view ->
-                Toast.makeText(getApplicationContext(), "Anda click icon edit",Toast.LENGTH_SHORT).show());
+        editAccount.setOnClickListener((View.OnClickListener) view -> {
+            BottomSheetEditAccount bottomSheetEditAccount = new BottomSheetEditAccount();
+            bottomSheetEditAccount.show(getSupportFragmentManager(), "TAG");
+        });
+//                Toast.makeText(getApplicationContext(), "Anda click icon edit",Toast.LENGTH_SHORT).show());
 
         simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.ic_round_check_success,0);
 

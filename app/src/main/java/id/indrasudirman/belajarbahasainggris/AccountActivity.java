@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.widget.NestedScrollView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,13 +22,17 @@ import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import id.indrasudirman.belajarbahasainggris.utils.BottomSheetEditAccount;
 
 public class AccountActivity extends AppCompatActivity {
 
     private AppCompatImageView editAccount;
+    private AppCompatImageView imageViewUser;
     private AppCompatTextView simplePastTense;
+    private FloatingActionButton fabChangeImage;
+    private NestedScrollView nestedScrollView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,13 +40,19 @@ public class AccountActivity extends AppCompatActivity {
         setContentView(R.layout.activity_account);
 
 
+
         //Initialize and assign variable
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNav);
         editAccount = findViewById(R.id.editAccount);
+        imageViewUser = findViewById(R.id.imageViewUser);
         simplePastTense = findViewById(R.id.simplePastTense);
+        fabChangeImage = findViewById(R.id.fabChangeImage);
+        nestedScrollView = findViewById(R.id.nestedScrollView);
 
         //Set Recycler View Learn English as default
         bottomNavigationView.setSelectedItemId(R.id.user_account);
+
+
 
         //Perform item selectListener
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -58,17 +70,52 @@ public class AccountActivity extends AppCompatActivity {
                 return false;
             }
         });
-//        setToolbar("Indra");
 
-//        initCollapsingToolbar();
-
+        //Show bottom sheet, to edit user account
         editAccount.setOnClickListener((View.OnClickListener) view -> {
             BottomSheetEditAccount bottomSheetEditAccount = new BottomSheetEditAccount();
             bottomSheetEditAccount.show(getSupportFragmentManager(), "TAG");
         });
-//                Toast.makeText(getApplicationContext(), "Anda click icon edit",Toast.LENGTH_SHORT).show());
 
+        //Default hide icon change image account
+        fabChangeImage.setVisibility(View.INVISIBLE);
+        //Show icon change image account, when image icon clicked
+        imageViewUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fabChangeImage.setVisibility(View.VISIBLE);
+                fabChangeImage.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        fabChangeImage.setVisibility(View.INVISIBLE);
+                    }
+                }, 2000);
+
+            }
+        });
+
+        //Set checklist green, is tense has passed
         simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.ic_round_check_success,0);
+
+//        nestedScrollView.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
+//            @Override
+//            public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
+//                //the delay of the extension of the FAB is set for 12 items
+//                if (scrollY > oldScrollY + 12 && fabChangeImage.isShown()) {
+//                    fabChangeImage.hide();
+//                }
+//
+//                //the delay of the extension of the FAB is set for 12 items
+//                if (scrollY < oldScrollY - 12 && !fabChangeImage.isShown()) {
+//                    fabChangeImage.hide();
+//                }
+//                //if the nestedScrollView is at the first item of the list then the floating action button should be in show state
+//                if (scrollY == 0) {
+//                    fabChangeImage.show();
+//                }
+//            }
+//        });
+
 
     }
 

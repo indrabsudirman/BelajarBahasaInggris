@@ -30,10 +30,10 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/grad">
 
-                    <RelativeLayout
+                    <androidx.coordinatorlayout.widget.CoordinatorLayout
                         android:id="@+id/layoutImageUser"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="30dp"
                         android:background="@drawable/circle_border"
@@ -47,8 +47,18 @@
                             android:background="@drawable/circle"
                             android:padding="1dp"
                             android:scaleType="centerInside"
-                            android:src="@drawable/gl_pro" />
-                    </RelativeLayout>
+                            android:src="@drawable/gl_pro"
+                            android:id="@+id/imageViewUser"/>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_camera"
+                            android:layout_gravity="bottom|right"
+                            android:id="@+id/fabChangeImage"/>
+
+
+                    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/textViewUserName"
@@ -100,6 +110,7 @@
         </com.google.android.material.appbar.AppBarLayout>
 
         <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="8dp"

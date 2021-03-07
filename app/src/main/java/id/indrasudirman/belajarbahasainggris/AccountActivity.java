@@ -7,10 +7,19 @@ import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.widget.NestedScrollView;
 
+import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -23,31 +32,59 @@ import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.karumi.dexter.Dexter;
+import com.karumi.dexter.MultiplePermissionsReport;
+import com.karumi.dexter.PermissionToken;
+import com.karumi.dexter.listener.PermissionRequest;
+import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
+import com.mikhaellopez.circularimageview.CircularImageView;
 
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.util.List;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import id.indrasudirman.belajarbahasainggris.utils.BottomSheetEditAccount;
 
 public class AccountActivity extends AppCompatActivity {
 
+    private static final int REQUEST_CODE_STORAGE_PERMISSION = 1;
+    private static final int REQUEST_CODE_SELECT_IMAGE = 2;
+
+    private BottomNavigationView bottomNavigationView;
     private AppCompatImageView editAccount;
-    private AppCompatImageView imageViewUser;
-    private AppCompatTextView simplePastTense;
-    private FloatingActionButton fabChangeImage;
-    private NestedScrollView nestedScrollView;
+    private CircularImageView imageViewUser;
+    private CircularImageView changeImage;
+//    private AppCompatTextView simplePastTense;
+//    private FloatingActionButton fabChangeImage;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_account);
+        setContentView(R.layout.activity_account_test);
+        ButterKnife.bind(this);
 
 
 
         //Initialize and assign variable
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNav);
+        bottomNavigationView = findViewById(R.id.bottomNav);
         editAccount = findViewById(R.id.editAccount);
         imageViewUser = findViewById(R.id.imageViewUser);
-        simplePastTense = findViewById(R.id.simplePastTense);
-        fabChangeImage = findViewById(R.id.fabChangeImage);
-        nestedScrollView = findViewById(R.id.nestedScrollView);
+        changeImage = findViewById(R.id.changeImage);
+//        simplePastTense = findViewById(R.id.simplePastTense);
+//        fabChangeImage = findViewById(R.id.fabChangeImage);
+//
+        changeImage.setOnClickListener(view -> {
+            Toast.makeText(getApplicationContext(), "Anda ingin ganti foto", Toast.LENGTH_SHORT).show();
+            onProfileImageClick();
+        });
+
+
+
+
 
         //Set Recycler View Learn English as default
         bottomNavigationView.setSelectedItemId(R.id.user_account);
@@ -56,6 +93,7 @@ public class AccountActivity extends AppCompatActivity {
 
         //Perform item selectListener
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
@@ -78,47 +116,46 @@ public class AccountActivity extends AppCompatActivity {
         });
 
         //Default hide icon change image account
-        fabChangeImage.setVisibility(View.INVISIBLE);
+        changeImage.setVisibility(View.INVISIBLE);
         //Show icon change image account, when image icon clicked
-        imageViewUser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                fabChangeImage.setVisibility(View.VISIBLE);
-                fabChangeImage.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        fabChangeImage.setVisibility(View.INVISIBLE);
-                    }
-                }, 2000);
+        imageViewUser.setOnClickListener(view -> {
+            changeImage.setVisibility(View.VISIBLE);
+            changeImage.postDelayed(() -> changeImage.setVisibility(View.INVISIBLE), 2000);
 
-            }
         });
-
-        //Set checklist green, is tense has passed
-        simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.ic_round_check_success,0);
-
-//        nestedScrollView.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
-//            @Override
-//            public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
-//                //the delay of the extension of the FAB is set for 12 items
-//                if (scrollY > oldScrollY + 12 && fabChangeImage.isShown()) {
-//                    fabChangeImage.hide();
-//                }
 //
-//                //the delay of the extension of the FAB is set for 12 items
-//                if (scrollY < oldScrollY - 12 && !fabChangeImage.isShown()) {
-//                    fabChangeImage.hide();
-//                }
-//                //if the nestedScrollView is at the first item of the list then the floating action button should be in show state
-//                if (scrollY == 0) {
-//                    fabChangeImage.show();
-//                }
-//            }
-//        });
+//        //Set checklist green, is tense has passed
+//        simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.ic_round_check_success,0);
 
 
     }
 
+    @OnClick({R.id.changeImage})
+    void onProfileImageClick() {
+        Dexter.withActivity(this)
+                .withPermissions(Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                .withListener(new MultiplePermissionsListener() {
+                    @Override
+                    public void onPermissionsChecked(MultiplePermissionsReport report) {
+                        if (report.areAllPermissionsGranted()) {
+                            showImagePickerOption();
+                        }
+
+                        if (report.isAnyPermissionPermanentlyDenied()) {
+//                            showSettingsDialog();
+                        }
+                    }
+
+                    @Override
+                    public void onPermissionRationaleShouldBeShown(List<PermissionRequest> permissions, PermissionToken token) {
+                        token.continuePermissionRequest();
+                    }
+                }).check();
+    }
+
+    private void showImagePickerOption() {
+        Toast.makeText(getApplicationContext(), "Show image picker ", Toast.LENGTH_SHORT).show();
+    }
 
 
 

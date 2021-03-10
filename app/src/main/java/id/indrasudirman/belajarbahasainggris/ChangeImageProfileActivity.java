@@ -163,7 +163,7 @@ public class ChangeImageProfileActivity extends AppCompatActivity {
                 }
                 break;
             case REQUEST_GALLERY_IMAGE:
-                if (requestCode == RESULT_OK) {
+                if (resultCode == RESULT_OK) {
                     Uri imageUri = data.getData();
                     cropImage(imageUri);
                 } else {
@@ -171,7 +171,7 @@ public class ChangeImageProfileActivity extends AppCompatActivity {
                 }
                 break;
             case UCrop.REQUEST_CROP:
-                if (requestCode == RESULT_OK) {
+                if (resultCode == RESULT_OK) {
                     handleUCropResult(data);
                 } else {
                     setResultCancelled();
@@ -194,7 +194,7 @@ public class ChangeImageProfileActivity extends AppCompatActivity {
 
         //Apply UI Theme
         options.setToolbarColor(ContextCompat.getColor(this, R.color.colorPrimary));
-        options.setStatusBarColor(ContextCompat.getColor(this, R.color.colorPrimary));
+        options.setStatusBarColor(ContextCompat.getColor(this, R.color.album_title));
         options.setActiveWidgetColor(ContextCompat.getColor(this, R.color.colorPrimary));
 
         if (lockAspectRatio)

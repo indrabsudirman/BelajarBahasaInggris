@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 
@@ -11,10 +12,13 @@ import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.ContentValues;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.text.Html;
@@ -34,7 +38,11 @@ import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
 import com.mikhaellopez.circularimageview.CircularImageView;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.util.List;
 
 import butterknife.ButterKnife;
@@ -50,6 +58,7 @@ public class AccountActivity extends AppCompatActivity {
     private AppCompatImageView editAccount;
     private CircularImageView imageViewUser;
     private CircularImageView changeImage;
+    private AppCompatTextView simplePastTense;
 
 
     @Override
@@ -58,21 +67,19 @@ public class AccountActivity extends AppCompatActivity {
         setContentView(R.layout.activity_account_test);
         ButterKnife.bind(this);
 
-
-
         //Initialize and assign variable
         bottomNavigationView = findViewById(R.id.bottomNav);
         editAccount = findViewById(R.id.editAccount);
         imageViewUser = findViewById(R.id.imageViewUser);
         changeImage = findViewById(R.id.changeImage);
-//        simplePastTense = findViewById(R.id.simplePastTense);
-//        fabChangeImage = findViewById(R.id.fabChangeImage);
-//
+        simplePastTense = findViewById(R.id.simplePastTense);
+
         changeImage.setOnClickListener(view -> {
-            Toast.makeText(getApplicationContext(), "Anda ingin ganti foto", Toast.LENGTH_SHORT).show();
+
             changeImageClicked();
         });
 
+//        Uri uri = Intent.getIntent("path");
         loadProfileDefault();
 
         // Clearing older images from cache directory
@@ -82,8 +89,6 @@ public class AccountActivity extends AppCompatActivity {
 
         //Set Recycler View Learn English as default
         bottomNavigationView.setSelectedItemId(R.id.user_account);
-
-
 
         //Perform item selectListener
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -117,9 +122,9 @@ public class AccountActivity extends AppCompatActivity {
             changeImage.postDelayed(() -> changeImage.setVisibility(View.INVISIBLE), 2000);
 
         });
-//
-//        //Set checklist green, is tense has passed
-//        simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.ic_round_check_success,0);
+
+        //Set checklist green, is tense has passed
+        simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.ic_round_check_success,0);
 
 
     }
@@ -150,7 +155,7 @@ public class AccountActivity extends AppCompatActivity {
                         }
 
                         if (report.isAnyPermissionPermanentlyDenied()) {
-//                            showSettingsDialog();
+                            showSettingDialog();
                         }
                     }
 
@@ -208,18 +213,82 @@ public class AccountActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_IMAGE) {
+            switch (requestCode) {
+                case REQU
+            }
             if (resultCode == Activity.RESULT_OK) {
                 Uri uri = data.getParcelableExtra("path");
                 try {
                     //you can update this bitmap to your server
                     Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), uri);
+                    //save image to local Gallery
+                    saveImageToGallery(bitmap);
 
                     //loading profile image from local cache
                     loadProfile(uri.toString());
 
+                    Log.d(TAG, " image cache path onActivityResult :" + uri.toString());
+
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+            }
+        }
+    }
+
+    private void saveImageToGallery(Bitmap bitmap) {
+        if (Build.VERSION.SDK_INT >= 29) {
+            ContentValues values = contentValues();
+            values.put(MediaStore.Images.Media.RELATIVE_PATH, "Pictures/" + getString(R.string.app_name));
+            values.put(MediaStore.Images.Media.IS_PENDING, true);
+
+            Uri uri = this.getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+            if (uri != null) {
+                try {
+                    saveImageToStream(bitmap, this.getContentResolver().openOutputStream(uri));
+                    values.put(MediaStore.Images.Media.IS_PENDING, false);
+                    this.getContentResolver().update(uri, values, null, null);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
+            }
+        } else {
+            File directory = new File(Environment.getExternalStorageDirectory().toString() + '/' + getString(R.string.app_name));
+            if (!directory.exists()) {
+                directory.mkdirs();
+            }
+
+            String fileName = System.currentTimeMillis() + ".png";
+            File file = new File(directory, fileName);
+
+            try {
+                saveImageToStream (bitmap, new FileOutputStream(file));
+                ContentValues values = new ContentValues();
+                values.put(MediaStore.Images.Media.DATA, file.getAbsolutePath());
+                this.getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private ContentValues contentValues () {
+        ContentValues values = new ContentValues();
+        values.put(MediaStore.Images.Media.MIME_TYPE, "image/png");
+        values.put(MediaStore.Images.Media.DATE_ADDED, System.currentTimeMillis() / 1000);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            values.put(MediaStore.Images.Media.DATE_TAKEN, System.currentTimeMillis());
+        }
+        return values;
+    }
+
+    private void saveImageToStream (Bitmap bitmap, OutputStream outputStream) {
+        if (outputStream != null) {
+            try {
+                bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
+                outputStream.close();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
     }

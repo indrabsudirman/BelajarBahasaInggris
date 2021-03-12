@@ -14,7 +14,7 @@ import id.indrasudirman.belajarbahasainggris.model.User;
 public class SQLiteHelper extends SQLiteOpenHelper {
 
     //Database Version
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
 
     //Database Name
     private static final String DATABASE_NAME = "BelajarBahasaInggris.db";
@@ -28,6 +28,8 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     private static final String COLUMN_USER_MAIL = "user_email";
     private static final String COLUMN_PASSWORD_SALT = "salt";
     private static final String COLUMN_PASSWORD = "password";
+    private static final String PHOTO_PATH = "photo_path";
+    private static final String SCORE = "score";
 
 
     //Create Table SQL Query
@@ -86,7 +88,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
                 COLUMN_USER_NAME,
                 COLUMN_USER_MAIL,
                 COLUMN_PASSWORD_SALT,
-                COLUMN_PASSWORD
+                COLUMN_PASSWORD,
         };
         //Sorting orders
         String sortOrder = COLUMN_USER_NAME + " ASC";

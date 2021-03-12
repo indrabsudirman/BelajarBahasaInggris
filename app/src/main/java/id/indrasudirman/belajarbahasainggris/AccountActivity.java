@@ -59,6 +59,7 @@ public class AccountActivity extends AppCompatActivity {
     private CircularImageView imageViewUser;
     private CircularImageView changeImage;
     private AppCompatTextView simplePastTense;
+    private String pathImage;
 
 
     @Override
@@ -213,9 +214,9 @@ public class AccountActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_IMAGE) {
-            switch (requestCode) {
-                case REQU
-            }
+//            switch (requestCode) {
+//                case REQU
+//            }
             if (resultCode == Activity.RESULT_OK) {
                 Uri uri = data.getParcelableExtra("path");
                 try {
@@ -226,8 +227,7 @@ public class AccountActivity extends AppCompatActivity {
 
                     //loading profile image from local cache
                     loadProfile(uri.toString());
-
-                    Log.d(TAG, " image cache path onActivityResult :" + uri.toString());
+                    //save image path to database
 
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -258,7 +258,7 @@ public class AccountActivity extends AppCompatActivity {
                 directory.mkdirs();
             }
 
-            String fileName = System.currentTimeMillis() + ".png";
+            String fileName = "belajar_bahasa_inggris_image_profile" + ".png";
             File file = new File(directory, fileName);
 
             try {
@@ -266,10 +266,15 @@ public class AccountActivity extends AppCompatActivity {
                 ContentValues values = new ContentValues();
                 values.put(MediaStore.Images.Media.DATA, file.getAbsolutePath());
                 this.getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+
+
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
+            this.pathImage = file.getAbsolutePath();
+            Log.d(TAG, "path image now at : " + pathImage); //bisa tambahkan method lagi buat parameter pathImage
         }
+
     }
 
     private ContentValues contentValues () {

@@ -249,7 +249,8 @@ public class AccountActivity extends AppCompatActivity {
             String profileEmailS = (String) profileEmail.getText();
             user.setEmail(profileEmailS);
             Log.d(TAG, "Email user in onActivityResult " + user.getEmail());
-            sqLiteHelper.updateUserPhoto(user);
+            //Update image path to database
+            sqLiteHelper.updateUserImage(profileEmailS , s);
         }
     }
 
@@ -299,6 +300,7 @@ public class AccountActivity extends AppCompatActivity {
 
             String name = user.getName(); //Null
             Log.d(TAG, "name now at getName : " + name);
+
         }
 
     }

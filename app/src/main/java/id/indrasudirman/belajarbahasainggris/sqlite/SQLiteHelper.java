@@ -10,9 +10,12 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
+import id.indrasudirman.belajarbahasainggris.MainActivity;
 import id.indrasudirman.belajarbahasainggris.model.User;
 
 public class SQLiteHelper extends SQLiteOpenHelper {
+
+    private static final String TAG = SQLiteHelper.class.getSimpleName();
 
     //Database Version
     private static final int DATABASE_VERSION = 1;
@@ -161,8 +164,27 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         //Updating row
         sqLiteDatabase.update(TABLE_USER, contentValues, COLUMN_USER_MAIL + " = ?",
                 new String[]{String.valueOf(users.getEmail())});
-        Log.d("TAG", "Email user in SQLiteHelper " + users.getEmail());
+        Log.d(TAG, "Email user in SQLiteHelper " + users.getEmail());
         sqLiteDatabase.close();
+    }
+
+    public void updateUserImage(String email, String photoPath) {
+
+        int count = 0;
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_PHOTO_PATH, photoPath);
+        // update Row
+        count = db.update(TABLE_USER,values,COLUMN_USER_MAIL + "= '" + email + "'",null);
+        if (count > 0) {
+            Log.d(TAG, "Database Updated");
+            Log.d(TAG, "Count is " + count);
+        }
+
+        db.close(); // Closing database connection
+
+
+
     }
 
     /**

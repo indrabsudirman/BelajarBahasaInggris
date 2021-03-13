@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +15,7 @@ import id.indrasudirman.belajarbahasainggris.model.User;
 public class SQLiteHelper extends SQLiteOpenHelper {
 
     //Database Version
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 1;
 
     //Database Name
     private static final String DATABASE_NAME = "BelajarBahasaInggris.db";
@@ -28,15 +29,15 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     private static final String COLUMN_USER_MAIL = "user_email";
     private static final String COLUMN_PASSWORD_SALT = "salt";
     private static final String COLUMN_PASSWORD = "password";
-    private static final String PHOTO_PATH = "photo_path";
-    private static final String SCORE = "score";
+    private static final String COLUMN_PHOTO_PATH = "photo_path";
+    private static final String COLUMN_SCORE = "score";
 
 
     //Create Table SQL Query
     private String CREATE_USER_TABLE = "CREATE TABLE " + TABLE_USER + "(" + COLUMN_ID
             + " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_USER_NAME
             + " TEXT," + COLUMN_USER_MAIL + " TEXT," + COLUMN_PASSWORD_SALT
-            + " TEXT," + COLUMN_PASSWORD + " TEXT" + ")" ;
+            + " TEXT," + COLUMN_PASSWORD + " TEXT, " + COLUMN_PHOTO_PATH +" TEXT, "+ COLUMN_SCORE + " TEXT" + ")" ;
 
     //Drop Table SQL Query
     private String DROP_USER_TABLE = "DROP TABLE IF EXISTS " + TABLE_USER;
@@ -144,6 +145,23 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         //Updating row
         sqLiteDatabase.update(TABLE_USER, contentValues, COLUMN_ID + " = ?",
                 new String[]{String.valueOf(users.getId())});
+        sqLiteDatabase.close();
+    }
+
+    /**
+     * This method to update user photo record
+     *
+     * @ param user
+     */
+    public void updateUserPhoto (User users) {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COLUMN_PHOTO_PATH, users.getPhotoPath());
+
+        //Updating row
+        sqLiteDatabase.update(TABLE_USER, contentValues, COLUMN_USER_MAIL + " = ?",
+                new String[]{String.valueOf(users.getEmail())});
+        Log.d("TAG", "Email user in SQLiteHelper " + users.getEmail());
         sqLiteDatabase.close();
     }
 

@@ -7,10 +7,22 @@ public class User {
     private String email;
     private String salt;
     private String password;
+
+
+
+    private String photoPath;
     private int score;
 
     //Default constructor
     public User() {
+    }
+
+    public String getPhotoPath() {
+        return photoPath;
+    }
+
+    public void setPhotoPath(String photoPath) {
+        this.photoPath = photoPath;
     }
 
     public int getScore() {

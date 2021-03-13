@@ -41,7 +41,7 @@
         android:textSize="@dimen/profile_title" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/profile_desc"
+        android:id="@+id/profileEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/dimen_40dp"

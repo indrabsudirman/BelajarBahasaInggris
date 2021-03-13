@@ -47,6 +47,8 @@ import java.util.List;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import id.indrasudirman.belajarbahasainggris.model.User;
+import id.indrasudirman.belajarbahasainggris.sqlite.SQLiteHelper;
 import id.indrasudirman.belajarbahasainggris.utils.BottomSheetEditAccount;
 
 public class AccountActivity extends AppCompatActivity {
@@ -60,6 +62,10 @@ public class AccountActivity extends AppCompatActivity {
     private CircularImageView changeImage;
     private AppCompatTextView simplePastTense;
     private String pathImage;
+    private AppCompatTextView profileEmail;
+
+    private User user;
+    private SQLiteHelper sqLiteHelper;
 
 
     @Override
@@ -74,6 +80,10 @@ public class AccountActivity extends AppCompatActivity {
         imageViewUser = findViewById(R.id.imageViewUser);
         changeImage = findViewById(R.id.changeImage);
         simplePastTense = findViewById(R.id.simplePastTense);
+        profileEmail = findViewById(R.id.profileEmail);
+
+        sqLiteHelper = new SQLiteHelper(this);
+        user = new User();
 
         changeImage.setOnClickListener(view -> {
 
@@ -233,10 +243,19 @@ public class AccountActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
+
+            String s = this.pathImage;
+            Log.d(TAG, "User photo path in onActivityResult " + s); //null
+            String profileEmailS = (String) profileEmail.getText();
+            user.setEmail(profileEmailS);
+            Log.d(TAG, "Email user in onActivityResult " + user.getEmail());
+            sqLiteHelper.updateUserPhoto(user);
         }
     }
 
     private void saveImageToGallery(Bitmap bitmap) {
+        User user = new User();
+
         if (Build.VERSION.SDK_INT >= 29) {
             ContentValues values = contentValues();
             values.put(MediaStore.Images.Media.RELATIVE_PATH, "Pictures/" + getString(R.string.app_name));
@@ -273,6 +292,13 @@ public class AccountActivity extends AppCompatActivity {
             }
             this.pathImage = file.getAbsolutePath();
             Log.d(TAG, "path image now at : " + pathImage); //bisa tambahkan method lagi buat parameter pathImage
+
+            user.setPhotoPath(pathImage);
+            String photo = user.getPhotoPath();
+            Log.d(TAG, "path image now at setPhotoPath : " + photo);
+
+            String name = user.getName(); //Null
+            Log.d(TAG, "name now at getName : " + name);
         }
 
     }

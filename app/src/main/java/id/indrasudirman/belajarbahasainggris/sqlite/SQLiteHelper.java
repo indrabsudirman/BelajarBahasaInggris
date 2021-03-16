@@ -10,7 +10,6 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import id.indrasudirman.belajarbahasainggris.MainActivity;
 import id.indrasudirman.belajarbahasainggris.model.User;
 
 public class SQLiteHelper extends SQLiteOpenHelper {
@@ -156,18 +155,6 @@ public class SQLiteHelper extends SQLiteOpenHelper {
      *
      * @ param user
      */
-    public void updateUserPhoto (User users) {
-        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(COLUMN_PHOTO_PATH, users.getPhotoPath());
-
-        //Updating row
-        sqLiteDatabase.update(TABLE_USER, contentValues, COLUMN_USER_MAIL + " = ?",
-                new String[]{String.valueOf(users.getEmail())});
-        Log.d(TAG, "Email user in SQLiteHelper " + users.getEmail());
-        sqLiteDatabase.close();
-    }
-
     public void updateUserImage(String email, String photoPath) {
 
         int count = 0;
@@ -183,7 +170,44 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
         db.close(); // Closing database connection
 
+    }
 
+    public String imagePathAlready (String email) {
+        String imagePath = null;
+
+        String [] column = {COLUMN_PHOTO_PATH};
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+
+        //Selection criteria
+        String selection = COLUMN_USER_MAIL + " = ?";
+
+        //Selection argument
+        String [] selectionArgs = {email};
+
+        /**
+         * Query users table with condition
+         * This query function is used to fetch records from user table this function work like we use sql query
+         * SQL query equivalent to this query function is
+         * SELECT photo_path FROM Users WHERE user_email = 'indrabsudirman@gmail.com';
+         */
+
+        Cursor cursor = sqLiteDatabase.query(TABLE_USER, //Table name
+                column, //Column to return
+                selection, //Select base on
+                selectionArgs, //Select argument
+                null, //The value for the WHERE clause
+                null, //group the row
+                null //filter by row groups
+                );
+        if (cursor.moveToFirst()) {
+            User user = new User();
+            imagePath = cursor.getString(cursor.getColumnIndex(COLUMN_PHOTO_PATH));
+            user.setImageName(imagePath);
+            Log.d(TAG, "ImagePath ada di database, user.getImageName() adalah : " + user.getImageName());
+
+
+        }
+        return imagePath;
 
     }
 
@@ -232,10 +256,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         cursor.close();
         sqLiteDatabase.close();
 
-        if (cursorCount > 0) {
-            return true;
-        }
-        return false;
+        return cursorCount > 0;
     }
 
     /**

@@ -1,13 +1,5 @@
 package id.indrasudirman.belajarbahasainggris;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatImageView;
-import androidx.appcompat.widget.AppCompatTextView;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
-
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -25,7 +17,14 @@ import android.text.Html;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.appbar.AppBarLayout;
@@ -43,6 +42,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import butterknife.ButterKnife;
@@ -53,9 +54,8 @@ import id.indrasudirman.belajarbahasainggris.utils.BottomSheetEditAccount;
 
 public class AccountActivity extends AppCompatActivity {
 
-    private static final String TAG = MainActivity.class.getSimpleName();
     public static final int REQUEST_IMAGE = 100;
-
+    private static final String TAG = MainActivity.class.getSimpleName();
     private BottomNavigationView bottomNavigationView;
     private AppCompatImageView editAccount;
     private CircularImageView imageViewUser;
@@ -90,7 +90,7 @@ public class AccountActivity extends AppCompatActivity {
             changeImageClicked();
         });
 
-//        Uri uri = Intent.getIntent("path");
+        //Load image from database if exist, or load image default is not exist in database
         loadProfileDefault();
 
         // Clearing older images from cache directory
@@ -109,7 +109,7 @@ public class AccountActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.main_learn:
                         startActivity(new Intent(getApplicationContext()
-                                ,MainMenu.class));
+                                , MainMenu.class));
                         overridePendingTransition(0, 0);
                         return true;
                     case R.id.user_account:
@@ -135,8 +135,7 @@ public class AccountActivity extends AppCompatActivity {
         });
 
         //Set checklist green, is tense has passed
-        simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.ic_round_check_success,0);
-
+        simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
 
     }
 
@@ -149,9 +148,24 @@ public class AccountActivity extends AppCompatActivity {
     }
 
     private void loadProfileDefault() {
-        Glide.with(this).load(R.drawable.gl_pro)
-                .into(imageViewUser);
+        String profileEmailS = (String) profileEmail.getText();
+
+
+        if (sqLiteHelper.imagePathAlready(profileEmailS) != null) {
+            String filename = sqLiteHelper.imagePathAlready(profileEmailS);
+            Log.d(TAG, "Image name dari database, adalah : " + filename);
+
+            File file = new File(Environment.getExternalStorageDirectory().toString() + '/' + getString(R.string.app_name) + '/' + filename);
+            Uri imageUri = Uri.fromFile(file);
+
+            Glide.with(this).load(imageUri)
+                    .into(imageViewUser);
+        } else {
+            Glide.with(this).load(R.drawable.gl_pro)
+                    .into(imageViewUser);
+        }
         imageViewUser.setColorFilter(ContextCompat.getColor(this, android.R.color.transparent));
+
     }
 
     @OnClick({R.id.changeImage})
@@ -250,12 +264,12 @@ public class AccountActivity extends AppCompatActivity {
             user.setEmail(profileEmailS);
             Log.d(TAG, "Email user in onActivityResult " + user.getEmail());
             //Update image path to database
-            sqLiteHelper.updateUserImage(profileEmailS , s);
+            sqLiteHelper.updateUserImage(profileEmailS, s);
         }
     }
 
     private void saveImageToGallery(Bitmap bitmap) {
-        User user = new User();
+
 
         if (Build.VERSION.SDK_INT >= 29) {
             ContentValues values = contentValues();
@@ -278,11 +292,12 @@ public class AccountActivity extends AppCompatActivity {
                 directory.mkdirs();
             }
 
-            String fileName = "belajar_bahasa_inggris_image_profile" + ".png";
+            @SuppressLint("SimpleDateFormat")
+            String fileName = "profile" + new SimpleDateFormat("yyyyMMddHHmmss'.png'").format(new Date());
             File file = new File(directory, fileName);
 
             try {
-                saveImageToStream (bitmap, new FileOutputStream(file));
+                saveImageToStream(bitmap, new FileOutputStream(file));
                 ContentValues values = new ContentValues();
                 values.put(MediaStore.Images.Media.DATA, file.getAbsolutePath());
                 this.getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
@@ -291,12 +306,12 @@ public class AccountActivity extends AppCompatActivity {
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
-            this.pathImage = file.getAbsolutePath();
-            Log.d(TAG, "path image now at : " + pathImage); //bisa tambahkan method lagi buat parameter pathImage
+            this.pathImage = fileName;
+            Log.d(TAG, "Image name now at : " + fileName); //bisa tambahkan method lagi buat parameter pathImage
 
-            user.setPhotoPath(pathImage);
-            String photo = user.getPhotoPath();
-            Log.d(TAG, "path image now at setPhotoPath : " + photo);
+            user.setImageName(fileName);
+            String photo = user.getImageName();
+            Log.d(TAG, "Image name now at setImageName : " + photo);
 
             String name = user.getName(); //Null
             Log.d(TAG, "name now at getName : " + name);
@@ -305,7 +320,7 @@ public class AccountActivity extends AppCompatActivity {
 
     }
 
-    private ContentValues contentValues () {
+    private ContentValues contentValues() {
         ContentValues values = new ContentValues();
         values.put(MediaStore.Images.Media.MIME_TYPE, "image/png");
         values.put(MediaStore.Images.Media.DATE_ADDED, System.currentTimeMillis() / 1000);
@@ -315,7 +330,7 @@ public class AccountActivity extends AppCompatActivity {
         return values;
     }
 
-    private void saveImageToStream (Bitmap bitmap, OutputStream outputStream) {
+    private void saveImageToStream(Bitmap bitmap, OutputStream outputStream) {
         if (outputStream != null) {
             try {
                 bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
@@ -335,12 +350,12 @@ public class AccountActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(AccountActivity.this);
         builder.setTitle(getString(R.string.dialog_permission_title));
         builder.setMessage(getString(R.string.dialog_permission_message));
-        builder.setPositiveButton(getString(R.string.go_to_settings), (dialog, which) ->{
+        builder.setPositiveButton(getString(R.string.go_to_settings), (dialog, which) -> {
             dialog.cancel();
             openSettings();
         });
         builder.setNegativeButton(getString(android.R.string.cancel), (dialog, which) -> dialog.cancel());
-            builder.show();
+        builder.show();
 
     }
 
@@ -376,7 +391,7 @@ public class AccountActivity extends AppCompatActivity {
                     scrollRange = appBarLayout.getTotalScrollRange();
                 }
                 if (scrollRange + verticalOffset == 0) {
-                    collapsingToolbar.setTitle(Html.fromHtml("<font color='#FFFFFF'>"+" User details"+"</font>"));
+                    collapsingToolbar.setTitle(Html.fromHtml("<font color='#FFFFFF'>" + " User details" + "</font>"));
                     isShow = true;
                 } else if (isShow) {
                     collapsingToolbar.setTitle(" ");

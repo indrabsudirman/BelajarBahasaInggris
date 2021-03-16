@@ -10,19 +10,19 @@ public class User {
 
 
 
-    private String photoPath;
+    private String imageName;
     private int score;
 
     //Default constructor
     public User() {
     }
 
-    public String getPhotoPath() {
-        return photoPath;
+    public String getImageName() {
+        return imageName;
     }
 
-    public void setPhotoPath(String photoPath) {
-        this.photoPath = photoPath;
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
     }
 
     public int getScore() {

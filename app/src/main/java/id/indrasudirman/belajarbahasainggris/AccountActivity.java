@@ -272,9 +272,16 @@ public class AccountActivity extends AppCompatActivity {
 
 
         if (Build.VERSION.SDK_INT >= 29) {
+            Log.d(AccountActivity.class.getName(), "OS Android adalah " + Build.VERSION.SDK_INT);
+            @SuppressLint("SimpleDateFormat") String title = "profile" + new SimpleDateFormat("yyyyMMddHHmmss'.png'").format(new Date());
             ContentValues values = contentValues();
             values.put(MediaStore.Images.Media.RELATIVE_PATH, "Pictures/" + getString(R.string.app_name));
             values.put(MediaStore.Images.Media.IS_PENDING, true);
+            values.put(MediaStore.Images.Media.DISPLAY_NAME, title); //set name image
+            this.pathImage = title;
+            user.setImageName(title);
+            Log.d(AccountActivity.class.getName(), "Image profile name from getImageName is " + user.getImageName());
+            Log.d(AccountActivity.class.getName(), "Image profile name from title is " + title);
 
             Uri uri = this.getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
             if (uri != null) {
@@ -287,7 +294,9 @@ public class AccountActivity extends AppCompatActivity {
                 }
             }
         } else {
+            Log.d(AccountActivity.class.getName(), "OS Android adalah " + Build.VERSION.SDK_INT);
             File directory = new File(Environment.getExternalStorageDirectory().toString() + '/' + getString(R.string.app_name));
+//            File directory = new File(getBaseContext().getExternalFilesDir(n) + '/' + getString(R.string.app_name));
             if (!directory.exists()) {
                 directory.mkdirs();
             }

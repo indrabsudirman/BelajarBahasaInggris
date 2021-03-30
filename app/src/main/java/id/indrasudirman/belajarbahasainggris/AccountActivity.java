@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
@@ -62,10 +63,15 @@ public class AccountActivity extends AppCompatActivity {
     private CircularImageView changeImage;
     private AppCompatTextView simplePastTense;
     private String pathImage;
-    private AppCompatTextView profileEmail;
+    private AppCompatTextView profileEmail, profileUserName;
 
     private User user;
     private SQLiteHelper sqLiteHelper;
+
+    private SharedPreferences sharedPreferences;
+
+    private static final String SHARED_PREF_NAME = "sharedPrefLogin";
+    private static final String KEY_EMAIL = "email";
 
 
     @Override
@@ -75,15 +81,25 @@ public class AccountActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         //Initialize and assign variable
+        user = new User();
+        sqLiteHelper = new SQLiteHelper(this);
         bottomNavigationView = findViewById(R.id.bottomNav);
         editAccount = findViewById(R.id.editAccount);
         imageViewUser = findViewById(R.id.imageViewUser);
         changeImage = findViewById(R.id.changeImage);
         simplePastTense = findViewById(R.id.simplePastTense);
         profileEmail = findViewById(R.id.profileEmail);
+        profileUserName = findViewById(R.id.profileUserName);
 
-        sqLiteHelper = new SQLiteHelper(this);
-        user = new User();
+        sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
+        String userEmail = (sharedPreferences.getString(KEY_EMAIL, "").trim());
+
+        String userName = sqLiteHelper.getUserName(userEmail);
+        profileUserName.setText(userName);
+        profileEmail.setText(userEmail);
+
+
+
 
         changeImage.setOnClickListener(view -> {
 

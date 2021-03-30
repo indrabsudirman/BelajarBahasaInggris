@@ -37,6 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@string/font_family_medium"
+        android:gravity="center_horizontal"
         android:text="@string/profile_title"
         android:textColor="@android:color/white"
         android:textSize="@dimen/profile_title" />
@@ -74,17 +75,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@string/font_family_condensed"
-                android:text="Score"
                 android:gravity="center"
+                android:text="Score"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/meta_label" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 android:text="123"
                 android:textColor="@android:color/white"
-                android:gravity="center_horizontal"
                 android:textSize="@dimen/meta_count"
                 android:textStyle="bold" />
 

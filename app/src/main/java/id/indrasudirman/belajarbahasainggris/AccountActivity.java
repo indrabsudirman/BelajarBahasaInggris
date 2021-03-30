@@ -77,7 +77,7 @@ public class AccountActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_account_test);
+        setContentView(R.layout.activity_account);
         ButterKnife.bind(this);
 
         //Initialize and assign variable

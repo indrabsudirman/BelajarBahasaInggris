@@ -28,7 +28,7 @@
     <dimen name="english_count_padding_bottom">5dp</dimen>
     <dimen name="english_count">12dp</dimen>
 
-    <dimen name="toolbar_profile_width">120dp</dimen>
+    <dimen name="toolbar_profile_width">150dp</dimen>
     <dimen name="dimen_20dp">20dp</dimen>
     <dimen name="activity_padding">20dp</dimen>
     <dimen name="profile_title">23dp</dimen>

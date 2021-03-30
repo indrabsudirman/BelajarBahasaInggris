@@ -12,7 +12,7 @@ Aplikasi Android rencananya akan menggunakan :
 
 **Here's screenshot**
 
-![BelajarBahasaInggris Account](https://user-images.githubusercontent.com/36407161/112952908-344c3280-9167-11eb-82e1-9e025332c41e.jpg)
+[<img src="https://user-images.githubusercontent.com/36407161/112952908-344c3280-9167-11eb-82e1-9e025332c41e.jpg" width="50%">]
 
 
 **Click icon below, to see Preview Belajar Bahasa Inggris**

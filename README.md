@@ -10,10 +10,13 @@ Aplikasi Android rencananya akan menggunakan :
 3. Recycler View untuk display pilihan belajar.
 4. Drag and Drop untuk kuis.
 
-Preview 1 Belajar Bahasa Inggris 
+**Here's screenshot**
+
+![BelajarBahasaInggris Account](https://user-images.githubusercontent.com/36407161/112952908-344c3280-9167-11eb-82e1-9e025332c41e.jpg)
 
 
-https://user-images.githubusercontent.com/36407161/112951567-b176a800-9165-11eb-84f5-31b28a10ae74.mp4
+**Click icon below, to see Preview Belajar Bahasa Inggris**
 
 
-[<img src="https://drive.google.com/file/d/19EmErWxuNBIdqDwOcV6drpOj8_Xy0m8G/view?usp=sharing" width="50%">](https://youtu.be/F8lJ_d9vxPo)
+
+[<img src="https://user-images.githubusercontent.com/36407161/112952908-344c3280-9167-11eb-82e1-9e025332c41e.jpg" width="50%">](https://youtu.be/F8lJ_d9vxPo)

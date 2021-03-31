@@ -5,6 +5,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ContentValues;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
@@ -18,6 +19,7 @@ import android.text.Html;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -58,7 +60,7 @@ public class AccountActivity extends AppCompatActivity {
     public static final int REQUEST_IMAGE = 100;
     private static final String TAG = MainActivity.class.getSimpleName();
     private BottomNavigationView bottomNavigationView;
-    private AppCompatImageView editAccount;
+    private AppCompatImageView editAccount, logOutAccount;
     private CircularImageView imageViewUser;
     private CircularImageView changeImage;
     private AppCompatTextView simplePastTense;
@@ -87,6 +89,7 @@ public class AccountActivity extends AppCompatActivity {
         editAccount = findViewById(R.id.editAccount);
         imageViewUser = findViewById(R.id.imageViewUser);
         changeImage = findViewById(R.id.changeImage);
+        logOutAccount = findViewById(R.id.logOutAccount);
         simplePastTense = findViewById(R.id.simplePastTense);
         profileEmail = findViewById(R.id.profileEmail);
         profileUserName = findViewById(R.id.profileUserName);
@@ -150,9 +153,48 @@ public class AccountActivity extends AppCompatActivity {
 
         });
 
+        logOutAccount.setOnClickListener(view ->{
+            logOutConfirmation();
+        });
+
         //Set checklist green, is tense has passed
         simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
 
+    }
+
+    private void logOutConfirmation() {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(AccountActivity.this);
+        alertDialogBuilder
+                .setTitle("Yakin Keluar!")
+                .setIcon(R.mipmap.ic_question)
+                .setMessage("Anda yakin akan keluar akun ?")
+                .setCancelable(false)
+                .setPositiveButton("Batal keluar",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                Toast.makeText(getApplicationContext(), "Anda batal keluar", Toast.LENGTH_SHORT).show();
+
+                            }
+                        })
+
+                .setNegativeButton("Keluar",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                // Delete SharedPreferences save
+                                sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, 0);
+                                SharedPreferences.Editor editor = sharedPreferences.edit();
+                                editor.clear();
+                                editor.apply();
+                                startActivity(new Intent(getApplicationContext()
+                                        ,MainActivity.class));
+                                overridePendingTransition(0, 0);
+                            }
+                        });
+
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
     }
 
     private void loadProfile(String url) {

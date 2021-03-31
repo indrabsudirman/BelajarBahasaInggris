@@ -38,6 +38,20 @@
                     android:layout_gravity="right"
                     android:focusable="true" />
 
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/logOutAccount"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_logout_icon"
+                    android:rotation="180"
+                    android:layout_gravity="left"
+                    android:focusable="true" />
+
                 <include layout="@layout/layout_toolbar_profile" />
 
             </com.google.android.material.appbar.CollapsingToolbarLayout>

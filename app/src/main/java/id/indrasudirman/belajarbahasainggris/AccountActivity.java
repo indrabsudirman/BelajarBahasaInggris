@@ -171,11 +171,21 @@ public class AccountActivity extends AppCompatActivity {
             String filename = sqLiteHelper.imagePathAlready(profileEmailS);
             Log.d(TAG, "Image name dari database, adalah : " + filename);
 
-            File file = new File(Environment.getExternalStorageDirectory().toString() + '/' + getString(R.string.app_name) + '/' + filename);
-            Uri imageUri = Uri.fromFile(file);
+//            File file = new File(Environment.getExternalStorageDirectory().toString() + '/' + getString(R.string.app_name) + '/' + filename);
+            if (Build.VERSION.SDK_INT >= 29) {
+                File file = new File("/storage/emulated/0/" + Environment.DIRECTORY_PICTURES + File.separator + getString(R.string.app_name) + File.separator + filename);
+                Uri imageUri = Uri.fromFile(file);
 
-            Glide.with(this).load(imageUri)
-                    .into(imageViewUser);
+                Glide.with(this).load(imageUri)
+                        .into(imageViewUser);
+            } else {
+                File file = new File("/storage/emulated/0/" + getString(R.string.app_name) + File.separator + filename);
+                Uri imageUri = Uri.fromFile(file);
+
+                Glide.with(this).load(imageUri)
+                        .into(imageViewUser);
+            }
+
         } else {
             Glide.with(this).load(R.drawable.gl_pro)
                     .into(imageViewUser);

@@ -81,6 +81,7 @@
                 android:textSize="@dimen/meta_label" />
 
             <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/userScore"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"

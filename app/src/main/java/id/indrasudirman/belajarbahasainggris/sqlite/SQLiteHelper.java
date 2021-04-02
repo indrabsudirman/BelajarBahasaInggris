@@ -206,6 +206,40 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         return userName;
     }
 
+    public String getUserScore (String email) {
+        String userScore = null;
+
+        String [] column = {COLUMN_SCORE};
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+
+        //Selection criteria
+        String selection = COLUMN_USER_MAIL + " = ?";
+
+        //Selection argument
+        String [] selectionArgs = {email};
+
+        /**
+         * Query users table with condition
+         * This query function is used to fetch records from user table this function work like we use sql query
+         * SQL Query equivalent to this query function is
+         * SELECT user_score FROM Users WHERE user_email = 'indrabsudirman@gmail.com'
+         */
+
+        Cursor cursor = sqLiteDatabase.query(TABLE_USER, //Table User
+                column, //Column to return
+                selection, //Select base on
+                selectionArgs, //Select argument
+                null, // The value for the WHERE clause
+                null, //group the row
+                null //filter by row groups
+        );
+        if (cursor.moveToFirst()) {
+            userScore = cursor.getString(cursor.getColumnIndex(COLUMN_SCORE));
+        }
+
+        return userScore;
+    }
+
     public String imagePathAlready (String email) {
         String imagePath = null;
 

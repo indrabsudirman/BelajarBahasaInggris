@@ -65,7 +65,7 @@ public class AccountActivity extends AppCompatActivity {
     private CircularImageView changeImage;
     private AppCompatTextView simplePastTense;
     private String pathImage;
-    private AppCompatTextView profileEmail, profileUserName;
+    private AppCompatTextView profileEmail, profileUserName, userScore;
 
     private User user;
     private SQLiteHelper sqLiteHelper;
@@ -93,6 +93,7 @@ public class AccountActivity extends AppCompatActivity {
         simplePastTense = findViewById(R.id.simplePastTense);
         profileEmail = findViewById(R.id.profileEmail);
         profileUserName = findViewById(R.id.profileUserName);
+        userScore = findViewById(R.id.userScore);
 
         sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
         String userEmail = (sharedPreferences.getString(KEY_EMAIL, "").trim());
@@ -100,6 +101,15 @@ public class AccountActivity extends AppCompatActivity {
         String userName = sqLiteHelper.getUserName(userEmail);
         profileUserName.setText(userName);
         profileEmail.setText(userEmail);
+
+        //get User Score from Database
+        String userScoreDB = sqLiteHelper.getUserScore(userEmail);
+        if (userScoreDB != null) {
+            userScore.setText(userScoreDB);
+        } else {
+            userScore.setText("0");
+        }
+
 
 
 

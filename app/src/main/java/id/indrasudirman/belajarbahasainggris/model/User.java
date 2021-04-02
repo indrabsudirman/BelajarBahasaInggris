@@ -7,14 +7,20 @@ public class User {
     private String email;
     private String salt;
     private String password;
-
-
-
     private String imageName;
     private int score;
+    private String scoreDB;
 
     //Default constructor
     public User() {
+    }
+
+    public String getScoreDB() {
+        return scoreDB;
+    }
+
+    public void setScoreDB(String scoreDB) {
+        this.scoreDB = scoreDB;
     }
 
     public String getImageName() {

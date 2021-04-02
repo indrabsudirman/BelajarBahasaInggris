@@ -153,7 +153,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     /**
      * This method to update user photo record
      *
-     * @ param user
+     * @ param userEmail, photoPath
      */
     public void updateUserImage(String email, String photoPath) {
 
@@ -164,12 +164,32 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         // update Row
         count = db.update(TABLE_USER,values,COLUMN_USER_MAIL + "= '" + email + "'",null);
         if (count > 0) {
-            Log.d(TAG, "Database Updated");
+            Log.d(TAG, "Image database updated");
             Log.d(TAG, "Count is " + count);
         }
 
         db.close(); // Closing database connection
 
+    }
+
+    /**
+     * This method to update user score record
+     *
+     * @ param userEmail, userScore
+     */
+
+    public void updateUserScore (String email, String userScore) {
+
+        int count = 0;
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_SCORE, userScore);
+        //update row
+        count = sqLiteDatabase.update(TABLE_USER, values, COLUMN_USER_MAIL + "= '" + email + "'", null);
+        if (count > 0) {
+            Log.d(TAG, "Score database updated");
+            Log.d(TAG, "Count is " + count);
+        }
     }
 
     public String getUserName (String email) {

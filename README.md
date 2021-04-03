@@ -27,4 +27,3 @@ Aplikasi Android rencananya akan menggunakan :
 
 
 [<img src="https://user-images.githubusercontent.com/36407161/112955516-b5a4c480-9169-11eb-93bc-e7c77220a8b4.png" width="90%">](https://youtu.be/F8lJ_d9vxPo)
-[![Everything Is AWESOME](https://user-images.githubusercontent.com/36407161/112955516-b5a4c480-9169-11eb-93bc-e7c77220a8b4.png)](https://youtu.be/F8lJ_d9vxPo "Everything Is AWESOME")

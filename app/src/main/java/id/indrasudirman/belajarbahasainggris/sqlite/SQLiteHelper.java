@@ -74,6 +74,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         contentValues.put(COLUMN_USER_MAIL, users.getEmail());
         contentValues.put(COLUMN_PASSWORD_SALT, users.getSalt());
         contentValues.put(COLUMN_PASSWORD, users.getPassword());
+        contentValues.put(COLUMN_SCORE, "0");
 
         //Inserting row
         sqLiteDatabase.insert(TABLE_USER, null, contentValues);

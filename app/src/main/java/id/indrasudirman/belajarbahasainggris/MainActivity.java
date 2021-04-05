@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
                         }
 
                     } else {
-                        Snackbar.make(nestedScrollView, "Login failed, please register first", Snackbar.LENGTH_LONG).show();
+                        Snackbar.make(nestedScrollView, "Login failed, email not found", Snackbar.LENGTH_LONG).show();
                         username.setText("");
                         password.setText("");
                         allFieldValid = false;

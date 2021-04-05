@@ -104,11 +104,8 @@ public class AccountActivity extends AppCompatActivity {
 
         //get User Score from Database
         String userScoreDB = sqLiteHelper.getUserScore(userEmail);
-        if (userScoreDB != null) {
-            userScore.setText(userScoreDB);
-        } else {
-            userScore.setText("0");
-        }
+        userScore.setText(userScoreDB);
+
 
 
 

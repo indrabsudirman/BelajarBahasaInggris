@@ -2,6 +2,7 @@ package id.indrasudirman.belajarbahasainggris;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.Bundle;
@@ -29,6 +30,7 @@ import java.util.List;
 
 import id.indrasudirman.belajarbahasainggris.adapter.MainMenuAdapter;
 import id.indrasudirman.belajarbahasainggris.model.EnglishList;
+import id.indrasudirman.belajarbahasainggris.sqlite.SQLiteHelper;
 import id.indrasudirman.belajarbahasainggris.utils.RecyclerItemClickListener;
 
 public class MainMenu extends AppCompatActivity {
@@ -36,6 +38,13 @@ public class MainMenu extends AppCompatActivity {
     private RecyclerView recyclerView;
     private MainMenuAdapter adapter;
     private List<EnglishList> english;
+    private String scoreDatabase;
+
+    private SQLiteHelper sqLiteHelper;
+    private SharedPreferences sharedPreferences;
+
+    private static final String SHARED_PREF_NAME = "sharedPrefLogin";
+    private static final String KEY_EMAIL = "email";
 
 
     @Override
@@ -44,6 +53,9 @@ public class MainMenu extends AppCompatActivity {
         setContentView(R.layout.activity_main_menu);
         androidx.appcompat.widget.Toolbar toolbar = (androidx.appcompat.widget.Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        sqLiteHelper = new SQLiteHelper(this);
+        sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
 
 
         //Initialize and assign variable
@@ -90,66 +102,187 @@ public class MainMenu extends AppCompatActivity {
                     startActivity(new Intent(getApplicationContext()
                             ,SimplePastActivity.class));
                     overridePendingTransition(0, 0);
+
                 } if (position == 1) { //2
-                    startActivity(new Intent(getApplicationContext()
-                            ,SimplePresentActivity.class));
-                    overridePendingTransition(0, 0);
+                    scoreDatabase = sqLiteHelper.getUserScore(sharedPreferences.getString(KEY_EMAIL, "").trim());
+
+                        int score = Integer.parseInt(scoreDatabase);
+                        if (score >= position) {
+                            startActivity(new Intent(getApplicationContext()
+                                    ,SimplePresentActivity.class));
+                            overridePendingTransition(0, 0);
+                        } else {
+                            Toast.makeText(getApplicationContext(), "Anda harus menyelesaikan pembelajaran sebelumnya, score anda = " + score, Toast.LENGTH_SHORT).show();
+                        }
+
+
                 } if (position == 2) { //3
-                    startActivity(new Intent(getApplicationContext()
-                            ,SimpleFutureActivity.class));
-                    overridePendingTransition(0, 0);
-                } if (position == 3) { //4
-                    startActivity(new Intent(getApplicationContext()
-                            ,SimplePastFutureActivity.class));
-                    overridePendingTransition(0, 0);
-                } if (position == 4) { //5
-                    startActivity(new Intent(getApplicationContext()
-                            ,PastContinuousActivity.class));
-                    overridePendingTransition(0, 0);
-                } if (position == 5) { //6
-                    startActivity(new Intent(getApplicationContext()
-                            ,PresentContinuousActivity.class));
-                    overridePendingTransition(0, 0);
-                } if (position == 6) { //7
-                    startActivity(new Intent(getApplicationContext()
-                            ,FutureContinuousActivity.class));
-                    overridePendingTransition(0, 0);
-                } if (position == 7) { //8
-                    startActivity(new Intent(getApplicationContext()
-                            ,PastFutureContinuousActivity.class));
-                    overridePendingTransition(0, 0);
-                } if (position == 8) { //9
-                    startActivity(new Intent(getApplicationContext()
-                            ,PastPerfectActivity.class));
-                    overridePendingTransition(0, 0);
-                } if (position == 9) { //10
-                    startActivity(new Intent(getApplicationContext()
-                            ,PresentPerfectActivity.class));
-                    overridePendingTransition(0, 0);
-                } if (position == 10) { //11
-                    startActivity(new Intent(getApplicationContext()
-                            ,FuturePerfectActivity.class));
-                    overridePendingTransition(0, 0);
-                } if (position == 11) { //12
-                    startActivity(new Intent(getApplicationContext()
-                            ,PastFuturePerfectActivity.class));
-                    overridePendingTransition(0, 0);
-                } if (position == 12) { //13
-                    startActivity(new Intent(getApplicationContext()
-                            ,PastPerfectContinuousActivity.class));
-                    overridePendingTransition(0, 0);
-                } if (position == 13) { //14
-                    startActivity(new Intent(getApplicationContext()
-                            ,PresentPerfectContinuousActivity.class));
-                    overridePendingTransition(0, 0);
-                } if (position == 14) { //15
-                    startActivity(new Intent(getApplicationContext()
-                            ,FuturePerfectContinuousActivity.class));
-                    overridePendingTransition(0, 0);
-                } if (position == 15) { //16
-                    startActivity(new Intent(getApplicationContext()
-                            ,PastFuturePerfectContinuousActivity.class));
-                    overridePendingTransition(0, 0);
+                    scoreDatabase = sqLiteHelper.getUserScore(sharedPreferences.getString(KEY_EMAIL, "").trim());
+
+                        int score = Integer.parseInt(scoreDatabase);
+                        if (score >= position) {
+                            startActivity(new Intent(getApplicationContext()
+                                    ,SimpleFutureActivity.class));
+                            overridePendingTransition(0, 0);
+                        } else {
+                            Toast.makeText(getApplicationContext(), "Anda harus menyelesaikan pembelajaran sebelumnya, score anda = " + score, Toast.LENGTH_SHORT).show();
+                        }
+
+                } if (position == 3) { //4 SimplePastFutureActivity
+                    scoreDatabase = sqLiteHelper.getUserScore(sharedPreferences.getString(KEY_EMAIL, "").trim());
+
+                    int score = Integer.parseInt(scoreDatabase);
+                    if (score >= position) {
+                        startActivity(new Intent(getApplicationContext()
+                                ,SimplePastFutureActivity.class));
+                        overridePendingTransition(0, 0);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Anda harus menyelesaikan pembelajaran sebelumnya, score anda = " + score, Toast.LENGTH_SHORT).show();
+                    }
+
+                } if (position == 4) { //5 PastContinuousActivity
+                    scoreDatabase = sqLiteHelper.getUserScore(sharedPreferences.getString(KEY_EMAIL, "").trim());
+
+                    int score = Integer.parseInt(scoreDatabase);
+                    if (score >= position) {
+                        startActivity(new Intent(getApplicationContext()
+                                ,PastContinuousActivity.class));
+                        overridePendingTransition(0, 0);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Anda harus menyelesaikan pembelajaran sebelumnya, score anda = " + score, Toast.LENGTH_SHORT).show();
+                    }
+
+                } if (position == 5) { //6 PresentContinuousActivity
+                    scoreDatabase = sqLiteHelper.getUserScore(sharedPreferences.getString(KEY_EMAIL, "").trim());
+
+                    int score = Integer.parseInt(scoreDatabase);
+                    if (score >= position) {
+                        startActivity(new Intent(getApplicationContext()
+                                ,PresentContinuousActivity.class));
+                        overridePendingTransition(0, 0);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Anda harus menyelesaikan pembelajaran sebelumnya, score anda = " + score, Toast.LENGTH_SHORT).show();
+                    }
+
+                } if (position == 6) { //7 FutureContinuousActivity
+                    scoreDatabase = sqLiteHelper.getUserScore(sharedPreferences.getString(KEY_EMAIL, "").trim());
+
+                    int score = Integer.parseInt(scoreDatabase);
+                    if (score >= position) {
+                        startActivity(new Intent(getApplicationContext()
+                                ,FutureContinuousActivity.class));
+                        overridePendingTransition(0, 0);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Anda harus menyelesaikan pembelajaran sebelumnya, score anda = " + score, Toast.LENGTH_SHORT).show();
+                    }
+
+                } if (position == 7) { //8 PastFutureContinuousActivity
+                    scoreDatabase = sqLiteHelper.getUserScore(sharedPreferences.getString(KEY_EMAIL, "").trim());
+
+                    int score = Integer.parseInt(scoreDatabase);
+                    if (score >= position) {
+                        startActivity(new Intent(getApplicationContext()
+                                ,PastFutureContinuousActivity.class));
+                        overridePendingTransition(0, 0);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Anda harus menyelesaikan pembelajaran sebelumnya, score anda = " + score, Toast.LENGTH_SHORT).show();
+                    }
+
+                } if (position == 8) { //9 PastPerfectActivity
+                    scoreDatabase = sqLiteHelper.getUserScore(sharedPreferences.getString(KEY_EMAIL, "").trim());
+
+                    int score = Integer.parseInt(scoreDatabase);
+                    if (score >= position) {
+                        startActivity(new Intent(getApplicationContext()
+                                ,PastPerfectActivity.class));
+                        overridePendingTransition(0, 0);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Anda harus menyelesaikan pembelajaran sebelumnya, score anda = " + score, Toast.LENGTH_SHORT).show();
+                    }
+
+                } if (position == 9) { //10 PresentPerfectActivity
+                    scoreDatabase = sqLiteHelper.getUserScore(sharedPreferences.getString(KEY_EMAIL, "").trim());
+
+                    int score = Integer.parseInt(scoreDatabase);
+                    if (score >= position) {
+                        startActivity(new Intent(getApplicationContext()
+                                ,PresentPerfectActivity.class));
+                        overridePendingTransition(0, 0);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Anda harus menyelesaikan pembelajaran sebelumnya, score anda = " + score, Toast.LENGTH_SHORT).show();
+                    }
+
+                } if (position == 10) { //11 FuturePerfectActivity
+                    scoreDatabase = sqLiteHelper.getUserScore(sharedPreferences.getString(KEY_EMAIL, "").trim());
+
+                    int score = Integer.parseInt(scoreDatabase);
+                    if (score >= position) {
+                        startActivity(new Intent(getApplicationContext()
+                                ,FuturePerfectActivity.class));
+                        overridePendingTransition(0, 0);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Anda harus menyelesaikan pembelajaran sebelumnya, score anda = " + score, Toast.LENGTH_SHORT).show();
+                    }
+
+                } if (position == 11) { //12 PastFuturePerfectActivity
+                    scoreDatabase = sqLiteHelper.getUserScore(sharedPreferences.getString(KEY_EMAIL, "").trim());
+
+                    int score = Integer.parseInt(scoreDatabase);
+                    if (score >= position) {
+                        startActivity(new Intent(getApplicationContext()
+                                ,PastFuturePerfectActivity.class));
+                        overridePendingTransition(0, 0);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Anda harus menyelesaikan pembelajaran sebelumnya, score anda = " + score, Toast.LENGTH_SHORT).show();
+                    }
+
+                } if (position == 12) { //13 PastPerfectContinuousActivity
+                    scoreDatabase = sqLiteHelper.getUserScore(sharedPreferences.getString(KEY_EMAIL, "").trim());
+
+                    int score = Integer.parseInt(scoreDatabase);
+                    if (score >= position) {
+                        startActivity(new Intent(getApplicationContext()
+                                ,PastPerfectContinuousActivity.class));
+                        overridePendingTransition(0, 0);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Anda harus menyelesaikan pembelajaran sebelumnya, score anda = " + score, Toast.LENGTH_SHORT).show();
+                    }
+
+                } if (position == 13) { //14 PresentPerfectContinuousActivity
+                    scoreDatabase = sqLiteHelper.getUserScore(sharedPreferences.getString(KEY_EMAIL, "").trim());
+
+                    int score = Integer.parseInt(scoreDatabase);
+                    if (score >= position) {
+                        startActivity(new Intent(getApplicationContext()
+                                ,PresentPerfectContinuousActivity.class));
+                        overridePendingTransition(0, 0);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Anda harus menyelesaikan pembelajaran sebelumnya, score anda = " + score, Toast.LENGTH_SHORT).show();
+                    }
+
+                } if (position == 14) { //15 FuturePerfectContinuousActivity
+                    scoreDatabase = sqLiteHelper.getUserScore(sharedPreferences.getString(KEY_EMAIL, "").trim());
+
+                    int score = Integer.parseInt(scoreDatabase);
+                    if (score >= position) {
+                        startActivity(new Intent(getApplicationContext()
+                                ,FuturePerfectContinuousActivity.class));
+                        overridePendingTransition(0, 0);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Anda harus menyelesaikan pembelajaran sebelumnya, score anda = " + score, Toast.LENGTH_SHORT).show();
+                    }
+
+                } if (position == 15) { //16 PastFuturePerfectContinuousActivity
+                    scoreDatabase = sqLiteHelper.getUserScore(sharedPreferences.getString(KEY_EMAIL, "").trim());
+
+                    int score = Integer.parseInt(scoreDatabase);
+                    if (score >= position) {
+                        startActivity(new Intent(getApplicationContext()
+                                ,PastFuturePerfectContinuousActivity.class));
+                        overridePendingTransition(0, 0);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Anda harus menyelesaikan pembelajaran sebelumnya, score anda = " + score, Toast.LENGTH_SHORT).show();
+                    }
                 }
 
 

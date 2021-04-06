@@ -57,7 +57,6 @@ public class SignUp extends AppCompatActivity {
 
     private static final String SHARED_PREF_NAME = "sharedPrefLogin";
     private static final String KEY_EMAIL = "email";
-    private static final String KEY_PWD = "pwd";
 
     public SignUp() {
         //Default constructor

@@ -8,6 +8,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -31,6 +32,7 @@ import id.indrasudirman.belajarbahasainggris.adapter.FutureContinuousAdapter;
 import id.indrasudirman.belajarbahasainggris.adapter.PastContinuousAdapter;
 import id.indrasudirman.belajarbahasainggris.adapter.PastFutureContinuousAdapter;
 import id.indrasudirman.belajarbahasainggris.model.User;
+import id.indrasudirman.belajarbahasainggris.sqlite.SQLiteHelper;
 import id.indrasudirman.belajarbahasainggris.utils.PasswordMD5WithSalt;
 
 public class FutureContinuousActivity extends AppCompatActivity {
@@ -43,6 +45,13 @@ public class FutureContinuousActivity extends AppCompatActivity {
     private User user;
     private TabLayout tabLayout;
 
+    private SQLiteHelper sqLiteHelper;
+    private SharedPreferences sharedPreferences;
+
+    private static final String TAG = SimplePastActivity.class.getSimpleName();
+    private static final String SHARED_PREF_NAME = "sharedPrefLogin";
+    private static final String KEY_EMAIL = "email";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +61,9 @@ public class FutureContinuousActivity extends AppCompatActivity {
         viewPager2.setAdapter(new FutureContinuousAdapter(this));
         viewPager2.setUserInputEnabled(false);
 
+        sqLiteHelper = new SQLiteHelper(this);
         user = new User();
+        sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
 
         floatingActionButton = findViewById(R.id.fab);
         floatingActionButton.setBackgroundColor(Color.parseColor("#FF009650"));
@@ -565,7 +576,9 @@ public class FutureContinuousActivity extends AppCompatActivity {
                                 score = 4;
                                 user.setScore(score);
                                 score = user.getScore();
-                                System.out.println("Score : " + score);
+                                //Set Score to DB
+                                String userEmail = (sharedPreferences.getString(KEY_EMAIL, "").trim());
+                                sqLiteHelper.updateUserScore(userEmail, "7");
                                 startActivity(new Intent(getApplicationContext()
                                         ,MainMenu.class));
                                 overridePendingTransition(0, 0);

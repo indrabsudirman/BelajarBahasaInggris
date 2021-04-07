@@ -73,7 +73,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/newUserPasswordLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:hint="New password"

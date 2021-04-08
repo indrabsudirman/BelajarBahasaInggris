@@ -76,6 +76,7 @@ public class AccountActivity extends AppCompatActivity {
     private static final String KEY_EMAIL = "email";
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -149,6 +150,17 @@ public class AccountActivity extends AppCompatActivity {
         editAccount.setOnClickListener((View.OnClickListener) view -> {
             BottomSheetEditAccount bottomSheetEditAccount = new BottomSheetEditAccount();
             bottomSheetEditAccount.show(getSupportFragmentManager(), "TAG");
+            new BottomSheetEditAccount.SendDataInterface() {
+                @Override
+                public void userName(String userName) {
+                    profileUserName.setText(userName);
+                }
+
+                @Override
+                public void userEmail(String userEmail) {
+                    profileEmail.setText(userEmail);
+                }
+            };
         });
 
         //Default hide icon change image account
@@ -167,6 +179,11 @@ public class AccountActivity extends AppCompatActivity {
         //Set checklist green, is tense has passed
         simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
 
+    }
+
+    public void updateUserSuccessful(String userNameNew, String userEmailNew) {
+        profileUserName.setText(userNameNew);
+        profileEmail.setText(userEmailNew);
     }
 
     private void logOutConfirmation() {
@@ -484,4 +501,5 @@ public class AccountActivity extends AppCompatActivity {
             }
         });
     }
+
 }

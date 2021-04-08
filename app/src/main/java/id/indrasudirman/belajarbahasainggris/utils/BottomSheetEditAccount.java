@@ -3,6 +3,7 @@ package id.indrasudirman.belajarbahasainggris.utils;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,6 +24,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.Objects;
 
+import id.indrasudirman.belajarbahasainggris.AccountActivity;
 import id.indrasudirman.belajarbahasainggris.R;
 import id.indrasudirman.belajarbahasainggris.model.User;
 import id.indrasudirman.belajarbahasainggris.sqlite.SQLiteHelper;
@@ -57,6 +59,10 @@ public class BottomSheetEditAccount extends BottomSheetDialogFragment {
     private static final String SHARED_PREF_NAME = "sharedPrefLogin";
     private static final String KEY_EMAIL = "email";
 
+    private static final String TAG = BottomSheetDialogFragment.class.getSimpleName();
+
+    private SendDataInterface mSendDataInterface;;
+
     public BottomSheetEditAccount() {
     }
 
@@ -80,6 +86,7 @@ public class BottomSheetEditAccount extends BottomSheetDialogFragment {
         sqLiteHelper = new SQLiteHelper(getActivity());
         user = new User();
 
+
         getDetailAccountFromDatabase();
 
         saveEditUserAccount.setOnClickListener( view1 -> {
@@ -99,46 +106,48 @@ public class BottomSheetEditAccount extends BottomSheetDialogFragment {
         newUserEmailEditText.setText(userEmail);
     }
 
+
     private void saveEditAccount() {
         try {
             checkFieldToEdit();
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
+
         if (allFieldValid) {
 
-            if (!sqLiteHelper.checkUser(newUserEmailEditText.getText().toString().trim())) {
-                user.setName(newUserNameEditText.getText().toString().trim());
-                user.setEmail(newUserEmailEditText.getText().toString().trim());
-                user.setSalt(getSaltPwdDB());
-                System.out.println("Salt mau input = " + getSaltPwdDB());
-                user.setPassword(getPwdSaltedDB());
-                System.out.println("Password dan Salt mau input = " + getPwdSaltedDB());
+            sharedPreferences = getActivity().getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
+            String userEmail = (sharedPreferences.getString(KEY_EMAIL, "").trim());
 
-                sqLiteHelper.addUser(user);
+            user.setName(newUserNameEditText.getText().toString().trim());
+            Log.d(TAG, "User name is " + user.getName());
+            user.setEmail(newUserEmailEditText.getText().toString().trim());
+            Log.d(TAG, "User email is " + user.getEmail());
+            user.setSalt(getSaltPwdDB());
+            Log.d(TAG, "User salt is " + user.getSalt());
+            user.setPassword(getPwdSaltedDB());
+            Log.d(TAG, "User password is " + user.getPassword());
+            sqLiteHelper.updateUser(userEmail, user.getName(), user.getEmail(), user.getSalt(), user.getPassword());
+            //Toast to show success message that record saved successfully
+            Toast.makeText(getActivity(), "Update Successful", Toast.LENGTH_SHORT).show();
 
-                newUserNameEditText.setText("");
-                newUserEmailEditText.setText("");
-                newUserPasswordEditText.setText("");
-                newUserPasswordConfirmEditText.setText("");
+            newUserNameEditText.setText("");
+            newUserEmailEditText.setText("");
+            newUserPasswordEditText.setText("");
+            newUserPasswordConfirmEditText.setText("");
 
+            mSendDataInterface.userName(user.getName());
+            mSendDataInterface.userName(user.getEmail());
 
+//            AccountActivity accountActivity = new AccountActivity();
+//            accountActivity.updateUserSuccessful(user.getName(), user.getEmail());
+//            ((AccountActivity.class).getA)
 
-                //Toast to show success message that record saved successfully
-                Toast.makeText(getActivity(), "Registration Successful", Toast.LENGTH_SHORT).show();
-//                Snackbar.make(nestedScrollView, "Registration Successful", Snackbar.LENGTH_LONG).show();
-                allFieldValid = false;
-
-            } else {
-                //Toast to show error message that record already exists
-                Toast.makeText(getActivity(), "Email Already Exists", Toast.LENGTH_SHORT).show();
-//                Snackbar.make(nestedScrollView, "Email Already Exists", Snackbar.LENGTH_LONG).show();
-                allFieldValid = false;
             }
+            allFieldValid = false;
             allFieldValid = false;
 
         }
-    }
 
     public void checkFieldToEdit() throws NoSuchAlgorithmException {
         int length = newUserPasswordEditText.length();
@@ -171,15 +180,11 @@ public class BottomSheetEditAccount extends BottomSheetDialogFragment {
                     newUserPasswordLayout.setError(null);
                     newUserPasswordConfirmLayout.setError(null);
                     byte [] salt = getSalt();
-                    System.out.println("Salt number "+Arrays.toString(salt));
                     String saltPwd = byteArrayToHexString(salt);
                     String pwdSalted = digest(passwordUserChar, salt);
-//                    System.out.println("Salt baru dibuat " + saltPwd);
-//                    System.out.println("Password dan Salt menjadi " + pwdSalted);
 
                     setSaltPwdDB(saltPwd);
                     setPwdSaltedDB(pwdSalted);
-//                    System.out.println("Salt dari setter menjadi " + getSaltPwdDB());
 
                     //Change char to 0
                     Arrays.fill(passwordUserChar, '0');
@@ -192,8 +197,6 @@ public class BottomSheetEditAccount extends BottomSheetDialogFragment {
                 newUserPasswordConfirmLayout.setError("Password tidak sama!");
             }
         }
-//        System.out.println("Pass sebelum dibuat 0 = "+ Arrays.toString(passwordUserChar));
-//        System.out.println("Pass "+ Arrays.toString(passwordUserChar));
 
 
 
@@ -227,5 +230,10 @@ public class BottomSheetEditAccount extends BottomSheetDialogFragment {
 
     public void setPwdSaltedDB(String pwdSaltedDB) {
         this.pwdSaltedDB = pwdSaltedDB;
+    }
+
+    public interface SendDataInterface{
+        void userName(String userName);
+        void userEmail(String userEmail);
     }
 }

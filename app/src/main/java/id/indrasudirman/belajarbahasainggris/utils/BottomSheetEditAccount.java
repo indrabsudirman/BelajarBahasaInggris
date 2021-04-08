@@ -165,11 +165,11 @@ public class BottomSheetEditAccount extends BottomSheetDialogFragment {
             newUserEmailLayout.setError(null);
             if (Arrays.equals(passwordUserChar, passwordUserCharConfirm)) {
                 if (passwordUserChar.length <= 5 && passwordUserCharConfirm.length <= 5) {
-                    newUserPasswordEditText.setError("Password terlalu pendek!");
-                    newUserPasswordConfirmEditText.setError("Password terlalu pendek!");
+                    newUserPasswordLayout.setError("Password terlalu pendek!");
+                    newUserPasswordConfirmLayout.setError("Password terlalu pendek!");
                 } else {
-                    newUserPasswordEditText.setError(null);
-                    newUserPasswordConfirmEditText.setError(null);
+                    newUserPasswordLayout.setError(null);
+                    newUserPasswordConfirmLayout.setError(null);
                     byte [] salt = getSalt();
                     System.out.println("Salt number "+Arrays.toString(salt));
                     String saltPwd = byteArrayToHexString(salt);
@@ -188,8 +188,8 @@ public class BottomSheetEditAccount extends BottomSheetDialogFragment {
 
                 }
             } else {
-                newUserPasswordEditText.setError("Password tidak sama!");
-                newUserPasswordConfirmEditText.setError("Password tidak sama!");
+                newUserPasswordLayout.setError("Password tidak sama!");
+                newUserPasswordConfirmLayout.setError("Password tidak sama!");
             }
         }
 //        System.out.println("Pass sebelum dibuat 0 = "+ Arrays.toString(passwordUserChar));

@@ -500,16 +500,9 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
     }
 
     @Override
-    public void userName(String userName) {
+    public void userName(String userName, String userEmail) {
         profileUserName.setText(userName);
-//        profileUserName.append(userName);
-//        profileUserName.setText(userName);
-
-    }
-
-    @Override
-    public void userEmail(String userEmail) {
         profileEmail.setText(userEmail);
-//        profileEmail.append(userEmail);
     }
+
 }

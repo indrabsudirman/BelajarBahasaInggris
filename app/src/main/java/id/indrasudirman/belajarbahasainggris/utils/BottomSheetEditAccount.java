@@ -137,8 +137,8 @@ public class BottomSheetEditAccount extends BottomSheetDialogFragment {
             newUserPasswordEditText.setText("");
             newUserPasswordConfirmEditText.setText("");
 
-            mSendDataInterface.userName(user.getName());
-            mSendDataInterface.userEmail(user.getEmail());
+            mSendDataInterface.userName(user.getName(), user.getEmail());
+//            mSendDataInterface.userEmail(user.getEmail());
 
             SharedPreferences.Editor editor = sharedPreferences.edit();
 
@@ -238,7 +238,7 @@ public class BottomSheetEditAccount extends BottomSheetDialogFragment {
     }
 
     public interface SendDataInterface{
-        void userName(String userName);
-        void userEmail(String userEmail);
+        void userName(String userName, String userEmail);
+//        void userEmail(String userEmail);
     }
 }

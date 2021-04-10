@@ -140,6 +140,8 @@ public class BottomSheetEditAccount extends BottomSheetDialogFragment {
             mSendDataInterface.userName(user.getName());
             mSendDataInterface.userEmail(user.getEmail());
 
+            sharedPreferences.edit().putString(KEY_EMAIL, user.getEmail()).apply();
+
 //            AccountActivity accountActivity = new AccountActivity();
 //            accountActivity.updateUserSuccessful(user.getName(), user.getEmail());
 //            ((AccountActivity.class).getA)

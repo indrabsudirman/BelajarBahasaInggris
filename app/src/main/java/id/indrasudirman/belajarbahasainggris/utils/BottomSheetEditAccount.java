@@ -61,9 +61,10 @@ public class BottomSheetEditAccount extends BottomSheetDialogFragment {
 
     private static final String TAG = BottomSheetDialogFragment.class.getSimpleName();
 
-    private SendDataInterface mSendDataInterface;;
+    private SendDataInterface mSendDataInterface;
 
-    public BottomSheetEditAccount() {
+    public BottomSheetEditAccount(SendDataInterface sendDataInterface) {
+        this.mSendDataInterface = sendDataInterface;
     }
 
     @Nullable
@@ -97,7 +98,7 @@ public class BottomSheetEditAccount extends BottomSheetDialogFragment {
         return view;
     }
 
-    private void getDetailAccountFromDatabase() {
+    public void getDetailAccountFromDatabase() {
         sharedPreferences = getActivity().getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
         String userEmail = (sharedPreferences.getString(KEY_EMAIL, "").trim());
 
@@ -137,7 +138,7 @@ public class BottomSheetEditAccount extends BottomSheetDialogFragment {
             newUserPasswordConfirmEditText.setText("");
 
             mSendDataInterface.userName(user.getName());
-            mSendDataInterface.userName(user.getEmail());
+            mSendDataInterface.userEmail(user.getEmail());
 
 //            AccountActivity accountActivity = new AccountActivity();
 //            accountActivity.updateUserSuccessful(user.getName(), user.getEmail());

@@ -55,7 +55,7 @@ import id.indrasudirman.belajarbahasainggris.model.User;
 import id.indrasudirman.belajarbahasainggris.sqlite.SQLiteHelper;
 import id.indrasudirman.belajarbahasainggris.utils.BottomSheetEditAccount;
 
-public class AccountActivity extends AppCompatActivity {
+public class AccountActivity extends AppCompatActivity implements BottomSheetEditAccount.SendDataInterface {
 
     public static final int REQUEST_IMAGE = 100;
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -82,6 +82,13 @@ public class AccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
         ButterKnife.bind(this);
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String value = extras.getString("key");
+            Log.d(TAG, "Image name dari database, adalah : " + value);
+            //The key argument here must match that used in the other activity
+        }
 
         //Initialize and assign variable
         user = new User();
@@ -148,19 +155,9 @@ public class AccountActivity extends AppCompatActivity {
 
         //Show bottom sheet, to edit user account
         editAccount.setOnClickListener((View.OnClickListener) view -> {
-            BottomSheetEditAccount bottomSheetEditAccount = new BottomSheetEditAccount();
+            BottomSheetEditAccount bottomSheetEditAccount = new BottomSheetEditAccount(AccountActivity.this);
             bottomSheetEditAccount.show(getSupportFragmentManager(), "TAG");
-            new BottomSheetEditAccount.SendDataInterface() {
-                @Override
-                public void userName(String userName) {
-                    profileUserName.setText(userName);
-                }
 
-                @Override
-                public void userEmail(String userEmail) {
-                    profileEmail.setText(userEmail);
-                }
-            };
         });
 
         //Default hide icon change image account
@@ -502,4 +499,17 @@ public class AccountActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void userName(String userName) {
+        profileUserName.setText(userName);
+//        profileUserName.append(userName);
+//        profileUserName.setText(userName);
+
+    }
+
+    @Override
+    public void userEmail(String userEmail) {
+        profileEmail.setText(userEmail);
+//        profileEmail.append(userEmail);
+    }
 }

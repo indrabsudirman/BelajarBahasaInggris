@@ -83,12 +83,7 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
         setContentView(R.layout.activity_account);
         ButterKnife.bind(this);
 
-        Bundle extras = getIntent().getExtras();
-        if (extras != null) {
-            String value = extras.getString("key");
-            Log.d(TAG, "Image name dari database, adalah : " + value);
-            //The key argument here must match that used in the other activity
-        }
+
 
         //Initialize and assign variable
         user = new User();

@@ -98,7 +98,7 @@ public class BottomSheetEditAccount extends BottomSheetDialogFragment {
         return view;
     }
 
-    public void getDetailAccountFromDatabase() {
+    private void getDetailAccountFromDatabase() {
         sharedPreferences = getActivity().getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
         String userEmail = (sharedPreferences.getString(KEY_EMAIL, "").trim());
 

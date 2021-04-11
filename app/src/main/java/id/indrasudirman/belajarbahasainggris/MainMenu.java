@@ -72,12 +72,8 @@ public class MainMenu extends AppCompatActivity {
                     case R.id.main_learn:
                         return true;
                     case R.id.user_account:
-                        String value="Hello world";
-                        Intent i = new Intent((getApplicationContext()), AccountActivity.class);
-                        i.putExtra("key",value);
-                        startActivity(i);
-//                        startActivity(new Intent(getApplicationContext()
-//                                , AccountActivity.class));
+                        startActivity(new Intent(getApplicationContext()
+                                , AccountActivity.class));
                         overridePendingTransition(0, 0);
                         return true;
                 }

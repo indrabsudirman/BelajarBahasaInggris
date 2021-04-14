@@ -173,11 +173,6 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
 
     }
 
-    public void updateUserSuccessful(String userNameNew, String userEmailNew) {
-        profileUserName.setText(userNameNew);
-        profileEmail.setText(userEmailNew);
-    }
-
     private void logOutConfirmation() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(AccountActivity.this);
         alertDialogBuilder
@@ -195,18 +190,15 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
                         })
 
                 .setNegativeButton("Keluar",
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                // Delete SharedPreferences save
-                                sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, 0);
-                                SharedPreferences.Editor editor = sharedPreferences.edit();
-                                editor.clear();
-                                editor.apply();
-                                startActivity(new Intent(getApplicationContext()
-                                        ,MainActivity.class));
-                                overridePendingTransition(0, 0);
-                            }
+                        (dialogInterface, i) -> {
+                            // Delete SharedPreferences save
+                            sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, 0);
+                            SharedPreferences.Editor editor = sharedPreferences.edit();
+                            editor.clear();
+                            editor.apply();
+                            startActivity(new Intent(getApplicationContext()
+                                    ,MainActivity.class));
+                            overridePendingTransition(0, 0);
                         });
 
         AlertDialog alertDialog = alertDialogBuilder.create();

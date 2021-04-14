@@ -245,7 +245,7 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
             }
 
         } else {
-            Glide.with(this).load(R.drawable.gl_pro)
+            Glide.with(this).load(R.drawable.ic_user_account)
                     .into(imageViewUser);
         }
         imageViewUser.setColorFilter(ContextCompat.getColor(this, android.R.color.transparent));

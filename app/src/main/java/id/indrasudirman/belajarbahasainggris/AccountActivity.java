@@ -63,7 +63,7 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
     private AppCompatImageView editAccount, logOutAccount;
     private CircularImageView imageViewUser;
     private CircularImageView changeImage;
-    private AppCompatTextView simplePastTense;
+    private AppCompatTextView simplePastTense, simplePresentTense, simpleFutureTense, simplePastFutureTense, pastContinuousTense, presentContinuousTense, futureContinuousTense, pastFutureContinuousTense, pastPerfectTense, presentPerfectTense, futurePerfectTense, pastFuturePerfectTense, pastPerfectContinuousTense, presentPerfectContinuousTense, futurePerfectContinuousTense, pastFuturePerfectContinuousTense;
     private String pathImage;
     private AppCompatTextView profileEmail, profileUserName, userScore;
 
@@ -94,6 +94,21 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
         changeImage = findViewById(R.id.changeImage);
         logOutAccount = findViewById(R.id.logOutAccount);
         simplePastTense = findViewById(R.id.simplePastTense);
+        simplePresentTense = findViewById(R.id.simplePresentTense);
+        simpleFutureTense = findViewById(R.id.simpleFutureTense);
+        simplePastFutureTense = findViewById(R.id.simplePastFutureTense);
+        pastContinuousTense = findViewById(R.id.pastContinuousTense);
+        presentContinuousTense = findViewById(R.id.presentContinuousTense);
+        futureContinuousTense = findViewById(R.id.futureContinuousTense);
+        pastFutureContinuousTense = findViewById(R.id.pastFutureContinuousTense);
+        pastPerfectTense = findViewById(R.id.pastPerfectTense);
+        presentPerfectTense = findViewById(R.id.presentPerfectTense);
+        futurePerfectTense = findViewById(R.id.futurePerfectTense);
+        pastFuturePerfectTense = findViewById(R.id.pastFuturePerfectTense);
+        pastPerfectContinuousTense = findViewById(R.id.pastPerfectContinuousTense);
+        presentPerfectContinuousTense = findViewById(R.id.presentPerfectContinuousTense);
+        futurePerfectContinuousTense = findViewById(R.id.futurePerfectContinuousTense);
+        pastFuturePerfectContinuousTense = findViewById(R.id.pastFuturePerfectContinuousTense);
         profileEmail = findViewById(R.id.profileEmail);
         profileUserName = findViewById(R.id.profileUserName);
         userScore = findViewById(R.id.userScore);

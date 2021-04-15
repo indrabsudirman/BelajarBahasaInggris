@@ -34,505 +34,505 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pembelajaran I"
-                        android:textSize="13sp"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/simplePastTense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Simple Past Tense"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="sans-serif-light"
                         android:drawableEnd="@drawable/ic_round_check_dark"
-                        android:drawablePadding="10dp"/>
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Simple Past Tense"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
-                        android:background="@color/solidCircle"/>
+                        android:background="@color/solidCircle" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pembelajaran II"
-                        android:textSize="13sp"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/simplePresentTense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Simple Present Tense"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="sans-serif-light"
                         android:drawableEnd="@drawable/ic_round_check_dark"
                         android:drawablePadding="10dp"
-                        android:id="@+id/simplePresentTense"/>
+                        android:fontFamily="sans-serif-light"
+                        android:text="Simple Present Tense"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
-                        android:background="@color/solidCircle"/>
+                        android:background="@color/solidCircle" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pembelajaran III"
-                        android:textSize="13sp"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/simpleFutureTense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Simple Future Tense"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="sans-serif-light"
                         android:drawableEnd="@drawable/ic_round_check_dark"
                         android:drawablePadding="10dp"
-                        android:id="@+id/simpleFutureTense"/>
+                        android:fontFamily="sans-serif-light"
+                        android:text="Simple Future Tense"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
-                        android:background="@color/solidCircle"/>
+                        android:background="@color/solidCircle" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pembelajaran IV"
-                        android:textSize="13sp"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/simplePastFutureTense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Simple Past Future Tense"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="sans-serif-light"
                         android:drawableEnd="@drawable/ic_round_check_dark"
                         android:drawablePadding="10dp"
-                        android:id="@+id/simplePastFutureTense"/>
+                        android:fontFamily="sans-serif-light"
+                        android:text="Simple Past Future Tense"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
-                        android:background="@color/solidCircle"/>
+                        android:background="@color/solidCircle" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pembelajaran V"
-                        android:textSize="13sp"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/pastContinuousTense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Past Continuous Tense"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="sans-serif-light"
                         android:drawableEnd="@drawable/ic_round_check_dark"
                         android:drawablePadding="10dp"
-                        android:id="@+id/pastContinuousTense"/>
+                        android:fontFamily="sans-serif-light"
+                        android:text="Past Continuous Tense"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
-                        android:background="@color/solidCircle"/>
+                        android:background="@color/solidCircle" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pembelajaran VI"
-                        android:textSize="13sp"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/presentContinuousTense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Present Continuous Tense"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="sans-serif-light"
                         android:drawableEnd="@drawable/ic_round_check_dark"
                         android:drawablePadding="10dp"
-                        android:id="@+id/presentContinuousTense"/>
+                        android:fontFamily="sans-serif-light"
+                        android:text="Present Continuous Tense"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
-                        android:background="@color/solidCircle"/>
+                        android:background="@color/solidCircle" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pembelajaran VII"
-                        android:textSize="13sp"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/futureContinuousTense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Future Continuous Tense"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="sans-serif-light"
                         android:drawableEnd="@drawable/ic_round_check_dark"
                         android:drawablePadding="10dp"
-                        android:id="@+id/futureContinuousTense"/>
+                        android:fontFamily="sans-serif-light"
+                        android:text="Future Continuous Tense"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
-                        android:background="@color/solidCircle"/>
+                        android:background="@color/solidCircle" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pembelajaran VIII"
-                        android:textSize="13sp"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/pastFutureContinuousTense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Past Future Continuous Tense"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="sans-serif-light"
                         android:drawableEnd="@drawable/ic_round_check_dark"
                         android:drawablePadding="10dp"
-                        android:id="@+id/pastFutureContinuousTense"/>
+                        android:fontFamily="sans-serif-light"
+                        android:text="Past Future Continuous Tense"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
-                        android:background="@color/solidCircle"/>
+                        android:background="@color/solidCircle" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pembelajaran IX"
-                        android:textSize="13sp"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/pastPerfectTense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Past Perfect Tense"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="sans-serif-light"
                         android:drawableEnd="@drawable/ic_round_check_dark"
                         android:drawablePadding="10dp"
-                        android:id="@+id/pastPerfectTense"/>
+                        android:fontFamily="sans-serif-light"
+                        android:text="Past Perfect Tense"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
-                        android:background="@color/solidCircle"/>
+                        android:background="@color/solidCircle" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pembelajaran X"
-                        android:textSize="13sp"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/presentPerfectTense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Present Perfect Tense"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="sans-serif-light"
                         android:drawableEnd="@drawable/ic_round_check_dark"
                         android:drawablePadding="10dp"
-                        android:id="@+id/presentPerfectTense"/>
+                        android:fontFamily="sans-serif-light"
+                        android:text="Present Perfect Tense"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
-                        android:background="@color/solidCircle"/>
+                        android:background="@color/solidCircle" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pembelajaran XI"
-                        android:textSize="13sp"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/futurePerfectTense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Future Perfect Tense"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="sans-serif-light"
                         android:drawableEnd="@drawable/ic_round_check_dark"
                         android:drawablePadding="10dp"
-                        android:id="@+id/futurePerfectTense"/>
+                        android:fontFamily="sans-serif-light"
+                        android:text="Future Perfect Tense"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
-                        android:background="@color/solidCircle"/>
+                        android:background="@color/solidCircle" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pembelajaran XII"
-                        android:textSize="13sp"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/pastFuturePerfectTense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Past Future Perfect Tense"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="sans-serif-light"
                         android:drawableEnd="@drawable/ic_round_check_dark"
                         android:drawablePadding="10dp"
-                        android:id="@+id/pastFuturePerfectTense"/>
+                        android:fontFamily="sans-serif-light"
+                        android:text="Past Future Perfect Tense"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
-                        android:background="@color/solidCircle"/>
+                        android:background="@color/solidCircle" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pembelajaran XIII"
-                        android:textSize="13sp"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/pastPerfectContinuousTense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Past Perfect Continuous Tense"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="sans-serif-light"
                         android:drawableEnd="@drawable/ic_round_check_dark"
                         android:drawablePadding="10dp"
-                        android:id="@+id/pastPerfectContinuousTense"/>
+                        android:fontFamily="sans-serif-light"
+                        android:text="Past Perfect Continuous Tense"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
-                        android:background="@color/solidCircle"/>
+                        android:background="@color/solidCircle" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pembelajaran XIV"
-                        android:textSize="13sp"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/presentPerfectContinuousTense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Present Perfect Continuous Tense"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="sans-serif-light"
                         android:drawableEnd="@drawable/ic_round_check_dark"
                         android:drawablePadding="10dp"
-                        android:id="@+id/presentPerfectContinuousTense"/>
+                        android:fontFamily="sans-serif-light"
+                        android:text="Present Perfect Continuous Tense"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
-                        android:background="@color/solidCircle"/>
+                        android:background="@color/solidCircle" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pembelajaran XV"
-                        android:textSize="13sp"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/futurePerfectContinuousTense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Future Perfect Continuous Tense"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="sans-serif-light"
                         android:drawableEnd="@drawable/ic_round_check_dark"
                         android:drawablePadding="10dp"
-                        android:id="@+id/futurePerfectContinuousTense"/>
+                        android:fontFamily="sans-serif-light"
+                        android:text="Future Perfect Continuous Tense"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
-                        android:background="@color/solidCircle"/>
+                        android:background="@color/solidCircle" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pembelajaran XVI"
-                        android:textSize="13sp"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/pastFuturePerfectContinuousTense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Past Future Perfect Continuous Tense"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="sans-serif-light"
                         android:drawableEnd="@drawable/ic_round_check_dark"
                         android:drawablePadding="10dp"
-                        android:id="@+id/pastFuturePerfectContinuousTense"/>
+                        android:fontFamily="sans-serif-light"
+                        android:text="Past Future Perfect Continuous Tense"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
-                        android:background="@color/solidCircle"/>
+                        android:background="@color/solidCircle" />
 
                 </LinearLayout>
 

@@ -65,6 +65,7 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
     private CircularImageView changeImage;
     private AppCompatTextView simplePastTense, simplePresentTense, simpleFutureTense, simplePastFutureTense, pastContinuousTense, presentContinuousTense, futureContinuousTense, pastFutureContinuousTense, pastPerfectTense, presentPerfectTense, futurePerfectTense, pastFuturePerfectTense, pastPerfectContinuousTense, presentPerfectContinuousTense, futurePerfectContinuousTense, pastFuturePerfectContinuousTense;
     private String pathImage;
+    String userEmail;
     private AppCompatTextView profileEmail, profileUserName, userScore;
 
     private User user;
@@ -114,7 +115,7 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
         userScore = findViewById(R.id.userScore);
 
         sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
-        String userEmail = (sharedPreferences.getString(KEY_EMAIL, "").trim());
+        userEmail = (sharedPreferences.getString(KEY_EMAIL, "").trim());
 
         String userName = sqLiteHelper.getUserName(userEmail);
         profileUserName.setText(userName);
@@ -184,7 +185,38 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
         });
 
         //Set checklist green, is tense has passed
-        simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
+
+        int score = Integer.parseInt(userScoreDB);
+        switch (score) {
+            case 1:
+                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
+                break;
+            case 2:
+                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
+                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
+                break;
+            case 3:
+                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
+                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
+                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
+                break;
+            case 4:
+                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
+                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
+                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
+                simplePastFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
+                break;
+            case 5:
+                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
+                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
+                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
+                simplePastFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
+                pastContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
+                break;
+
+        }
+
+
 
     }
 

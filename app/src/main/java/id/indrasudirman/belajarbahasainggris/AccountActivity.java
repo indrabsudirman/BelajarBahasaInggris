@@ -63,7 +63,8 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
     private AppCompatImageView editAccount, logOutAccount;
     private CircularImageView imageViewUser;
     private CircularImageView changeImage;
-    private AppCompatTextView simplePastTense, simplePresentTense, simpleFutureTense, simplePastFutureTense, pastContinuousTense, presentContinuousTense, futureContinuousTense, pastFutureContinuousTense, pastPerfectTense, presentPerfectTense, futurePerfectTense, pastFuturePerfectTense, pastPerfectContinuousTense, presentPerfectContinuousTense, futurePerfectContinuousTense, pastFuturePerfectContinuousTense;
+    private AppCompatTextView [] checkScore = new AppCompatTextView[16];
+    private String [] id;
     private String pathImage;
     String userEmail;
     private AppCompatTextView profileEmail, profileUserName, userScore;
@@ -94,26 +95,18 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
         imageViewUser = findViewById(R.id.imageViewUser);
         changeImage = findViewById(R.id.changeImage);
         logOutAccount = findViewById(R.id.logOutAccount);
-        simplePastTense = findViewById(R.id.simplePastTense); //1
-        simplePresentTense = findViewById(R.id.simplePresentTense); //2
-        simpleFutureTense = findViewById(R.id.simpleFutureTense); //3
-        simplePastFutureTense = findViewById(R.id.simplePastFutureTense); //4
-        pastContinuousTense = findViewById(R.id.pastContinuousTense); //5
-        presentContinuousTense = findViewById(R.id.presentContinuousTense); //6
-        futureContinuousTense = findViewById(R.id.futureContinuousTense); //7
-        pastFutureContinuousTense = findViewById(R.id.pastFutureContinuousTense); //8
-        pastPerfectTense = findViewById(R.id.pastPerfectTense); //9
-        presentPerfectTense = findViewById(R.id.presentPerfectTense); //10
-        futurePerfectTense = findViewById(R.id.futurePerfectTense); //11
-        pastFuturePerfectTense = findViewById(R.id.pastFuturePerfectTense); //12
-        pastPerfectContinuousTense = findViewById(R.id.pastPerfectContinuousTense); //13
-        presentPerfectContinuousTense = findViewById(R.id.presentPerfectContinuousTense); //14
-        futurePerfectContinuousTense = findViewById(R.id.futurePerfectContinuousTense); //15
-        pastFuturePerfectContinuousTense = findViewById(R.id.pastFuturePerfectContinuousTense); //16
         profileEmail = findViewById(R.id.profileEmail);
         profileUserName = findViewById(R.id.profileUserName);
         userScore = findViewById(R.id.userScore);
 
+        //Start initialize and assign variable for AppCompatTextView
+        int temp;
+        id = new String[] {"simplePastTense", "simplePresentTense", "simpleFutureTense", "simplePastFutureTense", "pastContinuousTense", "presentContinuousTense", "futureContinuousTense", "pastFutureContinuousTense", "pastPerfectTense", "presentPerfectTense", "futurePerfectTense", "pastFuturePerfectTense", "pastPerfectContinuousTense", "presentPerfectContinuousTense", "futurePerfectContinuousTense", "pastFuturePerfectContinuousTense"};
+
+        for (int i = 0; i < id.length; i++) {
+            temp = getResources().getIdentifier(id[i], "id", getOpPackageName());
+            checkScore[i] = findViewById(temp);
+        }
         sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
         userEmail = (sharedPreferences.getString(KEY_EMAIL, "").trim());
 
@@ -184,181 +177,13 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
             logOutConfirmation();
         });
 
-        //Set checklist green, is tense has passed
+        //Set checklist green, if tense has passed
 
         int score = Integer.parseInt(userScoreDB);
-        switch (score) {
-            case 1:
-                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                break;
-            case 2:
-                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                break;
-            case 3:
-                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                break;
-            case 4:
-                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePastFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                break;
-            case 5:
-                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePastFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                break;
-            case 6:
-                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePastFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                break;
-            case 7:
-                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePastFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                break;
-            case 8:
-                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePastFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastFutureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                break;
-            case 9:
-                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePastFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastFutureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastPerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                break;
-            case 10:
-                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePastFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastFutureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastPerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentPerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                break;
-            case 11:
-                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePastFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastFutureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastPerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentPerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futurePerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                break;
-            case 12:
-                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePastFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastFutureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastPerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentPerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futurePerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastFuturePerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                break;
-            case 13:
-                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePastFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastFutureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastPerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentPerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futurePerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastFuturePerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastPerfectContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                break;
-            case 14:
-                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePastFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastFutureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastPerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentPerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futurePerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastFuturePerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastPerfectContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentPerfectContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                break;
-            case 15:
-                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePastFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastFutureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastPerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentPerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futurePerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastFuturePerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastPerfectContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentPerfectContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futurePerfectContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                break;
-            case 16:
-                simplePastTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePresentTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simpleFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                simplePastFutureTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastFutureContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastPerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentPerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futurePerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastFuturePerfectTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastPerfectContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                presentPerfectContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                futurePerfectContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                pastFuturePerfectContinuousTense.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
-                break;
 
+        for (int i = 0; i < score; i++) {
+            checkScore[i].setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_round_check_success, 0);
         }
-
 
     }
 

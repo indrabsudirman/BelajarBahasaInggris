@@ -130,24 +130,18 @@ public class SignUp extends AppCompatActivity {
                         textInputEditTextPassword.setText("");
                         textInputEditTextPasswordConfirm.setText("");
 
-
-
                         //Snack Bar to show success message that record saved successfully
-                        Snackbar.make(nestedScrollView, "Registration Successful", Snackbar.LENGTH_LONG).show();
-                        allFieldValid = false;
+                        Snackbar.make(nestedScrollView, "Registration Successful, please login", Snackbar.LENGTH_LONG).show();
 
                     } else {
                         //Snack Bar to show error message that record already exists
                         Snackbar.make(nestedScrollView, "Email Already Exists", Snackbar.LENGTH_LONG).show();
-                        allFieldValid = false;
                     }
+                    allFieldValid = false;
                     allFieldValid = false;
 
                 }
 
-
-//                userNameHolder = userName;
-//                passwordOneHolder = Olah dulu MD5.
 
             }
         });
@@ -206,7 +200,6 @@ public class SignUp extends AppCompatActivity {
 
                     setSaltPwdDB(saltPwd);
                     setPwdSaltedDB(pwdSalted);
-//                    System.out.println("Salt dari setter menjadi " + getSaltPwdDB());
 
                     //Change char to 0
                     Arrays.fill(passwordUserChar, '0');
@@ -221,8 +214,6 @@ public class SignUp extends AppCompatActivity {
         }
 //        System.out.println("Pass sebelum dibuat 0 = "+ Arrays.toString(passwordUserChar));
 //        System.out.println("Pass "+ Arrays.toString(passwordUserChar));
-
-
     }
 
     private boolean validateUserName() {

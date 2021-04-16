@@ -59,32 +59,26 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
 
     public static final int REQUEST_IMAGE = 100;
     private static final String TAG = MainActivity.class.getSimpleName();
+    private static final String SHARED_PREF_NAME = "sharedPrefLogin";
+    private static final String KEY_EMAIL = "email";
+    String userEmail;
     private BottomNavigationView bottomNavigationView;
     private AppCompatImageView editAccount, logOutAccount;
     private CircularImageView imageViewUser;
     private CircularImageView changeImage;
-    private AppCompatTextView [] checkScore = new AppCompatTextView[16];
-    private String [] id;
+    private AppCompatTextView[] checkScore = new AppCompatTextView[16];
+    private String[] id;
     private String pathImage;
-    String userEmail;
     private AppCompatTextView profileEmail, profileUserName, userScore;
-
     private User user;
     private SQLiteHelper sqLiteHelper;
-
     private SharedPreferences sharedPreferences;
-
-    private static final String SHARED_PREF_NAME = "sharedPrefLogin";
-    private static final String KEY_EMAIL = "email";
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
         ButterKnife.bind(this);
-
 
 
         //Initialize and assign variable
@@ -101,7 +95,7 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
 
         //Start initialize and assign variable for AppCompatTextView
         int temp;
-        id = new String[] {"simplePastTense", "simplePresentTense", "simpleFutureTense", "simplePastFutureTense", "pastContinuousTense", "presentContinuousTense", "futureContinuousTense", "pastFutureContinuousTense", "pastPerfectTense", "presentPerfectTense", "futurePerfectTense", "pastFuturePerfectTense", "pastPerfectContinuousTense", "presentPerfectContinuousTense", "futurePerfectContinuousTense", "pastFuturePerfectContinuousTense"};
+        id = new String[]{"simplePastTense", "simplePresentTense", "simpleFutureTense", "simplePastFutureTense", "pastContinuousTense", "presentContinuousTense", "futureContinuousTense", "pastFutureContinuousTense", "pastPerfectTense", "presentPerfectTense", "futurePerfectTense", "pastFuturePerfectTense", "pastPerfectContinuousTense", "presentPerfectContinuousTense", "futurePerfectContinuousTense", "pastFuturePerfectContinuousTense"};
 
         for (int i = 0; i < id.length; i++) {
             temp = getResources().getIdentifier(id[i], "id", getOpPackageName());
@@ -117,11 +111,6 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
         //get User Score from Database
         String userScoreDB = sqLiteHelper.getUserScore(userEmail);
         userScore.setText(userScoreDB);
-
-
-
-
-
 
         changeImage.setOnClickListener(view -> {
 
@@ -173,12 +162,11 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
 
         });
 
-        logOutAccount.setOnClickListener(view ->{
+        logOutAccount.setOnClickListener(view -> {
             logOutConfirmation();
         });
 
         //Set checklist green, if tense has passed
-
         int score = Integer.parseInt(userScoreDB);
 
         for (int i = 0; i < score; i++) {
@@ -211,7 +199,7 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
                             editor.clear();
                             editor.apply();
                             startActivity(new Intent(getApplicationContext()
-                                    ,MainActivity.class));
+                                    , MainActivity.class));
                             overridePendingTransition(0, 0);
                         });
 

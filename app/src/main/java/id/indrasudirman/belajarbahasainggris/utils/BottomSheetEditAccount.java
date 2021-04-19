@@ -138,15 +138,11 @@ public class BottomSheetEditAccount extends BottomSheetDialogFragment {
             newUserPasswordConfirmEditText.setText("");
 
             mSendDataInterface.userName(user.getName(), user.getEmail());
-//            mSendDataInterface.userEmail(user.getEmail());
 
             SharedPreferences.Editor editor = sharedPreferences.edit();
 
             editor.putString(KEY_EMAIL, user.getEmail()).apply();
 
-//            AccountActivity accountActivity = new AccountActivity();
-//            accountActivity.updateUserSuccessful(user.getName(), user.getEmail());
-//            ((AccountActivity.class).getA)
 
             }
             allFieldValid = false;

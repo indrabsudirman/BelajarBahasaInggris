@@ -14,6 +14,7 @@ import android.text.SpannableString;
 import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -54,6 +55,8 @@ public class SignUp extends AppCompatActivity {
     private SQLiteHelper sqLiteHelper;
 
     private SharedPreferences sharedPreferences;
+
+    private static final String TAG = SignUp.class.getSimpleName();
 
     private static final String SHARED_PREF_NAME = "sharedPrefLogin";
     private static final String KEY_EMAIL = "email";
@@ -104,46 +107,43 @@ public class SignUp extends AppCompatActivity {
 
 
         //Adding Sign Up click listener
-        signUpButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        signUpButton.setOnClickListener(view -> {
 
-                try {
-                    checkFieldSignUp();
-                } catch (NoSuchAlgorithmException e) {
-                    e.printStackTrace();
+            try {
+                checkFieldSignUp();
+            } catch (NoSuchAlgorithmException e) {
+                e.printStackTrace();
+            }
+            if (allFieldValid) {
+
+                if (!sqLiteHelper.checkUser(textInputEditTextUsername.getText().toString().trim())) {
+                    user.setName(textInputEditTextName.getText().toString().trim());
+                    user.setEmail(textInputEditTextUsername.getText().toString().trim());
+                    user.setSalt(getSaltPwdDB());
+                    Log.d(TAG, "Salt mau input = " + getSaltPwdDB());
+                    user.setPassword(getPwdSaltedDB());
+                    Log.d(TAG, "Salt mau input = " + getPwdSaltedDB());
+
+                    sqLiteHelper.addUser(user);
+
+                    textInputEditTextName.setText("");
+                    textInputEditTextUsername.setText("");
+                    textInputEditTextPassword.setText("");
+                    textInputEditTextPasswordConfirm.setText("");
+
+                    //Snack Bar to show success message that record saved successfully
+                    Snackbar.make(nestedScrollView, "Registration Successful, please login", Snackbar.LENGTH_LONG).show();
+
+                } else {
+                    //Snack Bar to show error message that record already exists
+                    Snackbar.make(nestedScrollView, "Email Already Exists", Snackbar.LENGTH_LONG).show();
                 }
-                if (allFieldValid) {
-
-                    if (!sqLiteHelper.checkUser(textInputEditTextUsername.getText().toString().trim())) {
-                        user.setName(textInputEditTextName.getText().toString().trim());
-                        user.setEmail(textInputEditTextUsername.getText().toString().trim());
-                        user.setSalt(getSaltPwdDB());
-                        System.out.println("Salt mau input = " + getSaltPwdDB());
-                        user.setPassword(getPwdSaltedDB());
-                        System.out.println("Password dan Salt mau input = " + getPwdSaltedDB());
-
-                        sqLiteHelper.addUser(user);
-
-                        textInputEditTextName.setText("");
-                        textInputEditTextUsername.setText("");
-                        textInputEditTextPassword.setText("");
-                        textInputEditTextPasswordConfirm.setText("");
-
-                        //Snack Bar to show success message that record saved successfully
-                        Snackbar.make(nestedScrollView, "Registration Successful, please login", Snackbar.LENGTH_LONG).show();
-
-                    } else {
-                        //Snack Bar to show error message that record already exists
-                        Snackbar.make(nestedScrollView, "Email Already Exists", Snackbar.LENGTH_LONG).show();
-                    }
-                    allFieldValid = false;
-                    allFieldValid = false;
-
-                }
-
+                allFieldValid = false;
+                allFieldValid = false;
 
             }
+
+
         });
 
         SpannableString spannableString = new SpannableString("Already a member? Login!");
@@ -192,11 +192,9 @@ public class SignUp extends AppCompatActivity {
                     inputLayoutPassword.setError(null);
                     inputLayoutConfirmPassword.setError(null);
                     byte [] salt = getSalt();
-                    System.out.println("Salt number "+Arrays.toString(salt));
+                    Log.d(TAG, "Salt number "+Arrays.toString(salt));
                     String saltPwd = byteArrayToHexString(salt);
                     String pwdSalted = digest(passwordUserChar, salt);
-//                    System.out.println("Salt baru dibuat " + saltPwd);
-//                    System.out.println("Password dan Salt menjadi " + pwdSalted);
 
                     setSaltPwdDB(saltPwd);
                     setPwdSaltedDB(pwdSalted);
@@ -212,8 +210,7 @@ public class SignUp extends AppCompatActivity {
                 inputLayoutConfirmPassword.setError("Password tidak sama!");
             }
         }
-//        System.out.println("Pass sebelum dibuat 0 = "+ Arrays.toString(passwordUserChar));
-//        System.out.println("Pass "+ Arrays.toString(passwordUserChar));
+
     }
 
     private boolean validateUserName() {

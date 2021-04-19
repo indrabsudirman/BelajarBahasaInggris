@@ -55,7 +55,7 @@ public class MainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
-        androidx.appcompat.widget.Toolbar toolbar = (androidx.appcompat.widget.Toolbar) findViewById(R.id.toolbar);
+        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         sqLiteHelper = new SQLiteHelper(this);
@@ -69,20 +69,17 @@ public class MainMenu extends AppCompatActivity {
         bottomNavigationView.setSelectedItemId(R.id.main_learn);
 
         //Perform item selectListener
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.main_learn:
-                        return true;
-                    case R.id.user_account:
-                        startActivity(new Intent(getApplicationContext()
-                                , AccountActivity.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                }
-                return false;
+        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.main_learn:
+                    return true;
+                case R.id.user_account:
+                    startActivity(new Intent(getApplicationContext()
+                            , AccountActivity.class));
+                    overridePendingTransition(0, 0);
+                    return true;
             }
+            return false;
         });
 
         initCollapsingToolbar();

@@ -60,7 +60,7 @@ import id.indrasudirman.belajarbahasainggris.utils.BottomSheetEditAccount;
 public class AccountActivity extends AppCompatActivity implements BottomSheetEditAccount.SendDataInterface {
 
     public static final int REQUEST_IMAGE = 100;
-    private static final String TAG = MainActivity.class.getSimpleName();
+    private static final String TAG = AccountActivity.class.getSimpleName();
     private static final String SHARED_PREF_NAME = "sharedPrefLogin";
     private static final String KEY_EMAIL = "email";
     String userEmail;
@@ -133,21 +133,17 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
         bottomNavigationView.setSelectedItemId(R.id.user_account);
 
         //Perform item selectListener
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @SuppressLint("NonConstantResourceId")
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.main_learn:
-                        startActivity(new Intent(getApplicationContext()
-                                , MainMenu.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.user_account:
-                        return true;
-                }
-                return false;
+        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.main_learn:
+                    startActivity(new Intent(getApplicationContext()
+                            , MainMenu.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                case R.id.user_account:
+                    return true;
             }
+            return false;
         });
 
         //Show bottom sheet, to edit user account
@@ -202,13 +198,7 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
                 .setMessage("Anda yakin akan keluar akun ?")
                 .setCancelable(false)
                 .setPositiveButton("Batal keluar",
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                Toast.makeText(getApplicationContext(), "Anda batal keluar", Toast.LENGTH_SHORT).show();
-
-                            }
-                        })
+                        (dialogInterface, i) -> Toast.makeText(getApplicationContext(), "Anda batal keluar", Toast.LENGTH_SHORT).show())
 
                 .setNegativeButton("Keluar",
                         (dialogInterface, i) -> {
@@ -335,9 +325,7 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_IMAGE) {
-//            switch (requestCode) {
-//                case REQU
-//            }
+
             if (resultCode == Activity.RESULT_OK) {
                 Uri uri = data.getParcelableExtra("path");
                 try {
@@ -413,7 +401,7 @@ public class AccountActivity extends AppCompatActivity implements BottomSheetEdi
                 e.printStackTrace();
             }
             this.pathImage = fileName;
-            Log.d(TAG, "Image name now at : " + fileName); //bisa tambahkan method lagi buat parameter pathImage
+            Log.d(TAG, "Image name now at : " + fileName);
 
             user.setImageName(fileName);
             String photo = user.getImageName();

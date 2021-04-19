@@ -5,30 +5,20 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.text.Html;
-import android.util.Log;
-import android.view.MenuItem;
-import android.view.MotionEvent;
-import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.google.android.material.textfield.TextInputEditText;
@@ -88,94 +78,85 @@ public class SimplePastActivity extends AppCompatActivity {
         bottomNavigationView.setSelectedItemId(R.id.main_learn);
 
         //Perform item selectListener
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.main_learn:
-                        startActivity(new Intent(getApplicationContext()
-                                ,MainMenu.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.user_account:
-                        startActivity(new Intent(getApplicationContext()
-                                ,AccountActivity.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                }
-                return false;
+        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.main_learn:
+                    startActivity(new Intent(getApplicationContext()
+                            ,MainMenu.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                case R.id.user_account:
+                    startActivity(new Intent(getApplicationContext()
+                            ,AccountActivity.class));
+                    overridePendingTransition(0, 0);
+                    return true;
             }
+            return false;
         });
         //Perform TabLayout mediator for Viewpager2
         TabLayoutMediator tabLayoutMediator = new TabLayoutMediator(tabLayout,
-                viewPager2, new TabLayoutMediator.TabConfigurationStrategy() {
-            @Override
-            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
-                switch (position){
-                    case 0: {
-                        tab.setText("Hal 1");
-                        tab.setIcon(R.drawable.ic_baseline_menu_book_24);
-                        break;
-                    }
-                    case 1: {
-                        tab.setText("Hal 2");
-                        tab.setIcon(R.drawable.test);
-                        tab.view.setClickable(false);
-                        break;
-                    }
-                    case 2: {
-                        tab.setText("Hal 3");
-                        tab.setIcon(R.drawable.ic_baseline_menu_book_24);
-                        tab.view.setClickable(false);
-                        break;
-                    }
-                    case 3: {
-                        tab.setText("Hal 4");
-                        tab.setIcon(R.drawable.test);
-                        tab.view.setClickable(false);
-                        break;
-                    }
-                    case 4:{
-                        tab.setText("Hal 5");
-                        tab.setIcon(R.drawable.test);
-                        tab.view.setClickable(false);
-                        break;
-                    }
+                viewPager2, (tab, position) -> {
+                    switch (position){
+                        case 0: {
+                            tab.setText("Hal 1");
+                            tab.setIcon(R.drawable.ic_baseline_menu_book_24);
+                            break;
+                        }
+                        case 1: {
+                            tab.setText("Hal 2");
+                            tab.setIcon(R.drawable.test);
+                            tab.view.setClickable(false);
+                            break;
+                        }
+                        case 2: {
+                            tab.setText("Hal 3");
+                            tab.setIcon(R.drawable.ic_baseline_menu_book_24);
+                            tab.view.setClickable(false);
+                            break;
+                        }
+                        case 3: {
+                            tab.setText("Hal 4");
+                            tab.setIcon(R.drawable.test);
+                            tab.view.setClickable(false);
+                            break;
+                        }
+                        case 4:{
+                            tab.setText("Hal 5");
+                            tab.setIcon(R.drawable.test);
+                            tab.view.setClickable(false);
+                            break;
+                        }
 
 
-                }
+                    }
 
-            }
-        });
+                });
         tabLayoutMediator.attach();
 
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int position = tabLayout.getSelectedTabPosition();
-                switch (position) {
-                    case 0:
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        user.setScore(1);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
-                        break;
-                    case 1:
-                        checkAnswer(view);
-                        break;
-                    case 2:
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        user.setScore(3);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
-                        break;
-                    case 3:
-                        checkAnswerSimplePast4();
-                        break;
-                    case 4:
-                        checkAnswerSimplePast5();
-                        break;
-                }
+        floatingActionButton.setOnClickListener(view -> {
+            int position = tabLayout.getSelectedTabPosition();
+            switch (position) {
+                case 0:
+                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                    user.setScore(1);
+                    score = user.getScore();
+                    System.out.println("Score : " + score);
+                    break;
+                case 1:
+                    checkAnswer();
+                    break;
+                case 2:
+                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                    user.setScore(3);
+                    score = user.getScore();
+                    System.out.println("Score : " + score);
+                    break;
+                case 3:
+                    checkAnswerSimplePast4();
+                    break;
+                case 4:
+                    checkAnswerSimplePast5();
+                    break;
             }
         });
 
@@ -297,7 +278,7 @@ public class SimplePastActivity extends AppCompatActivity {
     }
 
     //Check simple past test 1
-    private void checkAnswer(View view) {
+    private void checkAnswer() {
         ArrayList<String> incorrectAnswerList = new ArrayList<>();
 
         int numberOfQuestionCorrect = 0;
@@ -373,12 +354,9 @@ public class SimplePastActivity extends AppCompatActivity {
                             })
 
                     .setNegativeButton("Keluar aplikasi",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    moveTaskToBack(true);
-                                    finish();
-                                }
+                            (dialogInterface, i) -> {
+                                moveTaskToBack(true);
+                                finish();
                             });
 
             AlertDialog alertDialog = alertDialogBuilder.create();
@@ -587,12 +565,9 @@ public class SimplePastActivity extends AppCompatActivity {
                             })
 
                     .setNegativeButton("Keluar aplikasi",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    moveTaskToBack(true);
-                                    finish();
-                                }
+                            (dialogInterface, i) -> {
+                                moveTaskToBack(true);
+                                finish();
                             });
 
             AlertDialog alertDialog = alertDialogBuilder.create();

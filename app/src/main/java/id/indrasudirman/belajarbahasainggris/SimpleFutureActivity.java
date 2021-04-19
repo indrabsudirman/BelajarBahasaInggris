@@ -77,105 +77,96 @@ public class SimpleFutureActivity extends AppCompatActivity {
         bottomNavigationView.setSelectedItemId(R.id.main_learn);
 
         //Perform item selectListener
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.main_learn:
-                        startActivity(new Intent(getApplicationContext()
-                                , MainMenu.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.user_account:
-                        startActivity(new Intent(getApplicationContext()
-                                , AccountActivity.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                }
-                return false;
+        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.main_learn:
+                    startActivity(new Intent(getApplicationContext()
+                            , MainMenu.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                case R.id.user_account:
+                    startActivity(new Intent(getApplicationContext()
+                            , AccountActivity.class));
+                    overridePendingTransition(0, 0);
+                    return true;
             }
+            return false;
         });
 
         //Perform TabLayout mediator for Viewpager2
         TabLayoutMediator tabLayoutMediator = new TabLayoutMediator(tabLayout,
-                viewPager2, new TabLayoutMediator.TabConfigurationStrategy() {
-            @Override
-            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
-                switch (position) {
-                    case 0: {
-                        tab.setText("Hal 1");
-                        tab.setIcon(R.drawable.ic_baseline_menu_book_24);
-                        break;
+                viewPager2, (tab, position) -> {
+                    switch (position) {
+                        case 0: {
+                            tab.setText("Hal 1");
+                            tab.setIcon(R.drawable.ic_baseline_menu_book_24);
+                            break;
+                        }
+                        case 1: {
+                            tab.setText("Hal 2");
+                            tab.setIcon(R.drawable.test);
+                            tab.view.setClickable(false);
+                            break;
+                        }
+                        case 2: {
+                            tab.setText("Hal 3");
+                            tab.setIcon(R.drawable.ic_baseline_menu_book_24);
+                            tab.view.setClickable(false);
+                            break;
+                        }
+                        case 3: {
+                            tab.setText("Hal 4");
+                            tab.setIcon(R.drawable.test);
+                            tab.view.setClickable(false);
+                            break;
+                        }
+                        case 4: {
+                            tab.setText("Hal 5");
+                            tab.setIcon(R.drawable.ic_baseline_menu_book_24);
+                            tab.view.setClickable(false);
+                            break;
+                        }
+                        case 5: {
+                            tab.setText("Hal 6");
+                            tab.setIcon(R.drawable.test);
+                            tab.view.setClickable(false);
+                            break;
+                        }
                     }
-                    case 1: {
-                        tab.setText("Hal 2");
-                        tab.setIcon(R.drawable.test);
-                        tab.view.setClickable(false);
-                        break;
-                    }
-                    case 2: {
-                        tab.setText("Hal 3");
-                        tab.setIcon(R.drawable.ic_baseline_menu_book_24);
-                        tab.view.setClickable(false);
-                        break;
-                    }
-                    case 3: {
-                        tab.setText("Hal 4");
-                        tab.setIcon(R.drawable.test);
-                        tab.view.setClickable(false);
-                        break;
-                    }
-                    case 4: {
-                        tab.setText("Hal 5");
-                        tab.setIcon(R.drawable.ic_baseline_menu_book_24);
-                        tab.view.setClickable(false);
-                        break;
-                    }
-                    case 5: {
-                        tab.setText("Hal 6");
-                        tab.setIcon(R.drawable.test);
-                        tab.view.setClickable(false);
-                        break;
-                    }
-                }
 
-            }
-        });
+                });
         tabLayoutMediator.attach();
 
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int position = tabLayout.getSelectedTabPosition();
-                switch (position) {
-                    case 0:
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        user.setScore(1);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
-                        break;
-                    case 1:
-                        checkAnswerSimpleFuture1();
-                        break;
-                    case 2:
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        user.setScore(3);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
-                        break;
-                    case 3:
-                        checkAnswerSimpleFuture2();
-                        break;
-                    case 4:
-                        viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-                        user.setScore(5);
-                        score = user.getScore();
-                        System.out.println("Score : " + score);
-                        break;
-                    case 5:
-                        checkAnswerSimpleFuture3();
-                        break;
-                }
+        floatingActionButton.setOnClickListener(view -> {
+            int position = tabLayout.getSelectedTabPosition();
+            switch (position) {
+                case 0:
+                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                    user.setScore(1);
+                    score = user.getScore();
+                    System.out.println("Score : " + score);
+                    break;
+                case 1:
+                    checkAnswerSimpleFuture1();
+                    break;
+                case 2:
+                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                    user.setScore(3);
+                    score = user.getScore();
+                    System.out.println("Score : " + score);
+                    break;
+                case 3:
+                    checkAnswerSimpleFuture2();
+                    break;
+                case 4:
+                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                    user.setScore(5);
+                    score = user.getScore();
+                    System.out.println("Score : " + score);
+                    break;
+                case 5:
+                    checkAnswerSimpleFuture3();
+                    break;
             }
         });
 
@@ -313,17 +304,14 @@ public class SimpleFutureActivity extends AppCompatActivity {
                     .setMessage("Anda berhasil, nilai Anda : " + numberOfQuestionCorrect + "/4\nIni Sempurna. Anda dapat melanjutkan ke pelajaran berikutnya.")
                     .setCancelable(false)
                     .setPositiveButton("Halaman berikutnya",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    //Set Score user to 1
-                                    score = 2;
-                                    user.setScore(score);
-                                    score = user.getScore();
-                                    System.out.println("Score : " + score);
-                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                            (dialogInterface, i) -> {
+                                //Set Score user to 1
+                                score = 2;
+                                user.setScore(score);
+                                score = user.getScore();
+                                System.out.println("Score : " + score);
+                                viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
 
-                                }
                             });
 
             AlertDialog alertDialog = alertDialogBuilder.create();
@@ -345,12 +333,9 @@ public class SimpleFutureActivity extends AppCompatActivity {
                             })
 
                     .setNegativeButton("Keluar aplikasi",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    moveTaskToBack(true);
-                                    finish();
-                                }
+                            (dialogInterface, i) -> {
+                                moveTaskToBack(true);
+                                finish();
                             });
 
             AlertDialog alertDialog = alertDialogBuilder.create();
@@ -461,17 +446,14 @@ public class SimpleFutureActivity extends AppCompatActivity {
                     .setMessage("Anda berhasil, nilai Anda : " + numberOfQuestionCorrect + "/7\nIni Sempurna. Anda dapat melanjutkan ke pelajaran berikutnya.")
                     .setCancelable(false)
                     .setPositiveButton("Halaman berikutnya",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    //Set Score user to 1
-                                    score = 4;
-                                    user.setScore(score);
-                                    score = user.getScore();
-                                    System.out.println("Score : " + score);
-                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
+                            (dialogInterface, i) -> {
+                                //Set Score user to 1
+                                score = 4;
+                                user.setScore(score);
+                                score = user.getScore();
+                                System.out.println("Score : " + score);
+                                viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
 
-                                }
                             });
 
             AlertDialog alertDialog = alertDialogBuilder.create();
@@ -484,21 +466,12 @@ public class SimpleFutureActivity extends AppCompatActivity {
                     .setMessage("Anda gagal, Nilai Anda adalah : " + numberOfQuestionCorrect + "/7\nAnda belum dapat melanjutkan pelajaran berikutnya.\n\n" + "Perbaiki jawaban Anda : \n\n" + sb.toString())
                     .setCancelable(false)
                     .setPositiveButton("Mulai test lagi",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem());
-
-                                }
-                            })
+                            (dialogInterface, i) -> viewPager2.setCurrentItem(viewPager2.getCurrentItem()))
 
                     .setNegativeButton("Keluar aplikasi",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    moveTaskToBack(true);
-                                    finish();
-                                }
+                            (dialogInterface, i) -> {
+                                moveTaskToBack(true);
+                                finish();
                             });
 
             AlertDialog alertDialog = alertDialogBuilder.create();
@@ -651,20 +624,17 @@ public class SimpleFutureActivity extends AppCompatActivity {
                     .setMessage("Anda berhasil, nilai Anda : " + numberOfQuestionCorrect + "/9\nIni Sempurna. Anda dapat melanjutkan ke pelajaran berikutnya Simple Past Future Tense.")
                     .setCancelable(false)
                     .setPositiveButton("Simple Past Future Tense",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    //Set Score user to 1
-                                    score = 4;
-                                    user.setScore(score);
-                                    score = user.getScore();
-                                    //Set Score to DB
-                                    String userEmail = (sharedPreferences.getString(KEY_EMAIL, "").trim());
-                                    sqLiteHelper.updateUserScore(userEmail, "3");
-                                    startActivity(new Intent(getApplicationContext()
-                                            ,MainMenu.class));
-                                    overridePendingTransition(0, 0);
-                                }
+                            (dialogInterface, i) -> {
+                                //Set Score user to 1
+                                score = 4;
+                                user.setScore(score);
+                                score = user.getScore();
+                                //Set Score to DB
+                                String userEmail = (sharedPreferences.getString(KEY_EMAIL, "").trim());
+                                sqLiteHelper.updateUserScore(userEmail, "3");
+                                startActivity(new Intent(getApplicationContext()
+                                        ,MainMenu.class));
+                                overridePendingTransition(0, 0);
                             });
 
             AlertDialog alertDialog = alertDialogBuilder.create();
@@ -677,21 +647,12 @@ public class SimpleFutureActivity extends AppCompatActivity {
                     .setMessage("Anda gagal, Nilai Anda adalah : " + numberOfQuestionCorrect + "/9\nAnda belum dapat melanjutkan pelajaran berikutnya.\n\n" + "Perbaiki jawaban Anda : \n\n" + sb.toString())
                     .setCancelable(false)
                     .setPositiveButton("Mulai test lagi",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    viewPager2.setCurrentItem(viewPager2.getCurrentItem());
-
-                                }
-                            })
+                            (dialogInterface, i) -> viewPager2.setCurrentItem(viewPager2.getCurrentItem()))
 
                     .setNegativeButton("Keluar aplikasi",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    moveTaskToBack(true);
-                                    finish();
-                                }
+                            (dialogInterface, i) -> {
+                                moveTaskToBack(true);
+                                finish();
                             });
 
             AlertDialog alertDialog = alertDialogBuilder.create();

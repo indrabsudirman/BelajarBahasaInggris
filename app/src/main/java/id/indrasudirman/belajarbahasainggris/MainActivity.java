@@ -80,66 +80,63 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Adding Login click listener
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //Call method to check all field valid
-                checkFieldLogin();
-                length = password.length();
-                pwd = new char[length];
-                Objects.requireNonNull(password.getText()).getChars(0, length, pwd, 0);
-                System.out.println("Pass user sebelum dibuat 0 " + Arrays.toString(pwd));
-                if (allFieldValid) {
+        loginButton.setOnClickListener(view -> {
+            //Call method to check all field valid
+            checkFieldLogin();
+            length = password.length();
+            pwd = new char[length];
+            Objects.requireNonNull(password.getText()).getChars(0, length, pwd, 0);
+            System.out.println("Pass user sebelum dibuat 0 " + Arrays.toString(pwd));
+            if (allFieldValid) {
 
-                    //Get salt from database
-                    String salt = sqLiteHelper.getSalt(username.getText().toString().trim());
-                    if (salt != null) {
-                        //convert salt to byte
-                        byte[] saltByte = hexStringToByteArray(salt);
-                        System.out.println("Salt number dari db "+Arrays.toString(saltByte));
-                        try {
+                //Get salt from database
+                String salt = sqLiteHelper.getSalt(username.getText().toString().trim());
+                if (salt != null) {
+                    //convert salt to byte
+                    byte[] saltByte = hexStringToByteArray(salt);
+                    System.out.println("Salt number dari db "+Arrays.toString(saltByte));
+                    try {
 
-                            pwdUsr = digest(pwd, saltByte);
-                            System.out.println("Pass User "+pwdUsr);
-                        } catch (NoSuchAlgorithmException e) {
-                            e.printStackTrace();
-                        }
-                        if (pwdUsr.equals(sqLiteHelper.getPwdSalt(username.getText().toString().trim()))) {
-                            //Save to sharedPreferences
-                            SharedPreferences.Editor editor = sharedPreferences.edit();
-                            editor.putString(KEY_EMAIL, username.getText().toString().trim());
-                            editor.apply();
-                            //Snackbar login berhasil
-                            Snackbar.make(nestedScrollView, "Login Berhasil", Snackbar.LENGTH_LONG).show();
-                            username.setText("");
-                            password.setText("");
-                            allFieldValid = false;
-                            Intent intent = new Intent(getApplicationContext(), MainMenu.class);
-                            startActivity(intent);
-                        } else {
-
-                            Snackbar.make(nestedScrollView, "Password salah", Snackbar.LENGTH_LONG).show();
-                        }
-
-                        if (salt == null) {
-                            Snackbar.make(nestedScrollView, "Login failed", Snackbar.LENGTH_LONG).show();
-                            username.setText("");
-                            password.setText("");
-                            allFieldValid = false;
-                        }
-
+                        pwdUsr = digest(pwd, saltByte);
+                        System.out.println("Pass User "+pwdUsr);
+                    } catch (NoSuchAlgorithmException e) {
+                        e.printStackTrace();
+                    }
+                    if (pwdUsr.equals(sqLiteHelper.getPwdSalt(username.getText().toString().trim()))) {
+                        //Save to sharedPreferences
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putString(KEY_EMAIL, username.getText().toString().trim());
+                        editor.apply();
+                        //Snackbar login berhasil
+                        Snackbar.make(nestedScrollView, "Login Berhasil", Snackbar.LENGTH_LONG).show();
+                        username.setText("");
+                        password.setText("");
+                        allFieldValid = false;
+                        Intent intent = new Intent(getApplicationContext(), MainMenu.class);
+                        startActivity(intent);
                     } else {
-                        Snackbar.make(nestedScrollView, "Login failed, email not found", Snackbar.LENGTH_LONG).show();
+
+                        Snackbar.make(nestedScrollView, "Password salah", Snackbar.LENGTH_LONG).show();
+                    }
+
+                    if (salt == null) {
+                        Snackbar.make(nestedScrollView, "Login failed", Snackbar.LENGTH_LONG).show();
                         username.setText("");
                         password.setText("");
                         allFieldValid = false;
                     }
 
+                } else {
+                    Snackbar.make(nestedScrollView, "Login failed, email not found", Snackbar.LENGTH_LONG).show();
+                    username.setText("");
+                    password.setText("");
+                    allFieldValid = false;
                 }
-                Arrays.fill(pwd, '0');
-                System.out.println("Pass setelah dibuat 0 " + Arrays.toString(pwd));
 
             }
+            Arrays.fill(pwd, '0');
+            System.out.println("Pass setelah dibuat 0 " + Arrays.toString(pwd));
+
         });
 
         SpannableString spannableString = new SpannableString("Don't have account! Register here!");

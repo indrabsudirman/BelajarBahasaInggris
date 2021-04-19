@@ -10,7 +10,12 @@ import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
+import id.indrasudirman.belajarbahasainggris.AccountActivity;
+
 public class PasswordMD5WithSalt {
+
+    private static final String TAG = PasswordMD5WithSalt.class.getSimpleName();
+
     public static String digest (char [] in, byte [] salt) throws NoSuchAlgorithmException {
         MessageDigest messageDigest = MessageDigest.getInstance("MD5");
 
@@ -91,9 +96,9 @@ public class PasswordMD5WithSalt {
             }
             digest = stringBuilder.toString();
         } catch (UnsupportedEncodingException e) {
-            Log.e("MyActivity", "UnsupportedEncodingException");
+            Log.e(TAG, "UnsupportedEncodingException");
         } catch (NoSuchAlgorithmException e) {
-            Log.e("MyActivity", "NoSuchAlgorithmException");
+            Log.e(TAG, "NoSuchAlgorithmException");
         }
         return digest;
     }

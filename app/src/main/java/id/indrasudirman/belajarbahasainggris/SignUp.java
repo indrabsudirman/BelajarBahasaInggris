@@ -116,8 +116,8 @@ public class SignUp extends AppCompatActivity {
             }
             if (allFieldValid) {
 
-                if (!sqLiteHelper.checkUser(textInputEditTextUsername.getText().toString().trim())) {
-                    user.setName(textInputEditTextName.getText().toString().trim());
+                if (!sqLiteHelper.checkUser(Objects.requireNonNull(textInputEditTextUsername.getText()).toString().trim())) {
+                    user.setName(Objects.requireNonNull(textInputEditTextName.getText()).toString().trim());
                     user.setEmail(textInputEditTextUsername.getText().toString().trim());
                     user.setSalt(getSaltPwdDB());
                     Log.d(TAG, "Salt mau input = " + getSaltPwdDB());

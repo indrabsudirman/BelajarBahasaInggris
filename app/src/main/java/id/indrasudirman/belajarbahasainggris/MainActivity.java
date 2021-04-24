@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             if (allFieldValid) {
 
                 //Get salt from database
-                String salt = sqLiteHelper.getSalt(username.getText().toString().trim());
+                String salt = sqLiteHelper.getSalt(Objects.requireNonNull(username.getText()).toString().trim());
                 if (salt != null) {
                     //convert salt to byte
                     byte[] saltByte = hexStringToByteArray(salt);
@@ -107,8 +107,6 @@ public class MainActivity extends AppCompatActivity {
                         SharedPreferences.Editor editor = sharedPreferences.edit();
                         editor.putString(KEY_EMAIL, username.getText().toString().trim());
                         editor.apply();
-                        //Snackbar login berhasil
-                        Snackbar.make(nestedScrollView, "Login Berhasil", Snackbar.LENGTH_LONG).show();
                         username.setText("");
                         password.setText("");
                         allFieldValid = false;
@@ -117,13 +115,6 @@ public class MainActivity extends AppCompatActivity {
                     } else {
 
                         Snackbar.make(nestedScrollView, "Password salah", Snackbar.LENGTH_LONG).show();
-                    }
-
-                    if (salt == null) {
-                        Snackbar.make(nestedScrollView, "Login failed", Snackbar.LENGTH_LONG).show();
-                        username.setText("");
-                        password.setText("");
-                        allFieldValid = false;
                     }
 
                 } else {

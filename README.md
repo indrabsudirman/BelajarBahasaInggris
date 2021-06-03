@@ -27,3 +27,11 @@ Aplikasi Android rencananya akan menggunakan :
 
 
 [<img src="https://user-images.githubusercontent.com/36407161/112955516-b5a4c480-9169-11eb-93bc-e7c77220a8b4.png" width="90%">](https://youtu.be/F8lJ_d9vxPo)
+
+
+Spesial thanks to :
+
+[nicolas](https://www.facebook.com/fransiskus.sipenggilafps) sudah meminjamkan laptopnya untuk saya.\
+[om Yohanes](https://github.com/yohanes) selalu bantu, bimbing, beri pencerahan untuk saya saat belajar coding.
+
+Semoga Allah SWT, selalu melindungi, memberikan kesehatan, murah rezeki untuk mereka dan keluarga. Aamiin YRB

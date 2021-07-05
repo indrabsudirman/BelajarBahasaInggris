@@ -56,6 +56,9 @@
     <string name="first_exercise_meaning_test2">\t Saudara perempuan saya mengunjungi Dieng\n \t Jawa Tengah tahun lalu.</string>
     <string name="exercise_simple_past_test3">3. Cinderella … with her stepmother and her\n \t\t two stepsisters, Anastasia and Drizella.</string>
     <string name="first_exercise_meaning_test3">\t Cinderella tinggal bersama Ibu tiri dan\n \t kedua Saudara perempuan tirinya.</string>
+    <string name="ate">Ate</string>
+    <string name="visited">Visited</string>
+    <string name="lived">Lived</string>
 
     <!-- Simple Past Tense, Explain 2 -->
 
@@ -115,15 +118,15 @@
 
     <!-- Simple Past Tense, Test 3 -->
 
-    <string name="exercise_simple_past_test_3_1">1. You … happy on your Birthday party.</string>
+    <string name="exercise_simple_past_test_3_1">1. You … happy on your Birthday party.</string> <!-- were-->
     <string name="first_exercise_meaning_test_3_1">\t Kamu terlihat senang pada pesta ulang tahunmu.</string>
-    <string name="exercise_simple_past_test_3_2">2. You … happy on your Birthday party.</string>
+    <string name="exercise_simple_past_test_3_2">2. You … happy on your Birthday party.</string> <!-- were not-->
     <string name="first_exercise_meaning_test_3_2">\t Kamu terlihat tidak senang pada \n\t\tpesta ulang tahunmu.</string>
-    <string name="exercise_simple_past_test_3_3">3. … You happy on your Birthday party?</string>
+    <string name="exercise_simple_past_test_3_3">3. … You happy on your Birthday party?</string> <!-- were-->
     <string name="first_exercise_meaning_test_3_3">\t Apakah kamu senang pada pesta ulang tahunmu?</string>
-    <string name="exercise_simple_past_test_3_4">4. … Zatul happy on his Birthday party?</string>
+    <string name="exercise_simple_past_test_3_4">4. … Zatul happy on his Birthday party?</string> <!-- was-->
     <string name="first_exercise_meaning_test_3_4">\t Apakah Zatul senang pada pesta ulang tahunnya?</string>
-    <string name="exercise_simple_past_test_3_5">5. Zatul and Lubna … happy on their \n\t\tGraduation …</string>
+    <string name="exercise_simple_past_test_3_5">5. Zatul and Lubna … happy on their \n\t\tGraduation …</string> <!-- were, last year-->
     <string name="first_exercise_meaning_test_3_5">\t Zatul dan Lubna senang pada wisuda \n\t\tkelulusan mereka tahun lalu.</string>
     <string name="drop_jawaban_5_2_disini">Drop jawaban 5 (2) disini …</string>
     <string name="drop_jawaban_5_1_disini">Drop jawaban 5 (1) disini …</string>

@@ -248,7 +248,7 @@ public class SimplePastActivity extends AppCompatActivity {
     }
 
     private boolean checkQuestion1() {
-        TextInputEditText editTextQuestion = findViewById(R.id.answer_simple_past_test1);
+        TextInputEditText editTextQuestion = findViewById(R.id.dropSimplePastOne);
 
         String key = "1f0cec14e2c5effcbff50f2feb9495f6";
 
@@ -258,7 +258,7 @@ public class SimplePastActivity extends AppCompatActivity {
     }
 
     private boolean checkQuestion2() {
-        TextInputEditText editTextQuestion = findViewById(R.id.answer_simple_past_test2);
+        TextInputEditText editTextQuestion = findViewById(R.id.dropSimplePastTwo);
 
         String key = "07715e6d0e0223bf2bd3ded1ff74184c";
 
@@ -268,7 +268,7 @@ public class SimplePastActivity extends AppCompatActivity {
     }
 
     private boolean checkQuestion3() {
-        TextInputEditText editTextQuestion = findViewById(R.id.answer_simple_past_test3);
+        TextInputEditText editTextQuestion = findViewById(R.id.dropSimplePastThree);
 
         String key = "e22864336bd8b265bcd2d0435462e1f4";
 
@@ -321,17 +321,8 @@ public class SimplePastActivity extends AppCompatActivity {
                                     score = 2;
                                     user.setScore(score);
                                     score = user.getScore();
-                                    System.out.println("Score : " + score);
+//                                    System.out.println("Score : " + score);
                                     viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
-
-                                    TextInputEditText editTextQuestion1 = findViewById(R.id.answer_simple_past_test1);
-                                    TextInputEditText editTextQuestion2 = findViewById(R.id.answer_simple_past_test2);
-                                    TextInputEditText editTextQuestion3 = findViewById(R.id.answer_simple_past_test3);
-
-                                    editTextQuestion1.setText("");
-                                    editTextQuestion2.setText("");
-                                    editTextQuestion3.setText("");
-
                                 }
                             });
 
@@ -408,7 +399,7 @@ public class SimplePastActivity extends AppCompatActivity {
                                     score = 4;
                                     user.setScore(score);
                                     score = user.getScore();
-                                    System.out.println("Score : " + score);
+//                                    System.out.println("Score : " + score);
                                     viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
                                 }
                             });

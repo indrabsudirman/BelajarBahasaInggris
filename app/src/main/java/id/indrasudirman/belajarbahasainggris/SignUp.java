@@ -10,6 +10,8 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.text.SpannableString;
 import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
@@ -18,6 +20,7 @@ import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
@@ -60,6 +63,8 @@ public class SignUp extends AppCompatActivity {
 
     private static final String SHARED_PREF_NAME = "sharedPrefLogin";
     private static final String KEY_EMAIL = "email";
+
+    private boolean doubleBackToExitPressedOnce = false;
 
     public SignUp() {
         //Default constructor
@@ -227,5 +232,20 @@ public class SignUp extends AppCompatActivity {
     private boolean checkUserNameValid(TextInputEditText textInputEditTextUsername) {
         CharSequence charSequence = textInputEditTextUsername.getText().toString().trim();
         return (!TextUtils.isEmpty(charSequence) && Patterns.EMAIL_ADDRESS.matcher(charSequence).matches());
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            Intent homeIntent = new Intent(Intent.ACTION_MAIN);
+            homeIntent.addCategory( Intent.CATEGORY_HOME );
+            homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(homeIntent);
+            return;
+        }
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(getApplicationContext(), "Tekan sekali lagi untuk keluar", Toast.LENGTH_SHORT).show();
+
+        new Handler(Looper.getMainLooper()).postDelayed(() -> doubleBackToExitPressedOnce=false, 2000);
     }
 }

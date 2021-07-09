@@ -11,6 +11,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/splash"
-        android:background="@drawable/bahasainggris_splashscreen"/>
+        android:background="@drawable/splash_screen_belajar_bahasa_inggris"/>
 
 </LinearLayout>

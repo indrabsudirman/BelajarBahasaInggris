@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="40dp"
-            android:src="@drawable/bahasainggris_splashscreen"/>
+            android:src="@drawable/splash_screen_belajar_bahasa_inggris"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayoutName"

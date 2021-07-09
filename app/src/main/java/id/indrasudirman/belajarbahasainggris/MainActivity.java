@@ -136,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(@NonNull View view) {
                 Intent intent = new Intent(getApplicationContext(), SignUp.class);
                 startActivity(intent);
+                overridePendingTransition(0,0);
             }
         };
         spannableString.setSpan(clickableSpan, 20, 34, 0);

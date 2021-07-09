@@ -152,6 +152,7 @@ public class SignUp extends AppCompatActivity {
             public void onClick(@NonNull View view) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
+                overridePendingTransition(0,0);
             }
         };
         spannableString.setSpan(clickableSpan,18,24,0);

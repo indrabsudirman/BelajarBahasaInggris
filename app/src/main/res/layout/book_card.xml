@@ -33,7 +33,8 @@
                 android:paddingRight="@dimen/book_title_padding"
                 android:paddingTop="@dimen/book_title_padding"
                 android:textColor="@color/album_title"
-                android:textSize="@dimen/book_title" />
+                android:textSize="@dimen/book_title"
+                android:gravity="center"/>
 
             <TextView
                 android:id="@+id/count"
@@ -43,7 +44,8 @@
                 android:paddingBottom="@dimen/english_count_padding_bottom"
                 android:paddingLeft="@dimen/book_title_padding"
                 android:paddingRight="@dimen/book_title_padding"
-                android:textSize="@dimen/english_count" />
+                android:textSize="@dimen/english_count"
+                android:gravity="center"/>
 
 
         </RelativeLayout>

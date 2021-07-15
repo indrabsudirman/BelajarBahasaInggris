@@ -46,7 +46,7 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MyView
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.book_card_test, parent, false);
+                .inflate(R.layout.book_card, parent, false);
 
         return new MyViewHolder(itemView);
     }

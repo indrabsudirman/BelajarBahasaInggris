@@ -24,9 +24,9 @@
     <dimen name="card_book_radius">0dp</dimen>
     <dimen name="book_cover_height">160dp</dimen>
     <dimen name="book_title_padding">10dp</dimen>
-    <dimen name="book_title">15dp</dimen>
+    <dimen name="book_title">15sp</dimen>
     <dimen name="english_count_padding_bottom">5dp</dimen>
-    <dimen name="english_count">12dp</dimen>
+    <dimen name="english_count">12sp</dimen>
 
     <dimen name="toolbar_profile_width">150dp</dimen>
     <dimen name="dimen_20dp">20dp</dimen>

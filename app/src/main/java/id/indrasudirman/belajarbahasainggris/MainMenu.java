@@ -89,7 +89,7 @@ public class MainMenu extends AppCompatActivity {
         english = new ArrayList<>();
         adapter = new MainMenuAdapter(this, english);
 
-        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 1);
+        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(10), true));
         recyclerView.setItemAnimator(new DefaultItemAnimator());

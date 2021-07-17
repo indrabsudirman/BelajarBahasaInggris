@@ -10,12 +10,10 @@ import android.os.Handler;
 import android.os.Looper;
 import android.text.Html;
 import android.util.TypedValue;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -24,7 +22,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
-import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
@@ -299,7 +296,7 @@ public class MainMenu extends AppCompatActivity {
         prepareCovers();
 
         try {
-            Glide.with(this).load(R.drawable.top_cover).into((ImageView) findViewById(R.id.backdrop));
+            Glide.with(this).load(R.drawable.top_cover_main_menu).into((ImageView) findViewById(R.id.backdrop));
         } catch (Exception e) {
             e.printStackTrace();
         }

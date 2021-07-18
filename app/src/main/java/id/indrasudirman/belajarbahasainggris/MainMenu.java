@@ -355,17 +355,22 @@ public class MainMenu extends AppCompatActivity {
      */
     private void prepareCovers() {
         int[] covers = new int[]{
-                R.drawable.bookopen,
-                R.drawable.bookopen,
-                R.drawable.bookopen,
-                R.drawable.bookopen,
-                R.drawable.bookopen,
-                R.drawable.bookopen,
-                R.drawable.bookopen,
-                R.drawable.bookopen,
-                R.drawable.bookopen,
-                R.drawable.bookopen,
-                R.drawable.bookopen};
+                R.drawable.simple_past_icon,
+                R.drawable.simple_present_icon,
+                R.drawable.simple_future_icon,
+                R.drawable.simple_past_future_icon,
+                R.drawable.past_continuous_tense_icon,
+                R.drawable.present_continuous_tense_icon,
+                R.drawable.future_continuous_tense_icon,
+                R.drawable.past_future_continuous_tense_icon,
+                R.drawable.past_perfect_tense_icon,
+                R.drawable.present_perfect_tense_icon,
+                R.drawable.future_perfect_tense_icon,
+                R.drawable.past_future_perfect_tense_icon,
+                R.drawable.past_perfect_continuous_tense_icon,
+                R.drawable.present_perfect_continuous_tense_icon,
+                R.drawable.future_perfect_continuous_tense_icon,
+                R.drawable.past_future_perfect_continuous_tense_icon};
 
         EnglishList a = new EnglishList("Simple Past Tense", 5, covers[0]); //1
         english.add(a);
@@ -397,22 +402,22 @@ public class MainMenu extends AppCompatActivity {
         a = new EnglishList("Present Perfect Tense", 5, covers[9]); //10
         english.add(a);
 
-        a = new EnglishList("Future Perfect Tense", 5, covers[9]); //11
+        a = new EnglishList("Future Perfect Tense", 5, covers[10]); //11
         english.add(a);
 
-        a = new EnglishList("Past Future Perfect Tense", 5, covers[9]); //12
+        a = new EnglishList("Past Future Perfect Tense", 5, covers[11]); //12
         english.add(a);
 
-        a = new EnglishList("Past Perfect Continuous Tense", 5, covers[9]); //13
+        a = new EnglishList("Past Perfect Continuous Tense", 5, covers[12]); //13
         english.add(a);
 
-        a = new EnglishList("Present Perfect Continuous Tense", 5, covers[9]); //14
+        a = new EnglishList("Present Perfect Continuous Tense", 5, covers[13]); //14
         english.add(a);
 
-        a = new EnglishList("Future Perfect Continuous Tense", 5, covers[9]); //15
+        a = new EnglishList("Future Perfect Continuous Tense", 5, covers[14]); //15
         english.add(a);
 
-        a = new EnglishList("Past Future Perfect Continuous Tense", 5, covers[9]); //16
+        a = new EnglishList("Past Future Perfect Continuous Tense", 5, covers[15]); //16
         english.add(a);
 
         adapter.notifyDataSetChanged();

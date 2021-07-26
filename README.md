@@ -1,7 +1,9 @@
 # BelajarBahasaInggris
 Project Android, Aplikasi Belajar Bahasa Inggris. 
 
-30 Nov 2020
+19 Juli 2021 live on Google Play https://play.google.com/store/apps/details?id=id.indrasudirman.belajarbahasainggris
+
+Start 30 Nov 2020
 Saat ini, dalam pengembangan aplikasi Android Belajar Bahasa Inggris
 Aplikasi Android rencananya akan menggunakan :
 
